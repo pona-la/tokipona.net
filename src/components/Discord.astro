@@ -1,0 +1,50 @@
+---
+interface Props {
+	name: string;
+	invite: string;
+	img: string;
+	members: string;
+}
+const { name, invite, img, members } = Astro.props;
+---
+
+<a href={invite}>
+	<img src={img} />
+	<div>
+		<strong>{name}</strong>
+		<p>{members}</p>
+	</div>
+</a>
+
+<style>
+	a {
+		background-color: #2a2c30;
+		display: flex;
+		gap: 15px;
+		padding: 18px;
+		border-radius: 5px;
+		font-weight: unset;
+		text-decoration: none;
+		margin-bottom: 1px;
+	}
+	img {
+		border-radius: 15px;
+		width: 56px;
+	}
+	strong {
+		color: #fff;
+	}
+	p {
+		color: #ccc;
+	}
+
+	p:before {
+		/* Unicode bullet symbol */
+		content: '\2022 ';
+		/* Bullet color */
+		color: #80848e;
+		padding-right: 8px;
+		font-size: 150%;
+		line-height: 1;
+	}
+</style>

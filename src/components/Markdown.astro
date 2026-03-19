@@ -1,17 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content';
-
 interface Props {
 	path: string;
 }
-
 const { path } = Astro.props;
-
 const collection = await getCollection('content');
-
 let md = collection.find((post) => post.id == path);
-
-const { Content: Element } = await render(md);
+const { Content: Element } = await render(md!);
 ---
 
 <Element />

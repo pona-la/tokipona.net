@@ -67,3 +67,14 @@ h5 {
 small {
 	font-size: 0.53rem;
 }
+
+ul,
+ol {
+	padding-left: 1rem;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: underline dashed;
+	text-underline-offset: 3px;
+}
