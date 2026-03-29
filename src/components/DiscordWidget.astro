@@ -1,0 +1,180 @@
+---
+import { type DiscordWidgetData, fetchServerData } from "@utils/discord.ts";
+export interface Props {
+  guildId?: string;
+  inviteCode?: string;
+  data?: DiscordWidgetData;
+}
+
+let { guildId, inviteCode, data = {} } = Astro.props;
+data = (await fetchServerData(guildId, inviteCode)) ?? data;
+guildId = data.id;
+inviteCode = data.inviteCode;
+
+const id = (field: string) => `${inviteCode}:${field}`;
+---
+
+<div
+  class="discord-widget"
+  id={id("widget")}
+  data-guild-id={guildId}
+  data-invite-code={inviteCode}
+>
+  <h2 id={id("name")}>
+    {data.name ?? "Unknown Server"}
+  </h2>
+
+  {
+    data.icon && (
+      <img
+        id={id("icon")}
+        src={data.icon}
+        alt={`Icon for ${data.name}`}
+        width="128"
+      />
+    )
+  }
+
+  {
+    data.banner && (
+      <img
+        id={id("banner")}
+        src={data.banner}
+        alt={`Banner for ${data.name}`}
+      />
+    )
+  }
+
+  {
+    data.splash && (
+      <img
+        id={id("splash")}
+        src={data.splash}
+        alt={`Invite banner for ${data.name}`}
+      />
+    )
+  }
+
+  {data.description && <p id={id("description")}>{data.description}</p>}
+
+  <ul>
+    <li>
+      <strong>Members:</strong>{" "}
+      <span id={id("approximate_member_count")}>
+        {data.approximate_member_count ?? "?"}
+      </span>
+    </li>
+    <li>
+      <strong>Online:</strong>{" "}
+      <span id={id("approximate_presence_count")}>
+        {data.approximate_presence_count ?? "?"}
+      </span>
+    </li>
+  </ul>
+
+  {
+    data.invite && (
+      <p>
+        <strong>Invite:</strong>{" "}
+        <a
+          id={id("invite")}
+          href={data.invite}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {data.invite}
+        </a>
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .discord-widget {
+    border: 1px solid #444;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+
+  .discord-widget img {
+    max-width: 100%;
+    display: block;
+    margin: 0.5rem 0;
+  }
+</style>
+
+<script is:inline type="module">
+  import { fetchServerData } from "/src/utils/discord.ts";
+  const TTL = 30 * 60 * 1000;
+
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el && value && value != el.textContent) el.textContent = value;
+  }
+
+  function setAttr(id, attr, value) {
+    const el = document.getElementById(id);
+    if (el && value) el.setAttribute(attr, value);
+  }
+
+  function update(code, data) {
+    if (!code || !data) return;
+
+    setText(`${code}:name`, data.name);
+    setText(`${code}:description`, data.description);
+    setText(
+      `${code}:approximate_member_count`,
+      data.approximate_member_count ?? "?",
+    );
+    setText(
+      `${code}:approximate_presence_count`,
+      data.approximate_presence_count ?? "?",
+    );
+
+    if (data.invite) {
+      setText(`${code}:invite`, data.invite);
+      setAttr(`${code}:invite`, "href", data.invite);
+    }
+
+    if (data.icon) setAttr(`${code}:icon`, "src", data.icon);
+    if (data.banner) setAttr(`${code}:banner`, "src", data.banner);
+    if (data.splash) setAttr(`${code}:splash`, "src", data.splash);
+  }
+
+  async function hydrate(el) {
+    const guildId = el.dataset.guildId || undefined;
+    const inviteCode = el.dataset.inviteCode || undefined;
+    if (!guildId && !inviteCode) return;
+
+    const key = `discord:${inviteCode ?? ""}:${guildId ?? ""}`;
+    const now = Date.now();
+
+    let cached = null;
+    try {
+      cached = JSON.parse(localStorage.getItem(key));
+    } catch {}
+    if (cached && now - cached.time < TTL) {
+      update(inviteCode, cached.data);
+      return;
+    }
+
+    const data = await fetchServerData(guildId, inviteCode);
+    if (!data) return;
+
+    const code = data.inviteCode ?? inviteCode;
+    if (!code) return;
+
+    update(code, data);
+
+    try {
+      localStorage.setItem(key, JSON.stringify({ time: now, data }));
+    } catch {}
+  }
+
+  const widget = document.getElementById(`${inviteCode}:widget`);
+  if (widget) {
+    hydrate(widget);
+    setInterval(hydrate(widget), TTL);
+  }
+</script>
