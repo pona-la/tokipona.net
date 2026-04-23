@@ -1,46 +1,40 @@
-# Astro Starter Kit: Basics
+# Toki Pona Homepage
+
+This work-in-progress homepage aims to serve as a quick introduction to [Toki Pona](https://tokipona.net/) for new people, dispel any common misconceptions, and link to frequently used community resources.
+
+## Contributing
+
+This is a collaborative project brought to you by the Toki Pona community.
+
+<div align="center">
+  <a href="https://github.com/pona-la/toki-pona-homepage/graphs/contributors">
+    <img src="https://contrib.rocks/image?columns=9&max=27&repo=pona-la/toki-pona-homepage" />
+  </a>
+</div>
+
+Your help is welcome! Feel free to submit pull requests if you find anything that needs improvement.
+
+Want to help but you're [new to Github? We can help!](https://github.com/pona-la/.github/blob/main/help/README.md)
+
+You can also join the Discord and talk to the maintainers!
+
+<div align="center">
+  <a href="https://discord.gg/A3ZPqnHHsy">
+    <img src="https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-badge.svg">
+  </a>
+</div>
+
+## Local development
+
+Install Bun on your system. Clone the repo. Run in terminal:
 
 ```sh
-bun create astro@latest -- --template basics
+bun i    # install dependencies
+bun dev  # run the dev server
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<!--## License-->
 
-## 🚀 Project Structure
+<!--Content (`/content/`) is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).-->
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<!--Code (`/src/`) is licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).-->
