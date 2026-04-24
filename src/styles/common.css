@@ -34,7 +34,7 @@ main {
 	max-width: 1600px;
 	margin: auto;
 	display: grid;
-	grid-template: "right left" / 3fr 2fr;
+	grid-template: "right right left" / 1fr 1fr 1fr;
 	column-gap: 10px;
 }
 main > * {
@@ -91,8 +91,10 @@ summary {
 @media only screen and (max-width: 600px) {
 	body {
 		margin: 0;
+		background-color: var(--yellow-soft);
 	}
 	section {
+		background-color: unset;
 		border: none;
 		border-radius: none;
 		font-size: 90%;
