@@ -68,6 +68,14 @@ h2 {
 	border-bottom: 6px solid var(--yellow-strong);
 }
 
+ul,
+ol {
+	text-align: left;
+}
+a,
+a:visited {
+	color: var(--blue-strong);
+}
 svg {
 	max-width: 100%;
 	height: auto;
