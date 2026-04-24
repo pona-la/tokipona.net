@@ -1,6 +1,7 @@
 ---
 import "@/styles/common.css";
 
+import Video from "@/components/Video.astro";
 import Layout2 from "@/layouts/Layout2.astro";
 import Banner from "@/assets/banner.svg";
 ---
@@ -11,4 +12,25 @@ import Banner from "@/assets/banner.svg";
 >
 	<h1>Toki Pona: the language with only 120 words.</h1>
 	<Banner />
+	<h2>Learn via videos!</h2>
+	<div class='cols'>
+		<blockquote>What is Toki Pona?<br /><b>A quick overview:</b></blockquote>
+		<Video id='U3GQePblz4M' />
+	</div>
+	<details>
+		<summary>Q - What is Toki Pona?</summary>
+		<p>
+			A - Toki Pona is a constructed language. That means that someone decided
+			what words and grammar to put in it, unlike natural languages, such as
+			English or Urdu. Toki Pona has one main gimmick: it only has 120 words.
+			Beyond that, Toki Pona is not very different from any other langauage in
+			capability.
+		</p>
+		<p>
+			The number of speakers of Toki Pona is in the thousands. Toki Pona
+			speakers are proud to be part of a community that emphasizes art and
+			expression of identity. Toki Pona is a living language, and it's evolving
+			through daily usage.
+		</p>
+	</details>
 </Layout2>

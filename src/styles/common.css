@@ -13,8 +13,9 @@
 body {
 	margin: 1rem;
 	font-family: var(--font);
+	background-color: var(--blue-soft);
 	color: var(--txt);
-	line-height: 1.7em;
+	line-height: 1.4;
 	font-size: 18px;
 }
 
@@ -25,6 +26,13 @@ body {
 		border 0.2s,
 		fill 0.2s,
 		box-shadow 0.2s;
+}
+
+blockquote {
+	text-align: left;
+	margin: 0px;
+	padding-inline: 15px 15px;
+	border-inline-start: 5px solid var(--yellow-strong);
 }
 
 main {
@@ -39,9 +47,39 @@ main {
 
 h1 {
 	font-weight: initial;
+	font-size: 36px;
+}
+h2 {
+	font-weight: initial;
+	font-size: 36px;
+	width: 100%;
+	padding-bottom: 15px;
+	border-bottom: 5px solid var(--yellow-strong);
 }
 
 svg {
 	max-width: 100%;
 	height: auto;
+}
+
+.cols {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+}
+
+.cols * {
+	align-self: center;
+}
+
+details {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: var(--yellow-strong);
+	border: 5px solid var(--orange);
+	border-radius: 5px;
+}
+summary {
+	background-color: var(--yellow-strong);
 }
