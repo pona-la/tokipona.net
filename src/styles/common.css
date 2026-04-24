@@ -29,6 +29,7 @@ body {
 }
 
 blockquote {
+	width: fit-content;
 	text-align: left;
 	margin: 0px;
 	padding-inline: 15px 15px;
@@ -69,6 +70,7 @@ svg {
 }
 
 .cols * {
+	justify-self: center;
 	align-self: center;
 }
 
