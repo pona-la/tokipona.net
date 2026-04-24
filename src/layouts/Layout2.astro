@@ -1,14 +1,20 @@
-<!doctype html>
+---
+import BaseHead from '@/components/BaseHead.astro';
+
+interface Props {
+	title: string;
+	description: string;
+}
+const { title, description } = Astro.props;
+---
+
 <html lang='en'>
 	<head>
-		<meta charset='UTF-8' />
-		<meta name='viewport' content='width=device-width' />
-		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-		<meta name='generator' content={Astro.generator} />
-		<link rel='stylesheet' href='/src/styles/index.css' />
-		<title>Toki Pona (Community site)</title>
+		<BaseHead title={title} description={description} />
 	</head>
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
