@@ -20,29 +20,21 @@ body {
 	font-size: 18px;
 }
 
-* {
-	transition:
-		color 0.2s,
-		background-color 0.2s,
-		border 0.2s,
-		fill 0.2s,
-		box-shadow 0.2s;
-}
-
 blockquote {
 	width: fit-content;
 	text-align: left;
 	font-size: 110%;
 	margin: 0px;
+	padding: 10px 0;
 	padding-inline: 15px 15px;
-	border-inline-start: 5px solid var(--yellow-strong);
+	border-inline-start: 6px solid var(--yellow-strong);
 }
 
 main {
 	max-width: 900px;
 	margin: auto;
-	border: 5px solid var(--orange);
-	border-radius: 5px;
+	border: 3px solid var(--orange);
+	border-radius: 10px;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
@@ -54,14 +46,14 @@ main {
 
 h1 {
 	font-weight: initial;
-	font-size: 180%;
+	font-size: 200%;
 }
 h2 {
 	font-weight: initial;
-	font-size: 150%;
+	font-size: 175%;
 	width: 100%;
 	padding-bottom: 15px;
-	border-bottom: 5px solid var(--yellow-strong);
+	border-bottom: 6px solid var(--yellow-strong);
 }
 
 svg {
@@ -83,13 +75,18 @@ svg {
 }
 
 details {
-	max-width: 600px;
-	margin: auto;
+	/*max-width: 600px;*/
+	/*margin: auto;*/
 	background-color: var(--yellow);
-	border: 5px solid var(--orange);
+	border: 3px solid var(--orange);
 	border-radius: 5px;
 	padding: 10px 15px;
 }
+
+/*details p {
+	max-width: 600px;
+	margin: 10px auto;
+}*/
 summary {
 	background-color: var(--yellow);
 	cursor: pointer;
@@ -101,6 +98,7 @@ summary {
 	}
 	main {
 		border: none;
+		border-radius: none;
 		font-size: 90%;
 	}
 	.cols {
@@ -110,6 +108,7 @@ summary {
 	}
 	blockquote {
 		border: none;
+		padding: none;
 		padding-inline: none;
 		text-align: center;
 	}
