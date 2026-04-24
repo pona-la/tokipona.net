@@ -46,9 +46,6 @@ section {
 	border: 3px solid var(--orange);
 	border-radius: 10px;
 	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
 	background-color: var(--yellow-soft);
 	text-align: center;
 	font-size: 18px;
@@ -81,10 +78,6 @@ details {
 	padding: 10px 15px;
 }
 
-/*details p {
-	max-width: 600px;
-	margin: 10px auto;
-}*/
 summary {
 	background-color: var(--yellow);
 	cursor: pointer;

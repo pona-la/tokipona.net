@@ -5,6 +5,7 @@ import Video from "@/components/Video.astro";
 import Cols from "@/components/Cols.astro";
 import Layout2 from "@/layouts/Layout2.astro";
 import Banner from "@/assets/banner.svg";
+import Card from "@/components/Card.astro";
 ---
 
 <Layout2
@@ -71,43 +72,24 @@ import Banner from "@/assets/banner.svg";
 			</blockquote>
 			<Video id='5phj5Ae80h8' />
 		</Cols>
+
+		<blockquote>An FAQ for Toki Pona written by community members</blockquote>
 	</section>
 	<section style='grid-area: left;'>
-		<h2>Read more!</h2>
-
-		<Cols>
-			<blockquote style='grid-area: 1/2'>
-				Linku, our <b>community dictionary</b> for toki pona words
-			</blockquote>
-			<p></p>
-		</Cols>
-		<details>
-			<summary>Click here for alternative dictionaries</summary>
-		</details>
-
-		<Cols>
-			<div>
-				<blockquote>
-					Wasona, a <b>complete course</b> available in 14 languages
-				</blockquote>
-			</div>
-			<p></p>
-		</Cols>
-		<details><summary>Click here for alternative courses</summary></details>
-
-		<Cols>
-			<blockquote style='grid-area: 1/2'>
-				An FAQ for Toki Pona written by community members
-			</blockquote>
-			<p></p>
-		</Cols>
-
-		<Cols>
-			<blockquote>
-				sona pona ("good knowledge") is a <b>reliable encyclopedia</b> for toki pona
-				and its history.
-			</blockquote>
-			<p></p>
-		</Cols>
+		<h2>Start learning!</h2>
+		<Card url='https://wasona.com' img='https://wasona.com/favicon.png'>
+			Wasona, a <b>complete course</b> available in 14 languages
+		</Card>
+		<Card url='https://linku.la' img='https://linku.la/favicon.png'>
+			Linku, our <b>community dictionary</b> for Toki Pona words
+		</Card>
+		<Card
+			url='https://sona.pona.la'
+			img='https://static.wikitide.net/sonaponawiki/e/ec/sona_pona_%28provisional%29.png'
+		>
+			<abbr title="'good knowledge'">sona pona</abbr>, a <b>
+				reliable encyclopedia
+			</b> for Toki Pona and its history
+		</Card>
 	</section>
 </Layout2>
