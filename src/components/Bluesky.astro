@@ -1,0 +1,62 @@
+---
+const { did } = Astro.props; // e.g. "jay.bsky.social"
+---
+
+<div id='bluesky-post'>
+	<p>Loading latest post...</p>
+</div>
+
+<script define:vars={{ did }} is:inline>
+	const container = document.getElementById("bluesky-post");
+
+	async function loadPost() {
+		try {
+			// Resolve handle → DID
+			// const didRes = await fetch(
+			// 	`https://public.api.bsky.app/xrpc/com.atproto.identity.resolveHandle?handle=${handle}`,
+			// );
+			// const didData = await didRes.json();
+
+			// console.log(didData);
+			// Fetch author feed
+			const feedRes = await fetch(
+				`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${did}&limit=1`,
+			);
+			const feedData = await feedRes.json();
+
+			const post = feedData.feed[0].post;
+
+			if (!post) {
+				container.innerHTML = "<p>No posts found.</p>";
+				return;
+			}
+
+			const record = post.record;
+
+			container.innerHTML = `
+        <div class="post">
+        <small>${new Date(record.createdAt).toLocaleString("en-US", {
+					month: "short",
+					year: "numeric",
+					day: "numeric",
+				})}:</small><br />
+          <span>${record.text}</span>
+        </div>
+      `;
+		} catch (err) {
+			console.error(err);
+			container.innerHTML = "<p>Failed to load post.</p>";
+		}
+	}
+
+	loadPost();
+</script>
+
+<style>
+	.post {
+		border: 1px solid #ddd;
+		padding: 1rem;
+		border-radius: 8px;
+		font-family: system-ui, sans-serif;
+	}
+</style>

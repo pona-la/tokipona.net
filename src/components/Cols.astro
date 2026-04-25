@@ -1,0 +1,20 @@
+<div class='cols'><slot /></div>
+<style is:global>
+	.cols {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 20px;
+		padding: 10px 0px;
+	}
+	.cols > * {
+		justify-self: center;
+		align-self: center;
+	}
+	@media only screen and (max-width: 600px) {
+		.cols {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+</style>
