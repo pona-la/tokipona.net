@@ -1,12 +1,12 @@
 ---
 import "@/styles/common.css";
 
-import Layout2 from "@/layouts/Layout2.astro";
 import HomepageLeft from "@/components/HomepageLeft.astro";
 import HomepageRight from "@/components/HomepageRight.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout2
+<Layout
 	title={"Toki Pona (Homepage)"}
 	description={"Toki Pona: the language with only 120 words."}
 >
@@ -16,7 +16,7 @@ import HomepageRight from "@/components/HomepageRight.astro";
 	<section style='grid-area: left;'>
 		<HomepageRight />
 	</section>
-</Layout2>
+</Layout>
 
 <footer>
 	Made by the Toki Pona community.<br />
