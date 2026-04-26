@@ -2,7 +2,7 @@
 	--font: "Andika", sans-serif;
 
 	--yellow-soft: #fff9f9;
-	--yellow: #ffde72;
+	--yellow: #ffeaa4;
 	--yellow-strong: #ffd13b;
 	--orange: #ffa454;
 	--red: #f26a6a;
@@ -92,7 +92,6 @@ details {
 }
 
 summary {
-	background-color: var(--yellow);
 	cursor: pointer;
 }
 
