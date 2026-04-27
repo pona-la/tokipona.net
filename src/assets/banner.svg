@@ -105,47 +105,47 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:#240000;fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--txt);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="79.28508"
        y="52.219734"
        id="text12730-3"><tspan
          sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+         style="text-align:center;text-anchor:middle;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
          x="79.28508"
          y="52.219734"
          id="tspan12736-9"><tspan
-   style="font-style:italic;text-align:center;text-anchor:middle;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+   style="font-style:italic;text-align:center;text-anchor:middle;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
    id="tspan12738-3">toki</tspan> - language</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:#240000;fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--txt);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="25.011431"
        y="48.758976"
        id="text12730-5-6"><tspan
          sodipodi:role="line"
          id="tspan12728-0-6"
-         style="text-align:center;text-anchor:middle;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+         style="text-align:center;text-anchor:middle;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
          x="25.011431"
          y="48.758976"><tspan
-   style="font-style:italic;text-align:center;text-anchor:middle;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+   style="font-style:italic;text-align:center;text-anchor:middle;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
    id="tspan12738-9-1">toki pona</tspan> -</tspan><tspan
          sodipodi:role="line"
-         style="text-align:center;text-anchor:middle;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+         style="text-align:center;text-anchor:middle;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
          x="25.011431"
          y="55.527824"
          id="tspan12736-7-2">good language</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:#240000;fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--txt);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="113.34862"
        y="51.347481"
        id="text12734-4"><tspan
          sodipodi:role="line"
          id="tspan12732-6"
-         style="fill:#240000;fill-opacity:1;stroke-width:0.480219"
+         style="fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
          x="113.34862"
          y="51.347481"><tspan
-   style="font-style:italic;fill:#240000;fill-opacity:1;stroke-width:0.480219"
+   style="font-style:italic;fill:var(--txt);fill-opacity:1;stroke-width:0.480219"
    id="tspan12740-7">pona</tspan> - good</tspan></text>
   </g>
 </svg>

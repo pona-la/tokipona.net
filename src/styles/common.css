@@ -5,10 +5,20 @@
 	--yellow: #ffeaa4;
 	--yellow-strong: #ffd13b;
 	--orange: #ffa454;
-	--red: #f26a6a;
+	--red: #b02929;
 	--blue-strong: #4349ff;
 	--blue-soft: #bfc1ff;
 	--txt: #240000;
+}
+.dark {
+	--yellow-soft: #3e2015;
+	--yellow: #663517;
+	--yellow-strong: #924e06;
+	--orange: #c76f21;
+	--red: #f26a6a;
+	--blue-strong: #898ce7;
+	--blue-soft: #1d1e39;
+	--txt: #fee;
 }
 
 body {
