@@ -1,5 +1,25 @@
 ---
-
+const styles = `
+.border-b {
+	border: 3px solid color-mix(in srgb, var(--orange), transparent 70%);
+	border-radius: 10px;
+}
+:has(> article) {
+	padding: 0;
+}
+section > :first-child {
+	margin-top: 0;
+}
+section > * {
+	margin-bottom: 0.5rem !important;
+	&:not(:has(article)) {
+		padding: 0.75rem !important;
+	}
+	& > article {
+		padding: 0.75rem !important;
+	}
+}
+`;
 ---
 
 <script
@@ -9,6 +29,6 @@
 <bsky-embed
 	limit='2'
 	username='tokipona.net'
-	custom-styles='.border-slate-300 { border-color: var(--orange); }'
+	custom-styles={styles}
 >
 </bsky-embed>
