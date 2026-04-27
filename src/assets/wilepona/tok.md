@@ -52,6 +52,33 @@ kama ni ale li ike a. anpa Ama li wawa a li pali pona a lon tenpo pini, li awen 
 
 tenpo ni la wile mi li ni: pakala o kama pona kepeken tenpo, lon kulupu mi, lon anpa Ama kin. o pona tawa ni.
 
+tan jan ni:  
+kala Asi  
+jan Eta  
+waso Juwan  
+jan Ke Tami  
+mun Kekan San  
+pipi Kewapi  
+jan Lakuse  
+soweli Lapate  
+lipamanka  
+jan Lisaki  
+jan Mika  
+sitelen ko Pela  
+jan Sepulon  
+jan Suko  
+wan Tansin  
+jan Tekinowi  
+jan Telesi  
+jan Tepo
+
+tan mama pi kulupu ni:  
+ma mun (ilo Siko)  
+ma pona pi toki pona (ilo Siko)  
+Ma Toki Pona VR (ilo Wijasa)  
+r/tokipona (lipu Wesi)  
+kulupu pali pi sitelen pona
+
 (sina wile e nimi pi kulupu sina lon lipu ni la, o toki e wile ni tawa ni: [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net))
 
 [^2]: mi mute li sona ala e misikeke, li wile pana e ken len pona tawa anpa Ama, la mi toki ala kepeken nasin toki misikeke.  mi toki e nasin ni: sona jan en lon lon li kama tu.  nasin nasa lawa mute li ni ala.  jan li nasa pilin, li toki ike tawa jan, la ken la ona li awen sona e lon.  taso jan li sona e lon ante, la ni li ante.  sina wile kama sona, la o lukin e [lipu ni](https://www.nami.org/types-of-conditions/psychosis/).
