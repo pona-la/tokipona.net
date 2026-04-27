@@ -80,7 +80,6 @@ ma mun (Discord)
 ma pona pi toki pona (Discord)  
 Ma Toki Pona VR (VRChat)  
 r/tokipona (Reddit)  
-kama sona (Discord)  
 Sitelen Pona Publishers and Typographers Association
 
 (Contact [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net) to add your community’s name to this list.)

@@ -81,7 +81,6 @@ ma mun (ilo Siko)
 ma pona pi toki pona (ilo Siko)  
 Ma Toki Pona VR (ilo Wijasa)  
 r/tokipona (lipu Wesi)  
-kama sona (ilo Siko)  
 kulupu pali pi sitelen pona
 
 (sina wile e nimi pi kulupu sina lon lipu ni la, o toki e wile ni tawa ni: [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net))
