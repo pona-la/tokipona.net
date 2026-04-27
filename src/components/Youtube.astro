@@ -1,9 +1,8 @@
 ---
 interface Props {
-	src: string;
-	captions: string;
+	id: string;
 }
-const { src, captions } = Astro.props;
+const { id } = Astro.props;
 ---
 
 <style>
@@ -19,7 +18,7 @@ const { src, captions } = Astro.props;
 		border-radius: 10px;
 	}
 
-	.container video {
+	.container iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -30,8 +29,11 @@ const { src, captions } = Astro.props;
 </style>
 
 <div class='container'>
-	<video preload='metadata' src={src}>
-		<track default kind='captions' src={captions} />
-		Your browser does not support the video tag.
-	</video>
+	<iframe
+		src={`https://www.youtube.com/embed/${id}`}
+		title='YouTube video player'
+		frameborder='0'
+		allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+		referrerpolicy='strict-origin-when-cross-origin'
+		allowfullscreen></iframe>
 </div>

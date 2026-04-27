@@ -22,6 +22,7 @@ body {
 
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-attachment: fixed;
 	background-size: 100%;
 }
 
@@ -59,7 +60,7 @@ section {
 
 footer {
 	text-align: center;
-	margin: 30vw auto 10px auto;
+	margin: 25vw auto 10px auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
 }
@@ -103,6 +104,9 @@ details {
 	}
 	& > p {
 		padding: 0px 15px;
+	}
+	& > ul {
+		padding: 0px 15px 0px 30px;
 	}
 }
 
