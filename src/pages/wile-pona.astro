@@ -1,0 +1,106 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Eng from "@/assets/wilepona/eng.md";
+import Tok from "@/assets/wilepona/tok.md";
+---
+
+<html lang='en'>
+	<head>
+		<BaseHead
+			title='toki kulupu pi wile pona'
+			description='A statement from members of the Toki Pona community.'
+		/>
+		<link
+			href='https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap'
+			rel='stylesheet'
+		/>
+	</head>
+	<body>
+		<h1>toki kulupu pi wile pona</h1>
+		<main>
+			<nav>
+				<button onclick='tok()'>toki pona</button>
+				<button onclick='eng()'>English</button>
+			</nav>
+			<article id='eng'>
+				<Eng />
+			</article>
+			<article id='tok' style='display: none'>
+				<Tok />
+			</article>
+		</main>
+	</body>
+</html>
+
+<script is:inline>
+	function tok() {
+		for (let article of document.getElementsByTagName("article")) {
+			article.style.display = "none";
+		}
+		document.getElementById("tok").style.display = "initial";
+		console.log("tok");
+	}
+	function eng() {
+		for (let article of document.getElementsByTagName("article")) {
+			article.style.display = "none";
+		}
+		document.getElementById("eng").style.display = "initial";
+	}
+</script>
+<style is:global>
+	body {
+		font-family: "Source Serif 4", serif;
+		margin: 1rem;
+		line-height: 1.5;
+		font-size: 18px;
+	}
+
+	main {
+		margin: auto;
+		max-width: 730px;
+	}
+	nav {
+		text-align: center;
+	}
+	button {
+		width: 25%;
+		padding: 10px;
+		font-family: inherit;
+		font-size: 20px;
+		transition: background-color 0.2s ease;
+		border: none;
+		border-radius: 10px;
+		background-color: #e9e9ed;
+		&:hover {
+			background-color: #c9c9cf;
+		}
+		&:active {
+			background-color: #b1b1b9;
+		}
+	}
+	p {
+		text-align: justify;
+	}
+	.subtitle {
+		font-size: 22px;
+		text-align: center;
+	}
+	h1 {
+		font-style: italic;
+		text-align: center;
+		font-weight: normal;
+		padding: 30px;
+	}
+	h2,
+	h2 strong {
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	a,
+	a:visited {
+		color: #00c;
+		text-underline-offset: 2px;
+	}
+</style>
