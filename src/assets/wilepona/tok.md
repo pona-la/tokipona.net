@@ -76,6 +76,7 @@ jan Telesi
 jan Tepo
 
 tan mama pi kulupu ni:  
+kama sona (ilo Siko)
 ma mun (ilo Siko)  
 ma pona pi toki pona (ilo Siko)  
 Ma Toki Pona VR (ilo Wijasa)  

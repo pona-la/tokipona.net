@@ -75,6 +75,7 @@ jan Telesi
 jan Tepo
 
 And the moderation or leadership teams of:  
+kama sona (Discord)  
 ma mun (Discord)  
 ma pona pi toki pona (Discord)  
 Ma Toki Pona VR (VRChat)  
