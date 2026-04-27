@@ -52,11 +52,13 @@ At the end of the day, this is a very sad story about a very talented person who
 Now is a time for healing, for this community and hopefully also for Amatullah.  We hope you will let us focus on that.
 
 Signed (alphabetical by name):  
+jan Alin
 kala Asi  
 jan Eta  
 waso Juwan  
 jan Ke Tami  
-mun Kekan San  
+mun Kekan San
+waso Keli
 pipi Kewapi  
 jan Lakuse  
 soweli Lapate  
@@ -76,6 +78,7 @@ ma mun (Discord)
 ma pona pi toki pona (Discord)  
 Ma Toki Pona VR (VRChat)  
 r/tokipona (Reddit)
+kama sona (Discord)
 Sitelen Pona Publishers and Typographers Association
 
 (Contact [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net) to add your community’s name to this list.)
