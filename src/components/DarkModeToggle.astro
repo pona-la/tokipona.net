@@ -24,10 +24,11 @@
 		background: none;
 		cursor: pointer;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 1rem;
+		right: 1rem;
 	}
 	.sun {
+		transition: fill 150ms;
 		fill: var(--txt);
 	}
 
@@ -49,6 +50,7 @@
 
 	:global(.dark) .moon {
 		fill: var(--txt);
+		transition: fill 150ms;
 	}
 
 	:global(.dark) #themeToggle:hover .moon {

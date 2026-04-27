@@ -35,14 +35,16 @@ body {
 	background-attachment: fixed;
 	background-size: 100%;
 }
+.dark body {
+	background-image: url("/sitelen/background-dark.svg");
+}
+
+.no-transition, .no-transition * {
+	transition: none !important;
+}
 
 * {
-	transition:
-		color 0.2s,
-		background-color 0.2s,
-		border 0.2s,
-		fill 0.2s,
-		box-shadow 0.2s;
+	box-sizing: border-box;
 }
 
 blockquote {
@@ -87,6 +89,7 @@ footer {
 h1 {
 	font-weight: initial;
 	font-size: 200%;
+	text-wrap: balance;
 }
 h2 {
 	font-weight: initial;
@@ -143,6 +146,7 @@ summary {
 @media only screen and (max-width: 750px) {
 	body {
 		margin: 0;
+		background-attachment: scroll;
 	}
 	main {
 		margin: 0;
@@ -167,6 +171,5 @@ summary {
 }
 
 img {
-	box-sizing: border-box;
 	max-width: 100%;
 }
