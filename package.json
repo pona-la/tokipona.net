@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "5.17.3"
+    "astro": "5.17.3",
+    "bsky-embed": "^0.2.7"
   }
 }

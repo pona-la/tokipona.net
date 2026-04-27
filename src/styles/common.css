@@ -39,7 +39,8 @@ body {
 	background-image: url("/sitelen/background-dark.svg");
 }
 
-.no-transition, .no-transition * {
+.no-transition,
+.no-transition * {
 	transition: none !important;
 }
 
@@ -49,7 +50,6 @@ body {
 
 blockquote {
 	width: fit-content;
-	text-align: left;
 	font-size: 110%;
 	margin: 0px;
 	padding: 10px 0;
@@ -75,7 +75,6 @@ section {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: var(--yellow-soft);
-	text-align: center;
 	font-size: 18px;
 }
 
@@ -90,6 +89,7 @@ h1 {
 	font-weight: initial;
 	font-size: 200%;
 	text-wrap: balance;
+	text-align: center;
 }
 h2 {
 	font-weight: initial;
@@ -97,12 +97,9 @@ h2 {
 	width: 100%;
 	padding-bottom: 15px;
 	border-bottom: 6px solid var(--yellow-strong);
+	text-align: center;
 }
 
-ul,
-ol {
-	text-align: left;
-}
 a,
 a:visited {
 	color: var(--blue-strong);
@@ -120,7 +117,6 @@ details {
 	border: 3px solid var(--orange);
 	border-radius: 10px;
 	/*padding: 10px 15px;*/
-	text-align: left;
 	&:open summary {
 		border-bottom: 3px solid var(--orange);
 	}
