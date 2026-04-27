@@ -111,14 +111,68 @@ svg {
 }
 
 details {
-	/*max-width: 600px;*/
+	interpolate-size: allow-keywords;
 	margin-top: 20px;
 	background-color: var(--yellow);
 	border: 3px solid var(--orange);
 	border-radius: 10px;
-	/*padding: 10px 15px;*/
+
+	&::details-content {
+		height: 0;
+		overflow: hidden;
+		box-shadow: inset 0 3px 0 0 transparent;
+		transition:
+			opacity 300ms,
+			height 300ms,
+			box-shadow 0ms 300ms,
+			padding-top 0ms 300ms,
+			content-visibility 300ms allow-discrete;
+	}
+
+	&:open::details-content {
+		height: auto;
+		padding-top: 3px;
+		box-shadow: inset 0 3px 0 0 var(--orange);
+		transition:
+			opacity 300ms,
+			height 300ms,
+			box-shadow 0ms 0ms,
+			padding-top 0ms 0ms,
+			content-visibility 300ms allow-discrete;
+	}
+
+
+	/* Style when the details element is [open] */
+	&:open::details-content {
+		height: auto;
+	}
+
+	& > summary {
+		padding: 10px 15px;
+		text-align: center;
+		cursor: pointer;
+
+		&::marker {
+			content: "";
+		}
+		&::before {
+			content: "";
+			background-color: var(--txt);
+			width: 20px;
+			height: 20px;
+			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='size-5'%3E%3Cpath fill-rule='evenodd' d='M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");	background-size: contain;
+			background-repeat: no-repeat;
+			margin-top: 0.25rem;
+			margin-right: 0.25rem;
+			display: inline-block;
+			vertical-align: top;
+			transition: rotate 150ms;
+		}
+	}
 	&:open summary {
-		border-bottom: 3px solid var(--orange);
+		&::before {
+			rotate: 90deg;
+		}
 	}
 	& > p {
 		padding: 0px 15px;
@@ -126,12 +180,6 @@ details {
 	& > ul {
 		padding: 0px 15px 0px 30px;
 	}
-}
-
-summary {
-	padding: 10px 15px;
-	text-align: center;
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {
