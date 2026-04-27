@@ -12,12 +12,17 @@
 }
 
 body {
-	margin: 1rem;
+	margin: 0;
 	font-family: var(--font);
 	background-color: var(--blue-soft);
 	color: var(--txt);
 	line-height: 1.4;
 	font-size: 18px;
+	background-image: url("/sitelen/background.svg");
+
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
 }
 
 blockquote {
@@ -31,8 +36,9 @@ blockquote {
 }
 
 main {
-	max-width: 1600px;
+	max-width: min(1600px, 90%);
 	margin: auto;
+	margin-top: 1rem;
 	display: grid;
 	grid-template: "right right left" / 1fr 1fr 1fr;
 	column-gap: 10px;
@@ -53,7 +59,9 @@ section {
 
 footer {
 	text-align: center;
-	margin: auto;
+	margin: 10px auto 30vw auto;
+	/* Ensure background image is nicely viewable
+	at all browser widths and zoom levels */
 }
 
 h1 {
@@ -103,9 +111,16 @@ summary {
 @media only screen and (max-width: 600px) {
 	body {
 		margin: 0;
+	}
+	main {
+		margin: 0;
+		padding: 1rem;
+		max-width: none;
 		background-color: var(--yellow-soft);
+		border-bottom: 5px solid var(--yellow-strong);
 	}
 	section {
+		padding: 0;
 		background-color: unset;
 		border: none;
 		border-radius: none;
