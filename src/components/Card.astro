@@ -13,9 +13,11 @@ const { url, img } = Astro.props;
 		grid-template-columns: 60px 1fr;
 		grid-gap: 15px;
 		align-items: center;
+		border-radius: 1rem;
+		transition: background-color 150ms;
 	}
 	.card:hover {
-		background-color: var(--bg-1);
+		background-color: var(--yellow);
 	}
 	a:hover .title {
 		text-decoration: underline dotted;
