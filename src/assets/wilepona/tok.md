@@ -53,11 +53,13 @@ kama ni ale li ike a. anpa Ama li wawa a li pali pona a lon tenpo pini, li awen 
 tenpo ni la wile mi li ni: pakala o kama pona kepeken tenpo, lon kulupu mi, lon anpa Ama kin. o pona tawa ni.
 
 tan jan ni:  
+jan Alin  
 kala Asi  
 jan Eta  
 waso Juwan  
 jan Ke Tami  
 mun Kekan San  
+waso Keli  
 pipi Kewapi  
 jan Lakuse  
 soweli Lapate  
@@ -67,6 +69,7 @@ jan Mika
 sitelen ko Pela  
 jan Sepulon  
 jan Suko  
+ilo Tani  
 wan Tansin  
 jan Tekinowi  
 jan Telesi  
@@ -77,6 +80,7 @@ ma mun (ilo Siko)
 ma pona pi toki pona (ilo Siko)  
 Ma Toki Pona VR (ilo Wijasa)  
 r/tokipona (lipu Wesi)  
+kama sona (ilo Siko)  
 kulupu pali pi sitelen pona
 
 (sina wile e nimi pi kulupu sina lon lipu ni la, o toki e wile ni tawa ni: [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net))
