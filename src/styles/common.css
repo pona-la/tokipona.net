@@ -36,6 +36,15 @@ body {
 	background-size: 100%;
 }
 
+* {
+	transition:
+		color 0.2s,
+		background-color 0.2s,
+		border 0.2s,
+		fill 0.2s,
+		box-shadow 0.2s;
+}
+
 blockquote {
 	width: fit-content;
 	text-align: left;
