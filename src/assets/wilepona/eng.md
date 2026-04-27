@@ -55,6 +55,7 @@ Signed (alphabetical by name):
 jan Alin  
 kala Asi  
 jan Eta  
+jan Isapela (formerly "jan Asiku")  
 waso Juwan  
 jan Ke Tami  
 mun Kekan San  

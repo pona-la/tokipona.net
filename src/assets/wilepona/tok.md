@@ -56,6 +56,7 @@ tan jan ni:
 jan Alin  
 kala Asi  
 jan Eta  
+jan Isapela (tenpo pini la "jan Asiku")  
 waso Juwan  
 jan Ke Tami  
 mun Kekan San  
