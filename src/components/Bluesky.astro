@@ -1,6 +1,6 @@
 ---
 const styles = `
-.border-b {
+.border-slate-300 {
 	border: 3px solid color-mix(in srgb, var(--orange), transparent 70%);
 	border-radius: 10px;
 }
@@ -19,6 +19,9 @@ section > * {
 		padding: 0.75rem !important;
 	}
 }
+a img {
+	display: none
+}
 `;
 ---
 
@@ -26,9 +29,5 @@ section > * {
 	type='module'
 	src='https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js'
 	async></script>
-<bsky-embed
-	limit='2'
-	username='tokipona.net'
-	custom-styles={styles}
->
+<bsky-embed limit='2' username='tokipona.net' custom-styles={styles}>
 </bsky-embed>
