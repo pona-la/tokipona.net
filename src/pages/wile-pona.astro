@@ -60,17 +60,23 @@ import Tok from "@/assets/wilepona/tok.md";
 		max-width: 730px;
 	}
 	nav {
+		display: flex;
+		margin: auto;
+		max-width: 500px;
 		text-align: center;
+		gap: 10px;
+		& > * {
+			flex: 1 1 0;
+		}
 	}
 	button {
 		cursor: pointer;
 		color: inherit;
-		width: 25%;
-		min-width: 8rem;
 		padding: 10px;
 		font-family: inherit;
 		font-size: 20px;
 		transition: background-color 0.2s ease;
+		white-space: nowrap;
 		border: none;
 		border-radius: 10px;
 		background-color: #e9e9ed;
@@ -81,6 +87,7 @@ import Tok from "@/assets/wilepona/tok.md";
 			background-color: #b1b1b9;
 		}
 	}
+
 	p {
 		text-align: justify;
 	}
@@ -105,5 +112,11 @@ import Tok from "@/assets/wilepona/tok.md";
 	a:visited {
 		color: #00c;
 		text-underline-offset: 2px;
+	}
+
+	@media only screen and (max-width: 400px) {
+		nav {
+			flex-direction: column;
+		}
 	}
 </style>
