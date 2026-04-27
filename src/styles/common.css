@@ -42,9 +42,9 @@ main {
 	display: grid;
 	grid-template: "right right left" / 1fr 1fr 1fr;
 	column-gap: 10px;
-}
-main > * {
-	align-self: start;
+	& > * {
+		align-self: start;
+	}
 }
 
 section {
@@ -59,7 +59,7 @@ section {
 
 footer {
 	text-align: center;
-	margin: 10px auto 30vw auto;
+	margin: 30vw auto 10px auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
 }
@@ -96,10 +96,19 @@ details {
 	background-color: var(--yellow);
 	border: 3px solid var(--orange);
 	border-radius: 10px;
-	padding: 10px 15px;
+	/*padding: 10px 15px;*/
+	text-align: left;
+	&:open summary {
+		border-bottom: 3px solid var(--orange);
+	}
+	& > p {
+		padding: 0px 15px;
+	}
 }
 
 summary {
+	padding: 10px 15px;
+	text-align: center;
 	cursor: pointer;
 }
 
@@ -135,5 +144,6 @@ summary {
 }
 
 img {
+	box-sizing: border-box;
 	max-width: 100%;
 }
