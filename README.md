@@ -1,6 +1,6 @@
-# Toki Pona Homepage
+# tokipona.net
 
-This work-in-progress homepage aims to serve as a quick introduction to [Toki Pona](https://tokipona.net/) for new people, dispel any common misconceptions, and link to frequently used community resources.
+This homepage aims to serve as a quick introduction to [Toki Pona](https://tokipona.net/) for new people, dispel any common misconceptions, and link to frequently used community resources.
 
 ## Contributing
 
