@@ -37,7 +37,7 @@ blockquote {
 }
 
 main {
-	max-width: min(1600px, 90%);
+	max-width: min(1600px, 80%);
 	margin: auto;
 	margin-top: 1rem;
 	display: grid;
@@ -116,12 +116,12 @@ summary {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 	main {
 		display: block;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 	body {
 		margin: 0;
 	}
