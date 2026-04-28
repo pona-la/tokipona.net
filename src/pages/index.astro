@@ -10,19 +10,20 @@ import Layout from "@/layouts/Layout.astro";
 	title={"Toki Pona (Homepage)"}
 	description={"Toki Pona: the language with only 120 words."}
 >
-	<section style='grid-area: right;'>
-		<HomepageLeft />
-	</section>
-	<section style='grid-area: left;'>
-		<HomepageRight />
-	</section>
+	<main>
+		<section style='grid-area: right;'>
+			<HomepageLeft />
+		</section>
+		<section style='grid-area: left;'>
+			<HomepageRight />
+		</section>
+	</main>
+	<footer>
+		Made by and for the Toki Pona community.<br />
+		Contact us at: <a href='mailto:kulupu@tokipona.net'>kulupu@tokipona.net</a
+		>.<br />
+		Source code is available on <a
+			href='https://github.com/pona-la/toki-pona-homepage'>GitHub</a
+		>.
+	</footer>
 </Layout>
-
-<footer>
-	Made by and for the Toki Pona community.<br />
-	Contact us at: <a href='mailto:kulupu@tokipona.net'>kulupu@tokipona.net</a
-	>.<br />
-	Source code is available on <a
-		href='https://github.com/pona-la/toki-pona-homepage'>GitHub</a
-	>.
-</footer>
