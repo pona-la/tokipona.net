@@ -29,7 +29,6 @@ body {
 	background-color: var(--scene-background);
 	color: var(--foreground);
 	line-height: 1.4;
-	font-size: 18px;
 	background-image: url("/sitelen/background.svg");
 
 	background-repeat: no-repeat;
@@ -77,7 +76,6 @@ section {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: var(--background);
-	font-size: 18px;
 }
 
 footer {
