@@ -9,6 +9,7 @@
 	--blue-strong: #4349ff;
 	--blue-soft: #bfc1ff;
 	--txt: #240000;
+	--txt-muted: #6b4c4c;
 }
 .dark {
 	--yellow-soft: #181514;
@@ -19,6 +20,7 @@
 	--blue-strong: #898ce7;
 	--blue-soft: #1d1e39;
 	--txt: #fee;
+	--txt-muted: #cbb;
 }
 
 body {

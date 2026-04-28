@@ -42,6 +42,7 @@ const { url, img } = Astro.props;
 </style>
 
 <a class='card' href={url}>
-	<div class='sp'>{img && <img src={img} />}</div>
+	<!-- i18n: image is always accompanied by a description, can be treated decoratively -->
+	<div class='sp'>{img && <img src={img} alt="" />}</div>
 	<div class='desc'><slot /></div>
 </a>
