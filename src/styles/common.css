@@ -131,6 +131,7 @@ details {
 			opacity 300ms,
 			height 300ms,
 			box-shadow 0ms var(--border-delay, 0ms),
+			padding-top 0ms var(--border-delay, 0ms),
 			content-visibility 300ms allow-discrete;
 	}
 
@@ -139,11 +140,6 @@ details {
 		height: auto;
 		padding-top: 3px;
 		box-shadow: inset 0 3px 0 0 var(--orange);
-	}
-
-	/* Style when the details element is [open] */
-	&[open]::details-content {
-		height: auto;
 	}
 
 	& > summary {
