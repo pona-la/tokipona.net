@@ -7,8 +7,8 @@ This homepage aims to serve as a quick introduction to [Toki Pona](https://tokip
 This is a collaborative project brought to you by the Toki Pona community.
 
 <div align="center">
-  <a href="https://github.com/pona-la/toki-pona-homepage/graphs/contributors">
-    <img src="https://contrib.rocks/image?columns=9&max=27&repo=pona-la/toki-pona-homepage" />
+  <a href="https://github.com/pona-la/tokipona.net/graphs/contributors">
+    <img src="https://contrib.rocks/image?columns=9&max=27&repo=pona-la/tokipona.net" />
   </a>
 </div>
 
