@@ -166,7 +166,7 @@ details {
 			margin-right: 0.25rem;
 			display: inline-block;
 			vertical-align: middle;
-			transition: rotate 150ms;
+			transition: rotate var(--border-delay, 0ms);
 		}
 	}
 	&[open] summary {
