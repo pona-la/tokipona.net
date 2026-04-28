@@ -6,6 +6,10 @@ const styles = `
 .text-slate-500 {
 	color: var(--foreground-muted);
 }
+section > *,
+section > * > * {
+	border:none !important;
+}
 .border-slate-300 {
 	border: 3px solid color-mix(in srgb, var(--card-border), transparent 70%);
 	border-radius: 10px;
@@ -19,14 +23,21 @@ section > :first-child {
 section > * {
 	margin-bottom: 0.5rem !important;
 	&:not(:has(article)) {
-		padding: 0.75rem !important;
+		padding: 5px 15px !important;
 	}
 	& > article {
-		padding: 0.75rem !important;
+		padding: 5px 15px !important;
 	}
 }
 a img {
 	display: none
+}
+.flex.gap-2 {
+	gap: 15px;
+}
+.flex.gap-2 > :first-child {
+	width: 60px;
+	height: 60px;
 }
 `;
 ---
