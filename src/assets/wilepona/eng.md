@@ -1,6 +1,6 @@
 
 <p class="subtitle">
-	A statement from several members of the Toki Pona community.<br />
+	A statement from members of the Toki Pona community.<br />
 	Dedicated inbox: <a href="mailto:wile.pona@tokipona.net">wile.pona@tokipona.net</a>.<br />
 	April 27, 2026
 </p>
