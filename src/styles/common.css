@@ -1,5 +1,7 @@
 :root {
 	--font: "Andika", sans-serif;
+	--rounding-large: 1rem;
+	--rounding-small: 0.5rem;
 
 	--scene-background: oklch(83% 0.088 280);
 	--background: oklch(99% 0.005 15);
@@ -50,12 +52,22 @@ body {
 }
 
 blockquote {
+	position:relative;
 	width: fit-content;
-	font-size: 110%;
-	margin: 0px;
-	padding: 10px 0;
-	padding-inline: 15px 15px;
-	border-inline-start: 6px solid var(--border);
+	font-size: 1.125rem;
+	margin: 0;
+	padding: 0.5rem 1.5rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 6px;
+		height: 100%;
+		background-color: var(--border);
+		border-radius: var(--rounding-small);
+	}
 }
 
 main {
@@ -64,23 +76,24 @@ main {
 	margin-top: 1rem;
 	display: grid;
 	grid-template: "right right left" / 1fr 1fr 1fr;
-	column-gap: 10px;
+	column-gap: 0.5rem;
 	& > * {
 		align-self: start;
 	}
 }
 
 section {
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 	border: 3px solid var(--border);
-	border-radius: 10px;
-	padding: 10px;
+	border-radius: var(--rounding-large);
+	padding: 0.5rem;
 	background-color: var(--background);
 }
 
 footer {
 	text-align: center;
-	margin: 25vw auto 10px auto;
+	font-size: 0.875rem;
+	margin: 25vw auto 2rem auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
 }
@@ -92,12 +105,25 @@ h1 {
 	text-align: center;
 }
 h2 {
+	position: relative;
 	font-weight: initial;
 	font-size: 175%;
 	width: 100%;
-	padding-bottom: 15px;
-	border-bottom: 6px solid var(--border);
+	padding-bottom: 1rem;
 	text-align: center;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		translate: -50% 0;
+		width: 100%;
+		border-bottom: 6px solid var(--border);
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: var(--rounding-small);
+	}
 }
 
 a,
@@ -116,10 +142,10 @@ details {
 	}
 
 	interpolate-size: allow-keywords;
-	margin-top: 20px;
+	margin-top: 1rem;
 	background-color: var(--card-background);
 	border: 3px solid var(--card-border);
-	border-radius: 10px;
+	border-radius: var(--rounding-small);
 
 	&::details-content {
 		height: 0;
@@ -141,7 +167,7 @@ details {
 	}
 
 	& > summary {
-		padding: 10px 15px;
+		padding: 0.5rem 1rem;
 		text-align: center;
 		cursor: pointer;
 		list-style: none;
@@ -156,8 +182,8 @@ details {
 		&::before {
 			content: "";
 			background-color: var(--foreground);
-			width: 20px;
-			height: 20px;
+			width: 1.25rem;
+			height: 1.25rem;
 			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='size-5'%3E%3Cpath fill-rule='evenodd' d='M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");	background-size: contain;
 			background-repeat: no-repeat;
 			margin-top: -0.25rem;
@@ -173,10 +199,10 @@ details {
 		}
 	}
 	& > p {
-		padding: 0px 15px;
+		padding: 0 1rem;
 	}
 	& > ul {
-		padding: 0px 15px 0px 30px;
+		padding: 0 1rem 0 2rem;
 	}
 }
 
@@ -195,7 +221,7 @@ details {
 		padding: 1rem;
 		max-width: none;
 		background-color: var(--background);
-		border-bottom: 5px solid var(--border);
+		border-bottom: 6px solid var(--border);
 	}
 	section {
 		padding: 0;
