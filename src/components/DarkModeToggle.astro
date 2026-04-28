@@ -29,11 +29,11 @@
 	}
 	.sun {
 		transition: fill 150ms;
-		fill: var(--txt);
+		fill: var(--foreground);
 	}
 
 	#themeToggle:hover .sun {
-		fill: var(--red);
+		fill: var(--highlight);
 	}
 
 	.moon {
@@ -49,12 +49,12 @@
 	}
 
 	:global(.dark) .moon {
-		fill: var(--txt);
+		fill: var(--foreground);
 		transition: fill 150ms;
 	}
 
 	:global(.dark) #themeToggle:hover .moon {
-		fill: var(--red);
+		fill: var(--highlight);
 	}
 </style>
 <script is:inline>
