@@ -77,7 +77,6 @@ body {
 }
 
 main {
-	flex: 1;
 	width: min(var(--max-content-width), 80%);
 	margin: 0 auto;
 	display: grid;
@@ -102,9 +101,10 @@ section {
 footer {
 	color: var(--scene-foreground);
 	text-align: center;
-	margin: 25vw auto 2rem auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
+	padding-top: 25vw;
+	margin: auto auto 2rem auto;
 	& a {
 		color: var(--scene-foreground);
 	}
@@ -247,7 +247,10 @@ details {
 		/* revert to more contrastive color when in front of sky color */
 		--scene-foreground: var(--foreground);
 		font-size: 0.875rem;
-		margin-bottom: 28vw;
+		margin-top: 0;
+		margin-bottom: auto;
+		padding-top: 1rem;
+		padding-bottom: 40vw;
 	}
 }
 
