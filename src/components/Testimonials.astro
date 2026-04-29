@@ -8,9 +8,12 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 
 <style>
 	figure {
-		position: relative;
 		margin: 0;
 		margin-bottom: 2rem;
+	}
+	blockquote {
+		position: relative;
+		margin: 0;
 		padding-left: 2rem;
 		padding-block: 0rem;
 		&::before {
@@ -23,9 +26,6 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 			left: 0;
 			top: 0;
 		}
-	}
-	blockquote {
-		margin: 0;
 		& :global(p) {
 			margin: 0;
 			margin-bottom: 1rem;
