@@ -7,8 +7,8 @@
 	--border: oklch(87% 0.165 90);
 	--scene-background: oklch(83% 0.088 280);
 	--scene-foreground: oklch(99% 0.015 150);
-	--card-background: oklch(93% 0.090 90);
-	--card-border: oklch(80% 0.145 60);
+	--card-background: oklch(95% 0.090 60);
+	--card-border: oklch(85% 0.145 60);
 	--highlight: oklch(50% 0.170 25);
 	--link: oklch(65% 0.260 270);
 	--foreground: oklch(16% 0.067 30);
@@ -19,7 +19,7 @@
 	--scene-foreground: oklch(97% 0.02 60);
     --background: oklch(19% 0.025 270);
     --border: oklch(41% 0.110 270);
-    --card-background: oklch(27% 0.067 270);
+    --card-background: oklch(30% 0.067 270);
     --card-border: oklch(54% 0.160 270);
     --highlight: oklch(69% 0.170 20);
     --link: oklch(77% 0.200 270);
