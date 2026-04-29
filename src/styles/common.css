@@ -1,5 +1,5 @@
 :root {
-	--font: "Andika", sans-serif;
+	--font: var(--font-andika);
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
 	--max-content-width: 1440px;

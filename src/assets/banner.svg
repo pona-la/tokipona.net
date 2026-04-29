@@ -105,7 +105,7 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:var(--font);-inkscape-font-specification:var(--font);text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="79.28508"
        y="52.219734"
        id="text12730-3"><tspan
@@ -118,7 +118,7 @@
    id="tspan12738-3">toki</tspan> - language</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:var(--font);-inkscape-font-specification:var(--font);text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="25.011431"
        y="48.758976"
        id="text12730-5-6"><tspan
@@ -136,7 +136,7 @@
          id="tspan12736-7-2">good language</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:5.41508px;line-height:normal;font-family:'Andika';-inkscape-font-specification:'Andika';text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:5.41508px;line-height:normal;font-family:var(--font);-inkscape-font-specification:var(--font);text-decoration-color:#000000;fill:var(--foreground);fill-opacity:1;stroke-width:0.48022;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;stop-color:#000000"
        x="113.34862"
        y="51.347481"
        id="text12734-4"><tspan

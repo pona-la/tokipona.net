@@ -1,4 +1,6 @@
 ---
+import { Font } from "astro:assets";
+
 import ScriptToggleDarkMode from "@/components/ScriptToggleDarkMode.astro";
 
 interface Props {
@@ -24,12 +26,7 @@ const { title, description } = Astro.props;
 <meta name='robots' content='index, nofollow' />
 
 <!-- Font preloads -->
-<link rel='preconnect' href='https://fonts.googleapis.com' />
-<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-<link
-	href='https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Emoji:wght@300..700&display=swap'
-	rel='stylesheet'
-/>
+<Font cssVariable="--font-andika" preload />
 
 {!noURL ?
 	<!-- Canonical URL -->
