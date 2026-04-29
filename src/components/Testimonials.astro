@@ -1,0 +1,55 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+
+const testimonials = await getCollection("testimonials");
+const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCompare(b.data.author));
+---
+
+<style>
+	figure {
+		position: relative;
+		margin: 0;
+		margin-bottom: 2rem;
+		padding-left: 2rem;
+		padding-block: 0rem;
+		&::before {
+			content: "";
+			display: block;
+			width: 3px;
+			height: 100%;
+			background-color: var(--border);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	blockquote {
+		margin: 0;
+		& :global(p) {
+			margin: 0;
+			margin-bottom: 1rem;
+		}
+		& :global(p:last-child) {
+			margin: 0;
+		}
+	}
+	figcaption {
+		margin-top: 0.5rem;
+		color: var(--color-secondary);
+	}
+</style>
+
+{selectedTestimonials.map(async (testimonial) => {
+	const { Content } = await render(testimonial);
+	return (
+		<figure>
+			<blockquote>
+				<Content />
+			</blockquote>
+			<figcaption>
+				— <cite>{testimonial.data.author}</cite>
+			</figcaption>
+		</figure>
+	);
+})}

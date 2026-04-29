@@ -28,6 +28,11 @@
     --foreground-muted: oklch(80% 0.02 60);
 }
 
+html {
+	scroll-padding: 2rem;
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	font-family: var(--font);
@@ -67,24 +72,7 @@ body {
 	z-index: 1000;
 }
 
-blockquote {
-	position: relative;
-	width: fit-content;
-	font-size: 1.125rem;
-	margin: 0;
-	padding: 0.5rem 1.5rem;
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 6px;
-		height: 100%;
-		background-color: var(--border);
-		border-radius: var(--rounding-small);
-	}
-}
 
 main {
 	max-width: min(var(--max-content-width), 80%);
@@ -251,13 +239,6 @@ details {
 		border: none;
 		border-radius: none;
 		font-size: 0.875rem;
-	}
-	blockquote {
-		padding: none;
-		text-align: center;
-		&::before {
-			display: none;
-		}
 	}
 	footer {
 		/* revert to more contrastive color when in front of sky color */
