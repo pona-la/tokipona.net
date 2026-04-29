@@ -77,12 +77,14 @@ jan Telesi
 jan Tepo
 
 tan mama pi kulupu ni:  
-kama sona (ilo Siko)
+kama sona (ilo Siko)  
+kulupu pali pi sitelen pona  
+kulupu pi toki Epanja (ilo Siko)  
 ma mun (ilo Siko)  
 ma pona pi toki pona (ilo Siko)  
 Ma Toki Pona VR (ilo Wijasa)  
 r/tokipona (lipu Wesi)  
-kulupu pali pi sitelen pona
+toki pona - jan pi wile pona taso (ilo Telekan)  
 
 (sina wile e nimi pi kulupu sina lon lipu ni la, o toki e wile ni tawa ni: [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net))
 

@@ -77,11 +77,14 @@ jan Tepo
 
 And the moderation or leadership teams of:  
 kama sona (Discord)  
+kulupu pi toki Epanja (Discord)  
 ma mun (Discord)  
 ma pona pi toki pona (Discord)  
 Ma Toki Pona VR (VRChat)  
 r/tokipona (Reddit)  
-Sitelen Pona Publishers and Typographers Association
+Sitelen Pona Publishers and Typographers Association  
+toki pona - jan pi wile pona taso (ilo Telekan)  
+
 
 (Contact [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net) to add your community’s name to this list.)
 
