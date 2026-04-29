@@ -30,6 +30,10 @@
 
 body {
 	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 	font-family: var(--font);
 	background-color: var(--scene-background);
 	color: var(--foreground);
@@ -87,8 +91,9 @@ blockquote {
 }
 
 main {
-	max-width: min(var(--max-content-width), 80%);
-	margin: auto;
+	flex: 1;
+	width: min(var(--max-content-width), 80%);
+	margin: 0 auto;
 	margin-top: 1rem;
 	display: grid;
 	grid-template: "left left right" / 1fr 1fr 1fr;
@@ -102,7 +107,7 @@ main {
 }
 
 section {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	border: 3px solid var(--border);
 	border-radius: var(--rounding-large);
 	padding: 0.5rem;
@@ -242,7 +247,7 @@ details {
 	main {
 		margin: 0;
 		padding: 1rem;
-		max-width: none;
+		width: 100%;
 		background-color: var(--background);
 		border-bottom: 6px solid var(--border);
 	}
