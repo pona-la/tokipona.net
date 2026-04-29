@@ -93,7 +93,6 @@ blockquote {
 main {
 	width: min(var(--max-content-width), 80%);
 	margin: 0 auto;
-	margin-top: 1rem;
 	display: grid;
 	grid-template: "left left right" / 1fr 1fr 1fr;
 	column-gap: 0.5rem;
