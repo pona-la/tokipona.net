@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import cloudflare from '@astrojs/cloudflare';
 
 const deploy =
 	import.meta.env.PROD ?
@@ -13,4 +14,5 @@ export default defineConfig({
 		"/tp/Default.aspx": "/",
 	},
 	integrations: [],
+	adapter: cloudflare(),
 });
