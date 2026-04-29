@@ -7,4 +7,10 @@ const deploy =
 	:	{ site: "http://localhost/" };
 
 // https://astro.build/config
-export default defineConfig({ ...deploy, integrations: [] });
+export default defineConfig({
+	...deploy,
+	redirects: {
+		"/tp/Default.aspx": "/",
+	},
+	integrations: [],
+});
