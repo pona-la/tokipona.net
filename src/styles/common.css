@@ -120,12 +120,14 @@ footer {
 }
 
 h1 {
+	line-height: 1.2;
 	font-weight: bold;
 	font-size: 2rem;
 	text-wrap: balance;
 	text-align: center;
 }
 h2 {
+	line-height: 1.2;
 	position: relative;
 	font-weight: bold;
 	font-size: 1.5rem;
