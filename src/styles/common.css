@@ -77,7 +77,7 @@ main {
 	margin: auto;
 	margin-top: 1rem;
 	display: grid;
-	grid-template: "right right left" / 1fr 1fr 1fr;
+	grid-template: "left left right" / 1fr 1fr 1fr;
 	column-gap: 0.5rem;
 	& > * {
 		align-self: start;
@@ -131,8 +131,7 @@ h2 {
 	}
 }
 
-a,
-a:visited {
+a {
 	color: var(--link);
 }
 svg {
