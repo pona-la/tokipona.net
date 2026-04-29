@@ -2,6 +2,7 @@
 import { defineConfig, fontProviders } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 
 const deploy =
 	import.meta.env.PROD ?
@@ -14,7 +15,7 @@ export default defineConfig({
 	redirects: {
 		'/tp/Default.aspx': '/',
 	},
-	integrations: [mdx()],
+	integrations: [mdx(), sitemap()],
 	adapter: cloudflare(),
 	fonts: [
 		{
