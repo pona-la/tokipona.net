@@ -1,0 +1,98 @@
+---
+import DarkModeToggle from "@/components/DarkModeToggle.astro";
+
+const links = [
+	{ name: "Home", href: "/" },
+	{ name: "FAQ", href: "/faq" },
+	{ name: "About", href: "/about" },
+];
+---
+
+<style>
+	nav {
+		width: min(80%, var(--max-content-width));
+		margin: 1rem auto 0.5rem auto;
+		background: var(--background);
+		border: 3px solid var(--border);
+		border-radius: var(--rounding-large);
+		display: flex;
+		padding: 0.75rem;
+		align-items: center;
+	}
+
+	.toggle {
+		margin-left: auto;
+	}
+
+	.logo {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 0.75rem;
+	}
+
+	.name {
+		font-family: var(--font);
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: var(--foreground);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+			color: var(--primary);
+		}
+	}
+
+	[role="separator"] {
+		width: 3px;
+		height: 1.5rem;
+		background: var(--border);
+		margin-inline: 0.75rem;
+	}
+
+	.link {
+		margin-right: 0.25rem;
+		font-family: var(--font);
+		color: var(--foreground);
+		text-decoration: none;
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--rounding-small);
+		transition: background 150ms, color 150ms;
+		&:hover, &.active {
+			background: var(--card-background);
+			color: var(--primary);
+		}
+		&.active {
+			font-weight: bold;
+		}
+	}
+
+	@media only screen and (max-width: 750px) {
+		nav {
+			width: 100%;
+			border-width: 0 0 3px 0;
+			padding: 1rem;
+			border-radius: 0;
+			margin: 0;
+		}
+		.name {
+			display: none;
+		}
+		[role="separator"] {
+			display: none;
+		}
+	}
+</style>
+
+<nav>
+	<img src="/logo.png" alt="toki pona logo" class="logo">
+	<a href="/" class="name">tokipona.net</a>
+	<div role="separator"></div>
+	{links.map((link) => (
+		<a href={link.href} class:list={["link", Astro.url.pathname === link.href && "active"]}>
+			{link.name}
+		</a>
+	))}
+	<div class="toggle">
+		<DarkModeToggle />
+	</div>
+</nav>

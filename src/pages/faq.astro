@@ -1,0 +1,46 @@
+---
+import * as md from "../assets/faq.md";
+
+import Layout from "@/layouts/Layout.astro";
+---
+
+<style is:global>
+	.prose {
+		display: grid;
+		grid-template-columns:
+			[full-start] 1fr
+			[main-start] min(65ch, 100%) [main-end]
+			1fr [full-end];
+	}
+
+	.prose > h2 {
+		grid-column: full;
+		padding-inline: max(0px, calc((100% - 65ch) / 2));
+	}
+	.prose > * {
+		grid-column: main;
+	}
+	.prose > p {
+		margin-top: 0;
+	}
+</style>
+
+<Layout
+	title={"Frequently Asked Questions | Toki Pona"}
+	description={"This is a test page."}
+>
+	<section style='grid-area: right;'>
+		<h2>Table of Contents</h2>
+		<ul>
+			{md.getHeadings().map((item) => (
+				<li>
+					<a href={`#${item.slug}`}>{item.text}</a>
+				</li>
+			))}
+		</ul>
+	</section>
+	<section style='grid-area: left;' class="prose">
+		<h1>Frequently Asked Questions</h1>
+		<md.Content />
+	</section>
+</Layout>

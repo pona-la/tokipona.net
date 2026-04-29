@@ -2,6 +2,7 @@
 	--font: "Andika", sans-serif;
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
+	--max-content-width: 1440px;
 
 	--background: oklch(99% 0.005 15);
 	--border: oklch(87% 0.165 90);
@@ -54,7 +55,7 @@ body {
 }
 
 blockquote {
-	position:relative;
+	position: relative;
 	width: fit-content;
 	font-size: 1.125rem;
 	margin: 0;
@@ -73,14 +74,16 @@ blockquote {
 }
 
 main {
-	max-width: min(1600px, 80%);
+	max-width: min(var(--max-content-width), 80%);
 	margin: auto;
-	margin-top: 1rem;
 	display: grid;
-	grid-template: "right right left" / 1fr 1fr 1fr;
+	grid-template: "left left right" / 1fr 1fr 1fr;
 	column-gap: 0.5rem;
 	& > * {
 		align-self: start;
+	}
+	& > :only-child {
+		grid-column: 1 / -1;
 	}
 }
 
@@ -104,15 +107,15 @@ footer {
 }
 
 h1 {
-	font-weight: initial;
+	font-weight: bold;
 	font-size: 2rem;
 	text-wrap: balance;
 	text-align: center;
 }
 h2 {
 	position: relative;
-	font-weight: initial;
-	font-size: 1.75rem;
+	font-weight: bold;
+	font-size: 1.5rem;
 	width: 100%;
 	padding-bottom: 1rem;
 	text-align: center;
@@ -131,8 +134,7 @@ h2 {
 	}
 }
 
-a,
-a:visited {
+a {
 	color: var(--link);
 }
 svg {
