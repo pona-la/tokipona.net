@@ -10,6 +10,7 @@ const socialImageURL = new URL("/logo.png", siteUrl);
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteTitle = siteUrl.hostname;
 const url_goatcounter = "https://tokipona-net.goatcounter.com";
+const noURL = Astro.routePattern == '/404';
 
 const { title, description } = Astro.props;
 ---
@@ -30,8 +31,9 @@ const { title, description } = Astro.props;
 	rel='stylesheet'
 />
 
-<!-- Canonical URL -->
-<link rel='canonical' href={canonicalURL} />
+{!noURL ?
+	<!-- Canonical URL -->
+	<link rel='canonical' href={canonicalURL} /> : ''}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -40,7 +42,7 @@ const { title, description } = Astro.props;
 
 <!-- Open Graph / Facebook -->
 <meta property='og:type' content='website' />
-<meta property='og:url' content={Astro.url} />
+{!noURL ? <meta property='og:url' content={Astro.url} /> : ''}
 <meta property='og:site_name' content={siteTitle} />
 <meta property='og:title' content={title} />
 <meta property='og:description' content={description} />
@@ -48,7 +50,7 @@ const { title, description } = Astro.props;
 
 <!-- Twitter -->
 <meta property='twitter:card' content='summary' />
-<meta property='twitter:url' content={Astro.url} />
+{!noURL ? <meta property='twitter:url' content={Astro.url} /> : ''}
 <meta property='twitter:title' content={title} />
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={socialImageURL} />
