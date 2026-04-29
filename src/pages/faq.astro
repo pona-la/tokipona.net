@@ -1,11 +1,12 @@
 ---
-import * as md from "../assets/faq.md";
+import * as md from "@/assets/faq.md";
 
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <style is:global>
 	.prose {
+		line-height: 1.75;
 		display: grid;
 		grid-template-columns:
 			[full-start] 1fr
@@ -25,22 +26,53 @@ import Layout from "@/layouts/Layout.astro";
 	}
 </style>
 
+<style>
+	.right-toc {
+		position: sticky;
+		top: 1rem;
+	}
+	.small-toc {
+		display: none;
+		margin-bottom: 0.5rem;
+	}
+	@media only screen and (max-width: 1200px) {
+		.right-toc {
+			display: none !important;
+		}
+		.small-toc {
+			display: block;
+		}
+	}
+</style>
+
 <Layout
 	title={"Frequently Asked Questions | Toki Pona"}
 	description={"This is a test page."}
 >
-	<section style='grid-area: right;'>
+	<section style='grid-area: right;' class="right-toc">
 		<h2>Table of Contents</h2>
-		<ul>
-			{md.getHeadings().map((item) => (
-				<li>
-					<a href={`#${item.slug}`}>{item.text}</a>
-				</li>
-			))}
-		</ul>
+		<nav>
+			<ul>
+				{md.getHeadings().map((item) => (
+					<li>
+						<a href={`#${item.slug}`}>{item.text}</a>
+					</li>
+				))}
+			</ul>
+		</nav>
 	</section>
 	<section style='grid-area: left;' class="prose">
 		<h1>Frequently Asked Questions</h1>
+		<details open class="small-toc">
+			<summary>Table of Contents</summary>
+			<ul>
+				{md.getHeadings().map((item) => (
+					<li>
+						<a href={`#${item.slug}`}>{item.text}</a>
+					</li>
+				))}
+			</ul>
+		</details>
 		<md.Content />
 	</section>
 </Layout>
