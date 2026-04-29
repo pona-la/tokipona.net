@@ -3,26 +3,28 @@
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
 
-	--scene-background: oklch(83% 0.088 280);
 	--background: oklch(99% 0.005 15);
 	--border: oklch(87% 0.165 90);
+	--scene-background: oklch(83% 0.088 280);
+	--scene-foreground: oklch(99% 0.015 150);
 	--card-background: oklch(93% 0.090 90);
 	--card-border: oklch(80% 0.145 60);
 	--highlight: oklch(50% 0.170 25);
-	--link: oklch(50% 0.260 270);
+	--link: oklch(65% 0.260 270);
 	--foreground: oklch(16% 0.067 30);
 	--foreground-muted: oklch(45% 0.045 20);
 }
 .dark {
     --scene-background: oklch(26% 0.060 280);
+	--scene-foreground: oklch(97% 0.02 60);
     --background: oklch(19% 0.025 270);
     --border: oklch(41% 0.110 270);
     --card-background: oklch(27% 0.067 270);
     --card-border: oklch(54% 0.160 270);
     --highlight: oklch(69% 0.170 20);
-    --link: oklch(67% 0.133 290);
+    --link: oklch(77% 0.200 270);
     --foreground: oklch(97% 0.02 60);
-    --foreground-muted: oklab(80% 0.02 0);
+    --foreground-muted: oklch(80% 0.02 60);
 }
 
 body {
@@ -91,23 +93,26 @@ section {
 }
 
 footer {
+	color: var(--scene-foreground);
 	text-align: center;
-	font-size: 0.875rem;
 	margin: 25vw auto 2rem auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
+	& a {
+		color: var(--scene-foreground);
+	}
 }
 
 h1 {
 	font-weight: initial;
-	font-size: 200%;
+	font-size: 2rem;
 	text-wrap: balance;
 	text-align: center;
 }
 h2 {
 	position: relative;
 	font-weight: initial;
-	font-size: 175%;
+	font-size: 1.75rem;
 	width: 100%;
 	padding-bottom: 1rem;
 	text-align: center;
@@ -228,13 +233,20 @@ details {
 		background-color: unset;
 		border: none;
 		border-radius: none;
-		font-size: 90%;
+		font-size: 0.875rem;
 	}
 	blockquote {
-		border: none;
 		padding: none;
-		padding-inline: none;
 		text-align: center;
+		&::before {
+			display: none;
+		}
+	}
+	footer {
+		/* revert to more contrastive color when in front of sky color */
+		--scene-foreground: var(--foreground);
+		font-size: 0.875rem;
+		margin-bottom: 28vw;
 	}
 }
 
