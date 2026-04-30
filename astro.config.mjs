@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import cloudflare from '@astrojs/cloudflare';
+import sitemap from "@astrojs/sitemap";
 
 const deploy =
 	import.meta.env.PROD ?
@@ -13,6 +14,6 @@ export default defineConfig({
 	redirects: {
 		"/tp/Default.aspx": "/",
 	},
-	integrations: [],
+	integrations: [sitemap()],
 	adapter: cloudflare(),
 });

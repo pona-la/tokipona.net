@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.13",
+    "@astrojs/sitemap": "^3.6.1",
     "astro": "5.17.3",
     "bsky-embed": "^0.2.7"
   }
