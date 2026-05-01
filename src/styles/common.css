@@ -124,6 +124,7 @@ h2 {
 	font-size: 1.5rem;
 	width: 100%;
 	padding-bottom: 1rem;
+	text-wrap: balance;
 	text-align: center;
 	&::after {
 		content: "";
@@ -147,6 +148,25 @@ svg {
 	max-width: 100%;
 	height: auto;
 	margin: auto;
+}
+
+.prose {
+	line-height: 1.75;
+	display: grid;
+	grid-template-columns:
+		[full-start] 1fr
+		[main-start] min(65ch, 100%) [main-end]
+		1fr [full-end];
+	& > h2 {
+		grid-column: full;
+		padding-inline: max(0px, calc((100% - 65ch) / 2));
+	}
+	& > * {
+		grid-column: main;
+	}
+	& > p {
+		margin-top: 0;
+	}
 }
 
 details {
