@@ -4,32 +4,11 @@ import * as md from "@/assets/faq.mdx";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<style is:global>
-	.prose {
-		line-height: 1.75;
-		display: grid;
-		grid-template-columns:
-			[full-start] 1fr
-			[main-start] min(65ch, 100%) [main-end]
-			1fr [full-end];
-	}
-
-	.prose > h2 {
-		grid-column: full;
-		padding-inline: max(0px, calc((100% - 65ch) / 2));
-	}
-	.prose > * {
-		grid-column: main;
-	}
-	.prose > p {
-		margin-top: 0;
-	}
-</style>
-
 <style>
 	.right-toc {
 		position: sticky;
 		top: 1rem;
+		line-height: 1.7;
 	}
 	.small-toc {
 		display: none;
@@ -43,6 +22,23 @@ import Layout from "@/layouts/Layout.astro";
 			display: block;
 		}
 	}
+	ol li {
+		& a {
+			color: var(--foreground);
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&::marker {
+			content: counter(list-item) "  ";
+			color: var(--foreground-muted);
+			width: 2ch;
+			text-align: right;
+			padding-right: 1ch;
+			display: block;
+		}
+	}
 </style>
 
 <Layout
@@ -52,26 +48,26 @@ import Layout from "@/layouts/Layout.astro";
 	<section style='grid-area: right;' class="right-toc">
 		<h2>Table of Contents</h2>
 		<nav>
-			<ul>
+			<ol>
 				{md.getHeadings().map((item) => (
 					<li>
 						<a href={`#${item.slug}`}>{item.text}</a>
 					</li>
 				))}
-			</ul>
+			</ol>
 		</nav>
 	</section>
 	<section style='grid-area: left;' class="prose">
 		<h1>Frequently Asked Questions</h1>
 		<details open class="small-toc">
 			<summary>Table of Contents</summary>
-			<ul>
+			<ol>
 				{md.getHeadings().map((item) => (
 					<li>
 						<a href={`#${item.slug}`}>{item.text}</a>
 					</li>
 				))}
-			</ul>
+			</ol>
 		</details>
 		<md.Content />
 	</section>
