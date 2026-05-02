@@ -1,9 +1,8 @@
 ---
 interface Props {
 	src: string;
-	captions: string;
 }
-const { src, captions } = Astro.props;
+const { src } = Astro.props;
 ---
 
 <style>
@@ -30,8 +29,7 @@ const { src, captions } = Astro.props;
 </style>
 
 <div class='container'>
-	<video preload='metadata' src={src}>
-		<track default kind='captions' src={captions} />
+	<video preload='metadata' src={src} controls>
 		Your browser does not support the video tag.
 	</video>
 </div>
