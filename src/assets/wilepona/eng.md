@@ -51,7 +51,7 @@ At the end of the day, this is a very sad story about a very talented person who
 
 Now is a time for healing, for this community and hopefully also for Amatullah.  We hope you will let us focus on that.
 
-Signed (alphabetical by name):  
+**Signed (alphabetical by name)**:  
 jan Alin  
 kala Asi  
 jan Eta  
@@ -75,7 +75,7 @@ jan Tekinowi
 jan Telesi  
 jan Tepo
 
-And the moderation or leadership teams of:  
+**And the moderation or leadership teams of:**  
 kama sona (Discord)  
 kulupu pi toki Epanja (Discord)  
 ma mun (Discord)  
@@ -83,9 +83,12 @@ ma pona pi toki pona (Discord)
 Ma Toki Pona VR (VRChat)  
 r/tokipona (Reddit)  
 Sitelen Pona Publishers and Typographers Association  
-toki pona - jan pi wile pona taso (ilo Telekan)  
+toki pona - jan pi wile pona taso (Telegram)  
 
 
 (Contact [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net) to add your community’s name to this list.)
+
+## Footnote:
+
 
 [^1]:  Because we are not medical experts, and because Amatullah is entitled to a degree of privacy even amidst a very public crisis, we are avoiding clinical terms in this statement as much as possible.  We use the word “psychosis” not to represent a specific clinical diagnosis, but a broad category of states involving detachment from reality. There is an important distinction between mental states in which someone may do things they usually would not but still has the same underlying understanding of reality (say, a person with a mood disorder who says mean things when upset) and ones in which someone is operating based on a different understanding than everyone around them.  For a general overview, we recommend [this learning resource](https://www.nami.org/types-of-conditions/psychosis/).

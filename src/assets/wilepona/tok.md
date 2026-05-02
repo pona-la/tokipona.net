@@ -88,4 +88,6 @@ toki pona - jan pi wile pona taso (ilo Telekan)
 
 (sina wile e nimi pi kulupu sina lon lipu ni la, o toki e wile ni tawa ni: [wile.pona@tokipona.net](mailto:wile.pona@tokipona.net))
 
+## sona namako:
+
 [^2]: mi mute li sona ala e misikeke, li wile pana e ken len pona tawa anpa Ama, la mi toki ala kepeken nasin toki misikeke.  mi toki e nasin ni: sona jan en lon lon li kama tu.  nasin nasa lawa mute li ni ala.  jan li nasa pilin, li toki ike tawa jan, la ken la ona li awen sona e lon.  taso jan li sona e lon ante, la ni li ante.  sina wile kama sona, la o lukin e [lipu ni](https://www.nami.org/types-of-conditions/psychosis/).

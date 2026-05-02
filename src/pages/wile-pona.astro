@@ -2,6 +2,9 @@
 import BaseHead from "@/components/BaseHead.astro";
 import Eng from "@/assets/wilepona/eng.md";
 import Tok from "@/assets/wilepona/tok.md";
+import Eo from "@/assets/wilepona/eo.md";
+import Fr from "@/assets/wilepona/fr.md";
+
 ---
 
 <html lang='en'>
@@ -22,13 +25,24 @@ import Tok from "@/assets/wilepona/tok.md";
 			<nav>
 				<button onclick='tok()'>toki pona</button>
 				<button onclick='eng()'>English</button>
+				<button onclick='eo()'>Esperanto</button>
+				<button onclick='fr()'>Français</button>
+
 			</nav>
-			<article id='eng'>
+			<article lang="en" id='eng'>
 				<Eng />
 			</article>
-			<article id='tok' style='display: none'>
+			<article lang="tok" id='tok' style='display: none'>
 				<Tok />
 			</article>
+			<article lang="eo" id='eo' style='display: none'>
+				<Eo />
+			</article>
+
+			<article lang="fr" id='fr' style='display: none'>
+				<Fr />
+			</article>
+
 		</main>
 	</body>
 </html>
@@ -47,6 +61,20 @@ import Tok from "@/assets/wilepona/tok.md";
 		}
 		document.getElementById("eng").style.display = "initial";
 	}
+	function eo() {
+		for (let article of document.getElementsByTagName("article")) {
+			article.style.display = "none";
+		}
+		document.getElementById("eo").style.display = "initial";
+	}
+	function fr() {
+		for (let article of document.getElementsByTagName("article")) {
+			article.style.display = "none";
+		}
+		document.getElementById("fr").style.display = "initial";
+	}
+
+
 </script>
 <style is:global>
 	body {
@@ -62,15 +90,13 @@ import Tok from "@/assets/wilepona/tok.md";
 	}
 	nav {
 		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
 		margin: auto;
 		max-width: 500px;
-		text-align: center;
-		gap: 10px;
-		& > * {
-			flex: 1 1 0;
-		}
 	}
 	button {
+		flex: 45%;
 		cursor: pointer;
 		color: inherit;
 		padding: 10px;
@@ -117,6 +143,9 @@ import Tok from "@/assets/wilepona/tok.md";
 	a:visited {
 		color: #00c;
 		text-underline-offset: 2px;
+	}
+	#footnote-label{
+		display:none;
 	}
 
 	@media only screen and (max-width: 400px) {
