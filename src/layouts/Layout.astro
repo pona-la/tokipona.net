@@ -1,5 +1,8 @@
 ---
+import "@/styles/common.css";
+
 import BaseHead from '@/components/BaseHead.astro';
+import Navbar from "@/components/Navbar.astro";
 
 interface Props {
 	title: string;
@@ -13,6 +16,18 @@ const { title, description } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 	<body>
-		<slot />
+		<a href="#main" class="skip-link">Skip to content</a>
+		<Navbar />
+		<main id="main">
+			<slot />
+		</main>
+		<footer>
+			Made by and for the Toki Pona community.<br />
+			Contact us at <a href='mailto:kulupu@tokipona.net'>kulupu@tokipona.net</a
+			>.<br />
+			Source code is available on <a
+				href='https://github.com/pona-la/tokipona.net'>GitHub</a
+			>.
+		</footer>
 	</body>
 </html>

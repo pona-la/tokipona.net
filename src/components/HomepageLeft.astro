@@ -1,15 +1,47 @@
 ---
 import Banner from "@/assets/banner.svg";
 import Cols from "@/components/Cols.astro";
-import DarkModeToggle from "@/components/DarkModeToggle.astro";
 import Youtube from "@/components/Youtube.astro";
 // import Video from "@/components/Video.astro";
 ---
 
-<h1>Toki Pona: the language with only 120 words.</h1>
-<DarkModeToggle />
+<style>
+	.banner {
+		display: flex;
+		justify-content: center;
+	}
+	blockquote {
+		position: relative;
+		width: fit-content;
+		font-size: 1.125rem;
+		margin: 0;
+		padding: 0.5rem 1.5rem;
 
-<div align='center'><Banner /></div>
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 6px;
+			height: 100%;
+			background-color: var(--border);
+			border-radius: var(--rounding-small);
+		}
+	}
+	@media only screen and (max-width: 750px) {
+		blockquote {
+			padding: none;
+			text-align: center;
+			&::before {
+				display: none;
+			}
+		}
+	}
+</style>
+
+<h1>Toki Pona: the language with only 120 words.</h1>
+
+<div class="banner"><Banner /></div>
 
 <h2>Learn via videos!</h2>
 

@@ -1,7 +1,8 @@
 :root {
-	--font: "Andika", sans-serif;
+	--font: var(--font-andika);
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
+	--max-content-width: 1440px;
 
 	--background: oklch(99% 0.005 15);
 	--border: oklch(87% 0.165 90);
@@ -27,8 +28,17 @@
     --foreground-muted: oklch(80% 0.02 60);
 }
 
+html {
+	scroll-padding: 2rem;
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 	font-family: var(--font);
 	background-color: var(--scene-background);
 	color: var(--foreground);
@@ -53,39 +63,35 @@ body {
 	box-sizing: border-box;
 }
 
-blockquote {
-	position:relative;
-	width: fit-content;
-	font-size: 1.125rem;
-	margin: 0;
-	padding: 0.5rem 1.5rem;
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 6px;
-		height: 100%;
-		background-color: var(--border);
-		border-radius: var(--rounding-small);
-	}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--background);
+	color: var(--foreground);
+	padding: 0.5rem 1rem;
+	z-index: 1000;
 }
 
 main {
-	max-width: min(1600px, 80%);
-	margin: auto;
-	margin-top: 1rem;
+	width: min(var(--max-content-width), 80%);
+	margin: 0 auto;
 	display: grid;
-	grid-template: "right right left" / 1fr 1fr 1fr;
+	grid-template: "left left right" / 1fr 1fr 1fr;
 	column-gap: 0.5rem;
 	& > * {
 		align-self: start;
 	}
+	& > :only-child {
+		grid-column: 1 / -1;
+	}
 }
 
 section {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	border: 3px solid var(--border);
 	border-radius: var(--rounding-large);
 	padding: 0.5rem;
@@ -95,26 +101,30 @@ section {
 footer {
 	color: var(--scene-foreground);
 	text-align: center;
-	margin: 25vw auto 2rem auto;
 	/* Ensure background image is nicely viewable
 	at all browser widths and zoom levels */
+	padding-top: 25vw;
+	margin: auto auto 2rem auto;
 	& a {
 		color: var(--scene-foreground);
 	}
 }
 
 h1 {
-	font-weight: initial;
+	line-height: 1.2;
+	font-weight: bold;
 	font-size: 2rem;
 	text-wrap: balance;
 	text-align: center;
 }
 h2 {
+	line-height: 1.2;
 	position: relative;
-	font-weight: initial;
-	font-size: 1.75rem;
+	font-weight: bold;
+	font-size: 1.5rem;
 	width: 100%;
 	padding-bottom: 1rem;
+	text-wrap: balance;
 	text-align: center;
 	&::after {
 		content: "";
@@ -131,14 +141,32 @@ h2 {
 	}
 }
 
-a,
-a:visited {
+a {
 	color: var(--link);
 }
 svg {
 	max-width: 100%;
 	height: auto;
 	margin: auto;
+}
+
+.prose {
+	line-height: 1.75;
+	display: grid;
+	grid-template-columns:
+		[full-start] 1fr
+		[main-start] min(65ch, 100%) [main-end]
+		1fr [full-end];
+	& > h2 {
+		grid-column: full;
+		padding-inline: max(0px, calc((100% - 65ch) / 2));
+	}
+	& > * {
+		grid-column: main;
+	}
+	& > p {
+		margin-top: 0;
+	}
 }
 
 details {
@@ -224,7 +252,7 @@ details {
 	main {
 		margin: 0;
 		padding: 1rem;
-		max-width: none;
+		width: 100%;
 		background-color: var(--background);
 		border-bottom: 6px solid var(--border);
 	}
@@ -235,18 +263,14 @@ details {
 		border-radius: none;
 		font-size: 0.875rem;
 	}
-	blockquote {
-		padding: none;
-		text-align: center;
-		&::before {
-			display: none;
-		}
-	}
 	footer {
 		/* revert to more contrastive color when in front of sky color */
 		--scene-foreground: var(--foreground);
 		font-size: 0.875rem;
-		margin-bottom: 28vw;
+		margin-top: 0;
+		margin-bottom: auto;
+		padding-top: 1rem;
+		padding-bottom: 40vw;
 	}
 }
 

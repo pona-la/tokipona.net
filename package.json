@@ -9,9 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.13",
-    "@astrojs/sitemap": "^3.6.1",
-    "astro": "5.17.3",
+    "@astrojs/cloudflare": "13.2.2",
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "6.1.10",
     "bsky-embed": "^0.2.7"
   }
 }
