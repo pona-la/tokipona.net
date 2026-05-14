@@ -1,0 +1,74 @@
+---
+import * as md from "@/assets/faq.mdx";
+
+import Layout from "@/layouts/Layout.astro";
+---
+
+<style>
+	.right-toc {
+		position: sticky;
+		top: 1rem;
+		line-height: 1.7;
+	}
+	.small-toc {
+		display: none;
+		margin-bottom: 0.5rem;
+	}
+	@media only screen and (max-width: 1200px) {
+		.right-toc {
+			display: none !important;
+		}
+		.small-toc {
+			display: block;
+		}
+	}
+	ol li {
+		& a {
+			color: var(--foreground);
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&::marker {
+			content: counter(list-item) "  ";
+			color: var(--foreground-muted);
+			width: 2ch;
+			text-align: right;
+			padding-right: 1ch;
+			display: block;
+		}
+	}
+</style>
+
+<Layout
+	title={"Frequently Asked Questions | Toki Pona"}
+	description={"This is a test page."}
+>
+	<section style='grid-area: right;' class="right-toc">
+		<h2>Table of Contents</h2>
+		<nav>
+			<ol>
+				{md.getHeadings().map((item) => (
+					<li>
+						<a href={`#${item.slug}`}>{item.text}</a>
+					</li>
+				))}
+			</ol>
+		</nav>
+	</section>
+	<section style='grid-area: left;' class="prose">
+		<h1>Frequently Asked Questions</h1>
+		<details open class="small-toc">
+			<summary>Table of Contents</summary>
+			<ol>
+				{md.getHeadings().map((item) => (
+					<li>
+						<a href={`#${item.slug}`}>{item.text}</a>
+					</li>
+				))}
+			</ol>
+		</details>
+		<md.Content />
+	</section>
+</Layout>
