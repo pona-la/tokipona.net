@@ -1,3 +1,0 @@
-all CSVs from discord's Server Insights
-weekly data from ~2026-01-22 to ~2026-05-22
-fetched 2026-05-22 by gregdan3
