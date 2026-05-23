@@ -49,7 +49,7 @@ import Layout from "@/layouts/Layout.astro";
 		<h2>Table of Contents</h2>
 		<nav>
 			<ol>
-				{md.getHeadings().map((item) => (
+				{md.getHeadings().filter((item) => item.depth <= 2).map((item) => (
 					<li>
 						<a href={`#${item.slug}`}>{item.text}</a>
 					</li>
@@ -62,7 +62,7 @@ import Layout from "@/layouts/Layout.astro";
 		<details open class="small-toc">
 			<summary>Table of Contents</summary>
 			<ol>
-				{md.getHeadings().map((item) => (
+				{md.getHeadings().filter((item) => item.depth <= 2).map((item) => (
 					<li>
 						<a href={`#${item.slug}`}>{item.text}</a>
 					</li>
