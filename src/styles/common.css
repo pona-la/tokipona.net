@@ -277,3 +277,7 @@ details {
 img {
 	max-width: 100%;
 }
+hr {
+	width: 30%;
+	border-radius: 4%;
+}
