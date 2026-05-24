@@ -4,6 +4,7 @@
 	"experimentalTernaries": true,
 	"jsxSingleQuote": true,
 	"printWidth": 80,
+	"proseWrap": "always",
 	"semi": true,
 	"doubleQuote": true,
 	"trailingComma": "all",
