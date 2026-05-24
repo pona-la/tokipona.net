@@ -11,7 +11,7 @@ tags: ["language learning", "new perspective",  "meet new people", "community", 
 
 (4) I often use Toki Pona in online groups to communicate with others. (Absolutely, I haven't found any other Tokiponists in my city.)
 
-<details style="border: none;" lang="eo">
+<details lang="eo">
 <summary>Legu en Esperanto</summary>
 <p>(1). Laŭ mi, Tokipono signifas fenestron al nova mondo, en kiu mi povas babili kun aliaj lingvaj lernantoj.</p>
 

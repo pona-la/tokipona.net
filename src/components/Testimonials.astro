@@ -10,12 +10,13 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 	figure {
 		margin: 0;
 		margin-block: 0;
-		margin-inline: 0;
+		margin-inline: 0.2rem;
 		display: grid;
 		grid-template-rows: max-content max-content;
 		align-items: center;
 		break-inside: avoid;
-		padding: 1.5em;
+		padding: 1.5em 1.5em 0 1.5em;
+	
 		
 
 	}
@@ -44,7 +45,37 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 	.testimonials{
 		column-width: 20em;
 		column-gap: 0;
+		column-rule: 0.43rem solid var(--border);
 	}
+	.tags {
+		list-style: none;
+		display: flex;
+		margin-block: 1em;
+		font-size: 0.8em;
+		flex-wrap: wrap;
+		column-gap: 0.5em;
+		row-gap: 0.25em;
+		justify-content: end;
+		opacity: 0.75;
+		li {
+			border-radius: 0.95em;
+			padding: 0.5em;
+			border: 0.02em solid var(--foreground);
+			background-color: var(--background);
+			line-height: 1em;
+
+		}
+	}
+	.testimonials :global(details){
+		background-color: inherit;
+		border: 0.1em dotted var(--foreground);
+	}
+	.testimonials :global(summary){
+		list-style: initial;
+		margin-left: 0;
+	}
+
+	
 </style>
 		<div class="testimonials">
 
@@ -57,6 +88,11 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 				</blockquote>
 				<figcaption>
 					— <cite>{testimonial.data.author}</cite>
+					<ul class="tags">
+						 {testimonial.data.tags.map((tag) => (
+  							<li>{tag}</li>
+						 ))}
+					</ul>
 				</figcaption>
 			</figure>
 	);
@@ -66,7 +102,7 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 <script>
 	function scrambleTestimonials() {
   const container = document.querySelector('div.testimonials');
-  if (!container) return;
+  if (!container) return; //straight out of claude, so improve it if you know a better solution
 
   const figures = [...container.querySelectorAll('figure')];
 

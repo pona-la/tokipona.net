@@ -11,7 +11,7 @@ tags: ["relationships","fun", "difficulty"]
 I learned the language on a video website, and then handwritten the official textbook "Toki Pona: The Language of Good" into my school notebook. A week later, I mastered the language, and that was the beginning. I taught the language to my friend, and we used it to swear at each other, like "sona ike." When we parted, we said to each other "sina jan pona mi." I love this language; it's very "pona" to me. Thank you!
 
 
-<details style="border: none;">
+<details>
 <summary >
 Translated. Read the original:
 </summary>
