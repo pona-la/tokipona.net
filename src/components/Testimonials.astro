@@ -47,9 +47,11 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 		column-gap: 0;
 		column-rule: 0.43rem solid var(--border);
 	}
+	.testimonials :global(a){
+		color: inherit;
+	}
 	.tags {
 		list-style: none;
-		display: flex;
 		margin-block: 1em;
 		font-size: 0.8em;
 		flex-wrap: wrap;
@@ -58,11 +60,11 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 		justify-content: end;
 		opacity: 0.75;
 		li {
-			border-radius: 0.95em;
-			padding: 0.5em;
-			border: 0.02em solid var(--foreground);
-			background-color: var(--background);
-			line-height: 1em;
+					display: inline;
+					word-spacing: 0.75em;
+					word-break: keep-all;
+					hyphens: none;
+
 
 		}
 	}
@@ -82,7 +84,7 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 {selectedTestimonials.map(async (testimonial) => {
 	const { Content } = await render(testimonial);
 	return (
-			<figure>
+			<figure class:list={testimonial.data.tags}>
 				<blockquote>
 					<Content />
 				</blockquote>
@@ -90,7 +92,7 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 					— <cite>{testimonial.data.author}</cite>
 					<ul class="tags">
 						 {testimonial.data.tags.map((tag) => (
-  							<li>{tag}</li>
+  							<li>#{tag} </li>
 						 ))}
 					</ul>
 				</figcaption>
@@ -116,6 +118,6 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
   figures.forEach(fig => container.appendChild(fig));
 }
 
-scrambleTestimonials();
-	document.addEventListener('DOMContentLoaded', scrambleTestimonials);
+     scrambleTestimonials();
+document.addEventListener('astro:page-load', scrambleTestimonials);
 </script>
