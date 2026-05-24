@@ -9,48 +9,133 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 <style>
 	figure {
 		margin: 0;
-		margin-bottom: 2rem;
+		margin-block: 0;
+		margin-inline: 0.2rem;
+		display: grid;
+		grid-template-rows: max-content max-content;
+		align-items: center;
+		break-inside: avoid;
+		padding: 1.5em 1.5em 0 1.5em;
+	
+		
+
 	}
+	figure:nth-of-type(3n+1){
+		background-color: var(--card-background);
+	}
+	figure:nth-of-type(3n+2){
+		background-color: var(--border);
+	}
+
+	figure:nth-of-type(4n-1){
+		background-color: var(--scene-background);
+	}
+
 	blockquote {
 		position: relative;
 		margin: 0;
-		padding-left: 2rem;
 		padding-block: 0rem;
-		&::before {
-			content: "";
-			display: block;
-			width: 3px;
-			height: 100%;
-			background-color: var(--border);
-			position: absolute;
-			left: 0;
-			top: 0;
-			border-radius: var(--rounding-small);
-		}
-		& :global(p) {
-			margin: 0;
-			margin-bottom: 1rem;
-		}
-		& :global(p:last-child) {
-			margin: 0;
-		}
+		
 	}
 	figcaption {
 		margin-top: 0.5rem;
 		color: var(--color-secondary);
+		text-align: right;
 	}
+	.testimonials{
+		column-width: 20em;
+		column-gap: 0;
+		column-rule: 0.43rem solid var(--border);
+	}
+	.testimonials :global(a){
+		color: inherit;
+	}
+	.tags {
+		list-style: none;
+		margin-block: 1em;
+		font-size: 0.8em;
+		flex-wrap: wrap;
+		column-gap: 0.5em;
+		row-gap: 0.25em;
+		justify-content: end;
+		opacity: 0.75;
+		li {
+					display: inline;
+					word-spacing: 0.75em;
+					word-break: keep-all;
+					hyphens: none;
+
+
+		}
+	}
+	.testimonials :global(details){
+		background-color: inherit;
+		border: 0.1em dotted var(--foreground);
+	}
+	.testimonials :global(summary){
+		list-style: initial;
+		margin-left: 0;
+	}
+	.note {
+		font-size: 0.8em;
+		line-height: 1em;
+		font-style: italic;
+		opacity: 0.9;
+		text-align: left;
+		border-top: 0.1em dotted var(--foreground);
+		padding: 0.5em;
+
+
+	}
+
+	
 </style>
+		<div class="testimonials">
 
 {selectedTestimonials.map(async (testimonial) => {
 	const { Content } = await render(testimonial);
 	return (
-		<figure>
-			<blockquote>
-				<Content />
-			</blockquote>
-			<figcaption>
-				— <cite>{testimonial.data.author}</cite>
-			</figcaption>
-		</figure>
+			<figure class:list={testimonial.data.tags}>
+				<blockquote>
+					<Content />
+				</blockquote>
+				<figcaption>
+
+					— <cite>{testimonial.data.author}</cite>
+
+
+
+					<ul class="tags">
+						 {testimonial.data.tags.map((tag) => (
+  							<li>#{tag} </li>
+						 ))}
+					</ul>
+										{ testimonial.data.notes && <p class="note">{testimonial.data.notes}</p>}
+
+					
+				</figcaption>
+			</figure>
 	);
 })}
+		</div>
+
+<script>
+	function scrambleTestimonials() {
+  const container = document.querySelector('div.testimonials');
+  if (!container) return; //straight out of claude, so improve it if you know a better solution
+
+  const figures = [...container.querySelectorAll('figure')];
+
+  // Fisher-Yates shuffle
+  for (let i = figures.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [figures[i], figures[j]] = [figures[j], figures[i]];
+  }
+
+  // Re-append in shuffled order
+  figures.forEach(fig => container.appendChild(fig));
+}
+
+     scrambleTestimonials();
+document.addEventListener('astro:page-load', scrambleTestimonials);
+</script>

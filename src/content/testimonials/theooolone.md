@@ -1,5 +1,7 @@
 ---
-author: "theooolone"
+author: "Theooolone"
+tags: ["community","fun","identity"] #order
+
 ---
 
 I have been speaking Toki Pona for almost 8 months now. I originally got into it because the language was aesthetically very cute. Speaking Toki Pona is euphoric for me, as it makes me feel cute too! The low word count or minimalist philosophy aren't particularly important to me, but I still value them as an aspect of the language.
