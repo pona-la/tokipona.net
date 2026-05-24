@@ -1,6 +1,6 @@
 ---
 author: "jan Kaje (Kai)"
-tags: ["language learning", "new perspective",  "meet new people", "community",  "relationships"]
+tags: ["language-learning", "new-perspective",  "meet-new-people", "community",  "relationships"]
 
 ---
 

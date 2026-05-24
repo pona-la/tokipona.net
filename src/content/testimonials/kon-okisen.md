@@ -1,6 +1,6 @@
 ---
 author: "kon Okisen"
-tags: ["new perspective", "personal use", "art",  "community", "identity", "fun"]
+tags: ["new-perspective", "personal-use", "art",  "community", "identity", "fun"]
 
 ---
 

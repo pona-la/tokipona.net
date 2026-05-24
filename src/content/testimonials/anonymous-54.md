@@ -1,6 +1,6 @@
 ---
 author: "Anonymous"
-tags: [ "new perspective",  "meet new people", "fun", "difficulty"]
+tags: [ "new-perspective",  "meet-new-people", "fun", "difficulty"]
 ---
 
 

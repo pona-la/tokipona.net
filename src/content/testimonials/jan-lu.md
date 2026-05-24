@@ -1,6 +1,6 @@
 ---
 author: "jan Lu"
-tags: ["new perspective", "personal use", "community",  "mental health"]
+tags: ["new-perspective", "personal-use", "community",  "mental-health"]
 
 ---
 

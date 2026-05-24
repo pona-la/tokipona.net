@@ -1,6 +1,6 @@
 ---
 author: "Ĥvaŝen/jan kasen"
-tags: ["language learning", "new perspective",  "meet new people", "community",  "limitations",]
+tags: ["language-learning", "new-perspective",  "meet-new-people", "community",  "limitations",]
 ---
 
 (1) In my opinion, Toki Pona means a window to a new world, where I can chat with other language learners.

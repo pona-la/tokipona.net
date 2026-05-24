@@ -1,6 +1,6 @@
 ---
 author: "jan Alonola"
-tags: ["art", "meet new people", "community", "fun"]
+tags: ["art", "meet-new-people", "community", "fun"]
 
 ---
 

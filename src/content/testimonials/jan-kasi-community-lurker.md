@@ -1,6 +1,6 @@
 ---
 author: "jan kasi (community lurker)"
-tags: ["language learning", "new perspective"]
+tags: ["language-learning", "new-perspective"]
 
 ---
 

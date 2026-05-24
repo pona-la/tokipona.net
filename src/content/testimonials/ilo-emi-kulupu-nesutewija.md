@@ -1,6 +1,6 @@
 ---
 author: "ilo Emi (kulupu Nesutewija)"
-tags: ["meet new people", "community", "identity","relationships"]
+tags: ["meet-new-people", "community", "identity","relationships"]
 
 ---
 

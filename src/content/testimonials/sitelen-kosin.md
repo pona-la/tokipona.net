@@ -1,6 +1,6 @@
 ---
 author: "sitelen Kosin"
-tags: ["art", "meet new people", "community"]
+tags: ["art", "meet-new-people", "community"]
 
 ---
 

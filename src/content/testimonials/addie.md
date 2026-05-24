@@ -1,6 +1,6 @@
 ---
 author: "Addie"
-tags: ["language learning","personal use", "fun"]
+tags: ["language-learning","personal-use", "fun"]
 ---
 
 

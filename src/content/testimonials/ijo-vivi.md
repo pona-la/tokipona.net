@@ -1,6 +1,6 @@
 ---
 author: "ijo vivi"
-tags: ["personal use", "meet new people", "identity"]
+tags: ["personal-use", "meet-new-people", "identity"]
 
 ---
 

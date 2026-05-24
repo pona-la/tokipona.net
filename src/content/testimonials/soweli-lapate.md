@@ -1,6 +1,6 @@
 ---
 author: "soweli Lapate"
-tags: [ "new perspective", "personal use", "art",  "community", "identity", "relationships", "mental health"]
+tags: [ "new-perspective", "personal-use", "art",  "community", "identity", "relationships", "mental-health"]
 
 ---
 

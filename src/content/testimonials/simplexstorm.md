@@ -1,6 +1,6 @@
 ---
 author: "SimplexStorm"
-tags: [ "new perspective", "personal use",  "meet new people", "community","fun"]
+tags: [ "new-perspective", "personal-use",  "meet-new-people", "community","fun"]
 
 ---
 

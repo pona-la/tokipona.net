@@ -1,6 +1,6 @@
 ---
 author: "jan Masewin"
-tags: [ "art", "meet new people", "community",  "relationships","fun", "difficulty"]
+tags: [ "art", "meet-new-people", "community",  "relationships","fun", "difficulty"]
 
 ---
 

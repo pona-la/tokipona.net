@@ -1,6 +1,6 @@
 ---
 author: "Kazimir Solan (wasoweli Kasimi)"
-tags: [ "community", "mixed feelings", "limitations", "relationships", "difficulty", "mental health"]
+tags: [ "community", "mixed-feelings", "limitations", "relationships", "difficulty", "mental-health"]
 ---
 
 <!--  -->

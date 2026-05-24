@@ -1,6 +1,6 @@
 ---
 author: "telo Ipi"
-tags: ["new perspective", "personal use", "art", "community"]
+tags: ["new-perspective", "personal-use", "art", "community"]
 
 ---
 

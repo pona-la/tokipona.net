@@ -1,6 +1,6 @@
 ---
 author: "lili Kuwita et aliae"
-tags: [ "meet new people", "community"]
+tags: [ "meet-new-people", "community"]
 
 ---
 

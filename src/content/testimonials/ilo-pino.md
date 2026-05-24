@@ -1,6 +1,6 @@
 ---
 author: "ilo Pino"
-tags: ["new perspective", "personal use", "art", "meet new people", "community", "identity",  "relationships","fun"]
+tags: ["new-perspective", "personal-use", "art", "meet-new-people", "community", "identity",  "relationships","fun"]
 
 ---
 

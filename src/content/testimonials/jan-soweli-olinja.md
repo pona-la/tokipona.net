@@ -1,6 +1,6 @@
 ---
 author: "jan soweli Olinja"
-tags: ["personal use", "art","community", "fun"]
+tags: ["personal-use", "art","community", "fun"]
 
 ---
 

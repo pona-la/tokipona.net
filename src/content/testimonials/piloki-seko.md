@@ -1,6 +1,6 @@
 ---
 author: "piloki Seko"
-tags: ["meet new people", "community", "art"]
+tags: ["meet-new-people", "community", "art"]
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "jan Lekokanon"
-tags: ["language learning", "meet new people", "community", "relationships"]
+tags: ["language-learning", "meet-new-people", "community", "relationships"]
 
 ---
 

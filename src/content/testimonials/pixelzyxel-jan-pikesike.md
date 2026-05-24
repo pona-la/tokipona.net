@@ -1,6 +1,6 @@
 ---
 author: "PixelZyxel / jan Pikesike"
-tags: [ "new perspective", "personal use", "art", "fun"]
+tags: [ "new-perspective", "personal-use", "art", "fun"]
 ---
 
 For me, Toki Pona is a way of artistic expression. It also allows me a way to communicate my thoughts clearly and concisely via the limited vocabulary.

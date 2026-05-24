@@ -1,6 +1,6 @@
 ---
 author: "jan Tala"
-tags: ["language learning", "difficulty", "fun"]
+tags: ["language-learning", "difficulty", "fun"]
 
 ---
 

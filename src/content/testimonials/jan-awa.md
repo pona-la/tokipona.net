@@ -1,6 +1,6 @@
 ---
 author: "jan Awa"
-tags: ["language learning", "personal use", "art", "meet new people",  
+tags: ["language-learning", "personal-use", "art", "meet-new-people",  
  "difficulty"]
 ---
 

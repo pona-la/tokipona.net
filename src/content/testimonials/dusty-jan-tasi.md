@@ -1,6 +1,6 @@
 ---
 author: "dusty / jan Tasi"
-tags: ["new perspective", "personal use", "art","community","difficulty"]
+tags: ["new-perspective", "personal-use", "art","community","difficulty"]
 ---
 
 Toki Pona, to me, is something of a puzzle that requires precise thinking in order to properly convey what I'm trying to say with it; I enjoy attempting to think more simply, and condense my thoughts into something smaller and simpler. When I picked up the language in November of 2022, I initially went in to learn it and apply it to my art and creative projects. 

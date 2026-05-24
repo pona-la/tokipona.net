@@ -1,6 +1,6 @@
 ---
 author: "Recqy / leko Leki"
-tags: ["new perspective", "personal use", "fun", "difficulty"]
+tags: ["new-perspective", "personal-use", "fun", "difficulty"]
 
 ---
 

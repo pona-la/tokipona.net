@@ -1,6 +1,6 @@
 ---
 author: "pan Temili"
-tags: ["language learning", "new perspective", "personal use", "art", "difficulty"]
+tags: ["language-learning", "new-perspective", "personal-use", "art", "difficulty"]
 
 ---
 

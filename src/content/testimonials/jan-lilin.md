@@ -1,6 +1,6 @@
 ---
 author: "jan Lilin"
-tags: ["language learning"]
+tags: ["language-learning"]
 
 ---
 

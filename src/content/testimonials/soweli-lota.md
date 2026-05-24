@@ -1,6 +1,6 @@
 ---
 author: "soweli Lota"
-tags: ["mixed feelings","mental health", "limitations", "personal use"]
+tags: ["mixed-feelings","mental-health", "limitations", "personal-use"]
 
 ---
 

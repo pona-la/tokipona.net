@@ -1,6 +1,6 @@
 ---
 author: "jan Maweku"
-tags: ["personal use",  "community", "identity","fun"]
+tags: ["personal-use",  "community", "identity","fun"]
 
 ---
 

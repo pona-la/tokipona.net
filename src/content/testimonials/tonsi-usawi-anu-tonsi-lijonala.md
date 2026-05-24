@@ -1,6 +1,6 @@
 ---
 author: "tonsi usawi anu tonsi Lijonala"
-tags: ["new perspective", "personal use", "relationships"]
+tags: ["new-perspective", "personal-use", "relationships"]
 
 ---
 

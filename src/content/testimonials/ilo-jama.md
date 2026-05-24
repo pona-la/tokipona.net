@@ -1,6 +1,6 @@
 ---
 author: "ilo Jama"
-tags: ["language learning","personal use", "art", "community", "fun" ]
+tags: ["language-learning","personal-use", "art", "community", "fun" ]
 
 ---
 

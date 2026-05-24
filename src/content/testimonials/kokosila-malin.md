@@ -1,6 +1,6 @@
 ---
 author: "kokosila Malin/Matling"
-tags: [ "new perspective", "personal use", "art", "community","fun"]
+tags: [ "new-perspective", "personal-use", "art", "community","fun"]
 ---
 
 

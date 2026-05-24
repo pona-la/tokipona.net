@@ -1,6 +1,6 @@
 ---
 author: "jan Nowa"
-tags: ["language learning", "new perspective"]
+tags: ["language-learning", "new-perspective"]
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "kijetesantakalu Wase"
-tags: ["fun", "personal use"]
+tags: ["fun", "personal-use"]
 
 ---
 

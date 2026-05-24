@@ -1,6 +1,6 @@
 ---
 author: "jan Siwa"
-tags: [ "art", "meet new people", "community"]
+tags: [ "art", "meet-new-people", "community"]
 
 ---
 

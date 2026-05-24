@@ -1,6 +1,6 @@
 ---
 author: "Marina Volta"
-tags: ["language learning", "new perspective"]
+tags: ["language-learning", "new-perspective"]
 
 ---
 

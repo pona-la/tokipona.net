@@ -1,6 +1,6 @@
 ---
 author: "jan Kalakon"
-tags: ["meet new people", "community", "relationships","fun"]
+tags: ["meet-new-people", "community", "relationships","fun"]
 
 ---
 

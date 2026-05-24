@@ -1,6 +1,6 @@
 ---
 author: "kule epiku Atawan"
-tags: ["art", "meet new people", "community", "identity","relationships"]
+tags: ["art", "meet-new-people", "community", "identity","relationships"]
 
 ---
 

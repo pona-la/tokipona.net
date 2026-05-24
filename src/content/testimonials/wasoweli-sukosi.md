@@ -1,6 +1,6 @@
 ---
 author: "wasoweli Sukosi"
-tags: ["new perspective", "personal use", "community", "identity"]
+tags: ["new-perspective", "personal-use", "community", "identity"]
 
 ---
 

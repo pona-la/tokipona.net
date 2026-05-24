@@ -1,6 +1,6 @@
 ---
 author: "jan wan"
-tags: ["new perspective", "meet new people", "community", "fun"]
+tags: ["new-perspective", "meet-new-people", "community", "fun"]
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "jan kekoi"
-tags: ["language learning", "community","fun", "difficulty", "mental health"]
+tags: ["language-learning", "community","fun", "difficulty", "mental-health"]
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "kasi Sonki"
-tags: ["new perspective", "meet new people", "community", "relationships","fun"]
+tags: ["new-perspective", "meet-new-people", "community", "relationships","fun"]
 
 ---
 

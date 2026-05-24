@@ -1,6 +1,6 @@
 ---
 author: "jan Jona"
-tags: ["new perspective",  "meet new people", "community", "identity"]
+tags: ["new-perspective",  "meet-new-people", "community", "identity"]
 ---
 
 

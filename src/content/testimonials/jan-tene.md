@@ -1,6 +1,6 @@
 ---
 author: "jan Tene"
-tags: ["meet new people", "community", "fun", "art"]
+tags: ["meet-new-people", "community", "fun", "art"]
 
 ---
 

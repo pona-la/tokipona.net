@@ -1,6 +1,6 @@
 ---
 author: "jan Lanijo"
-tags: ["personal use", "art","community", "fun"]
+tags: ["personal-use", "art","community", "fun"]
 
 ---
 

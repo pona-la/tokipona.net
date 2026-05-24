@@ -1,6 +1,6 @@
 ---
 author: "jan Kesi"
-tags: ["mental health"]
+tags: ["mental-health"]
 
 ---
 

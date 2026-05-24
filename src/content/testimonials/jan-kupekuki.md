@@ -1,6 +1,6 @@
 ---
 author: "jan Kupekuki"
-tags: ["new perspective", "personal use", "art", "community", "fun"]
+tags: ["new-perspective", "personal-use", "art", "community", "fun"]
 ---
 
 Toki Pona is a great lesson on the fact that translation is not a matter of changing words but of understanding the underlining concepts and redescribing them, and that the way in which we interpret something is not universal between languages, or even individuals. Often the ways in which you describe things in Toki Pona lets you see them from a new angle and so deepen your understanding of them.

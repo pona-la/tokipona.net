@@ -1,6 +1,6 @@
 ---
 author: "jan Lakuse"
-tags: [ "new perspective", "personal use",  "meet new people", "community", "identity"]
+tags: [ "new-perspective", "personal-use",  "meet-new-people", "community", "identity"]
 ---
 
 Here are fragments:

@@ -1,6 +1,6 @@
 ---
 author: "jan Lawen Kalapasa"
-tags: [ "new perspective", "personal use", "art","fun", "community"]
+tags: [ "new-perspective", "personal-use", "art","fun", "community"]
 
 ---
 

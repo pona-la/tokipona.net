@@ -1,6 +1,6 @@
 ---
 author: "soko Ni"
-tags: ["art", "meet new people", "community",  "relationships"]
+tags: ["art", "meet-new-people", "community",  "relationships"]
 
 ---
 

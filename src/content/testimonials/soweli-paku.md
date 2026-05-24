@@ -1,6 +1,6 @@
 ---
 author: "soweli Paku"
-tags: ["limitations", "new perspective", "personal use"]
+tags: ["limitations", "new-perspective", "personal-use"]
 
 ---
 
