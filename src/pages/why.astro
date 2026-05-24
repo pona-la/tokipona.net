@@ -1,0 +1,32 @@
+---
+import Testimonials from '@/components/Testimonials.astro';
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+	title={"Reviews | Toki Pon Toki Pona (Homepage)"}
+	description={"Toki Pona: the language with only 120 words."}
+    
+>
+	<section style='grid-area: right;'>
+    <h1>Reviews</h1>
+    <p>Community-submitted responses to the following four questions:</p>
+    <ul>
+    <li>What does Toki Pona mean to you?</li>
+    <li>What is Toki Pona for?</li>
+    <li>Has Toki Pona affected your life? If so, how?</li>
+    <li>How do you use Toki Pona day-to-day?</li>
+    </ul>
+    
+
+	</section>
+
+	<section style='grid-area: left;'>
+
+
+        <Testimonials />
+
+
+	</section>
+</Layout>
+
