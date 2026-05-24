@@ -1,6 +1,6 @@
 ---
 author: "tonsi Natali"
-tags: ["community", "art", "identity","difficulty"]
+tags: ["difficult", "community", "art"] #order
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "Vinyl / soweli Mu Tawa"
-tags: ["language-learning", "new-perspective", "personal-use",  "mixed-feelings",  "mental-health"]
+tags: ["mental-health", "new-perspective", "language-learning", "personal-use",  "mixed-feelings",  "community"] #order
 
 ---
 

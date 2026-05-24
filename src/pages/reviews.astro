@@ -12,8 +12,8 @@ import Layout from "@/layouts/Layout.astro";
 >
 	<section style='grid-area: right;'>
     <h1>Reviews</h1>
-    <p>Why learn toki pona? This question has more answers than speakers, so we collected these testimonials from community members to get the most complete answer possible.</p>
-    <p>We asked speakers to reflect on these four questions: </p>
+    <p>Why learn Toki Pona? This question has more answers than speakers, so we collected these testimonials from community members to get the most complete answer possible.</p>
+    <p><strong>We asked speakers to reflect on these four questions:</strong> </p>
     <ul>
     <li>What does Toki Pona mean to you?</li>
     <li>What is Toki Pona for?</li>
@@ -23,48 +23,50 @@ import Layout from "@/layouts/Layout.astro";
     
     <p>Loading this page randomizes the list order. To improve readability, we've tagged them with some themes.</p>
 
-            <label for="filter" style="margin-block: 0.5em; margin-inline-start: 2em;display:block;">
-        Filter by tag:
-    <select style="background-color: var(--card-background); color: var(--foreground);" name="review-tags" id="filter">
-        <option value="">--View All--</option>
-        <option value="language-learning">language learning</option>
-        <option value="art">art</option>
-        <option value="mental-health">mental health</option>
-        <option value="difficulty">difficulty</option>
-        <option value="fun">fun</option>
-        <option value="new-perspective">new perspective</option>
-        <option value="limitations">limitations</option>
-        <option value="mixed-feelings">mixed feelings</option>
-        <option value="identity">identity</option>
 
-        <option value="meet-new-people">meet new people</option>
-        <option value="difficulty">difficulty</option>
-        <option value="relationships">relationships</option>
-        <option value="community">community</option>
-        <option value="personal-use">personal use</option>
-    </select>
-    </label>
-
-
-    <details>
-        <summary>Learn more about tags</summary>
-        <ul>
-        <li><strong>#language-learning:</strong> Toki Pona somehow impacted how the speaker learns languages or thinks about linguistics</li>
-        <li><strong>#new-perspective:</strong> the speaker touches on whether they gained new insights about themselves or the world from learning Toki Pona</li>
-        <li><strong>#personal-use:</strong> the speaker refers to a functional or personal use for the language, such as journalling, using it as a secret language, etc</li>
-        <li><strong>#art:</strong> the speaker mentions using Toki Pona to create, or to consume the creations of others</li>
-        <li><strong>#community:</strong> the speaker comments on the role of the Toki Pona community</li>
-
-        <li><strong>#mixed-feelings:</strong> the speaker expresses a negative aspect of Toki Pona</li>
-        <li><strong>#limitations:</strong> the speaker comments on how Toki Pona is limited</li>
-        <li><strong>#meet-new-people:</strong> the speaker mentions meeting new people through Toki Pona</li>
-        <li><strong>#fun:</strong> the speaker thinks the language is fun</li>
-        <li><strong>#difficulty:</strong> the speaker reflects on how easy or difficult they found learning was</li>
-        <li><strong>#mental-health:</strong> the speaker discusses the impact Toki Pona had on their mental health</li>
-        <li><strong>#relationships:</strong> the speaker talks about how Toki Pona figures into their personal one-on-one relationships</li>
-    </ul>
-
-    </details>
+       <details style="max-width: 30em; margin: 1em auto;">
+            <summary>Learn more about tags</summary>
+            <ul>
+            <li><strong>#language-learning:</strong> Toki Pona somehow impacted how the speaker learns languages or thinks about linguistics</li>
+            <li><strong>#new-perspective:</strong> the speaker touches on whether they gained new insights about themselves or the world from learning Toki Pona</li>
+            <li><strong>#personal-use:</strong> the speaker refers to a functional or personal use for the language, such as journalling, using it as a secret language, etc</li>
+            <li><strong>#art:</strong> the speaker mentions using Toki Pona to create, or to consume the creations of others</li>
+            <li><strong>#community:</strong> the speaker comments on the role of the Toki Pona community</li>
+    
+            <li><strong>#mixed-feelings:</strong> the speaker expresses a negative aspect of Toki Pona</li>
+            <li><strong>#limitations:</strong> the speaker comments on how Toki Pona is limited</li>
+            <li><strong>#meet-new-people:</strong> the speaker mentions meeting new people through Toki Pona</li>
+            <li><strong>#fun:</strong> the speaker thinks the language is fun</li>
+            <li><strong>#difficulty:</strong> the speaker reflects on how easy or difficult they found learning was</li>
+            <li><strong>#mental-health:</strong> the speaker discusses the impact Toki Pona had on their mental health</li>
+            <li><strong>#relationships:</strong> the speaker talks about how Toki Pona figures into their personal one-on-one relationships</li>
+        </ul>
+    
+        </details>
+    <label for="filter" style="padding-block: 0.5em; padding-inline-start: 2em; margin-inline: auto;
+    margin-block:0; display:block;background-color:var(--scene-background); max-width:fit-content;">
+            Filter by tag:
+        <select style="background-color: var(--background); color: var(--foreground); border: 0.3em solid var(--scene-background); border-radius: 0.5rem;" name="review-tags" id="filter">
+            <option value="">--View All--</option>
+            <option value="language-learning">language learning</option>
+            <option value="art">art</option>
+            <option value="mental-health">mental health</option>
+            <option value="difficulty">difficulty</option>
+            <option value="fun">fun</option>
+            <option value="new-perspective">new perspective</option>
+            <option value="limitations">limitations</option>
+            <option value="mixed-feelings">mixed feelings</option>
+            <option value="identity">identity</option>
+            <option value="meet-new-people">meet new people</option>
+            <option value="difficulty">difficulty</option>
+            <option value="relationships">relationships</option>
+            <option value="community">community</option>
+            <option value="personal-use">personal use</option>
+        </select>
+        </label>
+    
+    
+     
 
     
     <p lang="tok"><em>sina toki pona li wile pana e toki sina tawa lipu ni la o toki tawa kulupu pali. sina wile ante e toki sina pi tenpo pini la sina kin o ni.</em></p>

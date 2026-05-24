@@ -1,6 +1,6 @@
 ---
 author: "jan Kulo"
-tags: [ "new-perspective", "personal-use",  "meet-new-people", "community", "fun"]
+tags: ["community", "fun",  "personal-use",  "new-perspective", "art", "meet-new-people"] #order
 ---
 I am one of the administrators of the Chinese Toki Pona QQ group. At first, this language served exactly as it was intended: a simple tool to clarify and simplify my thoughts and ideas. Yet after spending plenty of time within this community, we have built a unique shared culture and created countless unforgettable memories together. We are creative, knowledgeable, and occasionally playful and silly. We have shared much laughter and happiness. Toki Pona has grown far beyond a mere language; it has become a bond that connects us, lets us discover shared interests, and allows us to communicate on a far deeper level.
 

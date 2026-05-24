@@ -1,6 +1,6 @@
 ---
 author: "alesa"
-tags: [ "meet-new-people", "community", "identity", "relationships","fun"]
+tags: [ "identity","meet-new-people", "community",  "relationships"] #order
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: "jan Jaten"
-tags: ["language-learning", "new-perspective",   "community", "relationships","fun" ]
+tags: ["new-perspective",  "relationships","fun",  language-learning", "community","personal-use" ] #order
 
 ---
 

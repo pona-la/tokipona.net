@@ -1,7 +1,7 @@
 ---
 author: "tonsi usawi anu tonsi Lijonala"
-tags: ["new-perspective", "personal-use", "relationships"]
-
+tags: ["new-perspective", "personal-use", "relationships"] # order
+notes: "*translations provided by tokipona.net, not the speaker"
 ---
 
 
@@ -11,4 +11,3 @@ toki pona is a small language centered around empathy and understanding for the 
 
 Often times, I struggle to organize my thoughts when writing. This happens when a concept feels too big, and too vulnerable, and too complex. In those times I will typically communicate the thing in Toki Pona. *tenpo kama la, mi ken ante e one tawa toki Inli* (Later, I can translate it to English*).
 
-**(translations provided by tokipona.net, not the author)*

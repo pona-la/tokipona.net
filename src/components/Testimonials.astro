@@ -76,6 +76,17 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 		list-style: initial;
 		margin-left: 0;
 	}
+	.note {
+		font-size: 0.8em;
+		line-height: 1em;
+		font-style: italic;
+		opacity: 0.9;
+		text-align: left;
+		border-top: 0.1em dotted var(--foreground);
+		padding: 0.5em;
+
+
+	}
 
 	
 </style>
@@ -89,12 +100,19 @@ const selectedTestimonials = testimonials.sort((a, b) => a.data.author.localeCom
 					<Content />
 				</blockquote>
 				<figcaption>
+
 					— <cite>{testimonial.data.author}</cite>
+
+
+
 					<ul class="tags">
 						 {testimonial.data.tags.map((tag) => (
   							<li>#{tag} </li>
 						 ))}
 					</ul>
+										{ testimonial.data.notes && <p class="note">{testimonial.data.notes}</p>}
+
+					
 				</figcaption>
 			</figure>
 	);

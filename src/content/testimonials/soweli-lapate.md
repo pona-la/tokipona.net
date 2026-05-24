@@ -1,17 +1,17 @@
 ---
 author: "soweli Lapate"
-tags: [ "new-perspective", "personal-use", "art",  "community", "identity", "relationships", "mental-health"]
+tags: [ "mental-health","new-perspective", "personal-use", "art",  "community", "relationships", "identity"] #order
+notes: "*English version was prepared by tokipona.net."
 
 ---
 
-Four years ago, my sister passed away quite quickly. My family placed her in the ground; we all felt very low. That same day, when I returned home, I saw something about Esperanto on my device, and came to see the words, "*toki pona*." I was intrigued because according to that source, one could come to know themself and improve one's mood using Toki Pona. With that, I bought the Toki Pona book, and my learning begun! 
+Four years ago, my sister passed away unexpectedly. My family laid her to rest; it was a low point for all of us. Coming back home from the burial, something popped up in my feed related to Esperanto, and I first stumbled upon the words, "toki pona." I was intrigued-- according to that source, people could use Toki Pona to understand themselves and improve their moods. Because of that, I bought the Toki Pona book, and my learning begun! 
 
-Every day, I speak Toki Pona on Discord. I write reflections in my journal. I compose poetry and essays for myself, for those close to me, for the *lipu tenpo* magazine, for other publications. My internal monogue uses it. Toki Pona can be found in all my aspects. 
+Now, I speak Toki Pona on Discord every day. I write reflections in my journal. I compose poetry and essays for myself, for those close to me, for the *lipu tenpo* magazine and for other publications. My internal monogue uses it. Toki Pona can be found in all my aspects. 
 
-In my opinion, Toki Pona did improve my mood,  awareness, and spirit. As an added bonus, I came to know many pleasant folks because of Toki Pona. 
+In my opinion, Toki Pona did improve my mood, awareness, and spirit. As an added bonus, I came to know many loevely folks because of Toki Pona. 
 
-I still deeply feel the loss of my sister, but Toki Pona lightened my heart, and gifted me many powerful things. 
-
+I still deeply feel the loss of my sister, but Toki Pona lightened my heart, and has brought many gifts into my life.* 
 
 <details lang="tok">
 <summary>Translated from the original <br>(Toki Pona)</summary>

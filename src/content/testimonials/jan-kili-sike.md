@@ -1,6 +1,6 @@
 ---
 author: "jan kili sike"
-tags: ["language-learning", "meet-new-people", "difficulty"]
+tags: ["language-learning", "difficulty", "meet-new-people", "art"] #order
 
 ---
 
