@@ -140,7 +140,14 @@ const headings = faq.flatMap((item) =>
         }
         
     }
-    
+    @media (max-width: 35em ){
+        .faq{
+            grid-template-columns: 1fr;
+            justify-items: center;
+
+        }
+
+    }
 
 
 </style>
@@ -182,6 +189,9 @@ const headings = faq.flatMap((item) =>
 <div class="faq">
     
             {faq.map((item) =>
+            <div class="entry">
+                <item.Content />
+            </div>
             <div class="plant-card">
                 <dl>
                     <dt>Specimen</dt>
@@ -193,9 +203,7 @@ const headings = faq.flatMap((item) =>
                     <dd>{item.frontmatter.species_notes}</dd>
                 </dl>
             </div>
-            <div class="entry">
-                <item.Content />
-            </div>)}
+            )}
 </div>
 	</section>
 </Layout>
