@@ -74,7 +74,7 @@ const headings = faq.flatMap((item) =>
 		position: relative;
 		display: grid;
 		grid-template-rows: max-content 1fr;
-		box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;How does Toki Pona work with only 130 words?
+		box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
 	}
 	.kasi a{
 		text-align: center;
@@ -102,28 +102,48 @@ const headings = faq.flatMap((item) =>
         justify-content: space-evenly;
         
         .plant-card {
+            align-self: center;
+            border-radius: var(--rounding-large);
+            max-width: 200px;
+        }
+        .intro {
+            background-color: rgb(22, 33, 22);
+            color: lightcyan;
+            border-radius: var(--rounding-small);
+            padding: 1em;
+            grid-column: 1 / 3;
+
+
+        }
+        
+        .plant-card:not(.intro) {
             background-color: var(--card-background);
             align-self: center;
             border-radius: var(--rounding-large);
             max-width: 200px;
+            border: 0.3em solid var(--card-border);
 
 
             dl{
                 font-family: sans;
-                font-size: 0.7em;
-                padding: 1em;
+                font-size: 0.8em;
+                margin: 0;
+                padding: 0.5em 1em;
+                line-height: 1em;
             }
             dd {
                 display: inline;
-
                 margin: 0;
                 padding: 0;
                 width: 100%;
+                max-width: 200px;
                 img {
                     display: 
                     block;
-                    max-width: 150px;
-                    margin: 0 auto;
+                    margin: 1em auto;
+                    background-image: url(/public/sitelen/banner.png);
+                    border: 0.3em solid var(--link);
+                    border-radius: var(--rounding-large);
                 }
                 
 
@@ -132,6 +152,11 @@ const headings = faq.flatMap((item) =>
                 display: inline;
                 margin: 0 1em 0 0;
                 font-weight: 800;
+                text-transform: uppercase;
+                font-size: 0.8em;
+            }
+            .plant-name {
+                display: grid;
             }
 
         }
@@ -139,11 +164,41 @@ const headings = faq.flatMap((item) =>
             max-width: 30em;
         }
         
+        
     }
+
+    .garden {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            top: 0.4em;
+
+            div {
+
+
+
+            }
+            img {
+                max-width: 100%;
+                user-drag: none;
+                user-select: none;
+
+
+            }
+
+
+            
+
+        }
     @media (max-width: 35em ){
         .faq{
             grid-template-columns: 1fr;
             justify-items: center;
+
+            .plant-card .plant-name{
+                display: inline;
+            }
 
         }
 
@@ -186,24 +241,46 @@ const headings = faq.flatMap((item) =>
 				}
 			</ol>
 		</details>
+
+    <div class="garden">
+
+    {faq.map((item) => 
+        <div>
+            <img src={`/sitelen/kasi/${item.frontmatter.image}`}>
+        </div>
+        
+    )}
+
+    </div>
+        
 <div class="faq">
     
-            {faq.map((item) =>
-            <div class="entry">
-                <item.Content />
-            </div>
-            <div class="plant-card">
-                <dl>
-                    <dt>Specimen</dt>
-                    <dd>{item.frontmatter.species}
-                    <img src={`/sitelen/kasi/${item.frontmatter.image}`}>
-                    </dd>
 
-                    <dt>Notes</dt>
-                    <dd>{item.frontmatter.species_notes}</dd>
-                </dl>
-            </div>
-            )}
+
+
+
+    <div class="intro">
+        <p>What this language's deal?</p>
+        
+        <p>Is it even a language? Here, we provide a basic profile of what the language is.</p>
+    </div>
+
+    {faq.map((item) =>
+    <div class="entry">
+        <item.Content />
+    </div>
+    <div class="plant-card">
+        <dl>
+            <dt class="plant-name">Specimen</dt>
+            <dd>{item.frontmatter.species}
+            <img src={`/sitelen/kasi/${item.frontmatter.image}`}>
+            </dd>
+
+            <dt>Notes</dt>
+            <dd>{item.frontmatter.species_notes}</dd>
+        </dl>
+    </div>
+    )}
 </div>
 	</section>
 </Layout>
