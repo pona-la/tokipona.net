@@ -127,26 +127,43 @@ const headings = faq.flatMap((item) =>
             align-self: center;
             border-radius: var(--rounding-large);
             max-width: 225px;
-            border: 0.3em solid var(--card-border);
+            border: 0.3em solid var(--link);
 
 
-            dl{
+            .content-wrapper {
                 font-family: sans;
                 font-size: 0.8em;
                 margin: 0;
                 padding: 0.5em 1em;
-                line-height: 1em;
-                text-align: justify;
+                line-height: 1.3em;
 
             }
-            dd {
+            :global(details) {
+                border-style: solid;
+                border-color: var(--card-border);
+
+                :global(summary){
+                    display: list-item;
+
+                    &::before {
+                        content: none !important;
+                    }
+
+                }
+                .plant-notes{
+                    padding: 0 1em 1em 1em ;
+
+                }
+
+            }
+            .plant-profile, details {
                 display: inline;
                 margin: 0;
                 padding: 0;
                 width: 100%;
                 max-width: 200px;
 
-                div:has(img) {
+                .plant-wrapper {
                     display: block;
                     margin: 1em 1em 1em 1em;
 
@@ -156,7 +173,7 @@ const headings = faq.flatMap((item) =>
                     display: inline-block;
                     width: 100%;
                     background: var(--scene-background);
-                    border: 0.3em solid var(--link);
+                    border: 0.3em solid var(--card-border);
                     border-radius: var(--rounding-large);
                     box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
 
@@ -164,14 +181,14 @@ const headings = faq.flatMap((item) =>
 
             }
 
-            dt{
+            .plant-header, summary {
                 display: inline;
                 margin: 0 1em 0 0;
                 font-weight: 800;
                 text-transform: uppercase;
                 font-size: 0.8em;
             }
-            .plant-name {
+            .plant-header {
                 display: grid;
             }
 
@@ -211,7 +228,7 @@ const headings = faq.flatMap((item) =>
             grid-template-columns: 1fr;
             justify-items: center;
 
-            .plant-card:not(.intro) dt.plant-name{
+            .plant-card:not(.intro) dt.plant-header{
                 display: inline;
             }
             .intro {
@@ -289,15 +306,20 @@ const headings = faq.flatMap((item) =>
         <item.Content />
     </div>
     <div class="plant-card">
-        <dl>
-            <dt class="plant-name">Specimen</dt>
-            <dd>{item.frontmatter.species}
-            <div><img src={`/sitelen/kasi/${item.frontmatter.image}`}></div>
-            </dd>
-
-            <dt>Notes</dt>
-            <dd class="plant-notes">{item.frontmatter.species_notes}</dd>
-        </dl>
+        <div class="content-wrapper">
+            <span class="plant-header">Specimen</span>
+            <div class="plant-profile">{item.frontmatter.species}
+            <div class="plant-wrapper"><img src={`/sitelen/kasi/${item.frontmatter.image}`}></div>
+            </div>
+            <details>
+            <summary>Summary</summary>
+            <div class="plant-notes">{item.frontmatter.species_notes}</div>
+            </details>
+            <details>
+            <summary>About This Plant</summary>
+            <div class="plant-notes">{item.frontmatter.species_notes}</div>
+            </details>
+        </div>
     </div>
     )}
 </div>
