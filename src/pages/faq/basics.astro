@@ -97,14 +97,17 @@ const headings = faq.flatMap((item) =>
 	}
     .faq {
         display: grid;
-        grid-template-columns:  auto auto;
+        grid-template-columns:  auto minmax(175px, auto);
         column-gap: 0.5em;
         justify-content: space-evenly;
+        max-width: 50em;
+        margin: 0 auto;
         
         .plant-card {
             align-self: center;
             border-radius: var(--rounding-large);
             max-width: 200px;
+            margin-block: 1em;
         }
         .intro {
             background-color: rgb(22, 33, 22);
@@ -120,7 +123,7 @@ const headings = faq.flatMap((item) =>
             background-color: var(--card-background);
             align-self: center;
             border-radius: var(--rounding-large);
-            max-width: 200px;
+            max-width: 225px;
             border: 0.3em solid var(--card-border);
 
 
@@ -130,6 +133,8 @@ const headings = faq.flatMap((item) =>
                 margin: 0;
                 padding: 0.5em 1em;
                 line-height: 1em;
+                text-align: justify;
+
             }
             dd {
                 display: inline;
@@ -147,9 +152,9 @@ const headings = faq.flatMap((item) =>
                     box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
 
                 }
-                
 
             }
+
             dt{
                 display: inline;
                 margin: 0 1em 0 0;
@@ -163,7 +168,9 @@ const headings = faq.flatMap((item) =>
 
         }
         .entry{
+            text-align: left;
             max-width: 30em;
+
         }
         
         
@@ -283,7 +290,7 @@ const headings = faq.flatMap((item) =>
             </dd>
 
             <dt>Notes</dt>
-            <dd>{item.frontmatter.species_notes}</dd>
+            <dd class="plant-notes">{item.frontmatter.species_notes}</dd>
         </dl>
     </div>
     )}
