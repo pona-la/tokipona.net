@@ -1,5 +1,8 @@
 ---
 published: true
+image: is-it-real.png
+species: Lonsoniana
+species_notes: Spontaneously emerges in disparate locations, not native to any biosystem. It is theorized that merismatic cells of certain plants are predisposed to specialize into Lonsoniana tissue when stimulated by certain 5G internet frequencies.  Thus in its pre-emergent state, it might be better classified as a kind of fungus, though without direct observation or existing framework to explain this behaviour, we are content with calling it a plant for now.
 ---
 
 ## Is Toki Pona a real language?

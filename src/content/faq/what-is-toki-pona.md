@@ -1,5 +1,8 @@
 ---
 published: true
+image: what-is-tp.png
+species: Tocciptonis kasae
+species_notes: "Before it was released to proliferate in the wild, Tocciptonis was created in a lab to test whether an organism with a reduced amount of cell structures could manage to survive in natural contexts. Whimsically, racoons seem drawn to its scent"
 ---
 
 ## What is Toki Pona?

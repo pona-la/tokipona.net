@@ -1,5 +1,8 @@
 ---
 published: true
+image: how-does-it-work.png
+species: Salvia teksticum
+species_notes: "Salvia monitors various cues from the environment including sound/vibrations, light level, temperature, and passing time. At set intervals, it mixes and releases its own chemical signalling that will be most likely to entice a suitable pollinator. Noticing that the success rate increases over the plant's life, we suspect that Salvia is able to learn from its prior communication attempts. " 
 ---
 
 ## How does Toki Pona work with only 130 words?

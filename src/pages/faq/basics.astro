@@ -1,44 +1,22 @@
 ---
 import * as howDoesItWork from '@/content/faq/how-does-it-work.md';
-import * as howLongToLearn from '@/content/faq/how-long-to-learn.md';
-import * as howManySpeakers from '@/content/faq/how-many-speakers.md';
-import * as howManyWords from '@/content/faq/how-many-words.md';
 import * as isItReal from '@/content/faq/is-it-real.md';
-import * as isItUseful from '@/content/faq/is-it-useful.md';
-import * as limits from '@/content/faq/limits.md';
-import * as proposingChanges from '@/content/faq/proposing-changes.md';
 import * as whatDoesItMean from '@/content/faq/what-does-it-mean.md';
-import * as whatIsItFor from '@/content/faq/what-is-it-for.md';
 import * as whatIsTokiPona from '@/content/faq/what-is-toki-pona.md';
-import * as whereIsItSpoken from '@/content/faq/where-is-it-spoken.md';
-import * as whoIsInCharge from '@/content/faq/who-is-in-charge.md';
 
 import Layout from '@/layouts/Layout.astro';
 
 const faq = [
 	whatIsTokiPona,
 	isItReal,
-	isItUseful,
 	howDoesItWork,
-	howLongToLearn,
-	whereIsItSpoken,
-	howManySpeakers,
-	whatIsItFor,
-	howManyWords,
-	limits,
-	proposingChanges,
 	whatDoesItMean,
-	whoIsInCharge,
 ];
 
 // fetch all questions, omit the ones we already have
 // append any that were missing to the end
 const allEntries = import.meta.glob('@/content/faq/*.md', { eager: true });
 const manualImports = new Set(faq.map((item) => item.file));
-const autoImports = Object.values(allEntries).filter(
-	(item) => !manualImports.has(item.file) && item.frontmatter?.published,
-);
-faq.push(...autoImports);
 
 const headings = faq.flatMap((item) =>
 	item.getHeadings().filter((heading) => heading.depth <= 2),
@@ -117,19 +95,61 @@ const headings = faq.flatMap((item) =>
 		right:0;
 		left: 0;
 	}
+    .faq {
+        display: grid;
+        grid-template-columns:  auto auto;
+        column-gap: 0.5em;
+        justify-content: space-evenly;
+        
+        .plant-card {
+            background-color: var(--card-background);
+            align-self: center;
+            border-radius: var(--rounding-large);
+            max-width: 200px;
+
+
+            dl{
+                font-family: sans;
+                font-size: 0.7em;
+                padding: 1em;
+            }
+            dd {
+                display: inline;
+
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                img {
+                    display: 
+                    block;
+                    max-width: 150px;
+                    margin: 0 auto;
+                }
+                
+
+            }
+            dt{
+                display: inline;
+                margin: 0 1em 0 0;
+                font-weight: 800;
+            }
+
+        }
+        .entry{
+            max-width: 30em;
+        }
+        
+    }
+    
 
 
 </style>
 
 <Layout
-	title={'Frequently Asked Questions | Toki Pona'}
+	title={'The Basics | Toki Pona'}
 	description={'This is a test page.'}
 >
 	<section style='grid-area: right;' class='right-toc'>
-		<!--  <h2>TaThe Basics
-
-    What is Toki Pona?
-    Isble of Contents</h2>
 		<nav>
 			<ol>
 				{
@@ -140,51 +160,14 @@ const headings = faq.flatMap((item) =>
 					))
 				}
 			</ol>
-		</nav>-->
+		</nav>
 	</section>
 	<section style='grid-area: left;'>
-		<h1>Frequently Asked Questions</h1>
+		<h1>The Basics</h1>
 
-		<h2>The Basics</h2>
-		<ul class='kasi'>
-			<li>
-				<img src='/src/assets/images/what-is-tp.png' />
-				<a href=''><span>What is Toki Pona?</span></a>
-			</li>
-			<li>
-				<img src='/src/assets/images/is-it-real.png' />
-				<a href=''><span>Is Toki Pona a real language?</span></a>
-			</li>
-			<li>
-				<img src='/src/assets/images/how-does-it-work.png' />
-				<a href=''><span>How does Toki Pona work with only 130 words?</span></a>
-			</li>
-			<li>
-				<img src='/src/assets/images/meaning.png' />
+        
 
-				<a href=''><span>What does “Toki Pona” even mean?</span></a>
-			</li>
-			<li>
-				<img src='/src/assets/images/sound-like.png' />
-
-				<a href=''><span>What does Toki Pona sound like?</span></a>
-			</li>
-		</ul>
-
-		<!-- 
-		<h2>Using Toki Pona</h2>
-		What is Toki Pona for? Is it useful to learn Toki Pona? How long does it take
-		to learn Toki Pona? Where is Toki Pona from? Where is it spoken? How many
-		people speak Toki Pona? Deeper Insights into Toki Pona What are Toki Pona’s
-		limits? Can I propose changes to Toki Pona? Who is the authority on Toki Pona?
-		*Is Toki Pona like Newspeak from 1984? *Do Toki Pona speakers memorize thousands
-		of compound words? *Is AI good at Toki Pona? *What are new words in Toki Pona?
-		*What is a Tokiponido?
-		
-		-->
-		
-
-		<!--<details open class='small-toc'>
+		<details open class='small-toc'>
 			<summary>Table of Contents</summary>
 			<ol>
 				{
@@ -195,8 +178,24 @@ const headings = faq.flatMap((item) =>
 					))
 				}
 			</ol>
-		</details>-->
+		</details>
+<div class="faq">
+    
+            {faq.map((item) =>
+            <div class="plant-card">
+                <dl>
+                    <dt>Specimen</dt>
+                    <dd>{item.frontmatter.species}
+                    <img src={`/src/assets/images/${item.frontmatter.image}`}>
+                    </dd>
 
-		<!--  {faq.map((item) => <item.Content />)}-->
+                    <dt>Notes</dt>
+                    <dd>{item.frontmatter.species_notes}</dd>
+                </dl>
+            </div>
+            <div class="entry">
+                <item.Content />
+            </div>)}
+</div>
 	</section>
 </Layout>
