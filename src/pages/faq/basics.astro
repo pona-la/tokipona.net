@@ -3,6 +3,8 @@ import * as howDoesItWork from '@/content/faq/how-does-it-work.md';
 import * as isItReal from '@/content/faq/is-it-real.md';
 import * as whatDoesItMean from '@/content/faq/what-does-it-mean.md';
 import * as whatIsTokiPona from '@/content/faq/what-is-toki-pona.md';
+import * as whatSoundLike from '@/content/faq/what-sounds-like.md';
+
 
 import Layout from '@/layouts/Layout.astro';
 
@@ -11,6 +13,7 @@ const faq = [
 	isItReal,
 	howDoesItWork,
 	whatDoesItMean,
+    whatSoundLike
 ];
 
 // fetch all questions, omit the ones we already have
@@ -142,10 +145,16 @@ const headings = faq.flatMap((item) =>
                 padding: 0;
                 width: 100%;
                 max-width: 200px;
+
+                div:has(img) {
+                    display: block;
+                    margin: 1em 1em 1em 1em;
+
+                }
+                
                 img {
-                    display: 
-                    block;
-                    margin: 1em auto;
+                    display: inline-block;
+                    width: 100%;
                     background: var(--scene-background);
                     border: 0.3em solid var(--link);
                     border-radius: var(--rounding-large);
@@ -178,16 +187,13 @@ const headings = faq.flatMap((item) =>
 
     .garden {
             width: 100%;
+            max-width: 50em;
+            margin: 0 auto;
             display: flex;
             flex-wrap: nowrap;
             position: relative;
             top: 0.4em;
 
-            div {
-
-
-
-            }
             img {
                 max-width: 100%;
                 user-drag: none;
@@ -286,7 +292,7 @@ const headings = faq.flatMap((item) =>
         <dl>
             <dt class="plant-name">Specimen</dt>
             <dd>{item.frontmatter.species}
-            <img src={`/sitelen/kasi/${item.frontmatter.image}`}>
+            <div><img src={`/sitelen/kasi/${item.frontmatter.image}`}></div>
             </dd>
 
             <dt>Notes</dt>
