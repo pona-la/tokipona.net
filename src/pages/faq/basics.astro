@@ -141,9 +141,11 @@ const headings = faq.flatMap((item) =>
                     display: 
                     block;
                     margin: 1em auto;
-                    background-image: url(/public/sitelen/banner.png);
+                    background: var(--scene-background);
                     border: 0.3em solid var(--link);
                     border-radius: var(--rounding-large);
+                    box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
+
                 }
                 
 
@@ -190,15 +192,19 @@ const headings = faq.flatMap((item) =>
 
             
 
-        }
+    }
     @media (max-width: 35em ){
         .faq{
             grid-template-columns: 1fr;
             justify-items: center;
 
-            .plant-card .plant-name{
+            .plant-card:not(.intro) dt.plant-name{
                 display: inline;
             }
+            .intro {
+                grid-column: auto;
+            }
+
 
         }
 
