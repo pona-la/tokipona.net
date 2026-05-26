@@ -15,14 +15,21 @@ const faq = [
 	whatSoundLike,
 ];
 
+const slugify = (title: string) =>
+	title
+		.toLowerCase()
+		.replaceAll(" ", "-")
+		.replaceAll(/[\.\?]/g, "");
+
 // fetch all questions, omit the ones we already have
 // append any that were missing to the end
 const allEntries = import.meta.glob('@/content/faq/*.md', { eager: true });
 const manualImports = new Set(faq.map((item) => item.file));
 
-const headings = faq.flatMap((item) =>
-	item.getHeadings().filter((heading) => heading.depth <= 2),
-);
+const headings = faq.flatMap((item) => ({
+	text: item.frontmatter.title,
+	slug: slugify(item.frontmatter.title),
+}));
 ---
 
 <style>
@@ -225,7 +232,9 @@ const headings = faq.flatMap((item) =>
 				{
 					faq.map((item) => (
 						<article class='entry-wrap'>
-							<h2>{item.frontmatter.title}</h2>
+							<h2 id={slugify(item.frontmatter.title)}>
+								{item.frontmatter.title}
+							</h2>
 							<div class='entry'>
 								<details class='plant'>
 									<summary class='plant'>
