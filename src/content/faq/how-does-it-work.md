@@ -4,10 +4,9 @@ image: how-does-it-work.png
 species: Salvia teksticum
 species_notes: "Salvia monitors various cues from the environment including sound/vibrations, light level, temperature, and passing time. At set intervals, it mixes and releases its own chemical signalling that will be most likely to entice a suitable pollinator. Noticing that the success rate increases over the plant's life, we suspect that Salvia is able to learn from its prior communication attempts. " 
 faq_index: 1.3
-
+title: How does Toki Pona work with only 130 words?
+simple: Toki Pona doesn't have any specific words, so speakers get good at using the words to make specific descriptions that they think the listener will understand in context. 
 ---
-
-## How does Toki Pona work with only 130 words?
 
 Toki Pona is highly context-dependent. This means that Toki Pona employs many of the same methods of communication that other languages do; it just doesn't allow for disambiguation via the usage of a more specific word. All other methods still work.
 

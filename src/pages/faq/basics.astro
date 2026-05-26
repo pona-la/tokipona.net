@@ -4,8 +4,7 @@ import * as isItReal from '@/content/faq/is-it-real.md';
 import * as whatDoesItMean from '@/content/faq/what-does-it-mean.md';
 import * as whatIsTokiPona from '@/content/faq/what-is-toki-pona.md';
 import * as whatSoundLike from '@/content/faq/what-sounds-like.md';
-
-
+import { slugify } from 'astro/zod';
 import Layout from '@/layouts/Layout.astro';
 
 const faq = [
@@ -13,7 +12,7 @@ const faq = [
 	isItReal,
 	howDoesItWork,
 	whatDoesItMean,
-    whatSoundLike
+	whatSoundLike,
 ];
 
 // fetch all questions, omit the ones we already have
@@ -61,200 +60,122 @@ const headings = faq.flatMap((item) =>
 			display: block;
 		}
 	}
-	.kasi {
-		display: flex;
-		list-style-type: none;
-		row-gap: 1em;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		max-width: 40em;
+	.main-content {
+		max-width: 35em;
 		margin: 0 auto;
 	}
-	.kasi li {
-		margin: 0;
-		aspect-ratio: 1 / 1;
-		max-width: 10em;
-		position: relative;
-		display: grid;
-		grid-template-rows: max-content 1fr;
-		box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
+	.space-maker {
+		width: 6rem;
+		height: 1rem;
+		float: left;
 	}
-	.kasi a{
-		text-align: center;
-		background-color: rgb(22, 33, 22);
-		display: grid;
-		color: lightcyan;
-		text-decoration: none;
-		padding: 1em 0.25em;
-	}
-	.kasi span{
-		align-self: center;
-	}
-	.kasi a::after{
-		content: "";
+	.plant {
+		width: 5rem;
+		z-index: 2;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		right:0;
-		left: 0;
+		display: block;
+		white-space: normal;
+		margin-top: -2rem;
+		padding: 0;
+		float: left;
+		border: none;
+		background: none;
+
+		summary::before {
+			content: none;
+		}
+
+		img {
+			max-width: 100%;
+			border-radius: 50%;
+			border: 0.5em solid var(--card-border);
+			float: left;
+			background-color: var(--card-background);
+		}
 	}
-    .faq {
-        display: grid;
-        grid-template-columns:  auto minmax(175px, auto);
-        column-gap: 0.5em;
-        justify-content: space-evenly;
-        max-width: 50em;
-        margin: 0 auto;
-        
-        .plant-card {
-            align-self: center;
-            border-radius: var(--rounding-large);
-            max-width: 200px;
-            margin-block: 1em;
-        }
-        .intro {
-            background-color: rgb(22, 33, 22);
-            color: lightcyan;
-            border-radius: var(--rounding-small);
-            padding: 1em;
-            grid-column: 1 / 3;
+	.faq :global(h2) {
+		&::after {
+			z-index: 1;
+		}
+	}
 
+	.garden {
+		width: 100%;
+		max-width: 50em;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: nowrap;
+		position: relative;
+		top: 0.4em;
 
-        }
-        
-        .plant-card:not(.intro) {
-            background-color: var(--card-background);
-            align-self: center;
-            border-radius: var(--rounding-large);
-            max-width: 225px;
-            border: 0.3em solid var(--link);
+		img {
+			max-width: 100%;
+			user-drag: none;
+			user-select: none;
+		}
+	}
 
-
-            .content-wrapper {
-                font-family: sans;
-                font-size: 0.8em;
-                margin: 0;
-                padding: 0.5em 1em;
-                line-height: 1.3em;
-
-            }
-            :global(details) {
-                border-style: solid;
-                border-color: var(--card-border);
-
-                :global(summary){
-                    display: list-item;
-
-                    &::before {
-                        content: none !important;
-                    }
-
-                }
-                .plant-notes{
-                    padding: 0 1em 1em 1em ;
-
-                }
-
-            }
-            .plant-profile, details {
-                display: inline;
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                max-width: 200px;
-
-                .plant-wrapper {
-                    display: block;
-                    margin: 1em 1em 1em 1em;
-
-                }
-                
-                img {
-                    display: inline-block;
-                    width: 100%;
-                    background: var(--scene-background);
-                    border: 0.3em solid var(--card-border);
-                    border-radius: var(--rounding-large);
-                    box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
-
-                }
-
-            }
-
-            .plant-header, summary {
-                display: inline;
-                margin: 0 1em 0 0;
-                font-weight: 800;
-                text-transform: uppercase;
-                font-size: 0.8em;
-            }
-            .plant-header {
-                display: grid;
-            }
-
-        }
-        .entry{
-            text-align: left;
-            max-width: 30em;
-
-        }
-        
-        
+	.entry-wrap :global(h2) {
+		padding-left: 5.5rem;
+		margin-inline: 0;
+		text-align: left;
+	}
+    .entry-wrap{
+        margin-block: 2.5em;
     }
+	.summary {
+		width: 70vw;
+		max-width: 25em;
 
-    .garden {
-            width: 100%;
-            max-width: 50em;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: nowrap;
-            position: relative;
-            top: 0.4em;
+		border-color: var(--scene-background);
+		border-style: solid;
+		border-end-end-radius: var(--rounding-large);
+		border-start-end-radius: var(--rounding-large);
+		border-end-start-radius: var(--rounding-large);
+		border-width: 0.2em 0.4em 0.4em 0.2em;
+		background-color: var(--background);
+		z-index: 4;
+		padding: 1em;
+		background-color: rgb(22, 33, 22);
+		color: lightcyan;
+	}
 
-            img {
-                max-width: 100%;
-                user-drag: none;
-                user-select: none;
+	.summary {
+		position: absolute;
+		left: inherit;
+		right: inherit;
+		top: inherit;
+		bottom: inherit;
+		margin-top: 1em;
+		margin-left: 4em;
+		list-style-type: none;
+	}
 
+	.intro {
+		background-color: rgb(22, 33, 22);
+		color: lightcyan;
+		border-radius: var(--rounding-small);
+		padding: 1em;
+		grid-column: 1 / 3;
+	}
+	.summary {
+		z-index: 4;
+	}
 
-            }
-
-
-            
-
-    }
-    @media (max-width: 35em ){
-        .faq{
-            grid-template-columns: 1fr;
-            justify-items: center;
-
-            .plant-card:not(.intro) dt.plant-header{
-                display: inline;
-            }
-            .intro {
-                grid-column: auto;
-            }
-
-
-        }
-
-    }
-
-
+	@media (max-width: 35em) {
+	}
 </style>
 
-<Layout
-	title={'The Basics | Toki Pona'}
-	description={'This is a test page.'}
->
+<Layout title={'The Basics | Toki Pona'} description={'This is a test page.'}>
 	<section style='grid-area: right;' class='right-toc'>
 		<nav>
 			<ol>
 				{
 					headings.map((item) => (
-						<li>
+												<li>
 							<a href={`#${item.slug}`}>{item.text}</a>
 						</li>
+
 					))
 				}
 			</ol>
@@ -262,8 +183,6 @@ const headings = faq.flatMap((item) =>
 	</section>
 	<section style='grid-area: left;'>
 		<h1>The Basics</h1>
-
-        
 
 		<details open class='small-toc'>
 			<summary>Table of Contents</summary>
@@ -277,51 +196,94 @@ const headings = faq.flatMap((item) =>
 				}
 			</ol>
 		</details>
+		<div class='main-content'>
+			<div class='garden'>
+				{
+					faq.map((item) => (
+						<div>
+							<img
+								src={`/sitelen/kasi/${item.frontmatter.image}`}
+							/>
+						</div>
+					))
+				}
+			</div>
 
-    <div class="garden">
+			<div class='faq'>
+				<div class='intro'>
+					<p>What this language's deal?</p>
 
-    {faq.map((item) => 
-        <div>
-            <img src={`/sitelen/kasi/${item.frontmatter.image}`}>
-        </div>
-        
-    )}
+					<p>
+						Is it even a language? Here, we provide a basic profile
+						of what the language is.
+					</p>
+				</div>
 
-    </div>
-        
-<div class="faq">
-    
-
-
-
-
-    <div class="intro">
-        <p>What this language's deal?</p>
-        
-        <p>Is it even a language? Here, we provide a basic profile of what the language is.</p>
-    </div>
-
-    {faq.map((item) =>
-    <div class="entry">
-        <item.Content />
-    </div>
-    <div class="plant-card">
-        <div class="content-wrapper">
-            <span class="plant-header">Specimen</span>
-            <div class="plant-profile">{item.frontmatter.species}
-            <div class="plant-wrapper"><img src={`/sitelen/kasi/${item.frontmatter.image}`}></div>
-            </div>
-            <details>
-            <summary>Summary</summary>
-            <div class="plant-notes">{item.frontmatter.species_notes}</div>
-            </details>
-            <details>
-            <summary>About This Plant</summary>
-            <div class="plant-notes">{item.frontmatter.species_notes}</div>
-            </details>
-        </div>
-    </div>
-    )}
-</div>
+				{
+					faq.map((item) => (
+						<article class='entry-wrap'>
+							<h2>{item.frontmatter.title}</h2>
+							<div class='entry'>
+								<details class='plant'>
+									<summary class='plant'>
+										<img
+											alt='Show summary'
+											src={`/sitelen/kasi/${item.frontmatter.image}`}
+										/>
+									</summary>
+									<div
+										class='summary'
+										id={item.frontmatter.species.replaceAll(
+											' ',
+											'-',
+										)}
+									>
+										{item.frontmatter.simple}
+									</div>
+								</details>
+								<div class='entry-content'>
+									<div class='space-maker' />
+									<item.Content />
+								</div>
+							</div>
+						</article>
+					))
+				}
+			</div>
+		</div>
 	</section>
+    <script is:inline>
+	function lightDismiss() {
+        console.log("mu");
+
+		document.querySelectorAll('details.plant').forEach((details) => {
+            details.addEventListener('toggle', (event) => {
+                // Only run when the state changes to open
+                if (details.open) {
+                    // Define the outside click handler function
+                    const closeOnOutsideClick = (clickEvent) => {
+                        if (!details.contains(clickEvent.target)) {
+                            details.removeAttribute('open');
+                            // Self-cleanup: remove this listener immediately
+                            document.removeEventListener(
+                                'click',
+                                closeOnOutsideClick,
+                            );
+                        }
+                    };
+
+                    // Delay listener attachment slightly to prevent immediate triggering from the summary click
+                    setTimeout(() => {
+                        document.addEventListener(
+                            'click',
+                            closeOnOutsideClick,
+                        );
+                    }, 0);
+                }
+            });
+        });
+	}
+document.addEventListener("DOMContentLoaded", lightDismiss);
+</script>
+
 </Layout>
