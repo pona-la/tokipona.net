@@ -157,6 +157,10 @@ const headings = faq.flatMap((item) =>
 		border-radius: var(--rounding-small);
 		padding: 1em;
 		grid-column: 1 / 3;
+        
+        a {
+            color:inherit;
+        }
 	}
 	.summary {
 		z-index: 4;
@@ -211,13 +215,12 @@ const headings = faq.flatMap((item) =>
 
 			<div class='faq'>
 				<div class='intro'>
-					<p>What this language's deal?</p>
+                
+<p>Curious about what Toki Pona is? This page covers the basics.</p><p> We've recruited some <a href="https://nimi.li/kasi">kasi</a> to provide brief summaries along the way. They will speak up if you give them a click.</p>
 
-					<p>
-						Is it even a language? Here, we provide a basic profile
-						of what the language is.
-					</p>
-				</div>
+<p><em>Not new around here? Our FAQ has two more sections: <a href="">Using Toki Pona</a> and <a href="">Deeper Insights</a>. </em></p>
+                    
+                </div>
 
 				{
 					faq.map((item) => (
