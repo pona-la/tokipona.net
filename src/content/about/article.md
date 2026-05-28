@@ -13,3 +13,4 @@ Toki Pona's community is decentralized. There is **no single person** that can a
 With this in mind, **tokipona.net** is maintained by many contributors. Through collaborative development, **tokipona.net** aims to be a reliable website and accessible homepage, a new zone where contributors can collaboratively **serve as educators**, **amplify existing art projects**, and **nurture the seeds** of their own communities. 
 
 Simultaneously, **tokipona.net** recognizes that the decentralized Toki Pona community is far broader and diverse than the opinions and information that can be expressed on a single centralized homepage.  
+

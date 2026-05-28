@@ -1,6 +1,9 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Article from "@/content/about.md";
+import Layout from '@/layouts/Layout.astro';
+import Article from '@/content/about/article.md';
+import * as contact from '@/content/about/contact.md';
+import Contact from '@/content/about/contact.md';
+
 ---
 
 <style>
@@ -8,38 +11,69 @@ import Article from "@/content/about.md";
 		display: flex;
 		justify-content: center;
 	}
+	.contact{
+		:global(h3){
+			margin: 0;
+		}
+	}
+	:global(main) {
+	}
+
 </style>
 
 <Layout
-	title={"Toki Pona (Homepage)"}
-	description={"Toki Pona: the language with only 120 words."}
+	title={'Toki Pona (Homepage)'}
+	description={'Toki Pona: the language with only 120 words.'}
 >
-	<section style="grid-area: left;" class="prose">
+	<section style='grid-area: left;' class='prose'>
 		<h1>About us</h1>
-		<Article></Article>
+		<Article />
 	</section>
-	<section style='grid-area: right;' class="prose">
-		<h2>Contact us</h2>
+	<section style='grid-area: right;' class='prose contact'>
+		<Contact />
 
-		<p>
-			External inquiries can be directed to <a href="mailto:kulupu@tokipona.net">kulupu@tokipona.net</a>.
-		</p>
+		<h3>For questions regarding:</h3>
+		{contact.frontmatter.regarding.map((reason) => (
+			<details name="regarding">
+				<summary>{reason.id}</summary>
+				<p set:html={reason.text} />
+			</details>
+		))}
+
+		<h3>For questions from:</h3>
+		{contact.frontmatter.from.map((reason) => (
+			<details name="from">
+				<summary>{reason.id}</summary>
+				<p set:html={reason.text} />
+			</details>
+		))}
 
 		<h2>Contributing</h2>
 
 		<p>
-			Development of <b>tokipona.net</b> is mostly organized through the Discord server <a href="https://discord.gg/A3ZPqnHHsy" target="_blank">pali pona</a>.
-			Our <a href="https://github.com/pona-la/tokipona.net" target="_blank">GitHub</a> codebase is open to browsing, issues, and pull requests.
+			Development of <b>tokipona.net</b> is mostly organized through the Discord
+			server <a href='https://discord.gg/A3ZPqnHHsy' target='_blank'
+				>pali pona</a
+			>. Our <a
+				href='https://github.com/pona-la/tokipona.net'
+				target='_blank'>GitHub</a
+			> codebase is open to browsing, issues, and pull requests.
 		</p>
 
-		<p>
-			All Toki Pona speakers are welcome to contribute to this website.
-		</p>
+		<p>All Toki Pona speakers are welcome to contribute to this website.</p>
 
-		<p class="badge">
-			<a href="https://discord.gg/A3ZPqnHHsy">
-				<img src="https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-badge.svg">
+		<p class='badge'>
+			<a href='https://discord.gg/A3ZPqnHHsy'>
+				<img
+					src='https://raw.githubusercontent.com/pona-la/.github/refs/heads/main/assets/pali-pona-badge.svg'
+				/>
 			</a>
 		</p>
+		<details>
+			<summary>sona en ken en wile pali li lon sina la o open e poki ni o kama lukin</summary>
+
+		</details>
 	</section>
+
+
 </Layout>
