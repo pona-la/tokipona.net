@@ -12,7 +12,11 @@
     "@astrojs/cloudflare": "13.2.2",
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
+    "@playform/inline": "^0.1.4",
     "astro": "6.1.10",
+    "astro-compress": "^2.4.1",
+    "astro-purgecss": "^6.0.1",
+    "astro-robots-txt": "^1.0.0",
     "bsky-embed": "^0.2.7"
   },
   "devDependencies": {

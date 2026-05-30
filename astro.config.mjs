@@ -1,13 +1,19 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
+
 import mdx from '@astrojs/mdx';
-import sitemap from "@astrojs/sitemap";
+import sitemap from '@astrojs/sitemap';
+import robotsTxt from 'astro-robots-txt';
+
+import purgecss from 'astro-purgecss';
+import inline from '@playform/inline';
+import compress from 'astro-compress';
 
 const deploy =
 	import.meta.env.PROD ?
-		{ site: `https://tokipona.net/` }
-	:	{ site: "http://localhost/" };
+		{ site: 'https://tokipona.net/' }
+	:	{ site: 'http://localhost/' };
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +21,15 @@ export default defineConfig({
 	redirects: {
 		'/tp/Default.aspx': '/',
 	},
-	integrations: [mdx(), sitemap()],
+	integrations: [
+		mdx(),
+		sitemap(),
+		robotsTxt(),
+
+		purgecss(),
+		inline(),
+		compress(),
+	],
 	adapter: cloudflare(),
 	fonts: [
 		{
