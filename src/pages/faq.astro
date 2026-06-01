@@ -57,7 +57,7 @@ import Layout from '@/layouts/Layout.astro';
 			display: block;
 		}
 	}
-	.kasi {
+	.ijo {
 		display: flex;
 		list-style-type: none;
 		row-gap: 1em;
@@ -66,33 +66,55 @@ import Layout from '@/layouts/Layout.astro';
 		max-width: 40em;
 		margin: 0 auto;
 	}
-	.kasi li {
+	
+	.ijo li {
 		margin: 0;
 		aspect-ratio: 1 / 1;
 		max-width: 10em;
 		position: relative;
 		display: grid;
 		grid-template-rows: max-content 1fr;
-		box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
 	}
-	.kasi a{
+	.ijo a{
 		text-align: center;
-		background-color: rgb(22, 33, 22);
 		display: grid;
-		color: lightcyan;
 		text-decoration: none;
 		padding: 1em 0.25em;
 	}
-	.kasi span{
+	.ijo span{
 		align-self: center;
 	}
-	.kasi a::after{
+	.ijo a::after{
 		content: "";
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		right:0;
 		left: 0;
+	}
+
+	.kasi
+	{
+		li {
+			box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
+		}
+		a{
+			background-color: rgb(22, 33, 22);
+			color: lightcyan;
+		}
+	}
+	.waso {
+		li {
+			background-color: var(--scene-background);
+
+		}
+		a{
+			background-color: rgb(52, 78, 58);
+			color: lightcyan;
+
+
+		}
+
 	}
 
 
@@ -141,7 +163,7 @@ import Layout from '@/layouts/Layout.astro';
 		</details>
 
 		<h2>The Basics</h2>
-		<ul class="kasi">
+		<ul class="ijo kasi">
 
 		{kasi.map((item) => 
 			<li>
@@ -153,7 +175,7 @@ import Layout from '@/layouts/Layout.astro';
 		</ul>
 
 				<h2>Using Toki Pona</h2>
-		<ul class="kasi">
+		<ul class="ijo waso">
 
 		{waso.map((item) => 
 			<li>
@@ -165,7 +187,7 @@ import Layout from '@/layouts/Layout.astro';
 		</ul>
 
 		<h2>Deeper Insights</h2>
-		<ul class="kasi">
+		<ul class="ijo">
 
 		{soweli.map((item) => 
 			<li>
