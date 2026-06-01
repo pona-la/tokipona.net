@@ -66,7 +66,7 @@ import Layout from '@/layouts/Layout.astro';
 		max-width: 40em;
 		margin: 0 auto;
 	}
-	
+
 	.ijo li {
 		margin: 0;
 		aspect-ratio: 1 / 1;
@@ -128,14 +128,14 @@ import Layout from '@/layouts/Layout.astro';
 >
 	<section style='grid-area: right;' class='right-toc'>
 				<ol>
-			{kasi.map((item) => 
-				<li><a href={`faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
+			{kasi.map((item) =>
+				<li><a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
-			{waso.map((item) => 
-				<li><a href={`faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
+			{waso.map((item) =>
+				<li><a href={`/faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
-			{soweli.map((item) => 
-				<li><a href={`faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
+			{soweli.map((item) =>
+				<li><a href={`/faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
 			</ol>
 
@@ -147,14 +147,14 @@ import Layout from '@/layouts/Layout.astro';
 				Table of Contents
 			</summary>
 			<ol>
-			{kasi.map((item) => 
-				<li><a href={`faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
+			{kasi.map((item) =>
+				<li><a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
-			{waso.map((item) => 
-				<li><a href={`faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
+			{waso.map((item) =>
+				<li><a href={`/faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
-			{soweli.map((item) => 
-				<li><a href={`faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
+			{soweli.map((item) =>
+				<li><a href={`/faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
 			)}
 			</ol>
 
@@ -165,37 +165,37 @@ import Layout from '@/layouts/Layout.astro';
 		<h2>The Basics</h2>
 		<ul class="ijo kasi">
 
-		{kasi.map((item) => 
+		{kasi.map((item) =>
 			<li>
 				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`faq/basics/index.html#${item.id}`}><span>{item.data.title}</span></a>
+				<a href={`/faq/basics/index.html#${item.id}`}><span>{item.data.title}</span></a>
 			</li>
 		)}
-				
+
 		</ul>
 
 				<h2>Using Toki Pona</h2>
 		<ul class="ijo waso">
 
-		{waso.map((item) => 
+		{waso.map((item) =>
 			<li>
 				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`faq/using-toki-pona/index.html#${item.id}`}><span>{item.data.title}</span></a>
+				<a href={`/faq/using-toki-pona/index.html#${item.id}`}><span>{item.data.title}</span></a>
 			</li>
 		)}
-				
+
 		</ul>
 
 		<h2>Deeper Insights</h2>
 		<ul class="ijo">
 
-		{soweli.map((item) => 
+		{soweli.map((item) =>
 			<li>
 				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`faq/insights/index.html#${item.id}`}><span>{item.data.title}</span></a>
+				<a href={`/faq/insights/index.html#${item.id}`}><span>{item.data.title}</span></a>
 			</li>
 		)}
-				
+
 		</ul>
 
 	</section>
