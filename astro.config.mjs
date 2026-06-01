@@ -12,6 +12,12 @@ const deploy =
 // https://astro.build/config
 export default defineConfig({
 	...deploy,
+	// tenpo ni la ilo cloudflare pages li pana e lipu. nasin ona la, sitelen
+	// palisa pini o lon a nimi ilo lipu - sina lukin lukin e lipu kepeken ni ala
+	// la ilo li ante e nasin li pana e ni. taso jan li kepeken ilo Aso lon ilo
+	// ona la ni li kama ala la, sona jan li pakala. lawa ni li tawa ni: ilo Aso
+	// pi pali ilo o sama ilo pana lon cloudflare.
+	trailingSlash: 'always',
 	redirects: {
 		'/tp/Default.aspx': '/',
 	},
