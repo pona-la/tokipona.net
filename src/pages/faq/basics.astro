@@ -1,7 +1,4 @@
 ---
-import { draft } from "@/utils/draft.ts";
-draft(Astro);
-
 import FAQChild from '@/layouts/FAQChild.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 const kasi = (
@@ -47,6 +44,7 @@ const kasi = (
 	title={'The Basics | Toki Pona'}
 	description={'This is a test page.'}
 	array={kasi}
+	draft
 >
 	<div class='garden'>
 		{

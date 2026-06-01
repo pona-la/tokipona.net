@@ -1,7 +1,4 @@
 ---
-import { draft } from "@/utils/draft.ts";
-draft(Astro);
-
 import { getCollection, getEntry } from 'astro:content';
 const kasi = (await getCollection('faqEntries', ({ data }) => {
   return data.published == true && data.faq_group == 1;
@@ -128,6 +125,7 @@ import Layout from '@/layouts/Layout.astro';
 <Layout
 	title={'Frequently Asked Questions | Toki Pona'}
 	description={'This is a test page.'}
+	draft
 >
 	<section style='grid-area: right;' class='right-toc'>
 				<ol>

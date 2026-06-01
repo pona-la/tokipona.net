@@ -7,8 +7,14 @@ import Navbar from "@/components/Navbar.astro";
 interface Props {
 	title: string;
 	description: string;
+	draft?: boolean;
 }
 const { title, description } = Astro.props;
+
+import { markDraft } from "@/utils/draft.ts";
+if (Astro.props.draft) {
+	markDraft(Astro.response);
+}
 ---
 
 <html lang='en'>

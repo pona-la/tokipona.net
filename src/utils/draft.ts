@@ -1,7 +1,5 @@
-import type { AstroGlobal } from "astro";
-
 // ni li toki tawa pali insa middleware.ts pi ilo pana e ni: lipu ni li pini ala, o pana ala e ona lon lipu suli.
-export function draft({ response }: AstroGlobal) {
+export function markDraft(response: { headers: Headers }) {
 	response.headers.append("x-draft", "true");
 }
 

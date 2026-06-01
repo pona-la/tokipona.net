@@ -3,14 +3,14 @@ import Layout from '@/layouts/Layout.astro';
 interface Props {
 	title: string;
 	description: string;
+	draft?: boolean;
     array: Array<{
 
     }>;
     faq_title: string;
 }
 
-const { title, description, array, faq_title} = Astro.props;
-
+const { title, description, draft, array, faq_title } = Astro.props;
 ---
 
 <style>
@@ -135,7 +135,7 @@ const { title, description, array, faq_title} = Astro.props;
 	}
 </style>
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} draft={draft}>
 	<section style='grid-area: right;' class='right-toc'>
 		<nav>
 			<ol>
