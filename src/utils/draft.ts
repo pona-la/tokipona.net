@@ -10,5 +10,5 @@ export function isDraftResponse(response: Response) {
 }
 
 export const RENDER_DRAFTS =
-	import.meta.env.DEV ||
+	import.meta.env.MODE === 'development' ||
 	(import.meta.env.CF_PAGES && import.meta.env.CF_PAGES_BRANCH !== "main");

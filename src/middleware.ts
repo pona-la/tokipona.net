@@ -10,7 +10,7 @@ export async function onRequest(context: APIContext, next: MiddlewareNext) {
 		// ni: tenpo kama la ilo pana lon li pana e lipu la, ni li lipu lon,
 		// li toki pi lon ala e ni 'mi lon ala.' nasin ni taso la ilo Aso li
 		// ken lon ala e lipu: mi pana e *ala*.
-		if (context.isPrerendered) {
+		if (import.meta.env.PROD) {
 			return new Response(null);
 		}
 

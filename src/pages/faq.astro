@@ -1,4 +1,7 @@
 ---
+import { draft } from "@/utils/draft.ts";
+draft(Astro);
+
 import { getCollection, getEntry } from 'astro:content';
 const kasi = (await getCollection('faqEntries', ({ data }) => {
   return data.published == true && data.faq_group == 1;
