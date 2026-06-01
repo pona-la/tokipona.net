@@ -1,8 +1,11 @@
 ---
+title: Is it useful to learn Toki Pona?
+faq_group: 2
+faq_index:  1
 published: true
+image: is-it-useful.png
+# simple: 
 ---
-
-## Is it useful to learn Toki Pona?
 
 Toki Pona is what you make of it. If you'd like to experience and participate in a vibrant and nerdy hobby subculture, then yes, Toki Pona is perfect for that. If you enjoy making art, music, stories, or games, then Toki Pona could be a wonderful new playground for you. If you want to make friends online and talk with them in this silly language you found, then Toki Pona is a perfect fit. If you want to have a secret language for you and your friends, then you can use Toki Pona for that!
 

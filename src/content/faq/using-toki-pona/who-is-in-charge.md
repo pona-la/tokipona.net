@@ -1,8 +1,11 @@
 ---
+title: Who is in charge of Toki Pona?
+faq_group: 2
+faq_index:  6
 published: true
+# image: 
+# simple: 
 ---
-
-## Who is the authority on Toki Pona?
 
 There is no grand or central authority that dictates how Toki Pona is spoken. Any changes that Toki Pona undergoes happen naturally and flow from community usage. In other words, Toki Pona is a living language.
 

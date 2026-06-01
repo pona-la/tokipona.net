@@ -4,7 +4,8 @@ image: what-is-tp.png
 title: What is Toki Pona?
 species: Tocciptonis kasae
 species_notes: "Before it was released to proliferate in the wild, Tocciptonis was developed in a lab from 2001-2014 to test whether an organism with a reduced amount of cell structures could manage to survive in natural contexts. Whimsically, racoons seem drawn to its scent."
-faq_index: 1.1
+faq_group: 1
+faq_index:  1
 simple: "A simple language somebody first designed. Now a community of people speaks it for real. It has only about 130 words and still functions as a language."
 ---
 

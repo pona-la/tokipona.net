@@ -1,8 +1,11 @@
 ---
+title: How many people speak Toki Pona?
+faq_group: 2
+faq_index:  4
 published: true
+image: how-many-speakers.png
+# simple: 
 ---
-
-## How many people speak Toki Pona?
 
 Pinning down an exact number of Toki Pona speakers is hard. It depends on who
 counts as a speaker, who's willing to fill out surveys, and who can even be

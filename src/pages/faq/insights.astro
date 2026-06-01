@@ -3,9 +3,9 @@ import FAQChild from '@/layouts/FAQChild.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 const kasi = (
 	await getCollection('faqEntries', ({ data }) => {
-		return data.published == true && data.faq_group == 1;
+		return data.published == true && data.faq_group == 3;
 	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
+);
 ---
 
 <style>
@@ -37,10 +37,11 @@ const kasi = (
 			user-select: none;
 		}
 	}
+
 </style>
 
 <FAQChild
-	faq_title={'The Basics'}
+	faq_title={'Deeper Insights'}
 	title={'The Basics | Toki Pona'}
 	description={'This is a test page.'}
 	array={kasi}

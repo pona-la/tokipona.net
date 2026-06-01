@@ -4,7 +4,8 @@ image: sound-like.png
 species: Kalames Taxus
 species_notes: "accusantium ea vel, autem laboriosam nemo repudiandae accusamus corporis, sint necessitatibus. Consectetur assumenda exercitationem, tenetur, atque est impedit minima autem repudiandae id vel obcaecati vero architecto!"
 
-faq_index: 1.5
+faq_group: 1
+faq_index:  6
 title: What does Toki Pona sound like?
 ---
 

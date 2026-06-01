@@ -1,50 +1,22 @@
 ---
-import * as howDoesItWork from '@/content/faq/how-does-it-work.md';
-import * as howLongToLearn from '@/content/faq/how-long-to-learn.md';
-import * as howManySpeakers from '@/content/faq/how-many-speakers.md';
-import * as howManyWords from '@/content/faq/how-many-words.md';
-import * as isItReal from '@/content/faq/is-it-real.md';
-import * as isItUseful from '@/content/faq/is-it-useful.md';
-import * as limits from '@/content/faq/limits.md';
-import * as proposingChanges from '@/content/faq/proposing-changes.md';
-import * as whatDoesItMean from '@/content/faq/what-does-it-mean.md';
-import * as whatIsItFor from '@/content/faq/what-is-it-for.md';
-import * as whatIsTokiPona from '@/content/faq/what-is-toki-pona.md';
-import * as whereIsItSpoken from '@/content/faq/where-is-it-spoken.md';
-import * as whoIsInCharge from '@/content/faq/who-is-in-charge.md';
-import * as whatSoundLike from '@/content/faq/what-sounds-like.md';
+import { getCollection, getEntry } from 'astro:content';
+const kasi = (await getCollection('faqEntries', ({ data }) => {
+  return data.published == true && data.faq_group == 1;
+})).sort(
+  (a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf(),
+);
 
+const waso = (await getCollection('faqEntries', ({ data }) => {
+  return data.published == true && data.faq_group == 2;
+})).sort(
+  (a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf(),
+);
+
+const soweli = (await getCollection('faqEntries', ({ data }) => {
+  return data.published == true && data.faq_group == 3;
+}));
 
 import Layout from '@/layouts/Layout.astro';
-
-const faq = [
-	whatIsTokiPona,
-	isItReal,
-	isItUseful,
-	howDoesItWork,
-	howLongToLearn,
-	whereIsItSpoken,
-	howManySpeakers,
-	whatIsItFor,
-	howManyWords,
-	limits,
-	proposingChanges,
-	whatDoesItMean,
-	whoIsInCharge,
-];
-
-// fetch all questions, omit the ones we already have
-// append any that were missing to the end
-const allEntries = import.meta.glob('@/content/faq/*.md', { eager: true });
-const manualImports = new Set(faq.map((item) => item.file));
-const autoImports = Object.values(allEntries).filter(
-	(item) => !manualImports.has(item.file) && item.frontmatter?.published,
-);
-faq.push(...autoImports);
-
-const headings = faq.flatMap((item) =>
-	item.getHeadings().filter((heading) => heading.depth <= 2),
-);
 ---
 
 <style>
@@ -56,6 +28,9 @@ const headings = faq.flatMap((item) =>
 	.small-toc {
 		display: none;
 		margin-bottom: 0.5rem;
+		max-width: 30em;
+        margin-inline: auto;
+
 	}
 	@media only screen and (max-width: 1200px) {
 		.right-toc {
@@ -121,6 +96,8 @@ const headings = faq.flatMap((item) =>
 	}
 
 
+
+
 </style>
 
 <Layout
@@ -128,77 +105,76 @@ const headings = faq.flatMap((item) =>
 	description={'This is a test page.'}
 >
 	<section style='grid-area: right;' class='right-toc'>
-		<!--  <h2>TaThe Basics
-
-    What is Toki Pona?
-    Isble of Contents</h2>
-		<nav>
-			<ol>
-				{
-					headings.map((item) => (
-						<li>
-							<a href={`#${item.slug}`}>{item.text}</a>
-						</li>
-					))
-				}
+				<ol>
+			{kasi.map((item) => 
+				<li><a href={`faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
+			{waso.map((item) => 
+				<li><a href={`faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
+			{soweli.map((item) => 
+				<li><a href={`faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
 			</ol>
-		</nav>-->
+
 	</section>
 	<section style='grid-area: left;'>
 		<h1>Frequently Asked Questions</h1>
+		<details class="small-toc">
+			<summary>
+				Table of Contents
+			</summary>
+			<ol>
+			{kasi.map((item) => 
+				<li><a href={`faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
+			{waso.map((item) => 
+				<li><a href={`faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
+			{soweli.map((item) => 
+				<li><a href={`faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
+			)}
+			</ol>
+
+
+
+		</details>
 
 		<h2>The Basics</h2>
-		<ul class='kasi'>
-			<li>
-				<img src='/sitelen/kasi/what-is-tp.png' />
-				<a href='/faq/basics'><span>What is Toki Pona?</span></a>
-			</li>
-			<li>
-				<img src='/sitelen/kasi/is-it-real.png' />
-				<a href='/faq/basics'><span>Is Toki Pona a real language?</span></a>
-			</li>
-			<li>
-				<img src='/sitelen/kasi/how-does-it-work.png' />
-				<a href='/faq/basics'><span>How does Toki Pona work with only 130 words?</span></a>
-			</li>
-			<li>
-				<img src='/sitelen/kasi/meaning.png' />
+		<ul class="kasi">
 
-				<a href='/faq/basics'><span>What does “Toki Pona” even mean?</span></a>
-			</li>
+		{kasi.map((item) => 
 			<li>
-				<img src='/sitelen/kasi/sound-like.png' />
-
-				<a href='/faq/basics'><span>What does Toki Pona sound like?</span></a>
+				<img src={`/sitelen/kasi/${item.data.image}`} />
+				<a href={`faq/basics/index.html#${item.id}`}><span>{item.data.title}</span></a>
 			</li>
+		)}
+				
 		</ul>
 
-		<!-- 
-		<h2>Using Toki Pona</h2>
-		What is Toki Pona for? Is it useful to learn Toki Pona? How long does it take
-		to learn Toki Pona? Where is Toki Pona from? Where is it spoken? How many
-		people speak Toki Pona? Deeper Insights into Toki Pona What are Toki Pona’s
-		limits? Can I propose changes to Toki Pona? Who is the authority on Toki Pona?
-		*Is Toki Pona like Newspeak from 1984? *Do Toki Pona speakers memorize thousands
-		of compound words? *Is AI good at Toki Pona? *What are new words in Toki Pona?
-		*What is a Tokiponido?
-		
-		-->
-		
+				<h2>Using Toki Pona</h2>
+		<ul class="kasi">
 
-		<!--<details open class='small-toc'>
-			<summary>Table of Contents</summary>
-			<ol>
-				{
-					headings.map((item) => (
-						<li>
-							<a href={`#${item.slug}`}>{item.text}</a>
-						</li>
-					))
-				}
-			</ol>
-		</details>-->
+		{waso.map((item) => 
+			<li>
+				<img src={`/sitelen/kasi/${item.data.image}`} />
+				<a href={`faq/using-toki-pona/index.html#${item.id}`}><span>{item.data.title}</span></a>
+			</li>
+		)}
+				
+		</ul>
 
-		<!--  {faq.map((item) => <item.Content />)}-->
+		<h2>Deeper Insights</h2>
+		<ul class="kasi">
+
+		{soweli.map((item) => 
+			<li>
+				<img src={`/sitelen/kasi/${item.data.image}`} />
+				<a href={`faq/insights/index.html#${item.id}`}><span>{item.data.title}</span></a>
+			</li>
+		)}
+				
+		</ul>
+
 	</section>
 </Layout>

@@ -1,8 +1,11 @@
 ---
+title: What are Toki Pona's limits?
+faq_group: 3
+# faq_index:  
 published: true
+# image: 
+# simple: 
 ---
-
-## What are Toki Pona's limits?
 
 There are no hard limits for what Toki Pona is able to communicate. It is a complete and usable language, and its limits are fluid, being regularly explored and pushed as Toki Pona speakers continue to speak it. In short, Toki Pona is only limited by the experiences and interests of its speakers, not by its capability.
 
