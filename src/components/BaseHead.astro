@@ -52,12 +52,14 @@ const { title, description } = Astro.props;
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={socialImageURL} />
 
+{import.meta.env.CF_PAGES_BRANCH === 'main' ?
 <!-- Analytics -->
 <script
 	is:inline
 	data-goatcounter={`${url_goatcounter}/count`}
 	async
 	src='//gc.zgo.at/count.js'></script>
+: ''}
 
 <!-- Toggle scripts -->
 <ScriptToggleDarkMode />
