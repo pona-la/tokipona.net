@@ -3,7 +3,8 @@ title: How long does it take to learn Toki Pona?
 faq_group: 2
 faq_index:  2
 published: true
-# image: 
+image: how-long-learn.png
+
 # simple: 
 ---
 Like all languages, the amount of time needed to learn Toki Pona depends a lot on the person learning. It is difficult and unreliable to measure how long it takes people to reach certain levels of proficiency, and in turn, this is because it is difficult to measure Toki Pona proficiency. To make this point, there are many speakers who do not identify as fluent, but who are more skilled than many of those who do identify as fluent. Relatedly, different Toki Pona speakers will claim to have taken a different amount of time to reach any specific levels of proficiency.
