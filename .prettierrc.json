@@ -10,5 +10,6 @@
 	],
 
 	"experimentalTernaries": true,
-	"singleQuote": false
+	"singleQuote": false,
+	"proseWrap": "always"
 }

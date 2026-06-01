@@ -28,6 +28,11 @@
     --foreground-muted: oklch(80% 0.02 60);
 }
 
+html {
+	scroll-padding: 2rem;
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -71,29 +76,9 @@ body {
 	z-index: 1000;
 }
 
-blockquote {
-	position: relative;
-	width: fit-content;
-	font-size: 1.125rem;
-	margin: 0;
-	padding: 0.5rem 1.5rem;
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 6px;
-		height: 100%;
-		background-color: var(--border);
-		border-radius: var(--rounding-small);
-	}
-}
-
 main {
 	width: min(var(--max-content-width), 80%);
 	margin: 0 auto;
-	margin-top: 1rem;
 	display: grid;
 	grid-template: "left left right" / 1fr 1fr 1fr;
 	column-gap: 0.5rem;
@@ -139,6 +124,7 @@ h2 {
 	font-size: 1.5rem;
 	width: 100%;
 	padding-bottom: 1rem;
+	text-wrap: balance;
 	text-align: center;
 	&::after {
 		content: "";
@@ -162,6 +148,25 @@ svg {
 	max-width: 100%;
 	height: auto;
 	margin: auto;
+}
+
+.prose {
+	line-height: 1.75;
+	display: grid;
+	grid-template-columns:
+		[full-start] 1fr
+		[main-start] min(65ch, 100%) [main-end]
+		1fr [full-end];
+	& > h2 {
+		grid-column: full;
+		padding-inline: max(0px, calc((100% - 65ch) / 2));
+	}
+	& > * {
+		grid-column: main;
+	}
+	& > p {
+		margin-top: 0;
+	}
 }
 
 details {
@@ -258,13 +263,6 @@ details {
 		border-radius: none;
 		font-size: 0.875rem;
 	}
-	blockquote {
-		padding: none;
-		text-align: center;
-		&::before {
-			display: none;
-		}
-	}
 	footer {
 		/* revert to more contrastive color when in front of sky color */
 		--scene-foreground: var(--foreground);
@@ -278,4 +276,8 @@ details {
 
 img {
 	max-width: 100%;
+}
+hr {
+	width: 30%;
+	border-radius: 4%;
 }

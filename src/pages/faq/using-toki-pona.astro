@@ -1,0 +1,97 @@
+---
+import FAQChild from '@/layouts/FAQChild.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+const kasi = (
+	await getCollection('faqEntries', ({ data }) => {
+		return data.published == true && data.faq_group == 2;
+	})
+).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
+---
+
+<style>
+	.intro {
+		border-radius: var(--rounding-small);
+		padding: 1em;
+		grid-column: 1 / 3;
+		border: 0.5em solid var(--scene-background);
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.garden {
+		width: 100%;
+		max-width: 50em;
+		margin: 0 auto;
+		display: flex;
+		background: var(--faq-child);
+		border-radius: var(--rounding-large);
+
+		mask:
+			radial-gradient(64.41px at 50% 87px, #000 99%, #0000 101%)
+				calc(50% - 60px) 0/120px 51% repeat-x,
+			radial-gradient(64.41px at 50% -57px, #0000 99%, #000 101%) 50%
+				30px/120px calc(51% - 30px) repeat-x,
+			radial-gradient(
+					64.41px at 50% calc(100% - 87px),
+					#000 99%,
+					#0000 101%
+				)
+				calc(50% - 60px) 100%/120px 51% repeat-x,
+			radial-gradient(
+					64.41px at 50% calc(100% + 57px),
+					#0000 99%,
+					#000 101%
+				)
+				50% calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
+
+		flex-wrap: nowrap;
+		position: relative;
+		top: 0.4em;
+		img {
+			max-width: 90%;
+			user-drag: none;
+			user-select: none;
+            margin-block: 3em;
+		}
+	}
+    body{
+        --faq-child: var(--scene-background);
+    }
+</style>
+
+<FAQChild
+	faq_title={'Using Toki Pona'}
+	title={'The Basics | Toki Pona'}
+	description={'This is a test page.'}
+	array={kasi}
+>
+	<div class='garden'>
+		{
+			kasi.map((item) => (
+				<div>
+					<img src={`/sitelen/kasi/${item.data.image}`} />
+				</div>
+			))
+		}
+	</div>
+
+	<div class='faq'>
+		<div class='intro'>
+			<p>
+                Toki Pona is a living language. What does that mean in practice?
+			</p><p>
+				Our flock of busy <a href='https://nimi.li/waso'>waso</a> is here to provide short summaries of the answers below. Give them a click!
+			</p>
+
+			<p>
+				<em
+					>Not new around here? Our FAQ has two more sections: <a
+						href=''>Using Toki Pona</a
+					> and <a href=''>Deeper Insights</a>.
+				</em>
+			</p>
+		</div>
+	</div>
+</FAQChild>
