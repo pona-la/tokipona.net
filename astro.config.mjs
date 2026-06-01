@@ -31,5 +31,8 @@ export default defineConfig({
 
 	integrations: [mdx(), sitemap()],
 
-	adapter: cloudflare(),
+	adapter: cloudflare({
+		// ni li suli. sina weka e ni la, pali insa middleware.ts li lukin lon ala e lipu la, ona li kama lon e lipu pi ijo insa ala. (???)
+		prerenderEnvironment: "node",
+	}),
 });
