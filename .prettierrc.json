@@ -9,5 +9,6 @@
 		}
 	],
 
-	"experimentalTernaries": true
+	"experimentalTernaries": true,
+	"singleQuote": false
 }
