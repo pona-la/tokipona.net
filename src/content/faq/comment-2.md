@@ -1,12 +1,11 @@
 ---
 title: DO NOT PUBLISH
 faq_group: -1
-faq_index:  -1
+faq_index: -1
 published: false
-# image: 
-# simple: 
+# image:
+# simple:
 ---
-
 
 {/\* NOTE: this section is NOT COMPLETE. do not uncomment. -jan Kekan San
 

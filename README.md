@@ -1,6 +1,8 @@
 # tokipona.net
 
-This homepage aims to serve as a quick introduction to [Toki Pona](https://tokipona.net/) for new people, dispel any common misconceptions, and link to frequently used community resources.
+This homepage aims to serve as a quick introduction to
+[Toki Pona](https://tokipona.net/) for new people, dispel any common
+misconceptions, and link to frequently used community resources.
 
 ## Contributing
 
@@ -12,9 +14,11 @@ This is a collaborative project brought to you by the Toki Pona community.
   </a>
 </div>
 
-Your help is welcome! Feel free to submit pull requests if you find anything that needs improvement.
+Your help is welcome! Feel free to submit pull requests if you find anything
+that needs improvement.
 
-Want to help but you're [new to Github? We can help!](https://github.com/pona-la/.github/blob/main/help/README.md)
+Want to help but you're
+[new to Github? We can help!](https://github.com/pona-la/.github/blob/main/help/README.md)
 
 You can also join the Discord and talk to the maintainers!
 

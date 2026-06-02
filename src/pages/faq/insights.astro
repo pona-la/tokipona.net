@@ -1,25 +1,22 @@
 ---
-import FAQChild from '@/layouts/FAQChild.astro';
-import { getCollection, getEntry, render } from 'astro:content';
-const kasi = (
-	await getCollection('faqEntries', ({ data }) => {
-		return data.published == true && data.faq_group == 3;
-	})
-);
+import FAQChild from "@/layouts/FAQChild.astro";
+import { getCollection, getEntry, render } from "astro:content";
+const kasi = await getCollection("faqEntries", ({ data }) => {
+	return data.published == true && data.faq_group == 3;
+});
 ---
 
 <style>
-
-    .intro {
+	.intro {
 		background-color: rgb(22, 33, 22);
 		color: lightcyan;
 		border-radius: var(--rounding-small);
 		padding: 1em;
 		grid-column: 1 / 3;
 
-        a {
-            color:inherit;
-        }
+		a {
+			color: inherit;
+		}
 	}
 
 	.garden {
@@ -37,17 +34,16 @@ const kasi = (
 			user-select: none;
 		}
 	}
-
 </style>
 
 <FAQChild
-	faq_title={'Deeper Insights'}
-	title={'The Basics | Toki Pona'}
-	description={'This is a test page.'}
+	faq_title={"Deeper Insights"}
+	title={"The Basics | Toki Pona"}
+	description={"This is a test page."}
 	draft
 	array={kasi}
 >
-	<div class='garden'>
+	<div class="garden">
 		{
 			kasi.map((item) => (
 				<div>
@@ -57,17 +53,20 @@ const kasi = (
 		}
 	</div>
 
-	<div class='faq'>
-		<div class='intro'>
+	<div class="faq">
+		<div class="intro">
+			<p>Curious about what Toki Pona is? This page covers the basics.</p><p>
+				We've recruited some <a href="https://nimi.li/kasi">kasi</a> to provide brief
+				summaries along the way. They will speak up if you give them a click.
+			</p>
 
-		<p>Curious about what Toki Pona is? This page covers the basics.</p><p>
-			We've recruited some <a href='https://nimi.li/kasi'>kasi</a> to provide
-			brief summaries along the way. They will speak up if you give them a click.
-		</p>
-
-		<p>
-			<em>Not new around here? Our FAQ has two more sections: <a href=''>Using Toki Pona</a> and <a href=''>Deeper Insights</a>.
-			</em>
-		</p>
-	    </div>
+			<p>
+				<em
+					>Not new around here? Our FAQ has two more sections: <a href=""
+						>Using Toki Pona</a
+					> and <a href="">Deeper Insights</a>.
+				</em>
+			</p>
+		</div>
+	</div>
 </FAQChild>

@@ -4,7 +4,10 @@ tags: ["language-learning", "new-perspective"] # order is fine
 notes: "*speaker sent this submission in both languages"
 ---
 
-I have been speaking Toki Pona for a bit over a year now, and it has changed the way I think. It has inspired me to write more, think more about what I'm saying, and learn more about other conlangs (constructed languages) and natlangs (natural languages). 
+I have been speaking Toki Pona for a bit over a year now, and it has changed the
+way I think. It has inspired me to write more, think more about what I'm saying,
+and learn more about other conlangs (constructed languages) and natlangs
+(natural languages).
 
 <details lang="tok">
 <summary>kepeken toki pona kin*</summary>

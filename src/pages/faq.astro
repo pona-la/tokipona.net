@@ -1,22 +1,22 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
-const kasi = (await getCollection('faqEntries', ({ data }) => {
-  return data.published == true && data.faq_group == 1;
-})).sort(
-  (a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf(),
-);
+import { getCollection, getEntry } from "astro:content";
+const kasi = (
+	await getCollection("faqEntries", ({ data }) => {
+		return data.published == true && data.faq_group == 1;
+	})
+).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
-const waso = (await getCollection('faqEntries', ({ data }) => {
-  return data.published == true && data.faq_group == 2;
-})).sort(
-  (a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf(),
-);
+const waso = (
+	await getCollection("faqEntries", ({ data }) => {
+		return data.published == true && data.faq_group == 2;
+	})
+).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
-const soweli = (await getCollection('faqEntries', ({ data }) => {
-  return data.published == true && data.faq_group == 3;
-}));
+const soweli = await getCollection("faqEntries", ({ data }) => {
+	return data.published == true && data.faq_group == 3;
+});
 
-import Layout from '@/layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <style>
@@ -29,8 +29,7 @@ import Layout from '@/layouts/Layout.astro';
 		display: none;
 		margin-bottom: 0.5rem;
 		max-width: 30em;
-        margin-inline: auto;
-
+		margin-inline: auto;
 	}
 	@media only screen and (max-width: 1200px) {
 		.right-toc {
@@ -49,7 +48,7 @@ import Layout from '@/layouts/Layout.astro';
 			}
 		}
 		&::marker {
-			content: counter(list-item) '  ';
+			content: counter(list-item) "  ";
 			color: var(--foreground-muted);
 			width: 2ch;
 			text-align: right;
@@ -75,30 +74,31 @@ import Layout from '@/layouts/Layout.astro';
 		display: grid;
 		grid-template-rows: max-content 1fr;
 	}
-	.ijo a{
+	.ijo a {
 		text-align: center;
 		display: grid;
 		text-decoration: none;
 		padding: 1em 0.25em;
 	}
-	.ijo span{
+	.ijo span {
 		align-self: center;
 	}
-	.ijo a::after{
+	.ijo a::after {
 		content: "";
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		right:0;
+		right: 0;
 		left: 0;
 	}
 
-	.kasi
-	{
+	.kasi {
 		li {
-			box-shadow: rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset, rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
+			box-shadow:
+				rgba(195, 187, 24, 0.25) 0px 30px 60px -12px inset,
+				rgba(239, 242, 205, 0.3) 0px 18px 36px -18px inset;
 		}
-		a{
+		a {
 			background-color: rgb(22, 33, 22);
 			color: lightcyan;
 		}
@@ -106,98 +106,123 @@ import Layout from '@/layouts/Layout.astro';
 	.waso {
 		li {
 			background-color: var(--scene-background);
-
 		}
-		a{
+		a {
 			background-color: rgb(52, 78, 58);
 			color: lightcyan;
-
-
 		}
-
 	}
-
-
-
-
 </style>
 
 <Layout
-	title={'Frequently Asked Questions | Toki Pona'}
-	description={'This is a test page.'}
+	title={"Frequently Asked Questions | Toki Pona"}
+	description={"This is a test page."}
 	draft
 >
-	<section style='grid-area: right;' class='right-toc'>
-				<ol>
-			{kasi.map((item) =>
-				<li><a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
-			{waso.map((item) =>
-				<li><a href={`/faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
-			{soweli.map((item) =>
-				<li><a href={`/faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
-			</ol>
-
+	<section style="grid-area: right;" class="right-toc">
+		<ol>
+			{
+				kasi.map((item) => (
+					<li>
+						<a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a>
+					</li>
+				))
+			}
+			{
+				waso.map((item) => (
+					<li>
+						<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
+							{item.data.title}
+						</a>
+					</li>
+				))
+			}
+			{
+				soweli.map((item) => (
+					<li>
+						<a href={`/faq/insights/index.html#${item.id}`}>
+							{item.data.title}
+						</a>
+					</li>
+				))
+			}
+		</ol>
 	</section>
-	<section style='grid-area: left;'>
+	<section style="grid-area: left;">
 		<h1>Frequently Asked Questions</h1>
 		<details class="small-toc">
-			<summary>
-				Table of Contents
-			</summary>
+			<summary> Table of Contents </summary>
 			<ol>
-			{kasi.map((item) =>
-				<li><a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
-			{waso.map((item) =>
-				<li><a href={`/faq/using-toki-pona/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
-			{soweli.map((item) =>
-				<li><a href={`/faq/insights/index.html#${item.id}`}>{item.data.title}</a></li>
-			)}
+				{
+					kasi.map((item) => (
+						<li>
+							<a href={`/faq/basics/index.html#${item.id}`}>
+								{item.data.title}
+							</a>
+						</li>
+					))
+				}
+				{
+					waso.map((item) => (
+						<li>
+							<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
+								{item.data.title}
+							</a>
+						</li>
+					))
+				}
+				{
+					soweli.map((item) => (
+						<li>
+							<a href={`/faq/insights/index.html#${item.id}`}>
+								{item.data.title}
+							</a>
+						</li>
+					))
+				}
 			</ol>
-
-
-
 		</details>
 
 		<h2>The Basics</h2>
 		<ul class="ijo kasi">
-
-		{kasi.map((item) =>
-			<li>
-				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`/faq/basics/index.html#${item.id}`}><span>{item.data.title}</span></a>
-			</li>
-		)}
-
+			{
+				kasi.map((item) => (
+					<li>
+						<img src={`/sitelen/kasi/${item.data.image}`} />
+						<a href={`/faq/basics/index.html#${item.id}`}>
+							<span>{item.data.title}</span>
+						</a>
+					</li>
+				))
+			}
 		</ul>
 
-				<h2>Using Toki Pona</h2>
+		<h2>Using Toki Pona</h2>
 		<ul class="ijo waso">
-
-		{waso.map((item) =>
-			<li>
-				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`/faq/using-toki-pona/index.html#${item.id}`}><span>{item.data.title}</span></a>
-			</li>
-		)}
-
+			{
+				waso.map((item) => (
+					<li>
+						<img src={`/sitelen/kasi/${item.data.image}`} />
+						<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
+							<span>{item.data.title}</span>
+						</a>
+					</li>
+				))
+			}
 		</ul>
 
 		<h2>Deeper Insights</h2>
 		<ul class="ijo">
-
-		{soweli.map((item) =>
-			<li>
-				<img src={`/sitelen/kasi/${item.data.image}`} />
-				<a href={`/faq/insights/index.html#${item.id}`}><span>{item.data.title}</span></a>
-			</li>
-		)}
-
+			{
+				soweli.map((item) => (
+					<li>
+						<img src={`/sitelen/kasi/${item.data.image}`} />
+						<a href={`/faq/insights/index.html#${item.id}`}>
+							<span>{item.data.title}</span>
+						</a>
+					</li>
+				))
+			}
 		</ul>
-
 	</section>
 </Layout>

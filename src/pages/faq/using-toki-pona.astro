@@ -1,8 +1,8 @@
 ---
-import FAQChild from '@/layouts/FAQChild.astro';
-import { getCollection, getEntry, render } from 'astro:content';
+import FAQChild from "@/layouts/FAQChild.astro";
+import { getCollection, getEntry, render } from "astro:content";
 const kasi = (
-	await getCollection('faqEntries', ({ data }) => {
+	await getCollection("faqEntries", ({ data }) => {
 		return data.published == true && data.faq_group == 2;
 	})
 ).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
@@ -31,19 +31,11 @@ const kasi = (
 		mask:
 			radial-gradient(64.41px at 50% 87px, #000 99%, #0000 101%)
 				calc(50% - 60px) 0/120px 51% repeat-x,
-			radial-gradient(64.41px at 50% -57px, #0000 99%, #000 101%) 50%
-				30px/120px calc(51% - 30px) repeat-x,
-			radial-gradient(
-					64.41px at 50% calc(100% - 87px),
-					#000 99%,
-					#0000 101%
-				)
+			radial-gradient(64.41px at 50% -57px, #0000 99%, #000 101%) 50% 30px/120px
+				calc(51% - 30px) repeat-x,
+			radial-gradient(64.41px at 50% calc(100% - 87px), #000 99%, #0000 101%)
 				calc(50% - 60px) 100%/120px 51% repeat-x,
-			radial-gradient(
-					64.41px at 50% calc(100% + 57px),
-					#0000 99%,
-					#000 101%
-				)
+			radial-gradient(64.41px at 50% calc(100% + 57px), #0000 99%, #000 101%)
 				50% calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
 
 		flex-wrap: nowrap;
@@ -53,22 +45,22 @@ const kasi = (
 			max-width: 90%;
 			user-drag: none;
 			user-select: none;
-            margin-block: 3em;
+			margin-block: 3em;
 		}
 	}
-    body{
-        --faq-child: var(--scene-background);
-    }
+	body {
+		--faq-child: var(--scene-background);
+	}
 </style>
 
 <FAQChild
-	faq_title={'Using Toki Pona'}
-	title={'The Basics | Toki Pona'}
-	description={'This is a test page.'}
+	faq_title={"Using Toki Pona"}
+	title={"The Basics | Toki Pona"}
+	description={"This is a test page."}
 	draft
 	array={kasi}
 >
-	<div class='garden'>
+	<div class="garden">
 		{
 			kasi.map((item) => (
 				<div>
@@ -78,19 +70,18 @@ const kasi = (
 		}
 	</div>
 
-	<div class='faq'>
-		<div class='intro'>
-			<p>
-                Toki Pona is a living language. What does that mean in practice?
-			</p><p>
-				Our flock of busy <a href='https://nimi.li/waso'>waso</a> is here to provide short summaries of the answers below. Give them a click!
+	<div class="faq">
+		<div class="intro">
+			<p>Toki Pona is a living language. What does that mean in practice?</p><p>
+				Our flock of busy <a href="https://nimi.li/waso">waso</a> is here to provide
+				short summaries of the answers below. Give them a click!
 			</p>
 
 			<p>
 				<em
-					>Not new around here? Our FAQ has two more sections: <a
-						href=''>Using Toki Pona</a
-					> and <a href=''>Deeper Insights</a>.
+					>Not new around here? Our FAQ has two more sections: <a href=""
+						>Using Toki Pona</a
+					> and <a href="">Deeper Insights</a>.
 				</em>
 			</p>
 		</div>
