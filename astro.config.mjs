@@ -1,7 +1,7 @@
 // @ts-check
-import { defineConfig, fontProviders } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';
-import mdx from '@astrojs/mdx';
+import { defineConfig, fontProviders } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
+import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
@@ -13,18 +13,18 @@ export default defineConfig({
 	// la ilo li ante e nasin li pana e ni. taso jan li kepeken ilo Aso lon ilo
 	// ona la ni li kama ala la, sona jan li pakala. lawa ni li tawa ni: ilo Aso
 	// pi pali ilo o sama ilo pana lon cloudflare.
-	trailingSlash: 'always',
+	trailingSlash: "always",
 
 	redirects: {
-		'/tp/Default.aspx': '/',
+		"/tp/Default.aspx": "/",
 	},
 
 	fonts: [
 		{
 			provider: fontProviders.fontsource(),
-			name: 'Andika',
-			cssVariable: '--font-andika',
-			styles: ['normal', 'italic'],
+			name: "Andika",
+			cssVariable: "--font-andika",
+			styles: ["normal", "italic"],
 			weights: [400, 700],
 		},
 	],

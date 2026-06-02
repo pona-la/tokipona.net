@@ -8,24 +8,24 @@
 	--border: oklch(87% 0.165 90);
 	--scene-background: oklch(83% 0.088 280);
 	--scene-foreground: oklch(99% 0.015 150);
-	--card-background: oklch(95% 0.090 60);
+	--card-background: oklch(95% 0.09 60);
 	--card-border: oklch(85% 0.145 60);
-	--highlight: oklch(50% 0.170 25);
-	--link: oklch(65% 0.260 270);
+	--highlight: oklch(50% 0.17 25);
+	--link: oklch(65% 0.26 270);
 	--foreground: oklch(16% 0.067 30);
 	--foreground-muted: oklch(45% 0.045 20);
 }
 .dark {
-    --scene-background: oklch(26% 0.060 280);
+	--scene-background: oklch(26% 0.06 280);
 	--scene-foreground: oklch(97% 0.02 60);
-    --background: oklch(19% 0.025 270);
-    --border: oklch(41% 0.110 270);
-    --card-background: oklch(30% 0.067 270);
-    --card-border: oklch(54% 0.160 270);
-    --highlight: oklch(69% 0.170 20);
-    --link: oklch(77% 0.200 270);
-    --foreground: oklch(97% 0.02 60);
-    --foreground-muted: oklch(80% 0.02 60);
+	--background: oklch(19% 0.025 270);
+	--border: oklch(41% 0.11 270);
+	--card-background: oklch(30% 0.067 270);
+	--card-border: oklch(54% 0.16 270);
+	--highlight: oklch(69% 0.17 20);
+	--link: oklch(77% 0.2 270);
+	--foreground: oklch(97% 0.02 60);
+	--foreground-muted: oklch(80% 0.02 60);
 }
 
 html {
@@ -65,13 +65,13 @@ body {
 }
 
 .skip-link {
-    position: absolute;
-    left: -9999px;
+	position: absolute;
+	left: -9999px;
 }
 .skip-link:focus {
-    left: 1rem;
-    top: 1rem;
-    background: var(--background);
+	left: 1rem;
+	top: 1rem;
+	background: var(--background);
 	color: var(--foreground);
 	padding: 0.5rem 1rem;
 	z-index: 1000;
@@ -218,7 +218,8 @@ details {
 			background-color: var(--foreground);
 			width: 1.25rem;
 			height: 1.25rem;
-			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='size-5'%3E%3Cpath fill-rule='evenodd' d='M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");	background-size: contain;
+			mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='size-5'%3E%3Cpath fill-rule='evenodd' d='M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");
+			background-size: contain;
 			background-repeat: no-repeat;
 			margin-top: -0.25rem;
 			margin-right: 0.25rem;

@@ -1,5 +1,5 @@
 ---
-import IframeSrcdoc from '@/components/IframeSrcdoc.astro';
+import IframeSrcdoc from "@/components/IframeSrcdoc.astro";
 interface Props {
 	name: string;
 	id: string;
@@ -30,12 +30,12 @@ const { name, id } = Astro.props;
 	}
 </style>
 
-<div class='container'>
+<div class="container">
 	<IframeSrcdoc
 		title={name}
-		frameborder='0'
-		allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-		referrerpolicy='strict-origin-when-cross-origin'
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		referrerpolicy="strict-origin-when-cross-origin"
 	>
 		<style is:inline>
 			html,
@@ -93,16 +93,16 @@ const { name, id } = Astro.props;
 			}
 		</style>
 		<img
-			class='thumbnail'
+			class="thumbnail"
 			src={`https://i.ytimg.com/vi_webp/${id}/mqdefault.webp`}
 		/>
 		<a
-			class='title'
+			class="title"
 			href={`https://www.youtube.com/watch?v=${id}`}
-			target='_blank'>{name}</a
+			target="_blank">{name}</a
 		>
-		<a class='play' href={`https://www.youtube.com/embed/${id}?autoplay=1`}>
-			<span class='playbutton'>▶</span>
+		<a class="play" href={`https://www.youtube.com/embed/${id}?autoplay=1`}>
+			<span class="playbutton">▶</span>
 		</a>
 	</IframeSrcdoc>
 </div>

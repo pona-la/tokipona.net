@@ -1,7 +1,7 @@
 ---
 import "@/styles/common.css";
 
-import BaseHead from '@/components/BaseHead.astro';
+import BaseHead from "@/components/BaseHead.astro";
 import Navbar from "@/components/Navbar.astro";
 
 interface Props {
@@ -17,7 +17,7 @@ if (Astro.props.draft) {
 }
 ---
 
-<html lang='en'>
+<html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
 	</head>
@@ -28,10 +28,12 @@ if (Astro.props.draft) {
 			<slot />
 		</main>
 		<footer>
-			Made for the Toki Pona community by many helping hands.<br>
+			Made for the Toki Pona community by many helping hands.<br />
 			Have a question? Want to contribute? Contact us at
-			<a href='mailto:kulupu@tokipona.net'>kulupu@tokipona.net</a>.<br>
-			Or jump into the code on <a href='https://github.com/pona-la/tokipona.net'>GitHub</a>.
+			<a href="mailto:kulupu@tokipona.net">kulupu@tokipona.net</a>.<br />
+			Or jump into the code on <a href="https://github.com/pona-la/tokipona.net"
+				>GitHub</a
+			>.
 		</footer>
 	</body>
 </html>

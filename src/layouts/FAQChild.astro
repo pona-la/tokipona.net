@@ -1,13 +1,11 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 interface Props {
 	title: string;
 	description: string;
 	draft?: boolean;
-    array: Array<{
-
-    }>;
-    faq_title: string;
+	array: Array<{}>;
+	faq_title: string;
 }
 
 const { title, description, draft, array, faq_title } = Astro.props;
@@ -22,8 +20,8 @@ const { title, description, draft, array, faq_title } = Astro.props;
 	.small-toc {
 		display: none;
 		margin-bottom: 0.5rem;
-        max-width: 30em;
-        margin-inline: auto;
+		max-width: 30em;
+		margin-inline: auto;
 	}
 	@media only screen and (max-width: 1200px) {
 		.right-toc {
@@ -42,7 +40,7 @@ const { title, description, draft, array, faq_title } = Astro.props;
 			}
 		}
 		&::marker {
-			content: counter(list-item) '  ';
+			content: counter(list-item) "  ";
 			color: var(--foreground-muted);
 			width: 2ch;
 			text-align: right;
@@ -89,15 +87,14 @@ const { title, description, draft, array, faq_title } = Astro.props;
 		}
 	}
 
-
 	.entry-wrap :global(h2) {
 		padding-left: 5.5rem;
 		margin-inline: 0;
 		text-align: left;
 	}
-    .entry-wrap{
-        margin-block: 2.5em;
-    }
+	.entry-wrap {
+		margin-block: 2.5em;
+	}
 	.summary {
 		width: 70vw;
 		max-width: 25em;
@@ -126,7 +123,6 @@ const { title, description, draft, array, faq_title } = Astro.props;
 		list-style-type: none;
 	}
 
-	
 	.summary {
 		z-index: 4;
 	}
@@ -136,7 +132,7 @@ const { title, description, draft, array, faq_title } = Astro.props;
 </style>
 
 <Layout title={title} description={description} draft={draft}>
-	<section style='grid-area: right;' class='right-toc'>
+	<section style="grid-area: right;" class="right-toc">
 		<nav>
 			<ol>
 				{
@@ -149,10 +145,10 @@ const { title, description, draft, array, faq_title } = Astro.props;
 			</ol>
 		</nav>
 	</section>
-	<section style='grid-area: left;'>
+	<section style="grid-area: left;">
 		<h1>{faq_title}</h1>
 
-		<details open class='small-toc'>
+		<details open class="small-toc">
 			<summary>Table of Contents</summary>
 			<ol>
 				{
@@ -164,74 +160,59 @@ const { title, description, draft, array, faq_title } = Astro.props;
 				}
 			</ol>
 		</details>
-		<div class='main-content'>
-                                			<slot />
+		<div class="main-content">
+			<slot />
 
-
-				{
-					array.map(async(item) => (
-						<article class='entry-wrap'>
-							<h2 id={item.id}>
-								{item.data.title}
-							</h2>
-							<div class='entry'>
-								<details class='plant'>
-									<summary class='plant'>
-										<img
-											alt='Show summary'
-											src={`/sitelen/kasi/${item.data.image}`}
-										/>
-									</summary>
-									<div
-										class='summary'
-										id={`icon${item.id}`}
-									>
-										{item.data.simple}
-									</div>
-								</details>
-								<div set:html={await (item.rendered).html} class='entry-content'>
-									<div class='space-maker' />
+			{
+				array.map(async (item) => (
+					<article class="entry-wrap">
+						<h2 id={item.id}>{item.data.title}</h2>
+						<div class="entry">
+							<details class="plant">
+								<summary class="plant">
+									<img
+										alt="Show summary"
+										src={`/sitelen/kasi/${item.data.image}`}
+									/>
+								</summary>
+								<div class="summary" id={`icon${item.id}`}>
+									{item.data.simple}
 								</div>
+							</details>
+							<div set:html={await item.rendered.html} class="entry-content">
+								<div class="space-maker" />
 							</div>
-						</article>
-					)
-				)
-				}
-			</div>
+						</div>
+					</article>
+				))
+			}
 		</div>
 	</section>
-    <script is:inline>
-	function lightDismiss() {
-        console.log("mu");
-
-		document.querySelectorAll('details.plant').forEach((details) => {
-            details.addEventListener('toggle', (event) => {
-                // Only run when the state changes to open
-                if (details.open) {
-                    // Define the outside click handler function
-                    const closeOnOutsideClick = (clickEvent) => {
-                        if (!details.contains(clickEvent.target)) {
-                            details.removeAttribute('open');
-                            // Self-cleanup: remove this listener immediately
-                            document.removeEventListener(
-                                'click',
-                                closeOnOutsideClick,
-                            );
-                        }
-                    };
-
-                    // Delay listener attachment slightly to prevent immediate triggering from the summary click
-                    setTimeout(() => {
-                        document.addEventListener(
-                            'click',
-                            closeOnOutsideClick,
-                        );
-                    }, 0);
-                }
-            });
-        });
-	}
-document.addEventListener("DOMContentLoaded", lightDismiss);
-</script>
-
 </Layout>
+<script is:inline>
+	function lightDismiss() {
+		console.log("mu");
+
+		document.querySelectorAll("details.plant").forEach((details) => {
+			details.addEventListener("toggle", (event) => {
+				// Only run when the state changes to open
+				if (details.open) {
+					// Define the outside click handler function
+					const closeOnOutsideClick = (clickEvent) => {
+						if (!details.contains(clickEvent.target)) {
+							details.removeAttribute("open");
+							// Self-cleanup: remove this listener immediately
+							document.removeEventListener("click", closeOnOutsideClick);
+						}
+					};
+
+					// Delay listener attachment slightly to prevent immediate triggering from the summary click
+					setTimeout(() => {
+						document.addEventListener("click", closeOnOutsideClick);
+					}, 0);
+				}
+			});
+		});
+	}
+	document.addEventListener("DOMContentLoaded", lightDismiss);
+</script>

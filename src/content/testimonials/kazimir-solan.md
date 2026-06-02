@@ -1,24 +1,100 @@
 ---
 author: "Kazimir Solan (wasoweli Kasimi)"
-tags: [ "mixed-feelings", "mental-health", "limitations", "community", "relationships", "difficulty"] #order
+tags: [
+    "mixed-feelings",
+    "mental-health",
+    "limitations",
+    "community",
+    "relationships",
+    "difficulty",
+  ] #order
 notes: "*translation added later by tokipona.net"
 ---
 
+articulating my thoughts on toki pona is a bit difficult, given any discussion
+of what i like or hate about the language has to reconcile the tensions between
+its origin as a constructed language with a design philosophy and concrete goals
+in mind and its current status as a living language with an active community.
+nonetheless, i would say i don't have a favorable opinion of either.
 
-articulating my thoughts on toki pona is a bit difficult, given any discussion of what i like or hate about the language has to reconcile the tensions between its origin as a constructed language with a design philosophy and concrete goals in mind and its current status as a living language with an active community. nonetheless, i would say i don't have a favorable opinion of either.
+what is toki pona for? i was initially tempted to repeat here the incendiary
+phrasing i used about two years ago with regards to toki pona's original design
+philosophy, but i think that piter keo and xerographicpaper have already
+addressed the topic of racial insensitivity in toki pona's design philosophy
+(the design philosophy being the closest thing that i can think of to what it
+would be _for_, giving that applying a functional perspective onto a living
+language is frankly nonsensical) in much more articulate terms than i would
+likely be able to (although the latter deleted their discussion of it). its
+other design goals, whether those be the ones stated by the creator or
+popularized in past iterations of the community, are all aspects it in my
+opinion fails at, and many i don't even value as positives in the first place.
+the idea of it impacting thought in any way is built atop naive whorfianism, the
+idea of it forcing honesty disregards that understatement and imposition of
+'softer' conceptual metaphors are methods of creating euphemisms just as common
+as making piles of jargon, and it goes without saying that all the ballyhooing
+about its easiness goes beyond the realm of common misconception into what is
+colloquially known as 'lying'.
 
-what is toki pona for? i was initially tempted to repeat here the incendiary phrasing i used about two years ago with regards to toki pona's original design philosophy, but i think that piter keo and xerographicpaper have already addressed the topic of racial insensitivity in toki pona's design philosophy (the design philosophy being the closest thing that i can think of to what it would be *for*, giving that applying a functional perspective onto a living language is frankly nonsensical) in much more articulate terms than i would likely be able to (although the latter deleted their discussion of it). its other design goals, whether those be the ones stated by the creator or popularized in past iterations of the community, are all aspects it in my opinion fails at, and many i don't even value as positives in the first place. the idea of it impacting thought in any way is built atop naive whorfianism, the idea of it forcing honesty disregards that understatement and imposition of 'softer' conceptual metaphors are methods of creating euphemisms just as common as making piles of jargon, and it goes without saying that all the ballyhooing about its easiness goes beyond the realm of common misconception into what is colloquially known as 'lying'.
+of course, against the modern landscape of the language as a living entity
+without purpose or goal, these criticisms turn to mere shadowboxing. still, the
+fact of the matter is that these are common narratives you can often find in
+older and more popular resources, as well as newer discussions, especially by
+outsiders, that build atop these resources due to their seniority and assumed
+officiality. something you might hear is that it is time to move past these
+narratives, but it seems to me that the community's understanding of what it
+means to 'move past' something neglects the fact that the past doesn't go
+anywhere once it has happened. the old metanarratives do not disappear from the
+historical record, and moving forward in an honest way would require the
+counterpoints to be pushed just as aggressively and publicly in the here and now
+as these points once were.
 
-of course, against the modern landscape of the language as a living entity without purpose or goal, these criticisms turn to mere shadowboxing. still, the fact of the matter is that these are common narratives you can often find in older and more popular resources, as well as newer discussions, especially by outsiders, that build atop these resources due to their seniority and assumed officiality. something you might hear is that it is time to move past these narratives, but it seems to me that the community's understanding of what it means to 'move past' something neglects the fact that the past doesn't go anywhere once it has happened. the old metanarratives do not disappear from the historical record, and moving forward in an honest way would require the counterpoints to be pushed just as aggressively and publicly in the here and now as these points once were. 
+does the toki pona community seem interested in doing so? from my perspective,
+not at all. for example, take the
+[r/tokipona response to piter keo's video on esperanto, toki pona, and ithkuil](https://www.reddit.com/r/tokipona/comments/1qdh75b/this_guy_said_toki_pona_is_a_racist_and/).
+the attempts at moving past the history of primitivism and noble-savage rhetoric
+were, at best, a statement that the community has supposedly already moved
+forwards, and at worst, out-of-hand dismissal of keo's argument whatsoever.
+maybe it's better on the discord side of the community, i wouldn't know as i
+have no access to it.
 
-does the toki pona community seem interested in doing so? from my perspective, not at all. for example, take the [r/tokipona response to piter keo's video on esperanto, toki pona, and ithkuil](https://www.reddit.com/r/tokipona/comments/1qdh75b/this_guy_said_toki_pona_is_a_racist_and/). the attempts at moving past the history of primitivism and noble-savage rhetoric were, at best, a statement that the community has supposedly already moved forwards, and at worst, out-of-hand dismissal of keo's argument whatsoever. maybe it's better on the discord side of the community, i wouldn't know as i have no access to it.
+i'm sure this whole tirade seems a bit impassioned for someone who hasn't even
+gotten into their _personal_ experience with toki pona, so i'll address that
+now. if you know me well, you're probably already aware of my struggles with
+mental illness and suicidality. on the rare occasions when i tried to talk about
+them in the medium of toki pona, i felt frustration at my own inability to
+articulate anything. this might just be a skill issue on my part, but in my
+experience all languages struggle with speaking about such entirely internal and
+qualia-based experiences, but toki pona is the worst offender when it comes to
+accuracy of approximation due to its exclusive use of superordinate terms
+(outside of jokes). combine this with the false advertising of the language as a
+panacea that was still commonplace during my time in the community and the
+result you find is a constant thought loop of 'why is this not working? i must
+be inherently defective'.
 
-i'm sure this whole tirade seems a bit impassioned for someone who hasn't even gotten into their *personal* experience with toki pona, so i'll address that now. if you know me well, you're probably already aware of my struggles with mental illness and suicidality. on the rare occasions when i tried to talk about them in the medium of toki pona, i felt frustration at my own inability to articulate anything. this might just be a skill issue on my part, but in my experience all languages struggle with speaking about such entirely internal and qualia-based experiences, but toki pona is the worst offender when it comes to accuracy of approximation due to its exclusive use of superordinate terms (outside of jokes). combine this with the false advertising of the language as a panacea that was still commonplace during my time in the community and the result you find is a constant thought loop of 'why is this not working? i must be inherently defective'. 
+at times, i even used my own mental supposition that toki pona was somehow a
+description of the truth of the world to actually _dismiss_ my own external
+problems that caused me literal nightmares by arguing to myself that because
+they weren't systemic they were just unimportant things i was needlessly whining
+about: '_ijo li suli ala la ona li suli ala_' (when something's not big, it's
+not important\*). it hurts to type this out, but i think it's true to say that
+if i were any more susceptible to false advertising than i was then, i would not
+still be here today.
 
-at times, i even used my own mental supposition that toki pona was somehow a description of the truth of the world to actually *dismiss* my own external problems that caused me literal nightmares by arguing to myself that because they weren't systemic they were just unimportant things i was needlessly whining about: '*ijo li suli ala la ona li suli ala*' (when something's not big, it's not important*). it hurts to type this out, but i think it's true to say that if i were any more susceptible to false advertising than i was then, i would not still be here today.
+with all this in mind, why do i still use toki pona at times and stay adjacent
+to the community? because, for better or for worse, i was a tokiponist. i
+experienced the language and its fandom at a formative time in my life, and i
+had some positive communal experiences through it. i met my ex-partner through
+this language, and there was a time i well and truly loved him. hell, i'm the
+designer of some Official™ merch. plus, toki pona's status as a very small
+language makes it an ideal springboard with a lot of room to grow for projects
+that expand (or contract, in tuki tiki's case) upon it. there is a reason that
+it has a number of descendants rivaling that of esperanto despite its much
+younger age. and collaborating on one of these tokiponidos with my
+aforementioned ex-partner has been one of the most close and psychologically
+intimate experiences i've ever had the opportunity of having.
 
-with all this in mind, why do i still use toki pona at times and stay adjacent to the community? because, for better or for worse, i was a tokiponist. i experienced the language and its fandom at a formative time in my life, and i had some positive communal experiences through it. i met my ex-partner through this language, and there was a time i well and truly loved him. hell, i'm the designer of some Official™ merch. plus, toki pona's status as a very small language makes it an ideal springboard with a lot of room to grow for projects that expand (or contract, in tuki tiki's case) upon it. there is a reason that it has a number of descendants rivaling that of esperanto despite its much younger age. and collaborating on one of these tokiponidos with my aforementioned ex-partner has been one of the most close and psychologically intimate experiences i've ever had the opportunity of having. 
-
-despite all my later realizations, i once loved toki pona and its community, and i once felt that toki pona and its community loved me, and i wouldn't have had it any other way. 
+despite all my later realizations, i once loved toki pona and its community, and
+i once felt that toki pona and its community loved me, and i wouldn't have had
+it any other way.
 
 valēte.
