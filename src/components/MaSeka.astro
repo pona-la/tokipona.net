@@ -112,15 +112,17 @@ const { name, maSekaId, youtubeId } = Astro.props;
 		</a>
 		<script is:inline>
 			async function loadThumbnail(img) {
-					const maSekaId = img.dataset.masakaid;
-					const youtubeId = img.dataset.youtubeid;				try {
+				const maSekaId = img.dataset.masakaid;
+				const youtubeId = img.dataset.youtubeid;
 
-					const res = await fetch(`https://seka.pona.la/api/videos/${maSekaId}`);
-					if (!res.ok) throw new Error('API failed');
+				try {
+
+					const res = await fetch(`https://seka.pona.la/api/v1/videos/${maSekaId}`);
+					if (!res.ok) throw new Error('ilo monsi li pana e pakala');
 
 					const data = await res.json();
 
-					const url = data.thumbnailPath;
+					const url = `https://seka.pona.la${data.thumbnailPath}`;
 
 					img.src = url;
 					img.dataset.loaded = "true";
