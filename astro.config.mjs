@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: import.meta.env.CF_PAGES_URL ?? "http://localhost/",
+	site: process.env.CF_PAGES_URL ?? "http://localhost/",
 
 	// tenpo ni la ilo cloudflare pages li pana e lipu. nasin ona la, sitelen
 	// palisa pini o lon a nimi ilo lipu - sina lukin lukin e lipu kepeken ni ala
@@ -35,4 +35,8 @@ export default defineConfig({
 		// ni li suli. sina weka e ni la, pali insa middleware.ts li lukin lon ala e lipu la, ona li kama lon e lipu pi ijo insa ala. (???)
 		prerenderEnvironment: "node",
 	}),
+
+	vite: {
+		envPrefix: ['PUBLIC_,', 'CF_'],
+	},
 });
