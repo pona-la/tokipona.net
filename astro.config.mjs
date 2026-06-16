@@ -17,6 +17,7 @@ export default defineConfig({
 	},
 	integrations: [mdx(), sitemap()],
 	adapter: cloudflare(),
+	site: "https://tokipona.net",
 	fonts: [
 		{
 			provider: fontProviders.fontsource(),
