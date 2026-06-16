@@ -6,7 +6,11 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: process.env.CF_PAGES_URL ?? "http://localhost/",
+	site:
+		process.env.CF_PAGES_BRANCH === "main" ? "https://tokipona.net"
+		: process.env.CF_PAGES_BRANCH ?
+			`https://${process.env.CF_PAGES_BRANCH}.tokipona-net-7fb.pages.dev`
+		:	"http://localhost/",
 
 	// tenpo ni la ilo cloudflare pages li pana e lipu. nasin ona la, sitelen
 	// palisa pini o lon a nimi ilo lipu - sina lukin lukin e lipu kepeken ni ala
@@ -37,6 +41,6 @@ export default defineConfig({
 	}),
 
 	vite: {
-		envPrefix: ['PUBLIC_,', 'CF_'],
+		envPrefix: ["PUBLIC_,", "CF_"],
 	},
 });
