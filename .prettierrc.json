@@ -1,12 +1,15 @@
 {
-	"arrowParens": "always",
-	"bracketSpacing": true,
+	"plugins": ["prettier-plugin-astro"],
+	"overrides": [
+		{
+			"files": "*.astro",
+			"options": {
+				"parser": "astro"
+			}
+		}
+	],
+
 	"experimentalTernaries": true,
-	"jsxSingleQuote": true,
-	"printWidth": 80,
-	"proseWrap": "always",
-	"semi": true,
-	"doubleQuote": true,
-	"trailingComma": "all",
-	"useTabs": true
+	"singleQuote": false,
+	"proseWrap": "always"
 }

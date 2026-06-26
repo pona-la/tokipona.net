@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Toki from "@/content/o-pali.astro";
+---
+
+<Layout title={"o pali"} description={"."} draft>
+	<style>
+		.badge {
+			display: flex;
+			justify-content: center;
+		}
+		iframe.form {
+			width: 100%;
+			min-height: 45em;
+		}
+	</style>
+	<section style="grid-area: left;" class="prose">
+		<h1>nasin pali pi lipu ilo ni</h1>
+		<Toki />
+	</section>
+	<section style="grid-area: right;" class="prose">
+		<h2 id="nasin-lipu-kuko">
+			o toki e wile sina kepeken <a
+				href="https://docs.google.com/forms/d/e/1FAIpQLSeZ_pGOxnm73syC1QnZG-jwrWMQA5-7MISBfRwF4bE6cmeLiQ/viewform"
+				>lipu toki nasin pi kulupu Kuko</a
+			>
+		</h2>
+		<section class="form" aria-labelled-by="nasin-lipu-kuko">
+			<iframe
+				width="100%"
+				height="700px"
+				src="https://docs.google.com/forms/d/e/1FAIpQLSeZ_pGOxnm73syC1QnZG-jwrWMQA5-7MISBfRwF4bE6cmeLiQ/viewform?embedded=true"
+				frameborder="0"
+				marginheight="0"
+				marginwidth="0">Loading…</iframe
+			>
+		</section>
+	</section>
+</Layout>

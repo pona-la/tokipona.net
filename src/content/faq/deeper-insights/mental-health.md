@@ -1,8 +1,12 @@
 ---
-published: false
----
+title: Can learning Toki Pona improve your mental health?
 
-## Can learning Toki Pona improve your mental health?
+faq_group: 3
+# faq_index:
+published: true
+# image:
+# simple:
+---
 
 Not exactly. Nothing about Toki Pona inherently has any effect on your mental
 health, whether positive or negative. This is a common misconception built on

@@ -1,16 +1,22 @@
 ---
 author: "Ĥvaŝen/jan kasen"
-tags: ["meet-new-people", "limitations", "new-perspective",   "community"] # order
+tags: ["meet-new-people", "limitations", "new-perspective", "community"] # order
 notes: "*speaker sent this submission in both languages"
 ---
 
-(1) In my opinion, Toki Pona means a window to a new world, where I can chat with other language learners.
+(1) In my opinion, Toki Pona means a window to a new world, where I can chat
+with other language learners.
 
-(2) Toki Pona is impractical and imprecise for communication, but extremely useful for simplifying thinking. At the same time, it is interesting and meaningful as a minimalist constructed language.
+(2) Toki Pona is impractical and imprecise for communication, but extremely
+useful for simplifying thinking. At the same time, it is interesting and
+meaningful as a minimalist constructed language.
 
-(3) For me, Toki Pona is a part of my life, but it doesn't greatly affect my life. The learning process itself is interesting, and it simplifies my thinking a little bit.
+(3) For me, Toki Pona is a part of my life, but it doesn't greatly affect my
+life. The learning process itself is interesting, and it simplifies my thinking
+a little bit.
 
-(4) I often use Toki Pona in online groups to communicate with others. (Absolutely, I haven't found any other Tokiponists in my city.)
+(4) I often use Toki Pona in online groups to communicate with others.
+(Absolutely, I haven't found any other Tokiponists in my city.)
 
 <details lang="eo">
 <summary>Ankaŭ en Esperanto*</summary>

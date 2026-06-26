@@ -1,19 +1,19 @@
 ---
 import DarkModeToggle from "@/components/DarkModeToggle.astro";
+import { RENDER_DRAFTS } from "@/utils/draft.ts";
 
 const links = [
-	{ name: "Home", href: "/" },
-	{ name: "FAQ", href: "/faq" },
-	{ name: "About", href: "/about" },
-	{ name: "Reviews", href: "/reviews" },
-
-];
+	{ name: "Home", href: "/", draft: true },
+	{ name: "FAQ", href: "/faq/", draft: true },
+	{ name: "About", href: "/about/", draft: true },
+	{ name: "Reviews", href: "/reviews/", draft: true },
+].filter((link) => !(link.draft && !RENDER_DRAFTS));
 ---
 
 <style>
 	nav {
 		width: min(80%, var(--max-content-width));
-		margin: 1rem auto 0.5rem auto;
+		margin: 0 auto 0.5rem auto;
 		background: var(--background);
 		border: 3px solid var(--border);
 		border-radius: var(--rounding-large);
@@ -56,8 +56,11 @@ const links = [
 		text-decoration: none;
 		padding: 0.25rem 0.75rem;
 		border-radius: var(--rounding-small);
-		transition: background 150ms, color 150ms;
-		&:hover, &.active {
+		transition:
+			background 150ms,
+			color 150ms;
+		&:hover,
+		&.active {
 			background: var(--card-background);
 			color: var(--primary);
 		}
@@ -83,16 +86,25 @@ const links = [
 	}
 </style>
 
-<nav>
-	<img src="/logo.png" alt="toki pona logo" class="logo">
-	<a href="/" class="name">tokipona.net</a>
-	<div role="separator"></div>
-	{links.map((link) => (
-		<a href={link.href} class:list={["link", Astro.url.pathname === link.href && "active"]}>
-			{link.name}
-		</a>
-	))}
-	<div class="toggle">
-		<DarkModeToggle />
-	</div>
-</nav>
+{
+	links.length ?
+		<nav>
+			<img src="/logo.png" alt="toki pona logo" class="logo" />
+			<a href="/" class="name">
+				tokipona.net
+			</a>
+			<div role="separator" />
+			{links.map((link) => (
+				<a
+					href={link.href}
+					class:list={["link", Astro.url.pathname === link.href && "active"]}
+				>
+					{link.name}
+				</a>
+			))}
+		</nav>
+	:	""
+}
+<div class="toggle">
+	<DarkModeToggle />
+</div>

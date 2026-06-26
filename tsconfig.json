@@ -5,7 +5,7 @@
 	"compilerOptions": {
 		"strictNullChecks": true,
 		"paths": {
-			"@/*": ["./src/*"],
-		},
-	},
+			"@/*": ["./src/*"]
+		}
+	}
 }

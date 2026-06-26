@@ -4,18 +4,17 @@ import Eng from "@/content/wilepona/eng.md";
 import Tok from "@/content/wilepona/tok.md";
 import Eo from "@/content/wilepona/eo.md";
 import Fr from "@/content/wilepona/fr.md";
-
 ---
 
-<html lang='en'>
+<html lang="en">
 	<head>
 		<BaseHead
-			title='toki kulupu pi wile pona'
-			description='A statement from members of the Toki Pona community.'
+			title="toki kulupu pi wile pona: A statement from members of the Toki Pona community."
+			description="A statement from members of the Toki Pona community."
 		/>
 		<link
-			href='https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap'
-			rel='stylesheet'
+			href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+			rel="stylesheet"
 		/>
 	</head>
 	<body>
@@ -23,26 +22,24 @@ import Fr from "@/content/wilepona/fr.md";
 		<h1>toki kulupu pi wile pona</h1>
 		<main>
 			<nav>
-				<button onclick='tok()'>toki pona</button>
-				<button onclick='eng()'>English</button>
-				<button onclick='eo()'>Esperanto</button>
-				<button onclick='fr()'>Français</button>
-
+				<button onclick="tok()">toki pona</button>
+				<button onclick="eng()">English</button>
+				<button onclick="eo()">Esperanto</button>
+				<button onclick="fr()">Français</button>
 			</nav>
-			<article lang="en" id='eng'>
+			<article lang="en" id="eng">
 				<Eng />
 			</article>
-			<article lang="tok" id='tok' style='display: none'>
+			<article lang="tok" id="tok" style="display: none">
 				<Tok />
 			</article>
-			<article lang="eo" id='eo' style='display: none'>
+			<article lang="eo" id="eo" style="display: none">
 				<Eo />
 			</article>
 
-			<article lang="fr" id='fr' style='display: none'>
+			<article lang="fr" id="fr" style="display: none">
 				<Fr />
 			</article>
-
 		</main>
 	</body>
 </html>
@@ -73,8 +70,6 @@ import Fr from "@/content/wilepona/fr.md";
 		}
 		document.getElementById("fr").style.display = "initial";
 	}
-
-
 </script>
 <style is:global>
 	body {
@@ -144,14 +139,13 @@ import Fr from "@/content/wilepona/fr.md";
 		color: #00c;
 		text-underline-offset: 2px;
 	}
-	.backto{
+	.backto {
 		max-width: 730px;
 		display: block;
 		margin: 0 auto;
-
 	}
-	#footnote-label{
-		display:none;
+	#footnote-label {
+		display: none;
 	}
 
 	@media only screen and (max-width: 400px) {
