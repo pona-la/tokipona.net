@@ -31,6 +31,7 @@ export default defineConfig({
 		compress(),
 	],
 	adapter: cloudflare(),
+	site: "https://tokipona.net",
 	fonts: [
 		{
 			provider: fontProviders.fontsource(),
