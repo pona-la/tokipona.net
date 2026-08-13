@@ -115,6 +115,16 @@ const { title, description, draft, array, faq_title, nextLink, prevLink, nextTex
 		color: lightcyan;
 	}
 
+		:global(.faq){
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		background-color: var(--background);
+	}
+:global(section){
+	padding-inline: 0;
+}
+
 	.summary {
 		position: absolute;
 		left: inherit;
@@ -155,79 +165,56 @@ const { title, description, draft, array, faq_title, nextLink, prevLink, nextTex
 		}
 	}
 
+	.entry-section{
+		position: relative;
+
+		.entry-wrap {
+			break-inside: avoid;
+			max-width: 42em;
+			margin: 3em auto;
+
+		}
+	}
+	.entry-content :global(p) {
+		margin-bottom: 1em;
+	}
 </style>
 
-<Layout title={title} description={description} draft={draft}>
-	<section style="grid-area: right;" class="right-toc">
-		<nav>
-			<ol>
-				{
-					array.map((item) => (
-						<li>
-							<a href={`#${item.id}`}>{item.data.title}</a>
-						</li>
-					))
-				} 
-			</ol>
-		</nav>
-	</section>
-	<section style="grid-area: left;">
-		<h1>{faq_title}</h1>
 
-		<details open class="small-toc">
-			<summary>Table of Contents</summary>
-			<ol>
+
+<div class="entry-section">
+
+
+				<slot />
+
+	
 				{
-					array.map((item) => (
-						<li>
-							<a href={`#${item.id}`}>{item.data.title}</a>
-						</li>
+					array.map(async (item) => (
+						<article class="entry-wrap">
+							<h2 id={item.id}>{item.data.title}</h2>
+							<div class="entry">
+								<details class="plant">
+									<summary class="plant">
+										<img
+											alt="Show summary"
+											src={`/sitelen/kasi/${item.data.image}`}
+										/>
+									</summary>
+									<div class="summary" id={`icon${item.id}`}>
+										{item.data.simple}
+									</div>
+								</details>
+								<div set:html={await item.rendered.html} class="entry-content">
+									<div class="space-maker" />
+								</div>
+							</div>
+						</article>
 					))
 				}
-			</ol>
-		</details>
-		<div class="main-content">
-			<slot />
-
-			{
-				array.map(async (item) => (
-					<article class="entry-wrap">
-						<h2 id={item.id}>{item.data.title}</h2>
-						<div class="entry">
-							<details class="plant">
-								<summary class="plant">
-									<img
-										alt="Show summary"
-										src={`/sitelen/kasi/${item.data.image}`}
-									/>
-								</summary>
-								<div class="summary" id={`icon${item.id}`}>
-									{item.data.simple}
-								</div>
-							</details>
-							<div set:html={await item.rendered.html} class="entry-content">
-								<div class="space-maker" />
-							</div>
-						</div>
-					</article>
-				))
-			}
+</div>
 		</div>
-		<div class="faqnext">
-{ prevLink ?	
-			<a class="prev" href={prevLink}>Previous</a>
-			:""
 
-}
-{ nextLink?			<div>
-				<span>Next FAQ section:</span>
-				<span><a href={nextLink}>{nextText}</a></span>
-			</div> : ""
-}
 
-		</div>
-	</section>
-</Layout>
 <script is:inline>
 	function lightDismiss() {
 		console.log("mu");

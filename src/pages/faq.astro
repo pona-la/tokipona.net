@@ -20,6 +20,11 @@ const soweli = (
 
 import Layout from "@/layouts/Layout.astro";
 import { compiledContent as toki } from "@/content/rapid-fire.md";
+import Basic from "@/pages/faq/basics.astro";
+import Using from "@/pages/faq/using-toki-pona.astro";
+
+import Insights from "@/pages/faq/insights.astro";
+
 ---
 
 <style>
@@ -211,50 +216,14 @@ import { compiledContent as toki } from "@/content/rapid-fire.md";
 				}
 			</ol>
 		</details>
+<Basic />
+<Using />
+<Insights />
 
-		<h2>The Basics</h2>
-		<ul class="ijo kasi">
-			{
-				kasi.map((item) => (
-					<li>
-						<img src={`/sitelen/kasi/${item.data.image}`} />
-						<a href={`/faq/basics/index.html#${item.id}`}>
-							<span>{item.data.title}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
-
-		<h2>Using Toki Pona</h2>
-		<ul class="ijo waso">
-			{
-				waso.map((item) => (
-					<li>
-						<img src={`/sitelen/kasi/${item.data.image}`} />
-						<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
-							<span>{item.data.title}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
-
-		<h2>Deeper Insights</h2>
-		<ul class="ijo soweli">
-			{
-				soweli.map((item) => (
-					<li>
-						<img src={`/sitelen/kasi/${item.data.image}`} />
-						<a href={`/faq/insights/index.html#${item.id}`}>
-							<span>{item.data.title}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
 
 		<h2>Quick Questions</h2>
+
+
 
 		<div class="quick">
 			{
