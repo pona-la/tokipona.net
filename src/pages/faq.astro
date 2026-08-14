@@ -24,7 +24,6 @@ import Basic from "@/components/faq/basics.astro";
 import Using from "@/components/faq/using-toki-pona.astro";
 
 import Insights from "@/components/faq/insights.astro";
-
 ---
 
 <style>
@@ -129,22 +128,21 @@ import Insights from "@/components/faq/insights.astro";
 			color: rgb(29, 61, 61);
 		}
 	}
-	.quick{
+	.quick {
 		padding: 2em;
 		column-width: 15em;
 		gap: 2em;
-		.quick-child{
+		.quick-child {
 			break-inside: avoid;
 
-			h3{
+			h3 {
 				padding-top: 0em;
 				margin-top: 0em;
 			}
-			p{
+			p {
 				margin-bottom: 2em;
 			}
 		}
-
 	}
 </style>
 
@@ -158,25 +156,21 @@ import Insights from "@/components/faq/insights.astro";
 			{
 				kasi.map((item) => (
 					<li>
-						<a href={`/faq/basics/index.html#${item.id}`}>{item.data.title}</a>
+						<a href={`#${item.id}`}>{item.data.title}</a>
 					</li>
 				))
 			}
 			{
 				waso.map((item) => (
 					<li>
-						<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
-							{item.data.title}
-						</a>
+						<a href={`#${item.id}`}>{item.data.title}</a>
 					</li>
 				))
 			}
 			{
 				soweli.map((item) => (
 					<li>
-						<a href={`/faq/insights/index.html#${item.id}`}>
-							{item.data.title}
-						</a>
+						<a href={`#${item.id}`}>{item.data.title}</a>
 					</li>
 				))
 			}
@@ -190,46 +184,43 @@ import Insights from "@/components/faq/insights.astro";
 				{
 					kasi.map((item) => (
 						<li>
-							<a href={`/faq/basics/index.html#${item.id}`}>
-								{item.data.title}
-							</a>
+							<a href={`#${item.id}`}>{item.data.title}</a>
 						</li>
 					))
 				}
 				{
 					waso.map((item) => (
 						<li>
-							<a href={`/faq/using-toki-pona/index.html#${item.id}`}>
-								{item.data.title}
-							</a>
+							<a href={`#${item.id}`}>{item.data.title}</a>
 						</li>
 					))
 				}
 				{
 					soweli.map((item) => (
 						<li>
-							<a href={`/faq/insights/index.html#${item.id}`}>
-								{item.data.title}
-							</a>
+							<a href={`#${item.id}`}>{item.data.title}</a>
 						</li>
 					))
 				}
 			</ol>
 		</details>
-<Basic />
-<Using />
-<Insights />
 
+		<Basic />
+		<Using />
+		<Insights />
 
 		<h2>Quick Questions</h2>
 
-
-
 		<div class="quick">
 			{
+				//generated with claude's help because i don't know astro
 				(async () => {
 					let fuck = (await toki()).split("<h3").slice(1);
-					return fuck.map((a) => <div class="quick-child" set:html={"<h3" + a}> </div>);
+					return fuck.map((a) => (
+						<div class="quick-child" set:html={"<h3" + a}>
+							{" "}
+						</div>
+					));
 				})()
 			}
 		</div>
