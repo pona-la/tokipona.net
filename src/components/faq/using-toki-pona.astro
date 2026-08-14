@@ -1,5 +1,5 @@
 ---
-import FAQChild from "@/layouts/FAQChild.astro";
+import FAQChild from "@/components/faq/FAQChild.astro";
 import { getCollection, getEntry, render } from "astro:content";
 const kasi = (
 	await getCollection("faqEntries", ({ data }) => {
@@ -74,8 +74,8 @@ const kasi = (
 	</div>
 
 	<div class="faq">
-		<div class="intro">
-			<h1>Using Toki Pona</h1>
+		<div class="intro waso">
+			<h2>Using Toki Pona</h2>
 			
 		</div>
 	</div>
