@@ -88,9 +88,14 @@
   description: Twenty-two of Beatrix Potter's animal stories translated into Toki Pona by jan Ke Tami and jan Pulepo. 
   link: https://lipumonsuta.neocities.org/
   img: 
+- name: Fingtam Toki Pona Stories 
+  category: reading
+  description: "Three primary works that each tell one story at three times (Beginner, Lower Intermediate, Upper Intermediate). Translated by jan Ne and with audio read-along by jan Po, physical editions of the Fingtam books can be ordered on Amazon, while PDFs are available free online."
+  link: https://www.fincxjejo.com/toki-pona-stories
+  img: 
 - name: Beginner Texts in Toki Pona
   category: reading
-  description: Small and large works, over 15K+ words in total, all original and authored by jan Lakuse. Features side-by-side English translations and Sitelen Pona.
+  description: A collection of mini to medium to massive works, totalling over 15K+ words of original Toki Pona narratives, featuring literal English translations and Sitelen Pona. Authored by jan Lakuse.
   link: https://raacz.neocities.org/toki-pona/beginner-material
   img: 
 - name: utala musi pi toki pona
