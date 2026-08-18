@@ -10,6 +10,7 @@ const { name, category, withImg } = Astro.props;
 			justify-content: center;
 			gap: 1em;
 			margin: 0;
+			margin-block-end: 2em;
 			padding: 0;
 
 			img {
@@ -22,7 +23,7 @@ const { name, category, withImg } = Astro.props;
 				display: grid;
 				width: 10em;
 				text-align: center;
-				grid-template-rows: auto 3em 1fr;
+				grid-template-rows: auto 2.25em 1fr;
 
 				a:not(:has(img)) {
                     grid-row: 2 / 3;

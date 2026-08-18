@@ -1,0 +1,47 @@
+---
+// ToolsList.astro
+// Renders the full hierarchy of headings + lists from tools.yaml.
+//
+// Relies on @rollup/plugin-yaml so that .yaml files can be imported
+// directly as JS modules. Add it to astro.config.mjs:
+//
+//   import { defineConfig } from "astro/config";
+//   import yaml from "@rollup/plugin-yaml";
+//
+//   export default defineConfig({
+//     vite: {
+//       plugins: [yaml()],
+//     },
+//   });
+
+import categories from "@/data/tools.yaml";
+import ToolsSection from "./ToolsSection.astro";
+
+interface ToolItem {
+  name: string;
+  description?: string | null;
+  link?: string | null;
+}
+
+interface ToolCategory {
+  category: string;
+  children: (ToolItem | ToolCategory)[];
+}
+
+const data = categories as unknown as ToolCategory[];
+---
+
+<style>
+    .tools-list{
+        padding-inline: 1em;
+        margin: 0 auto;
+        column-width: 15em;
+        column-count: 2;
+    }
+    .tools-list .tool-entry { background-color: pink;
+    }
+</style>
+
+<div class="tools-list">
+  {data.map((node) => <ToolsSection node={node} level={2} />)}
+</div>

@@ -5,22 +5,22 @@
   img: https://wasona.com/favicon.png
 - name: sona.pona.la
   category: reference
-  description: Toki Pona's community wiki, a treasure trove of articles, links and information about language, its community, and its history. Constantly being updated with new information, everyone is invited to contribute.
+  description: Toki Pona's community wiki, a gold mine of articles, links and information about language, its community, and its history. Constantly being updated with new information, everyone is invited to contribute.
   link: https://sona.pona.la/
   img: https://static.wikitide.net/sonaponawiki/e/ec/sona_pona_%28provisional%29.png
 - name: nimi.li
   category: reference
-  description: "An interactive dictionary for Toki Pona that brings together defintions and notes from various sources. It also serves as a reference for various writing systems, the sign language Luka Pona, usage statistics, and more."
+  description: "An interactive dictionary for Toki Pona that brings together definitions and notes from various sources. It also serves as a reference for various writing systems, the sign language Luka Pona, usage statistics, and more."
   link: https://nimi.li/
   img: https://nimi.li/favicon.png
 - name: lipu Linku
   category: reference
-  description: "lipu Linku maintains a community-sourced dictionary and collects other data, including usage data, tracks experimental 'sandbox' words, and also maintains a repository of Sitelen Pona fonts."
+  description: "lipu Linku maintains a community-sourced multilingual dictionary and collects other data, including usage data, tracks experimental 'sandbox' words, and also maintains a repository of Sitelen Pona fonts."
   link: https://linku.la/
   img: https://linku.la/favicon.png
 - name: lipu pi jan Ne
   category: reference
-  description: jan Ne's website is a long-consulted community resource for those interested in Toki Pona as it is presented in Sonja Lang's 2014 publication. It mirrors a copy of the original dictionary and place names, as well as other excertps from the book and from the creator's early published work.
+  description: jan Ne's website is a long-consulted community resource for those interested in Toki Pona as it is presented in Sonja Lang's 2014 publication. It mirrors a copy of the original dictionary and place names, as well as other excerpts from the book and from the creator's early published work.
   link: https://jan-ne.github.io/tp/
   img: https://jan-ne.github.io/janNelaso.svg
 - name: SPPTA
@@ -33,7 +33,6 @@
   description: "A English-TP dictionary which seeks to demonstrate different ways translation works through contextualized, example sentences. Still under development."
   link: https://kemeka.pona.la/
   img: https://kemeka.pona.la/favicon.svg
-
 - name: "o pilin e toki pona #opetp"
   category: course
   description: Using comprehensible input, jan Telakoman uses pictures and gestures to get you learning Toki Pona subconsciously through immersion. Thirty videos designed to be watched over one month; are you up to the challenge?
@@ -46,7 +45,7 @@
   img: /sitelen/resources/munKS.jpg
 - name: lipu sona pona
   category: course
-  description: Made by jan Lentan in 2021 and translated to German, Spanish, Esperanto, Polish, Portuguese, Russian and Chinese, this text-based course teaches the language's grammar and vocaulary in  13 lessons and various translation excercises. 
+  description: Made by jan Lentan in 2021 and translated to German, Spanish, Esperanto, Polish, Portuguese, Russian and Chinese, this text-based course teaches the language's grammar and vocabulary across thirteen lessons and various translation exercises. 
   link: https://lipu-sona.pona.la/
   img: /sitelen/resources/janLentan.png
 - name: lipu sona mi pi toki pona
@@ -67,12 +66,12 @@
 - name: Toki Pona in 18 minutes
   category: course
   description: a short video lesson covering all of Toki Pona's grammar
-  link:
+  link: https://youtube.com/watch?v=5phj5Ae80h8
   img: 
 - name: o kama sona e sitelen pona
   category: course
   description: jan Same teaches the Sitelen Pona writing system in 13 video lessons
-  link:
+  link: https://www.youtube.com/watch?v=Uze2LKVN-2E&list=PLJjeLfR6etE69KRFWQB1guBjfWIw8NN75
   img: 
 - name: lipu tenpo
   category: reading
@@ -86,7 +85,7 @@
   img: 
 - name: toki soweli tan jan Beatrix Potter
   category: reading
-  description: 22 of Beatrix Potter's animal stories translated into Toki Pona by jan Ke Tami and jan Pulepo. 
+  description: Twenty-two of Beatrix Potter's animal stories translated into Toki Pona by jan Ke Tami and jan Pulepo. 
   link: https://lipumonsuta.neocities.org/
   img: 
 - name: Beginner Texts in Toki Pona
@@ -101,7 +100,7 @@
   img: 
 - name: lipu monsuta
   category: reading
-  description: A toki pona horror anthology with five releases. 
+  description: A Toki Pona horror anthology with five releases. 
   link: https://lipumonsuta.neocities.org/
   img: 
 - name: toki lili lon ma kasi
@@ -111,7 +110,7 @@
   img: bk
 - name: jan Polijan
   category: listening
-  description: jan Polijan's vlogs are spoken in clear, un-rushed Toki Pona. Each vlog shows him engaging in an activity or musing on a new idea while being surrounded by nature. Supported with strong visual context, jan Polijan's videos all have options for subtitles in Toki Pona, English and French. 
+  description: jan Polijan's vlogs are spoken in clear, unhurried Toki Pona. Each vlog shows him engaging in an activity or musing on a new idea while being surrounded by nature. Supported with strong visual context, jan Polijan's videos all have options for subtitles in Toki Pona, English and French. 
   link: https://www.youtube.com/@janPolijan/videos
   img: /sitelen/resources/polijan.jpg
 
@@ -127,7 +126,7 @@
   img: /sitelen/resources/kalamasin.jpeg
 - name: suno pi toki pona
   category: listening
-  description: suno pi toki pona, or Toki Pona Day, is a 24-hour livestream event held every year in the week of August. On their website, you can peruse the backlog of recordings.
+  description: suno pi toki pona, or Toki Pona Day, is a 24-hour live-stream event held every year in the week of August. On their website, you can peruse the backlog of recordings.
   link: https://suno.pona.la/
   img: /sitelen/resources/sptp.svg
 - name: jan Alonola
@@ -245,71 +244,104 @@
   description: ma Seka is a Toki Pona instance of PeerTube, a YouTube alternative based on peer-to-peer technology. All videos that are on ma Seka are related to Toki Pona, and it supports Sitelen Pona too!
   link: https://seka.pona.la
   img: /sitelen/resources/seka.png
-- name: telo misikeke
-  category: tools
-  description:
-  link: https://telo-misikeke.gitlab.io/
+- name: Nardi
+  category: 
+  description: musician
+  link: https://www.youtube.com/watch?v=nbCfvO9wRO4&list=PLdgsc587RAxnz2M-5_y2mWPHF8R6iRtFc&index=2
   img:
-- name: ilo Muni
-  category: tools
-  description:
-  link: https://ilo.muni.la/
+- name: kqa
+  category: musician
+  description: 
+  link: https://www.youtube.com/watch?v=LU6FdgR85VY
   img:
-- name: Sitelen Pona Dictionary
-  category: tools
-  description:
-  link: https://theotherwebsite.com/tokipona/
+- name: jan Usawi
+  category: musician
+  description: 
+  link: https://www.youtube.com/watch?v=zZNhdiWBp0M
   img:
-- name: number converter
-  category: tools
-  description:
-  link:
+- name: Toki Pona Radio
+  category: music
+  description: 
+  link: https://kute.pona.la/
   img:
-- name: ucsur converter
-  category: tools
-  description:
-  link:
+- name: Noise and Bells
+  category: musician
+  description: 
+  link:   https://www.youtube.com/watch?v=vldBdNavmDE
   img:
-- name: ajemi?
-  category: tools
-  description:
-  link:
+- name: jan Sepulon
+  category: musician
+  description: 
+  link: https://www.youtube.com/@jansepulon
   img:
-- name: wakalito
-  category: tools
-  description:
-  link:
+- name: Zotn
+  category: musician
+  description: 
+  link: https://www.youtube.com/watch?v=Y2Dw4aatlEE
   img:
-- name: cheat sheet
-  category: reference
-  description:
-  link:
+- name: tori-pochun
+  category: musician
+  description: 
+  link: https://youtu.be/RPkuTDrCPts
   img:
-- name: kili pan Juli's grammar
-  category: reference
-  description:
-  link:
+- name: jan Misali
+  category: musician
+  description: 
+  link: https://youtu.be/fWHZz7ZCXqw
   img:
-- name: ma.pona.la
-  category:
-  description:
-  link:
+- name: jan Sutine
+  category: musician
+  description: 
+  link: https://www.youtube.com/watch?v=uHnKSFwLL3o
   img:
-- name: CEFR proficiency scale
-  category: jan Telakoman
-  description: https://app.simplenote.com/p/jtRhb1
-  link:
+- name: kala pona
+  category: 
+  description: 
+  link: https://www.youtube.com/watch?v=ArGaIGXJCZE
   img:
-- name:
-  category:
-  description:
-  link:
+- name: jan Ke Tami
+  category: musician
+  description: 
+  link: https://youtu.be/XW0RyO7wfi4
   img:
-- name:
-  category:
-  description:
-  link:
+- name: 
+  category: 
+  description: 
+  link: 
   img:
-
-
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
+- name: 
+  category: 
+  description: 
+  link: 
+  img:
 

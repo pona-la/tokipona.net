@@ -4,8 +4,7 @@ const { entry, hideCat } = Astro.props;
 
 <li>
 	<a href={entry.link} target="_blank" rel="noopener noreferrer">
-		{entry.name}
-	</a>
+	{entry.name}</a>
 
 	<span class="cat">{hideCat ? "·" : entry.category }</span>
 

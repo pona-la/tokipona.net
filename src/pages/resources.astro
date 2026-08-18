@@ -10,11 +10,35 @@ import ContainerCircles from "@/components/resources/Container_Circles.astro";
 import Container_CubedBullets from "@/components/resources/Container_CubedBullets.astro";
 import Container_Simple from "@/components/resources/Container_Simple.astro";
 import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astro";
-
+import ToolList from "@/components/resources/ToolsList.astro"
 ---
 
 <Layout title={"o pali"} description={"."} draft>
 	<style>
+
+			@media  (min-height: 690px) {
+	.stuck-scroll {
+			position: sticky;
+			top: 1rem;
+		}
+	}
+	@media only screen and (max-width: 1200px) {
+		.stuck-scroll {
+			position: static;
+		}
+	}
+	@media only screen and (min-width: 1201px) {
+		.stuck-scroll{ /* Prevent side container's details from causing overflow where you can't view it*/
+			max-height: 100vh;
+			overflow: auto;
+			
+
+		}
+
+
+	}
+
+
 		
 		section :global(h2) {
 			text-align: left;
@@ -37,20 +61,115 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 			flex-direction: column;
 			justify-content: space-evenly;
 		}
+		.book{
+			width: 10em;
+			float: right;
+		}
+		.warning img{
+			width: 4em;
+			max-height: 4em;
+		}
+		.warning {
+			display: flex;
+			gap: 1em;
+		}
+		.spacer{
+			height: 2em;
+			width: 100%:
+		}
+		.right-toc nav{
+			background-color: var(--card-background);
+			max-width: 15em;
+			border-radius: var(--rounding-small);
+			padding: 0.5em 2em;
+			margin-inline: auto;
+		}
+		.right-toc h2::after{
+			display: none;
+		}
+		.right-toc h2{
+			padding: 0em;
+			margin: 0em;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			margin: 0.25em auto;
+			text-align: center;
+			border-block-end: 0.3em solid var(--card-border);
+		}
+		.right-toc ul{
+			font-size: 1.15em;
+			padding: 0em;
+			margin: 0em;
+
+		}
+		.right-toc ul a{
+			color: inherit;
+		}
+		.radio img{
+			max-width: 100%;
+			max-height: 13em;
+			margin: 0 auto;
+		}
+		.radio{
+			display: flex;
+			flex-direction: column;
+		}
+
 		@media (min-width: 30em) {
 			.communities-flex {
 				display: grid;
 				grid-template-columns: minmax(10em, 1.5fr) minmax(5em, 1fr);
 			}
+									.radio{
+				flex-direction: row;
+			}
+
+		}
+		@media(max-width: 25em){
+			.warning{
+				display: block;
+			}
+			.warning img{
+				width: 2em;
+				height: 2em;
+				margin: 0 auto;
+				display: block;
+			}
+			.warning span{
+				display: block;
+			}
+
 		}
 	</style>
-	<section style="grid-area: left;">
+		<section style="grid-area: right;" class="right-toc stuck-scroll" >
 		<h1>Resources</h1>
 
-		<h2>Communities</h2>
+		<nav aria-labelledby="the-toc">
+			<h2 id="the-toc">Table of Contents</h2>
+		<ul>
+			<li><a href="#communities">Communities</a></li>
+			<li><a href="#courses">Courses</a></li>
+			<li><a href="#reference">Reference Material</a></li>
+			<li><a href="#reading">Reading Practice</a></li>
+			<li><a href="#listening">Listening Practice</a></li>
+						<li><a href="#music">Music</a></li>
 
-				<h3>Online</h3>
-				<ContainerCircles
+			<li><a href="#tools">Tools</a></li>
+
+		</ul>
+	</nav>
+			<p class="uncontained"><strong>A map to Toki Pona learning and community resources</strong>. For even more links check out the <a href="https://sona.pona.la/wiki/Main_Page">sona pona</a> wiki, which has its own articles for many of these categories.</p>
+
+	</section>
+
+	<section style="grid-area: left;">
+
+		<h2 id="communities">Communities</h2>
+			<p class="uncontained">Where to get involved? Where to ask questions, to get  feedback, to converse, to share your Toki Pona work? Join a community, <strong lang="tok"><em>o kama lon kulupu!</em></strong> </p>
+
+
+			<h3>Online</h3>
+			<ContainerCircles
 				name="Online"
 				category="community"
 				withImg={true}></ContainerCircles>
@@ -72,16 +191,15 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 
 				<h3>More communities</h3>
 				<p class="horizon">
-					A full list of all known Toki Pona communities is maintained on <a
+					There are many more communities besides the one's we've listed here. If you're looking for language-specific or place-specific communities,
+					or communities on platforms not listed here,
+					a full list of all known Toki Pona communities is maintained on <a
 						href="https://sona.pona.la/wiki/Communities"
-						>the sona pona wiki's "<strong>Communities</strong>" article</a
-					>
+						>the sona pona wiki's "<strong>Communities</strong>" article</a>.
 				</p>
 
 				<p>
-					If you're looking for language-specific or place-specific communities,
-					or communities on platforms not listed here, there's a good chance
-					that it is on this list.
+					A language isn't a language without people to speak it to. We highly encourage you to connect with other speakers!
 				</p>
 
 			</SeeMore>
@@ -89,7 +207,9 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 		</div>
 
 		<SinKulupu />
-		<h2>Courses</h2>
+		<h2 id="courses">Courses</h2>
+
+		<p class="uncontained">Start learning Toki Pona with one of the many community-authored courses available for free online.</p>
 
 		<ContainerSitelenToki name="Courses" withImg={true} category="course">
 			<li>
@@ -109,7 +229,7 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 			</li>
 		</ContainerSitelenToki>
 
-		<h2>Reference</h2>
+		<h2 id="reference">Reference</h2>
 
 		<ContainerSitelenLiliToki
 			name="Reference"
@@ -119,12 +239,13 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 		</ContainerSitelenLiliToki>
 
 
-		<h2>Reading Practice</h2>
+		<h2 id="reading">Reading Practice</h2>
+
+				<img class="book" alt="books on a shelf" src="/sitelen/resources/bookshelf.svg" />
 
 
-				<p class="uncontained">There is lots of Toki Pona material available for free online. <strong>Individual titles can be found listed at sona pona (<a href="https://sona.pona.la/wiki/Literature">Literature</a> | <a href="https://sona.pona.la/wiki/List_of_works_by_length">List of works by length</a> | <a href="https://sona.pona.la/wiki/Comics">Comics</a>) and on the digital library, <a href="https://lipu.pona.la/">lipu Lapo</a></strong>. Besides lipu Lapo, we've listed a couple of websites that host multiple works below:</p>
+				<p class="uncontained"><strong>Individual titles can be found listed at sona pona (<a href="https://sona.pona.la/wiki/Literature">Literature</a> | <a href="https://sona.pona.la/wiki/List_of_works_by_length">List of works by length</a> | <a href="https://sona.pona.la/wiki/Comics">Comics</a>) and on the digital library, <a href="https://lipu.pona.la/">lipu Lapo</a></strong>. Besides lipu Lapo, we've listed a couple of websites that host multiple works below:</p>
 
-				
 
 
 
@@ -137,9 +258,15 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 								<p class="uncontained"> Another excellent way to practice reading in Toki Pona is through video games: speakers made <a href="https://itch.io/jam/tu/results">32 games</a> in the 2026 pali musi game jam, and <a href="https://itch.io/jam/mu/results">34 games</a> in 2025. There are other titles of both original and translated available at sona.pona.la's <a href="https://sona.pona.la/wiki/Games#Video_games">Games</a> article.</p>
 
 
-				<p class="uncontained"> <strong>Be careful about purchasing reading material from Amazon</strong>; a good portion of the titles available there are generated by LLMs and are almost completely incoherent, published by people who do not know Toki Pona and are seeking to capitalize off of this niche market.</p>
 
-		<h2>Listening Practice</h2>
+				<p class="uncontained warning"> 
+																	<img  alt="Danger warning sign" src="/sitelen/resources/warning.svg"/>
+
+					<span><strong>Be careful about purchasing reading material from Amazon</strong>; a good portion, (though not all), of the titles available there are generated by LLMs and are almost completely incoherent, published by people who do not know Toki Pona and are seeking to capitalize off of this niche market.</span></p>
+
+<div class="spacer"></div>
+
+		<h2 id="listening">Listening Practice</h2>
 
 
 		<p class="uncontained">There are Toki Pona vloggers, streamers, and presenters on YouTube, but they can but a little hard to find. Hopefully these organized (and regularly updated) <strong>playlists</strong> can help!</p>
@@ -153,6 +280,7 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 
 
 
+		<p class="uncontained">Folks looking to build their receptive listening skills may find these resources particularly helpful:</p>
 
 
 			<ContainerSitelenToki
@@ -162,9 +290,16 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 		>
 				
 		</ContainerSitelenToki>
+<h2 id="music">Music</h2>
+<p class="uncontained">There are <a href="https://www.youtube.com/playlist?list=PLc7R2x5fn6AqRFUR9JzGIqh0FMdtsXRnH
+">over 1000 Toki Pona songs</a> available on YouTube and <a href="https://open.spotify.com/playlist/0jNVZdISRRIuExWtYov6I1">more than 8 hours of Toki Pona songs</a> streaming on Spotify.</p>
+
+<p class="uncontained radio"><span>If this sounds overwhelming, you might wish to check out the <a href="https://kute.pona.la">Toki Pona radio</a>. Listen on your browser, YouTube or Twitch.</span><a aria-hidden="true" href="https://kute.pona.la/"><img style="margin:0 auto"src="https://kute.pona.la/header.svg" alt="" /></a></p>
 
 
-<h2>Tools</h2>
+<h2 id="tools">Tools</h2>
+
+<ToolList></ToolList>
 
 				<Container_Simple
 				name="Online"
@@ -173,8 +308,5 @@ import Container_Thumbnail from "@/components/resources/Container_Thumbnail.astr
 
 
 
-	</section>
-	<section style="grid-area: right;" class="prose">
-		<p>Sidebar Content Here</p>
 	</section>
 </Layout>
