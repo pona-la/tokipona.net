@@ -28,3 +28,5 @@ pnpm-debug.log*
 
 # other package managers
 package-lock.json
+
+todo.md

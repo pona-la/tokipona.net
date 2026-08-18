@@ -20,7 +20,7 @@ above.
 ## Is this the official Toki Pona website?
 
 Toki Pona's community is decentralized. There is **no single person** that can
-act on behalf all Toki Pona speakers, and there is **no single group** that can
+act on behalf of all Toki Pona speakers, and there is **no single group** that can
 speak for the many autonomous groups that speak Toki Pona.
 
 With this in mind, **tokipona.net** is maintained by many contributors. Through

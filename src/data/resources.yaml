@@ -27,7 +27,7 @@
   category: reference
   description: "The Sitelen Pona Publishers and Typographers Association outlines Common Sitelen Pona (sitelen pona kulupu), a standard that outlines the basic characteristics of Sitelen Pona, developed through a mix of community surveys and consultations with Sitelen Pona experts. "
   link: https://sitelenpona.net/
-  img: /src/assets/sitelen/resources/sppta.png
+  img: /src/assets/sitelen/resources/sppta.svg
 - name: lipu Kemeka
   category: reference
   description: "An English-TP dictionary which seeks to demonstrate different possibilities for translation with contextualized example sentences. Still under development."
@@ -131,9 +131,9 @@
   img: /src/assets/sitelen/resources/kalamasin.jpeg
 - name: suno pi toki pona
   category: listening
-  description: suno pi toki pona, or Toki Pona Day, is a 24-hour live-stream event held every year in the week of August. On their website, you can peruse the backlog of recordings.
+  description: suno pi toki pona, or Toki Pona Day, is a 24-hour live-stream event held every year in the week of August. Each year, there are lectures, games, live music, lots of little nuggets that can be used for receptive practice. The entire event is recorded and uploaded to YouTube. On the suno.pona.la website, you can peruse the full catalogue of past suno pi toki pona recordings.
   link: https://suno.pona.la/
-  img: /src/assets/sitelen/resources/sptp.svg
+  img: /src/assets/sitelen/resources/sptp.png
 - name: jan Alonola
   category: channel
   description:

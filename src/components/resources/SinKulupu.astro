@@ -1,26 +1,37 @@
 ---
 import sinKulupuImage  from "@/assets/sitelen/resources/sin-kulupu.svg"
+import { Image } from 'astro:assets';
 ---
 
-<h3>Mailing List</h3>
 
 <style>
 		.sin-kulupu{
 			display: grid;
-			grid-template-columns: 1fr 3fr;
-			column-gap: 1em;
-			align-items: center;
-			
+			padding-inline: 1em;
+			margin-block-start: -1em;
+		}
+		.skimg{
+			width: 100%;
+			height: auto;
+			max-width: 16em;
+			margin: 0 auto;
+			display: inline;
+		}
+		h3 {
+			margin-top: 2em;
+			display: block;
+			color: var(--foreground-muted)
+		}
+		h3 div{ 
+			margin-block-start: -1em;
+
 		}
 
 </style>
 
+	<h3><a href="https://sin-kulupu.pona.la/"><img alt="" class="skimg" src={sinKulupuImage.src} /></a> <div>NEWSLETTER</div></h3>
 
 		<div class="sin-kulupu">
-			<a href="https://sin-kulupu.pona.la/"><img alt="sin kulupu" src={sinKulupuImage.src} /></a>
-			<div>
 				<p>With Toki Pona content posted all over the place, how does anyone keep track of it all? The link-focused newsletter, <strong>sin kulupu</strong>, regularly collects new Toki Pona content from around the web and sends it directly to your inbox.
 				<strong>Visit the <a href="https://sin-kulupu.pona.la/">sin kulupu website</a> to browse past newsletters</strong>, each a treasure trove of  Toki Pona content.</p>
-			</div>
-		
 		</div>
