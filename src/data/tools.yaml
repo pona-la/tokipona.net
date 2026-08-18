@@ -83,7 +83,7 @@
     description: Convert between arabic numerals, nasin nanpa pona, and abbreviated nasin nanpa pona
     link: https://antetokipona.infinityfreeapp.com/nnp/
   - name: number converter
-    description: Type a number, convert it to various Toki Pona numbering systems
+    description: Type a number to convert it to various Toki Pona numbering systems
     link: https://linku.la/tools
   - name: ilo nanpa
     description: Experiment with a Toki-Pona-based calculator (still in development)

@@ -30,7 +30,7 @@
   img: /src/assets/sitelen/resources/sppta.png
 - name: lipu Kemeka
   category: reference
-  description: "A English-TP dictionary which seeks to demonstrate different ways translation works through contextualized, example sentences. Still under development."
+  description: "An English-TP dictionary which seeks to demonstrate different possibilities for translation with contextualized example sentences. Still under development."
   link: https://kemeka.pona.la/
   img: /src/assets/sitelen/resources/kemeka.svg
 - name: "o pilin e toki pona #opetp"
@@ -80,7 +80,7 @@
   img: 
 - name: StoryWeaver Picture Books
   category: reading
-  description: StoryWeaver offers a bunch of illustrated that anyone can translate into any language; Toki Pona speakers have translated selected titles into Toki Pona!
+  description: StoryWeaver offers a bunch of illustrated that anyone can translate into any language; Speakers have translated selected titles into Toki Pona!
   link: https://storyweaver.org.in/en/search?language=Toki%20Pona
   img: 
 - name: toki soweli tan jan Beatrix Potter
@@ -90,7 +90,7 @@
   img: 
 - name: Fingtam Toki Pona Stories 
   category: reading
-  description: "Three primary works that each tell one story at three times (Beginner, Lower Intermediate, Upper Intermediate). Translated by jan Ne and with audio read-along by jan Po, physical editions of the Fingtam books can be ordered on Amazon, while PDFs are available free online."
+  description: "Three primary works that each tell one story at three times (Beginner, Lower Intermediate, Upper Intermediate). Translated by jan Ne and with audio read-along by jan Po, physical editions of the Fingtam books can be ordered on Amazon, while PDFs are freely available online."
   link: https://www.fincxjejo.com/toki-pona-stories
   img: 
 - name: Beginner Texts in Toki Pona
