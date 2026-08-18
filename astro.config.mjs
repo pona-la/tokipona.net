@@ -3,7 +3,10 @@ import { defineConfig, fontProviders } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import yaml from '@rollup/plugin-yaml';
+import yaml from "@rollup/plugin-yaml";
+import browserslist from "browserslist";
+import browserslistToEsbuild from "browserslist-to-esbuild";
+import { browserslistToTargets } from "lightningcss";
 
 let siteUrl = "http://localhost";
 
@@ -57,6 +60,15 @@ export default defineConfig({
 	}),
 
 	vite: {
+		build: {
+			target: browserslistToEsbuild(),
+			cssMinify: "lightningcss",
+		},
+		css: {
+			lightningcss: {
+				targets: browserslistToTargets(browserslist()),
+			},
+		},
 		plugins: [yaml()],
 		envPrefix: ["PUBLIC_,", "CF_", "WORKERS_"],
 	},

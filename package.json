@@ -8,6 +8,12 @@
 		"preview": "astro preview",
 		"astro": "astro"
 	},
+	"browserslist": [
+		"> 0.2%",
+		"last 4 versions",
+		"Firefox ESR",
+		"not dead"
+	],
 	"dependencies": {
 		"@astrojs/cloudflare": "^13.7.0",
 		"@astrojs/mdx": "^5.0.6",
@@ -17,6 +23,9 @@
 		"bsky-embed": "^0.2.7"
 	},
 	"devDependencies": {
+		"browserslist": "^4.28.8",
+		"browserslist-to-esbuild": "^2.1.1",
+		"lightningcss": "^1.33.0",
 		"prettier": "^3.9.6",
 		"prettier-plugin-astro": "^0.14.1"
 	}
