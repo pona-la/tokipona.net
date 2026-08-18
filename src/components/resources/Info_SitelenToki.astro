@@ -19,11 +19,12 @@ const image = entry.img ? resourceImages[entry.img]?.default : null;
 
 	<span class="cat">{hideCat ? "·" : entry.category }</span>
 
-	<a
+	<a 
 		aria-hidden="true"
 		href={entry.link}
 		target="_blank"
 		rel="noopener noreferrer"
+		tabindex="-1"
 	>
     {image && (isSvg
       ? <img src={image.src} alt="" />
