@@ -2,57 +2,57 @@
   category: course
   description: "This website offers a full Toki Pona crash-course. It teaches vocabulary, grammar, and the sitelen pona writing system using Duolingo-style quizzes and exercises to boost retention. Available in many languages: English · čeština · dansk · Deutsch · español · français · magyar · italiano · polski · português · Tagalog · русский · українська · العربية · עברית" 
   link: https://wasona.com/
-  img: https://wasona.com/favicon.png
+  img:  /src/assets/sitelen/resources/wasona.png
 - name: sona.pona.la
   category: reference
   description: Toki Pona's community wiki, a gold mine of articles, links and information about language, its community, and its history. Constantly being updated with new information, everyone is invited to contribute.
   link: https://sona.pona.la/
-  img: https://static.wikitide.net/sonaponawiki/e/ec/sona_pona_%28provisional%29.png
+  img:  /src/assets/sitelen/resources/sona-pona.png
 - name: nimi.li
   category: reference
   description: "An interactive dictionary for Toki Pona that brings together definitions and notes from various sources. It also serves as a reference for various writing systems, the sign language Luka Pona, usage statistics, and more."
   link: https://nimi.li/
-  img: https://nimi.li/favicon.png
+  img:  /src/assets/sitelen/resources/nimi-li.png
 - name: lipu Linku
   category: reference
   description: "lipu Linku maintains a community-sourced multilingual dictionary and collects other data, including usage data, tracks experimental 'sandbox' words, and also maintains a repository of Sitelen Pona fonts."
   link: https://linku.la/
-  img: https://linku.la/favicon.png
+  img:  /src/assets/sitelen/resources/linku.png
 - name: lipu pi jan Ne
   category: reference
   description: jan Ne's website is a long-consulted community resource for those interested in Toki Pona as it is presented in Sonja Lang's 2014 publication. It mirrors a copy of the original dictionary and place names, as well as other excerpts from the book and from the creator's early published work.
   link: https://jan-ne.github.io/tp/
-  img: https://jan-ne.github.io/janNelaso.svg
+  img:  /src/assets/sitelen/resources/janNe.svg
 - name: SPPTA
   category: reference
   description: "The Sitelen Pona Publishers and Typographers Association outlines Common Sitelen Pona (sitelen pona kulupu), a standard that outlines the basic characteristics of Sitelen Pona, developed through a mix of community surveys and consultations with Sitelen Pona experts. "
   link: https://sitelenpona.net/
-  img: /sitelen/resources/sppta.png
+  img: /src/assets/sitelen/resources/sppta.png
 - name: lipu Kemeka
   category: reference
   description: "A English-TP dictionary which seeks to demonstrate different ways translation works through contextualized, example sentences. Still under development."
   link: https://kemeka.pona.la/
-  img: https://kemeka.pona.la/favicon.svg
+  img: /src/assets/sitelen/resources/kemeka.svg
 - name: "o pilin e toki pona #opetp"
   category: course
   description: Using comprehensible input, jan Telakoman uses pictures and gestures to get you learning Toki Pona subconsciously through immersion. Thirty videos designed to be watched over one month; are you up to the challenge?
   link: https://youtube.com/playlist?list=PLwYL9_SRAk8EXSZPSTm9lm2kD_Z1RzUgm
-  img: /sitelen/resources/opetp.png
+  img: /src/assets/sitelen/resources/opetp.png
 - name: Learn Toki Pona!
   category: course
   description: In this video series, jan Kekan San teaches introductory Toki Pona alongside its sitelen pona writing system using engaging lectures and a virtual whiteboard. Also, he's a literal star. 
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WEeCO7C2oc1LTWgkoBC8rvT
-  img: /sitelen/resources/munKS.jpg
+  img: /src/assets/sitelen/resources/munKS.jpg
 - name: lipu sona pona
   category: course
   description: Made by jan Lentan in 2021 and translated to German, Spanish, Esperanto, Polish, Portuguese, Russian and Chinese, this text-based course teaches the language's grammar and vocabulary across thirteen lessons and various translation exercises. 
   link: https://lipu-sona.pona.la/
-  img: /sitelen/resources/janLentan.png
+  img: /src/assets/sitelen/resources/janLentan.png
 - name: lipu sona mi pi toki pona
   category: course
   description: A cute, colourful course designed by soweli Sika in 2022. Translated to French, Italian, and Norwegian. 
   link: https://lipu-sona.comforttiger.space/
-  img: /sitelen/resources/sowelisika.png
+  img: /src/assets/sitelen/resources/sowelisika.png
 - name: toki pona lessons 
   category: course
   description: a work-in-progress instructional video series in English
@@ -117,23 +117,23 @@
   category: listening
   description: jan Polijan's vlogs are spoken in clear, unhurried Toki Pona. Each vlog shows him engaging in an activity or musing on a new idea while being surrounded by nature. Supported with strong visual context, jan Polijan's videos all have options for subtitles in Toki Pona, English and French. 
   link: https://www.youtube.com/@janPolijan/videos
-  img: /sitelen/resources/polijan.jpg
+  img: /src/assets/sitelen/resources/polijan.jpg
 
 - name: Duostories
   category: listening
   description: The Duostories project allows you to practice your Toki Pona comprehension with interactive exercises and stories. Text-to-speech narration is integrated into the stories. 
   link: https://duostories.org/tok-en
-  img: /sitelen/resources/duostories.png
+  img: /src/assets/sitelen/resources/duostories.png
 - name: kalama sin
   category: listening
   description: A Toki Pona podcast. Different speakers come on and present naturally about various topics. Most of the episodes have transcripts to help you follow along. kalama sin is available wherever you get your podcasts, including YouTube, where most episodes have subtitles available.
   link: https://redcircle.com/shows/kalama-sin
-  img: /sitelen/resources/kalamasin.jpeg
+  img: /src/assets/sitelen/resources/kalamasin.jpeg
 - name: suno pi toki pona
   category: listening
   description: suno pi toki pona, or Toki Pona Day, is a 24-hour live-stream event held every year in the week of August. On their website, you can peruse the backlog of recordings.
   link: https://suno.pona.la/
-  img: /sitelen/resources/sptp.svg
+  img: /src/assets/sitelen/resources/sptp.svg
 - name: jan Alonola
   category: channel
   description:
@@ -163,67 +163,67 @@
   category: community
   description: Discord community for learners.
   link: https://discord.gg/ChC6qtVsSE 
-  img: /sitelen/ma-ale/kama-sona.png
+  img: /src/assets/sitelen/resources/kama-sona.png
 - name: ma pona pi toki pona
   category: community
   description: Discord community, TP's largest community space. 
   link: https://discord.gg/mapona
-  img: /sitelen/ma-ale/ma-pona.webp
+  img: /src/assets/sitelen/resources/ma-pona.webp
 - name: ma mun 
   category: community
   description: Discord, cozy Toki-Pona immersion server. 
   link: https://discord.gg/kBdKdT4Zuq
-  img: /sitelen/ma-ale/ma-mun.png
+  img: /src/assets/sitelen/resources/ma-mun.png
 - name: r/tokipona
   category: community
   description: Reddit 
   link: https://reddit.com/r/tokipona
-  img: https://styles.redditmedia.com/t5_2s5z5/styles/communityIcon_rij8j6vfh6if1.png
-- name: Toki Pona VR
+  img:  /src/assets/sitelen/resources/reddit.png
+- name: MA Toki Pona VR
   category: community
   description: VRChat
   link: https://vrchat.com/home/group/grp_bfab3698-e131-4a25-b780-b7a2a1ba7e23
-  img:  https://upload.wikimedia.org/wikipedia/commons/4/45/Ma_Toki_Pona_VR_icon.svg
+  img:   /src/assets/sitelen/resources/mtpvr.svg
 - name: toki pona - jan pi wile pona taso
   category: community
   description: Telegram
   link: https://t.me/+TYSOh08FI0o3NTEy
-  img: /sitelen/resources/telekan.jpeg
+  img: /src/assets/sitelen/resources/telekan.jpeg
 - name: toki.social
   category: community
   description: Mastodon instance
   link: https://toki.social/
-  img: /sitelen/resources/mstdn.png
+  img: /src/assets/sitelen/resources/mstdn.png
 - name: ma telo pi toki pona
   category: community
   description: Fluxer
   link: https://fluxer.gg/FR8MorlA
-  img: /sitelen/resources/fluxer.png
+  img: /src/assets/sitelen/resources/fluxer.png
 - name: ma mun on Stoat
   category: community
   description: Bridged from Discord
   link: https://stt.gg/QQf0ZZd8
-  img: /sitelen/resources/stoat.png
+  img: /src/assets/sitelen/resources/stoat.png
 - name: Stories and Presentations
   category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WGtrg_4CURI3R4rp6ArHdsX
-  img: /sitelen/resources/Presentations.svg
+  img: /src/assets/sitelen/resources/Presentations.svg
 - name: Blogs and Conversations
   category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WF9RosKElwHUhAcx4TbCLv-
-  img: /sitelen/resources/Conversation.svg
+  img: /src/assets/sitelen/resources/Conversation.svg
 - name: Podcasts and News
   category: playlist
   description: 
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WFwq1JasXWsOdR7tOZNdApR
-  img: /sitelen/resources/Podcast.svg
+  img: /src/assets/sitelen/resources/Podcast.svg
 - name: Gaming
   category: playlist
   description:
   link: https://www.youtube.com/playlist?list=PLoLQoll2U6WE0LvFTjXUsRtYlS2GIoNVI
-  img: /sitelen/resources/Gaming.svg
+  img: /src/assets/sitelen/resources/Gaming.svg
 - name: Music Masterlist
   category: music
   description:
@@ -233,22 +233,22 @@
   category: inperson
   description: Seek out local Toki Pona speakers in your area using this map. 
   link: https://ma.pona.la
-  img:  /sitelen/ma-ale/lipu-ma.png
+  img:  /src/assets/sitelen/resources/lipu-ma.png
 - name: Annual North American Gathering
   category: inperson
   description: NYC 2026, Seattle 2025, Chicago 2024, Washington DC 2023. 
   link: https://kulupu.la/
-  img:  /sitelen/resources/amelika.png
+  img:  /src/assets/sitelen/resources/amelika.png
 - name: Annual European Gathering
   category: inperson
   description: Tiana 2026, Strasbourg 2025, Berlin 2024, Maastricht 2023, Vienna 2022
   link: https://sona.pona.la/wiki/tenpo_kulupu_pi_ma_Elopa
-  img: /sitelen/resources/elopa.png
+  img: /src/assets/sitelen/resources/elopa.png
 - name: ma Seka 
   category: listening 
   description: ma Seka is a Toki Pona instance of PeerTube, a YouTube alternative based on peer-to-peer technology. All videos that are on ma Seka are related to Toki Pona, and it supports Sitelen Pona too!
   link: https://seka.pona.la
-  img: /sitelen/resources/seka.png
+  img: /src/assets/sitelen/resources/seka.png
 - name: Nardi
   category: 
   description: musician

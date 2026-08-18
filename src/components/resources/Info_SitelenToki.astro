@@ -1,7 +1,18 @@
 ---
 const { entry, hideCat } = Astro.props;
+import { Image } from 'astro:assets';
+
+import { resourceImages } from "@/data/resourceImages";
+const isSvg = entry.img?.endsWith(".svg");
+const image = entry.img ? resourceImages[entry.img]?.default : null;
 ---
 
+<style>
+	img {
+  width: 100%;
+  height: auto;
+}
+</style>
 <li>
 	<a href={entry.link} target="_blank" rel="noopener noreferrer">
 	{entry.name}</a>
@@ -14,8 +25,10 @@ const { entry, hideCat } = Astro.props;
 		target="_blank"
 		rel="noopener noreferrer"
 	>
-		{entry.img && <img src={entry.img} alt="" />}
-	</a>
+    {image && (isSvg
+      ? <img src={image.src} alt="" />
+      : <Image src={image} alt="" />
+    )}</a>
 
 	{entry.description && <p>{entry.description}</p>}
 </li>
