@@ -9,9 +9,15 @@ interface Props {
 	nextLink?: string;
 	prevLink?: string;
 	nextText?: string;
+	images: Array<{}>;
+
 }
 
-const { title, description, draft, array, faq_title, nextLink, prevLink, nextText } = Astro.props;
+const { title, description, draft, array, faq_title, nextLink, prevLink, nextText, images } = Astro.props;
+
+import { Image } from 'astro:assets';
+import { faqImages } from "@/data/faqImages";
+
 
 
 ---
@@ -108,6 +114,8 @@ const { title, description, draft, array, faq_title, nextLink, prevLink, nextTex
 			border: 0.5em solid var(--card-border);
 			float: left;
 			background-color: var(--faq-child, var(--card-background));
+			width: 100%;
+			height: auto;
 		}
 	}
 	.faq :global(h3) {
@@ -265,9 +273,9 @@ const { title, description, draft, array, faq_title, nextLink, prevLink, nextTex
 							<div class="entry">
 								<details class="plant">
 									<summary class="plant">
-										<img
+										<Image
 											alt="Show summary"
-											src={`/sitelen/kasi/${item.data.image}`}
+											src={images[item.data.image]}
 										/>
 									</summary>
 									<div class="summary" id={`icon${item.id}`}>

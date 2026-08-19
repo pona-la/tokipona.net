@@ -7,6 +7,17 @@ const kasi = (
 	})
 ).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
+import { Image } from 'astro:assets';
+import { faqImages } from "@/data/faqImages";
+const imagesSRC = kasi.map((entry) => (entry.data.image ? faqImages["/src/assets/sitelen/faq/"+entry.data.image]?.default : null
+));
+const imageMap = Object.fromEntries(
+  imagesSRC
+    .filter((img) => img)
+    .map((img) => [img.src.split("/").pop().split("?")[0], img])
+);
+
+
 ---
 
 <style>
@@ -37,6 +48,9 @@ const kasi = (
 			max-width: 100%;
 			user-drag: none;
 			user-select: none;
+						width: 100%;
+			height: auto;
+
 		}
 	}
 </style>
@@ -49,15 +63,17 @@ const kasi = (
 	nextLink={undefined}
 	prevLink={"/faq/using-toki-pona/"}
 	nextText={undefined}
+	images={imageMap}
+
 
 
 	array={kasi}
 >
 	<div class="garden">
 		{
-			kasi.map((item) => (
+			imagesSRC.map((item) => (
 				<div>
-					<img src={`/sitelen/kasi/${item.data.image}`} />
+					<Image src={item} alt="" />
 				</div>
 			))
 		}
