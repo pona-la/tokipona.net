@@ -9,11 +9,10 @@ interface Props {
 	nextLink?: string;
 	prevLink?: string;
 	nextText?: string;
-	images: Array<{}>;
 
 }
 
-const { title, description, draft, array, faq_title, nextLink, prevLink, nextText, images } = Astro.props;
+const { title, description, draft, array, faq_title, nextLink, prevLink, nextText } = Astro.props;
 
 import { Image } from 'astro:assets';
 import { faqImages } from "@/data/faqImages";
@@ -38,15 +37,15 @@ import { faqImages } from "@/data/faqImages";
 					line-height: 1em;
 			&::after {
 			display: none;
-			}		
+			}
 
 
 		}
 	}
 
-	
 
-	
+
+
 	.right-toc {
 		position: sticky;
 		top: 1rem;
@@ -179,7 +178,7 @@ import { faqImages } from "@/data/faqImages";
 
 		grid-template-columns: auto 1fr;
 		align-items: center;
-		
+
 		.prev{
 			margin-left: 2em;
 		}
@@ -241,7 +240,7 @@ import { faqImages } from "@/data/faqImages";
 		scroll-margin-top: 3em;
 
 	}
-	
+
 
 
 
@@ -249,11 +248,11 @@ import { faqImages } from "@/data/faqImages";
 		background-color: var(--background);
     box-shadow:#c3bb1840 0 1.5em 3em -0.6em inset,#eff2cd4d 0 0.9em 1.8em -0.9em inset
   }
-  
+
 
 .entry-section:has(.waso)  img{    background-color:var(--scene-background)
-  
-  
+
+
 }
 .entry-section:has(.soweli)  img{    background-color:#000
   }
@@ -269,7 +268,7 @@ import { faqImages } from "@/data/faqImages";
 
 				<slot />
 
-	
+
 				{
 					array.map(async (item) => (
 						<article class="entry-wrap">
@@ -279,7 +278,7 @@ import { faqImages } from "@/data/faqImages";
 									<summary class="plant">
 										<Image
 											alt="Show summary"
-											src={images[item.data.image]}
+											src={faqImages[item.data.image]}
 										/>
 									</summary>
 									<div class="summary" id={`icon${item.id}`}>

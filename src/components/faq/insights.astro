@@ -11,11 +11,6 @@ import { Image } from 'astro:assets';
 import { faqImages } from "@/data/faqImages";
 const imagesSRC = kasi.map((entry) => (entry.data.image ? faqImages["/src/assets/sitelen/faq/"+entry.data.image]?.default : null
 ));
-const imageMap = Object.fromEntries(
-  imagesSRC
-    .filter((img) => img)
-    .map((img) => [img.src.split("/").pop().split("?")[0], img])
-);
 
 
 ---
@@ -63,20 +58,17 @@ const imageMap = Object.fromEntries(
 	nextLink={undefined}
 	prevLink={"/faq/using-toki-pona/"}
 	nextText={undefined}
-	images={imageMap}
 
 
 
 	array={kasi}
 >
 	<div class="garden">
-		{
-			imagesSRC.map((item) => (
-				<div>
-					<Image src={item} alt="" />
-				</div>
-			))
-		}
+		{kasi.map((entry) => (
+			entry.data.image ? <div>
+				<Image src={faqImages[entry.data.image]} alt="" />
+			</div> : ''
+		))}
 	</div>
 
 	<div class="faq soweli">
