@@ -18,15 +18,15 @@
       description: Have this transliterator attempt to transform a foreign word into a Toki Pona loan word
       link: https://jan-ne.github.io/tp/transliterator
     - name: sona pona's Place and Language Names
-      description: Reference the most recent community-proposed place and language names.
+      description: Reference the most recent community-proposed place and language names
       link: https://sona.pona.la/wiki/Place_and_language_names
     - name: 2014 Place and Language Names
-      description: Reference place and language names included in the 2014 book.
+      description: Reference place and language names included in the 2014 book
       link: https://jan-ne.github.io/tp/names
   - category: Memorize the vocabulary
     children:
     - name: Anki Deck
-      description: the world-reknowned spaced repetition application, Anki 
+      description: the world-renowned spaced repetition application, Anki 
       link: https://ankiweb.net/shared/info/206063196
     - name: My Little Word Land
       description: audio-based online flashcards 
@@ -35,10 +35,10 @@
       description: a popular flashcard app
       link: https://quizlet.com/152753648/toki-pona-flash-cards
     - name: nasin sona musi
-      description: using an asteroid game
+      description:  a fun asteroid game
       link: https://jamesmoulang.itch.io/nasin-sona-musi
     - name: Evening Web Quiz Database
-      description: a web-based quiz! (Beginners should un-select Uncommon and Obscure Words)
+      description: a web-based quiz! (Beginners should deselect Uncommon and Obscure Words)
       link: https://eveningwebquizdatabase.com/library?author=ekobadd&name=toki%2Bpona
 
 - category: Corpus and analysis
@@ -50,7 +50,7 @@
     description: Visualize Toki Pona sentences as parsed-out grammar trees
     link: https://nasin.nimi.li/
   - name: poka muni 
-    description: Explore which words tend to appear next to other words.
+    description: Explore which words tend to appear next to other words
     link: https://acipensersturio.github.io/poka-muni/
   - name: sona toki
     description: Algorithmically determine whether a sample text is in Toki Pona
@@ -68,13 +68,13 @@
     description: Speak any text, using your own voice!
     link: https://voice.sadale.net/
   - name: tts by waso lili
-    description: Convert any text to using espeak, download as .wav.
+    description: Download any text as a .wav converted by espeak
     link: https://tilde.club/~wasolili/tokispeak/index.html
   - name: tts by jan Ke Tami
     description: Speak voices with jan Lakuse, kala Asi, and jan Kokan Alto's voices
     link: http://antetokipona.infinityfreeapp.com/kalama/
   - name: Scribe v2 by ElevenLabs
-    description: This LLM is able to recognize and transcribe Toki Pona speech.
+    description: This LLM is able to recognize and transcribe Toki Pona speech
     link: https://elevenlabs.io/blog/introducing-scribe-v2#automatic-multi-language-transcription
 
 - category: Numbers 
@@ -89,8 +89,15 @@
     description: Experiment with a Toki-Pona-based calculator (still in development)
     link: https://tromboneboi9.github.io/ilo-nanpa/index.html
 
+
 - category: Sitelen Pona 
   children:
+  - name: ilo sitelen wawa
+    description: Compose documents using this browser-based UCSUR editor supporting SP-Lasina editing, dictionary, punctuation
+    link: https://gnidan.github.io/lipu-sitelen-wawa/
+  - name: ilo Nu
+    description: Make and keep notes in Sitelen Pona
+    link: https://sirstotes.github.io/iloNu/notes/notes.html
   - category: Font 
     children: 
     - name: fonts on Linku 
