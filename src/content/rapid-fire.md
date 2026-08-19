@@ -4,6 +4,9 @@
 No, Toki Pona has no verb conjugation and does not bake time information into its verbs. 
 
 
+### What does "Toki Pona" mean?
+
+In  _toki_ means 'language, communication, speech,' and  _pona_ means 'good, positive quality.' Combined, it is like 'good language' or 'pleasant communication.' When speaking Toki Pona, the phrase  _toki pona_ sometimes refers to the language itself and sometimes  refers to its meaning. For example, if you just delivered a speech,  "_sina toki pona!_", or "You communicated well!"
 
 
 ### How to say, "I love you" in Toki Pona?

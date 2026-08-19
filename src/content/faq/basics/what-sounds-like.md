@@ -4,7 +4,7 @@ image: sound-like.png
 species: Kalames Taxus
 simple: With only 14 letters, it has a unique sound that people from different places pronounce slightly differently. 
 faq_group: 1
-faq_index: 6
+faq_index: 5
 title: What does Toki Pona sound like?
 ---
 

@@ -1,24 +1,17 @@
 ---
 published: true
 image: meaning.png
-species: Bonintensica
-species_notes:
-  In spite of its name, which it was given in honour of its traditional use as a
-  folk medicine, Bonintensica can also be used in a number of formulations that
-  are virtually poisonous. Ultimately plants are plants, able to be utilized by
-  both moral and immoral humans.
 faq_group: 1
-faq_index: 5
-title: What does “Toki Pona” even mean?
+faq_index: 6
+title: How do I learn Toki Pona?
 simple:
-  "toki (communication) + pona (positive) = something like 'good language'"
+  "LAKUSE DONT FORGET THIS'"
 ---
 
-In Toki Pona, _toki_ means 'language, communication, speech,' while _pona_ means
-'good, positive quality.' Together, they mean something like 'good language' or
-'pleasant communication.'
+People often start learning Toki Pona using a course. We've compiled many popular free ones on our [Resources](/resources/#courses) page, and even more courses are listed on [sona pona](https://sona.pona.la/wiki/Learning_resources).
 
-When speaking Toki Pona, depending on the context, a speaker can use _toki pona_
-to refer to the language itself, or to good communication more generally. After
-to congratulate a friend after they've delivered a speech, speakers might say, "_sina toki pona!_",
-or "You spoke well!"
+**Everyone has different learning styles and preferences.** Do you follow one course, or you do you jump between a bunch of them at the same time? Do you drill the vocabulary with flashcards, or do you pick up the words as they come? Do you prioritize learning through immersion, or learning from lectures? Do you want to learn with the Sitelen Pona hierglyphic script, or would you rather not? Different learning materials will suit different styles. If you've never tried to learn a language before, learning Toki Pona is one way you can experiment with which styles work for you. 
+
+In Toki Pona, memorizing the words is a _very small_ portion of the learning process. **Learning to structure sentences correctly, to use the words creatively, and to decipher what others mean, it takes a lot of practice.** Many speakers practice through journalling, reading Toki Pona stories, listening to Toki Pona music and podcasts, making small translations, etc. Probably the most effective form of practice is reaching out to other Toki Pona speakers, since this is where you will get feedback. 
+
+Check out our [Resources](/resources/#communities) page for links to some communities. Toki Pona speakers are generally very eager to help new learners out, as we were all once learners ourselves! Lurking (the practice of joining a chat but only watching/listening, not contributing) is almost always acceptable. 
