@@ -18,3 +18,4 @@ While there are positive anecdotes, there are also negative anecdotes out there:
 
 Each story is different, each mind is different, and we can't predict what the outcome will be. 
 
+**Recommended reading**: [Can Toki Pona be therapeutic?](https://dikleyt.com/wp/2026/07/15/can-toki-pona-be-therapeutic/) by Rivkele dos Ketsele

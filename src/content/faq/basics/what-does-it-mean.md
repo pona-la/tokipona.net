@@ -5,7 +5,7 @@ faq_group: 1
 faq_index: 6
 title: How do I learn Toki Pona?
 simple:
-  "LAKUSE DONT FORGET THIS'"
+  "Learn the grammar and vocab with a course and then practice, practice, practice, practice!'"
 ---
 
 People often start learning Toki Pona using a course. We've compiled many popular free ones on our [Resources](/resources/#courses) page, and even more courses are listed on [sona pona](https://sona.pona.la/wiki/Learning_resources).

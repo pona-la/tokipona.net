@@ -42,9 +42,16 @@ economically, but it can be felt emotionally. You can also
 speakers describe what they found "useful" about Toki Pona—or more aptly, how
 Toki Pona impacted their lives.
 
+
+<hr style="width: 100%">
+<h4 style="text-align: center">Footnotes</h4>
+
+
 [^maybe]:
     Realistically, the answer is no; Toki Pona does not have the volume of
     speakers necessary to make it a critical skill anywhere in the world. You
     can fit Toki Pona into your daily life on your own, find a few people who
     you only share Toki Pona with to speak to, and do commissions in Toki Pona
     for some money. But don't learn Toki Pona with these as your expectations!
+
+
