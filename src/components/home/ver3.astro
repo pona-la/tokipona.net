@@ -218,7 +218,7 @@
 <p><a class="caveat" id="pini-caveat" href="#open-caveat">*</a>As much as it is possible to exactly count the words in any language. <br /><a href="/faq/#basics/how-many-words">Varies from 120-140 depending on the speaker.</a></p>
 
 <script>
-document.querySelectorAll('.button').forEach(btn => {
+document.querySelectorAll('.third .button').forEach(btn => {
   let state = 0;
   const tokSpan = btn.children[0]; // the tok word
   const enSpan = btn.children[1];  // the lang="en" span
@@ -227,7 +227,7 @@ document.querySelectorAll('.button').forEach(btn => {
     state = (state + 1) % 3;
 
     if (state === 1) {
-      tokSpan.style.cssText = "font-family: var(--sp-font);";
+      tokSpan.style.cssText = "font-family: var(--spfont)";
       enSpan.style.cssText = "";
     } else if (state === 2) {
       tokSpan.style.cssText = "display: none;";

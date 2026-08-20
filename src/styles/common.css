@@ -1,6 +1,6 @@
 :root {
 	--font: var(--font-andika);
-	--sp-font: var(--font-nasin-nanpa);
+	--spfont: var(--font-nasin-nanpa);
 
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
