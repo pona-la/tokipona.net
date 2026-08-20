@@ -7,7 +7,6 @@ import yaml from "@rollup/plugin-yaml";
 import browserslist from "browserslist";
 import browserslistToEsbuild from "browserslist-to-esbuild";
 import { browserslistToTargets } from "lightningcss";
-import { url } from "astro:schema";
 
 let siteUrl = "http://localhost";
 
