@@ -7,6 +7,7 @@ import yaml from "@rollup/plugin-yaml";
 import browserslist from "browserslist";
 import browserslistToEsbuild from "browserslist-to-esbuild";
 import { browserslistToTargets } from "lightningcss";
+import { url } from "astro:schema";
 
 let siteUrl = "http://localhost";
 
@@ -49,6 +50,20 @@ export default defineConfig({
 			cssVariable: "--font-andika",
 			styles: ["normal", "italic"],
 			weights: [400, 700],
+		},
+		{ 
+			provider: fontProviders.local(),
+    		name: "nasin-nanpa",
+    		cssVariable: "--font-nasin-nanpa",
+    		options: {
+      		variants: [
+        		{
+				weight: "400",
+				style: "normal",
+				src: ["./src/assets/fonts/nasin-nanpa-5.0.0-beta.3.otf"],
+				}
+      		],
+			},
 		},
 	],
 

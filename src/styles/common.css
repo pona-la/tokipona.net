@@ -1,5 +1,7 @@
 :root {
 	--font: var(--font-andika);
+	--sp-font: var(--font-nasin-nanpa);
+
 	--rounding-large: 1rem;
 	--rounding-small: 0.5rem;
 	--max-content-width: 1440px;

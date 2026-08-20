@@ -227,7 +227,7 @@ document.querySelectorAll('.button').forEach(btn => {
     state = (state + 1) % 3;
 
     if (state === 1) {
-      tokSpan.style.cssText = "font-family: 'nasin-nanpa';";
+      tokSpan.style.cssText = "font-family: var(--sp-font);";
       enSpan.style.cssText = "";
     } else if (state === 2) {
       tokSpan.style.cssText = "display: none;";
