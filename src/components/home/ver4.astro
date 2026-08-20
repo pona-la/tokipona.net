@@ -35,7 +35,7 @@
 	}
 	.button :not([lang="en"]){
 		display: block;
-        font-family: var(--sp-font);
+        font-family: var(--spfont);
 
 	}
 	span[lang="en"]{
@@ -220,7 +220,7 @@
 <p><a class="caveat" id="pini-caveat" href="#open-caveat">*</a>As much as it is possible to exactly count the words in any language. <br /><a href="/faq/#basics/how-many-words">Varies from 120-140 depending on the speaker.</a></p>
 
 <script>
-document.querySelectorAll('.button').forEach(btn => {
+document.querySelectorAll('.fourth .button').forEach(btn => {
   let state = 0;
   const tokSpan = btn.children[0]; // the tok word
   const enSpan = btn.children[1];  // the lang="en" span
