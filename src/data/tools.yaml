@@ -92,7 +92,7 @@
 
 - category: Sitelen Pona 
   children:
-  - name: ilo sitelen wawa
+  - name: lipu sitelen wawa
     description: Compose documents using this browser-based UCSUR editor supporting SP-Lasina editing, dictionary, punctuation
     link: https://gnidan.github.io/lipu-sitelen-wawa/
   - name: ilo Nu
