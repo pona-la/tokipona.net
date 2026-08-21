@@ -15,5 +15,5 @@ You can recognize some Esperanto words in modern Toki Pona itself:  *tomo* from 
 
 As Toki Pona has gained its own identity and dedicated digital spaces, the memberships of these two communities no longer overlap as closely as they used to. But their similarities invite proximity anyway. Both of them are commonly advertised as 'easy-to-learn' languages, so unsuprisingingly a small portion of those who learn Toki Pona also dabble in Esperanto at some point (and vice-versa), their historical ties being another source of mutual curiosity. 
 
-This overlap occasionally invites opportunities for cross-community collaboration. A contemporary example: some Esperanto-speaking members of the Toki Pona community are working with TEJO, the international Esperanto youth organization, to plan a joint gathering in Tiana in August 2026.
+This overlap occasionally invites opportunities for cross-community collaboration. A contemporary example: some Esperanto-speaking members of the Toki Pona community worked with TEJO, the international Esperanto youth organization, to plan a joint gathering in Tiana in August 2026.
 
