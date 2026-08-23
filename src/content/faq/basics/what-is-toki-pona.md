@@ -17,10 +17,11 @@ simple:
 
 Toki Pona is a constructed language. That means someone decided what words and
 grammar it should have, unlike natural languages such as English or Urdu. Toki
-Pona has one main gimmick: it was designed to function with only about 120 words, compared to the tens or
-hundreds of thousands you may find in natural languages. You'll also hear it
-called a 'minimal' language because of this. Despite its small vocabulary,
-Toki Pona is not very different from any other language in capability.
+Pona has one main gimmick: it was designed to function with only about 120
+words, compared to the tens or hundreds of thousands you may find in natural
+languages. You'll also hear it called a 'minimal' language because of this.
+Despite its small vocabulary, Toki Pona is not very different from any other
+language in capability.
 
 Toki Pona is also a living language with thousands of speakers across the world.
 It evolves through daily use and artistic expression, and thrives in many online

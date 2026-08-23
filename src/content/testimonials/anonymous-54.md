@@ -22,8 +22,8 @@ realize it goes much deeper than one may expect.
 
 I'm someone with a lot of complex special interests and initially I found it
 hard to talk about them in toki pona* The more you ponder these complex topics,
-the more you will realize that *everything* is simple when broken down enough.
-It's like solving a puzzle. How *do* I say this thing I want to say? What does
+the more you will realize that _everything_ is simple when broken down enough.
+It's like solving a puzzle. How _do_ I say this thing I want to say? What does
 it mean *exactly\*?
 
 It's fun when you come up with an answer. Sometimes the answers are long, but

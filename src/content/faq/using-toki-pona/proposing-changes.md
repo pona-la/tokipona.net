@@ -4,7 +4,7 @@ faq_group: 2
 faq_index: 5
 published: true
 image: proposing-changes.png
-simple: Toki Pona doesn't really work like that. 
+simple: Toki Pona doesn't really work like that.
 ---
 
 Toki Pona evolves like a living language, not like a group project. While you

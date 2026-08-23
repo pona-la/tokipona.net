@@ -1,43 +1,35 @@
 ---
 import FilterFor from "@/components/resources/FilterFor.astro";
 const { name, category, withImg } = Astro.props;
-
 ---
+
 <style>
-.reading {
-    display: grid;
-    row-gap: 1em;
-			
+	.reading {
+		display: grid;
+		row-gap: 1em;
 
-    .cat {
-        display: none;
-    }
+		.cat {
+			display: none;
+		}
 
-    li {
-        a{
-            font-weight: 600;
-        }
-        display: block;
+		li {
+			a {
+				font-weight: 600;
+			}
+			display: block;
 
-        p::before{
-            content: '~ '
-        }
+			p::before {
+				content: "~ ";
+			}
 
-        p {
-            display: inline;
-        }
-    }
-    
-
-}
-
-
+			p {
+				display: inline;
+			}
+		}
+	}
 </style>
 
-		<ul class="reading">
-
-						<FilterFor
-                        name={name} category={category} withImg={false}></FilterFor>
-            <slot />
-
-		</ul>
+<ul class="reading">
+	<FilterFor name={name} category={category} withImg={false} />
+	<slot />
+</ul>

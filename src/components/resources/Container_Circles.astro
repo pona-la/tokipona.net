@@ -1,57 +1,50 @@
 ---
 import FilterFor from "@/components/resources/FilterFor.astro";
 const { name, category, withImg } = Astro.props;
-
 ---
+
 <style>
-.communities {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 1em;
-			margin: 0;
-			margin-block-end: 2em;
-			padding: 0;
+	.communities {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1em;
+		margin: 0;
+		margin-block-end: 2em;
+		padding: 0;
 
-			img {
-				width: 5em;
-				height: 5em;
-				border-radius: 50%;
-				border: 0.1em solid var(--foreground);
-			}
-			li {
-				display: grid;
-				width: 10em;
+		img {
+			width: 5em;
+			height: 5em;
+			border-radius: 50%;
+			border: 0.1em solid var(--foreground);
+		}
+		li {
+			display: grid;
+			width: 10em;
+			text-align: center;
+			grid-template-rows: auto 2.25em 1fr;
+
+			a:not(:has(img)) {
+				grid-row: 2 / 3;
+				color: inherit;
+				text-decoration: none;
+				font-weight: 600;
+				line-height: 1.1em;
 				text-align: center;
-				grid-template-rows: auto 2.25em 1fr;
-
-				a:not(:has(img)) {
-                    grid-row: 2 / 3;
-					color: inherit;
-					text-decoration: none;
-					font-weight: 600;
-					line-height: 1.1em;
-					text-align: center;
-                    margin-block-start: 1em;
-				}
-                .cat {
-                    display: none;
-                }
-                a:has(img){
-                    grid-row: 1 / 2;
-
-
-                }
+				margin-block-start: 1em;
+			}
+			.cat {
+				display: none;
+			}
+			a:has(img) {
+				grid-row: 1 / 2;
 			}
 		}
-
-
+	}
 </style>
 
-		<ul class="communities">
-
-						<FilterFor
-                        name={name} category={category} withImg={withImg}></FilterFor>
-            <slot />
-
-		</ul>
+<ul class="communities">
+	<FilterFor name={name} category={category} withImg={withImg} />
+	<slot />
+</ul>

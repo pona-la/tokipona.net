@@ -45,10 +45,12 @@ bun dev  # run the dev server
 
 ## Drafted content
 
-You can mark things as drafts and it will not release them to the production deployment. If you want to preview the production deployment, run: 
+You can mark things as drafts and it will not release them to the production
+deployment. If you want to preview the production deployment, run:
 
 ```
 bun dev --mode production
 ```
 
-You can preview drafted content by visiting this url[https://tokipona-net-piniala.tokipona.workers.dev/](https://tokipona-net-piniala.tokipona.workers.dev/) 
+You can preview drafted content by visiting this
+url[https://tokipona-net-piniala.tokipona.workers.dev/](https://tokipona-net-piniala.tokipona.workers.dev/)

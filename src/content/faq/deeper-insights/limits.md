@@ -4,7 +4,9 @@ faq_group: 3
 faq_index: 1
 published: true
 image: limits.png
-simple: "In theory, it can do everything. But it takes more effort and time to say stuff and understand stuff sometimes, so it can feel clunky." 
+simple:
+  "In theory, it can do everything. But it takes more effort and time to say
+  stuff and understand stuff sometimes, so it can feel clunky."
 ---
 
 There are no hard limits on what can be communicated using Toki Pona. It is a
@@ -29,9 +31,9 @@ they may round to the nearest 20 or 100 if describing quantities.
 Despite this apparent limitation, Toki Pona speakers are able to communicate
 larger numbers through extended numbering systems like
 [nasin nanpa pona](https://sona.pona.la/wiki/nasin_nanpa_pona), which relies on
-multiplying the aforementioned base quantities by 100. Methods to communicate fractions
-and decimals are less established, but speakers are still able to convey these
-ideas by conversation rather than any specific convention.
+multiplying the aforementioned base quantities by 100. Methods to communicate
+fractions and decimals are less established, but speakers are still able to
+convey these ideas by conversation rather than any specific convention.
 
 Mathematic notation is often described as its own kind of language. World
 languages have each developed conventional ways to verbalize mathematic
@@ -39,7 +41,8 @@ notation. Toki Pona speakers do not yet share a convention for verbalizing
 mathematic notation, but many proficient speakers are able to describe all basic
 operations, and they are often able to express more complex mathematical ideas
 through conversation. The realm of advanced mathematics is a frontier Toki Pona
-speakers are yet to deeply explore, though there are some existing examples like jan Telakoman's
+speakers are yet to deeply explore, though there are some existing examples like
+jan Telakoman's
 [exploration of advanced geometry](https://www.youtube.com/watch?v=tL1WBUOqE48).
 
 However, just as many people are content with not using algebra in their

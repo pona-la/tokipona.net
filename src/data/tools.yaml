@@ -1,162 +1,188 @@
-- category: Learning 
+- category: Learning
   children:
-  - name: telo misikeke
-    description: Run your Toki Pona by this spellcheck/grammar checker
-    link: https://telo-misikeke.gitlab.io/
-  - name: Cheat Sheets
-    description: Carry around the language's entire vocabulary and grammar on a single sheet of paper. Available in several languages!
-    link: https://sona.pona.la/wiki/Cheat_sheets
-  - name: Words by Theme Cheat Sheet 
-    description: Reference the words you need by their meaning, instead of alphabetically
-    link: https://tenpi.li/tokipona/catdict
-  - category: Proper Names
-    children:
-    - name: naming yourself in toki pona
-      description: Step-by-step, learn Toki Pona naming conventions and phonetic rules
-      link: https://packbat.itch.io/naming-yourself-in-toki-pona
-    - name: ilo pi ante nimi
-      description: Have this transliterator attempt to transform a foreign word into a Toki Pona loan word
-      link: https://jan-ne.github.io/tp/transliterator
-    - name: sona pona's Place and Language Names
-      description: Reference the most recent community-proposed place and language names
-      link: https://sona.pona.la/wiki/Place_and_language_names
-    - name: 2014 Place and Language Names
-      description: Reference place and language names included in the 2014 book
-      link: https://jan-ne.github.io/tp/names
-  - category: Memorize the vocabulary
-    children:
-    - name: Anki Deck
-      description: the world-renowned spaced repetition application, Anki 
-      link: https://ankiweb.net/shared/info/206063196
-    - name: My Little Word Land
-      description: audio-based online flashcards 
-      link: https://mylittlewordland.com/course/351477/toki-pona-jan-lentan-s-course-with-audio
-    - name: Quizlet deck
-      description: a popular flashcard app
-      link: https://quizlet.com/152753648/toki-pona-flash-cards
-    - name: nasin sona musi
-      description:  a fun asteroid game
-      link: https://jamesmoulang.itch.io/nasin-sona-musi
-    - name: Evening Web Quiz Database
-      description: a web-based quiz! (Beginners should deselect Uncommon and Obscure Words)
-      link: https://eveningwebquizdatabase.com/library?author=ekobadd&name=toki%2Bpona
+    - name: telo misikeke
+      description: Run your Toki Pona by this spellcheck/grammar checker
+      link: https://telo-misikeke.gitlab.io/
+    - name: Cheat Sheets
+      description:
+        Carry around the language's entire vocabulary and grammar on a single
+        sheet of paper. Available in several languages!
+      link: https://sona.pona.la/wiki/Cheat_sheets
+    - name: Words by Theme Cheat Sheet
+      description:
+        Reference the words you need by their meaning, instead of alphabetically
+      link: https://tenpi.li/tokipona/catdict
+    - category: Proper Names
+      children:
+        - name: naming yourself in toki pona
+          description:
+            Step-by-step, learn Toki Pona naming conventions and phonetic rules
+          link: https://packbat.itch.io/naming-yourself-in-toki-pona
+        - name: ilo pi ante nimi
+          description:
+            Have this transliterator attempt to transform a foreign word into a
+            Toki Pona loan word
+          link: https://jan-ne.github.io/tp/transliterator
+        - name: sona pona's Place and Language Names
+          description:
+            Reference the most recent community-proposed place and language
+            names
+          link: https://sona.pona.la/wiki/Place_and_language_names
+        - name: 2014 Place and Language Names
+          description:
+            Reference place and language names included in the 2014 book
+          link: https://jan-ne.github.io/tp/names
+    - category: Memorize the vocabulary
+      children:
+        - name: Anki Deck
+          description: the world-renowned spaced repetition application, Anki
+          link: https://ankiweb.net/shared/info/206063196
+        - name: My Little Word Land
+          description: audio-based online flashcards
+          link: https://mylittlewordland.com/course/351477/toki-pona-jan-lentan-s-course-with-audio
+        - name: Quizlet deck
+          description: a popular flashcard app
+          link: https://quizlet.com/152753648/toki-pona-flash-cards
+        - name: nasin sona musi
+          description: a fun asteroid game
+          link: https://jamesmoulang.itch.io/nasin-sona-musi
+        - name: Evening Web Quiz Database
+          description:
+            a web-based quiz! (Beginners should deselect Uncommon and Obscure
+            Words)
+          link: https://eveningwebquizdatabase.com/library?author=ekobadd&name=toki%2Bpona
 
 - category: Corpus and analysis
   children:
-  - name: ilo Muni
-    description: Look up Toki Pona n-grams
-    link: https://ilo.muni.la/
-  - name: ilo nasin
-    description: Visualize Toki Pona sentences as parsed-out grammar trees
-    link: https://nasin.nimi.li/
-  - name: poka muni 
-    description: Explore which words tend to appear next to other words
-    link: https://acipensersturio.github.io/poka-muni/
-  - name: sona toki
-    description: Algorithmically determine whether a sample text is in Toki Pona
-    link: https://github.com/gregdan3/sona-toki
-  - name: handwritten sitelen pona SVG samples
-    description: 
-    link: https://archive.org/details/sitelen-pona-handwritten-svg-samples
-  - name: Common Voice Scripted Speech 
-    description:
-    link: https://mozilladatacollective.com/datasets/cmqioe08z00ysnq07wdp9ejux
+    - name: ilo Muni
+      description: Look up Toki Pona n-grams
+      link: https://ilo.muni.la/
+    - name: ilo nasin
+      description: Visualize Toki Pona sentences as parsed-out grammar trees
+      link: https://nasin.nimi.li/
+    - name: poka muni
+      description: Explore which words tend to appear next to other words
+      link: https://acipensersturio.github.io/poka-muni/
+    - name: sona toki
+      description:
+        Algorithmically determine whether a sample text is in Toki Pona
+      link: https://github.com/gregdan3/sona-toki
+    - name: handwritten sitelen pona SVG samples
+      description:
+      link: https://archive.org/details/sitelen-pona-handwritten-svg-samples
+    - name: Common Voice Scripted Speech
+      description:
+      link: https://mozilladatacollective.com/datasets/cmqioe08z00ysnq07wdp9ejux
 
-- category: Voice 
+- category: Voice
   children:
-  - name: tts by jan Sate
-    description: Speak any text, using your own voice!
-    link: https://voice.sadale.net/
-  - name: tts by waso lili
-    description: Download any text as a .wav converted by espeak
-    link: https://tilde.club/~wasolili/tokispeak/index.html
-  - name: tts by jan Ke Tami
-    description: Speak voices with jan Lakuse, kala Asi, and jan Kokan Alto's voices
-    link: http://antetokipona.infinityfreeapp.com/kalama/
-  - name: Scribe v2 by ElevenLabs
-    description: This LLM is able to recognize and transcribe Toki Pona speech
-    link: https://elevenlabs.io/blog/introducing-scribe-v2#automatic-multi-language-transcription
+    - name: tts by jan Sate
+      description: Speak any text, using your own voice!
+      link: https://voice.sadale.net/
+    - name: tts by waso lili
+      description: Download any text as a .wav converted by espeak
+      link: https://tilde.club/~wasolili/tokispeak/index.html
+    - name: tts by jan Ke Tami
+      description:
+        Speak voices with jan Lakuse, kala Asi, and jan Kokan Alto's voices
+      link: http://antetokipona.infinityfreeapp.com/kalama/
+    - name: Scribe v2 by ElevenLabs
+      description: This LLM is able to recognize and transcribe Toki Pona speech
+      link: https://elevenlabs.io/blog/introducing-scribe-v2#automatic-multi-language-transcription
 
-- category: Numbers 
+- category: Numbers
   children:
-  - name: nasin nanpa pona converter
-    description: Convert between arabic numerals, nasin nanpa pona, and abbreviated nasin nanpa pona
-    link: https://antetokipona.infinityfreeapp.com/nnp/
-  - name: number converter
-    description: Type a number to convert it to various Toki Pona numbering systems
-    link: https://linku.la/tools
-  - name: ilo nanpa
-    description: Experiment with a Toki-Pona-based calculator (still in development)
-    link: https://tromboneboi9.github.io/ilo-nanpa/index.html
-
-
-- category: Sitelen Pona 
-  children:
-  - name: ilo sitelen wawa
-    description: Compose documents using this browser-based UCSUR editor supporting SP-Lasina editing, dictionary, punctuation
-    link: https://gnidan.github.io/lipu-sitelen-wawa/
-  - name: ilo Nu
-    description: Make and keep notes in Sitelen Pona
-    link: https://sirstotes.github.io/iloNu/notes/notes.html
-  - category: Font 
-    children: 
-    - name: fonts on Linku 
-      description: Browse and download fonts
-      link: https://linku.la/fonts
-    - name: font tool
-      description: Compare Sitelen Pona fonts
-      link: https://antetokipona.infinityfreeapp.com/font/
-    - name: SP Font Maker!
-      description: Make a custom Sitelen Pona font by drawing on some paper
-      link: https://wasokeli.github.io/sp-font-maker/
-  - category: UCSUR 
-    children:
-    - name: ucsur converter
-      description: Convert Sitelen Pona between UCSUR and ASCII
+    - name: nasin nanpa pona converter
+      description:
+        Convert between arabic numerals, nasin nanpa pona, and abbreviated nasin
+        nanpa pona
+      link: https://antetokipona.infinityfreeapp.com/nnp/
+    - name: number converter
+      description:
+        Type a number to convert it to various Toki Pona numbering systems
       link: https://linku.la/tools
-    - name: sitelen pona UCSUR guide!!!
-      description: Learn to set up UCSUR on your desktop
-      link: https://github.com/neroist/sitelen-pona-ucsur-guide/blob/main/README.md
-    - name: tty_pona
-      description: Set-up UCSUR to work in terminal emulators
-      link: https://github.com/polijan/tty_pona
-    - name: ajemi
-      description: Type to output UCSUR Sitelen Pona
-      link: https://github.com/dec32/ajemi
-  - category: Look-Up 
-    children:
-    - name: ilo sona Like
-      description: Have a machine recognize Sitelen Pona
-      link: https://ilo-like.bucketfish.me/
-    - name: Sitelen Pona Dictionary
-      description: Look up Sitelen Pona by visual similarity
-      link: https://theotherwebsite.com/tokipona/
-    - name: lookup chart 
-      description: Look up Sitelen Pona by counting its elements
-      link: https://tokipona.org/sitelen_pona.html
-  - category: Other 
-    children:
-    - name: nasin sitelen Wakalito
-      description: Type Toki Pona words using Sitelen Pona radicals (iOS app)
-      link: https://apps.apple.com/us/app/nasin-sitelen-wakalito/id1569543076
-    - name: o sitelen pona e mi!
-      description: Experiment with writing your name in Sitelen Pona
-      link: https://vitphire.github.io/o-sitelen-pona-e-mi/
+    - name: ilo nanpa
+      description:
+        Experiment with a Toki-Pona-based calculator (still in development)
+      link: https://tromboneboi9.github.io/ilo-nanpa/index.html
+
+- category: Sitelen Pona
+  children:
+    - name: ilo sitelen wawa
+      description:
+        Compose documents using this browser-based UCSUR editor supporting
+        SP-Lasina editing, dictionary, punctuation
+      link: https://gnidan.github.io/lipu-sitelen-wawa/
+    - name: ilo Nu
+      description: Make and keep notes in Sitelen Pona
+      link: https://sirstotes.github.io/iloNu/notes/notes.html
+    - category: Font
+      children:
+        - name: fonts on Linku
+          description: Browse and download fonts
+          link: https://linku.la/fonts
+        - name: font tool
+          description: Compare Sitelen Pona fonts
+          link: https://antetokipona.infinityfreeapp.com/font/
+        - name: SP Font Maker!
+          description: Make a custom Sitelen Pona font by drawing on some paper
+          link: https://wasokeli.github.io/sp-font-maker/
+    - category: UCSUR
+      children:
+        - name: ucsur converter
+          description: Convert Sitelen Pona between UCSUR and ASCII
+          link: https://linku.la/tools
+        - name: sitelen pona UCSUR guide!!!
+          description: Learn to set up UCSUR on your desktop
+          link: https://github.com/neroist/sitelen-pona-ucsur-guide/blob/main/README.md
+        - name: tty_pona
+          description: Set-up UCSUR to work in terminal emulators
+          link: https://github.com/polijan/tty_pona
+        - name: ajemi
+          description: Type to output UCSUR Sitelen Pona
+          link: https://github.com/dec32/ajemi
+    - category: Look-Up
+      children:
+        - name: ilo sona Like
+          description: Have a machine recognize Sitelen Pona
+          link: https://ilo-like.bucketfish.me/
+        - name: Sitelen Pona Dictionary
+          description: Look up Sitelen Pona by visual similarity
+          link: https://theotherwebsite.com/tokipona/
+        - name: lookup chart
+          description: Look up Sitelen Pona by counting its elements
+          link: https://tokipona.org/sitelen_pona.html
+    - category: Other
+      children:
+        - name: nasin sitelen Wakalito
+          description:
+            Type Toki Pona words using Sitelen Pona radicals (iOS app)
+          link: https://apps.apple.com/us/app/nasin-sitelen-wakalito/id1569543076
+        - name: o sitelen pona e mi!
+          description: Experiment with writing your name in Sitelen Pona
+          link: https://vitphire.github.io/o-sitelen-pona-e-mi/
 
 - category: Other
   children:
-  - name: CEFR proficiency scale
-    description: Self-assess your Toki Pona proficiency with this framework
-    link: https://app.simplenote.com/p/jtRhb1
-  - name: Sitelen Sitelen Renderer
-    description: Render Sitelen Sitelen, and download as SVG
-    link: https://olafjanssen.github.io/sitelen-sitelen-renderer/liveinput/liveinput.html
-  - name: jan Masewin's illustrated cards
-    description: Print this beautiful playing card set featuring all the Toki Pona symbols visualized as the things the represent, alongisde their definitions
-    link: https://www.reddit.com/r/tokipona/comments/1i5kf3z/major_update_my_illustrated_cards_are_now/
-  - name: nimi generator 
-    description: Play the 'nimi sin game' with friends, one person generates a fake new Toki Pona word and uses it while other try to guess the meaning
-    link: https://perchance.org/geeyw3pvqm
-  - name: Calendar systems
-    description: "Experiment with Toki-Pona-based calendar systems (Note: none of these are widely used in the community)"
-    link: https://sona.pona.la/wiki/Calendar_systems
+    - name: CEFR proficiency scale
+      description: Self-assess your Toki Pona proficiency with this framework
+      link: https://app.simplenote.com/p/jtRhb1
+    - name: Sitelen Sitelen Renderer
+      description: Render Sitelen Sitelen, and download as SVG
+      link: https://olafjanssen.github.io/sitelen-sitelen-renderer/liveinput/liveinput.html
+    - name: jan Masewin's illustrated cards
+      description:
+        Print this beautiful playing card set featuring all the Toki Pona
+        symbols visualized as the things the represent, alongisde their
+        definitions
+      link: https://www.reddit.com/r/tokipona/comments/1i5kf3z/major_update_my_illustrated_cards_are_now/
+    - name: nimi generator
+      description:
+        Play the 'nimi sin game' with friends, one person generates a fake new
+        Toki Pona word and uses it while other try to guess the meaning
+      link: https://perchance.org/geeyw3pvqm
+    - name: Calendar systems
+      description:
+        "Experiment with Toki-Pona-based calendar systems (Note: none of these
+        are widely used in the community)"
+      link: https://sona.pona.la/wiki/Calendar_systems

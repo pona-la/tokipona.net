@@ -7,8 +7,7 @@ const kasi = (
 	})
 ).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
 
-
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import { faqImages } from "@/data/faqImages";
 ---
 
@@ -18,12 +17,10 @@ import { faqImages } from "@/data/faqImages";
 		color: lightcyan;
 		padding: 0.2em;
 
-
 		a {
 			color: inherit;
 		}
 	}
-
 
 	.garden {
 		width: 100%;
@@ -55,18 +52,20 @@ import { faqImages } from "@/data/faqImages";
 	draft
 >
 	<div class="garden">
-		{kasi.map((entry) => (
-			entry.data.image ? <div>
-				<Image src={faqImages[entry.data.image]} alt="" />
-			</div> : ''
-		))}
+		{
+			kasi.map((entry) =>
+				entry.data.image ?
+					<div>
+						<Image src={faqImages[entry.data.image]} alt="" />
+					</div>
+				:	"",
+			)
+		}
 	</div>
 
 	<div class="faq kasi">
 		<div class="intro">
 			<h2>The Basics</h2>
-
 		</div>
 	</div>
-
 </FAQChild>

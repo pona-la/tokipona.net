@@ -1,6 +1,6 @@
 ---
 const { entry, hideCat } = Astro.props;
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 import { resourceImages } from "@/data/resourceImages";
 const isSvg = entry.img?.endsWith(".svg");
@@ -9,27 +9,29 @@ const image = entry.img ? resourceImages[entry.img]?.default : null;
 
 <style>
 	img {
-  width: 100%;
-  height: auto;
-}
+		width: 100%;
+		height: auto;
+	}
 </style>
 <li>
 	<a href={entry.link} target="_blank" rel="noopener noreferrer">
-	{entry.name}</a>
+		{entry.name}</a
+	>
 
-	<span class="cat">{hideCat ? "·" : entry.category }</span>
+	<span class="cat">{hideCat ? "·" : entry.category}</span>
 
-	<a 
+	<a
 		aria-hidden="true"
 		href={entry.link}
 		target="_blank"
 		rel="noopener noreferrer"
 		tabindex="-1"
 	>
-    {image && (isSvg
-      ? <img src={image.src} alt="" />
-      : <Image src={image} alt="" />
-    )}</a>
+		{
+			image &&
+				(isSvg ? <img src={image.src} alt="" /> : <Image src={image} alt="" />)
+		}</a
+	>
 
 	{entry.description && <p>{entry.description}</p>}
 </li>

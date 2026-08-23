@@ -1,5 +1,5 @@
 ---
-import IframeSrcdoc from '@/components/IframeSrcdoc.astro';
+import IframeSrcdoc from "@/components/IframeSrcdoc.astro";
 
 interface Props {
 	name: string;
@@ -31,13 +31,16 @@ const { name, maSekaId, youtubeId } = Astro.props;
 let thumbnailUrl;
 try {
 	const res = await fetch(`https://seka.pona.la/api/v1/videos/${maSekaId}`);
-	if (!res.ok) throw new Error('ilo monsi li pana e pakala');
+	if (!res.ok) throw new Error("ilo monsi li pana e pakala");
 
 	const data = await res.json();
 
 	thumbnailUrl = `https://seka.pona.la${data.thumbnailPath}`;
 } catch (e) {
-	console.warn(`mi alasa e sitelen sinpin pi sitelen tawa ni: ${maSekaId}. pakala li lon:`, e);
+	console.warn(
+		`mi alasa e sitelen sinpin pi sitelen tawa ni: ${maSekaId}. pakala li lon:`,
+		e,
+	);
 
 	thumbnailUrl = `https://i.ytimg.com/vi_webp/${youtubeId}/mqdefault.webp`;
 }
@@ -77,17 +80,16 @@ try {
 		border: 0;
 		margin-top: 0.5rem;
 	}
-
 </style>
 
 <div class="wrapper">
-	<div class='container'>
+	<div class="container">
 		<IframeSrcdoc
 			title={name}
-			frameborder='0'
-			allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 			allowfullscreen
-			referrerpolicy='strict-origin-when-cross-origin'
+			referrerpolicy="strict-origin-when-cross-origin"
 		>
 			<style is:inline>
 				html,
@@ -145,21 +147,19 @@ try {
 					text-shadow: 0 0 0.5em black;
 				}
 			</style>
-			<img
-				class='thumbnail'
-
-				src={thumbnailUrl}
-			/>
+			<img class="thumbnail" src={thumbnailUrl} />
 			<a
-				class='title'
+				class="title"
 				href={`https://www.youtube.com/watch?v=${youtubeId}`}
-				target='_blank'>{name}</a
+				target="_blank">{name}</a
 			>
-			<a class='play' href={`https://seka.pona.la/videos/embed/${maSekaId}?autoplay=1`}>
-				<span class='playbutton'>▶</span>
+			<a
+				class="play"
+				href={`https://seka.pona.la/videos/embed/${maSekaId}?autoplay=1`}
+			>
+				<span class="playbutton">▶</span>
 			</a>
-			<script is:inline>
-			</script>
+			<script is:inline></script>
 		</IframeSrcdoc>
 	</div>
 

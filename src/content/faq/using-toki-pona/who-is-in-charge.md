@@ -4,7 +4,9 @@ faq_group: 2
 faq_index: 6
 published: true
 image: whos-in-charge.png
-simple: The creator fully empowers the community and individuals to be creative with the seed she planted. 
+simple:
+  The creator fully empowers the community and individuals to be creative with
+  the seed she planted.
 ---
 
 There is no grand or central authority that dictates how Toki Pona is spoken.
@@ -28,9 +30,9 @@ speaking community did emerge, it joyfully embraced this philosophy.
 Although the creator may post material under the moniker "Official," both she
 and community members understand "Official" to function uniquely like a personal
 signature for herself. Use of this moniker does not mean that her Toki Pona is
-any more official, real, true, correct, or authoritative than that of any other. She has
-stated before that interpreting the word as having something to do with a
-"prescribed way to speak Toki Pona" would "contradict the whole point" of the
+any more official, real, true, correct, or authoritative than that of any other.
+She has stated before that interpreting the word as having something to do with
+a "prescribed way to speak Toki Pona" would "contradict the whole point" of the
 messages of "creative freedom and community rights" that she put out throughout
 her career, and that indeed any engagement with her books is strictly
 "voluntary."
