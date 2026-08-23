@@ -2,14 +2,21 @@
 import Banner from "@/assets/banner.svg";
 import Cols from "@/components/Cols.astro";
 import MaSeka from "@/components/MaSeka.astro";
-// import Video from "@/components/Video.astro";
-import Version1 from "@/components/home/ver1.astro";
-import Version2 from "@/components/home/ver2.astro";
-import Version3 from "@/components/home/ver3.astro";
-import Version4 from "@/components/home/ver4.astro";
+import HomepageGrid from "@/components/home/HomepageGrid.astro";
 ---
 
 <style>
+	.caveat {
+		text-decoration: none;
+	}
+	p .caveat {
+		font-size: 1.5em;
+		font-weight: 800;
+	}
+	p:has(.caveat) {
+		text-align: center;
+	}
+
 	.banner {
 		display: flex;
 		justify-content: center;
@@ -101,33 +108,25 @@ import Version4 from "@/components/home/ver4.astro";
 	}
 </style>
 
-<label class="version" for="wan"
-	><input type="radio" name="version" id="wan" checked />first version</label
->
-<label class="version" for="tu"
-	><input type="radio" name="version" id="tu" />second version</label
->
-<label class="version" for="tuwan"
-	><input type="radio" name="version" id="tuwan" />third version</label
->
-<label class="version" for="tutu"
-	><input type="radio" name="version" id="tutu" />fourth version</label
->
+<h1>
+	Toki Pona: the language of 120<a
+		class="caveat"
+		id="open-caveat"
+		href="#pini-caveat">*</a
+	> words
+</h1>
 
 <div class="banner"><Banner /></div>
 
-<div class="first">
-	<Version1 />
-</div>
-<div class="second">
-	<Version2 />
-</div>
-<div class="third">
-	<Version3 />
-</div>
-<div class="fourth">
-	<Version4 />
-</div>
+<HomepageGrid />
+
+<p>
+	<a class="caveat" id="pini-caveat" href="#open-caveat">*</a>As much as it is
+	possible to exactly count the words in any language. <br /><a
+		href="/faq/#basics/how-many-words"
+		>Varies from 120-140 depending on the speaker.</a
+	>
+</p>
 
 <h2>Learn via videos!</h2>
 

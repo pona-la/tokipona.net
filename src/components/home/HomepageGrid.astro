@@ -1,0 +1,106 @@
+---
+import _words from "./words.yaml";
+const { words } = _words as { words: { tok: string; en: string }[] };
+---
+
+<style>
+	.words {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 2.5em);
+		justify-content: center;
+		justify-items: center;
+		line-height: 1em;
+		text-align: center;
+		border: none;
+		row-gap: 0.5em;
+	}
+	.subtitle {
+		display: block;
+		text-align: center;
+		margin-block-start: 1em;
+		margin-block-end: 0.5em;
+	}
+	word-button button {
+		display: grid;
+		place-items: center;
+		padding: 0;
+		/* baseline correction */
+		padding-top: 0.2em;
+		line-height: 1;
+		border: none;
+		border-radius: var(--rounding-small);
+		background-color: inherit;
+		color: inherit;
+		cursor: pointer;
+		font-family: var(--spfont);
+		font-size: 1.25em;
+		width: 1.75em;
+		height: 1.75em;
+	}
+	word-button button:hover,
+	word-button button:focus {
+		background-color: var(--card-background);
+	}
+	word-button {
+		display: block;
+		position: relative;
+	}
+	word-button::after {
+		content: attr(data-en);
+		display: none;
+		position: absolute;
+		bottom: 100%;
+		margin-bottom: 0.25em;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		white-space: nowrap;
+		pointer-events: none;
+		padding: 0.25em 0.5em;
+		border-radius: var(--rounding-small);
+		background-color: var(--card-background);
+		font-style: italic;
+		line-height: 1em;
+		font-size: 0.8em;
+		font-weight: 800;
+		color: var(--text);
+	}
+	word-button:hover::after,
+	word-button:focus-within::after {
+		display: block;
+	}
+	.kije {
+		display: flex;
+		justify-content: end;
+		grid-column: -3 / -1;
+	}
+	.kije .button {
+		text-align: right;
+		margin-right: 0;
+	}
+</style>
+
+<span id="vocab" class="subtitle">Explore the vocabulary...</span>
+
+<section aria-labelledby="vocab" class="words">
+	{
+		words.map(({ tok, en }) => (
+			<word-button data-en={en}>
+				<button lang="tok">{tok}</button>
+			</word-button>
+		))
+	}
+	<span class="kije"
+		>& <word-button data-en="raccoon">
+			<button lang="tok">kijetesantakalu</button>
+		</word-button>
+	</span>
+</section>
+
+<script>
+	class WordButton extends HTMLElement {
+		connectedCallback() {}
+	}
+
+	customElements.define("word-button", WordButton);
+</script>
