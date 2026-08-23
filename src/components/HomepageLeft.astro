@@ -3,11 +3,10 @@ import Banner from "@/assets/banner.svg";
 import Cols from "@/components/Cols.astro";
 import MaSeka from "@/components/MaSeka.astro";
 // import Video from "@/components/Video.astro";
-import Version1 from "@/components/home/ver1.astro"
-import Version2 from "@/components/home/ver2.astro"
-import Version3 from "@/components/home/ver3.astro"
-import Version4 from "@/components/home/ver4.astro"
-
+import Version1 from "@/components/home/ver1.astro";
+import Version2 from "@/components/home/ver2.astro";
+import Version3 from "@/components/home/ver3.astro";
+import Version4 from "@/components/home/ver4.astro";
 ---
 
 <style>
@@ -47,80 +46,78 @@ import Version4 from "@/components/home/ver4.astro"
 			}
 		}
 	}
-		
+
 	:global(:has(#wan:checked)) {
-
-		.first{
+		.first {
 			display: block;
 		}
-		.second{
+		.second {
 			display: none;
 		}
-		.third{
+		.third {
 			display: none;
 		}
-		.fourth{
+		.fourth {
 			display: none;
 		}
 	}
 
-
-	:global(:has(#tu:checked)){
-		.first{
+	:global(:has(#tu:checked)) {
+		.first {
 			display: none;
 		}
-		.second{
+		.second {
 			display: block;
 		}
-		.third{
+		.third {
 			display: none;
 		}
-		.fourth{
+		.fourth {
 			display: none;
 		}
 	}
-	:global(:has(#tuwan:checked)){
-		.first{
+	:global(:has(#tuwan:checked)) {
+		.first {
 			display: none;
 		}
-		.second{
+		.second {
 			display: none;
 		}
-		.third{
+		.third {
 			display: block;
 		}
-		.fourth{
+		.fourth {
 			display: none;
 		}
 	}
-	:global(:has(#tutu:checked)){
-		.first{
+	:global(:has(#tutu:checked)) {
+		.first {
 			display: none;
 		}
-		.second{
+		.second {
 			display: none;
 		}
-		.third{
+		.third {
 			display: none;
 		}
-		.fourth{
+		.fourth {
 			display: block;
 		}
 	}
-
-
-
-		
-	
-
 </style>
 
-<label class="version" for="wan"><input type="radio" name="version" id="wan" checked>first version</label>
-<label class="version" for="tu"><input type="radio" name="version" id="tu">second version</label>
-<label class="version" for="tuwan"><input type="radio" name="version" id="tuwan">third version</label>
-<label class="version" for="tutu"><input type="radio" name="version" id="tutu">fourth version</label>
-
-
+<label class="version" for="wan"
+	><input type="radio" name="version" id="wan" checked />first version</label
+>
+<label class="version" for="tu"
+	><input type="radio" name="version" id="tu" />second version</label
+>
+<label class="version" for="tuwan"
+	><input type="radio" name="version" id="tuwan" />third version</label
+>
+<label class="version" for="tutu"
+	><input type="radio" name="version" id="tutu" />fourth version</label
+>
 
 <div class="banner"><Banner /></div>
 
@@ -137,8 +134,6 @@ import Version4 from "@/components/home/ver4.astro"
 	<Version4 />
 </div>
 
-
-
 <h2>Learn via videos!</h2>
 
 <Cols>
@@ -152,7 +147,6 @@ import Version4 from "@/components/home/ver4.astro"
 	/>
 </Cols>
 
-
 <Cols>
 	<blockquote style="grid-area: 1/2">
 		<b>How can one communicate</b><br />when limited to such a small set of
@@ -164,8 +158,6 @@ import Version4 from "@/components/home/ver4.astro"
 		name="Context and Toki Pona // English Version"
 	/>
 </Cols>
-
-
 
 <Cols>
 	<blockquote>

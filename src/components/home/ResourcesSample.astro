@@ -1,71 +1,68 @@
 ---
 import booksImage from "@/assets/sitelen/resources/bookshelf.svg";
 ---
+
 <style>
-    .resourcebox{
-        background-color: var(--card-background);
-        display: grid;
-        grid-template-columns: max-content max-content;
-        align-items: center;
-        justify-content: space-evenly;;
-        margin-block-start: 1em;
-    }
-    .bookshelf{
-        grid-column: 2 / 3;
-        display: block;
-        background-color: var(--background);
-        border-radius: 0.3em solid var(--card-border);
-        padding: 1em;
-        max-width: 11em;
-        border-radius: 50%;
+	.resourcebox {
+		background-color: var(--card-background);
+		display: grid;
+		grid-template-columns: max-content max-content;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-block-start: 1em;
+	}
+	.bookshelf {
+		grid-column: 2 / 3;
+		display: block;
+		background-color: var(--background);
+		border-radius: 0.3em solid var(--card-border);
+		padding: 1em;
+		max-width: 11em;
+		border-radius: 50%;
 
-        :global(h2)::after{
-        display:none;
-        }
+		:global(h2)::after {
+			display: none;
+		}
 
-        a :global(h2){
-        color:var(--foreground);
-        margin: 0em;
-        padding: 0em;
-        
-        }
-        div{
-            text-align: center;
-            width: 100%;
-        }
+		a :global(h2) {
+			color: var(--foreground);
+			margin: 0em;
+			padding: 0em;
+		}
+		div {
+			text-align: center;
+			width: 100%;
+		}
+	}
+	.resources {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		max-width: 100%;
 
-    }
-    .resources{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        max-width: 100%;
-
-        a{
-            color:var(--foreground);
-
-        }
-        
-    }
+		a {
+			color: var(--foreground);
+		}
+	}
 </style>
 
 <div class="resourcebox">
-    
-    <div class="bookshelf">
-        <div>Find more</div> 
-        <a href="/resources">
-            <h2>Resources</h2>
-        </a>
-        <a tabindex="-1" aria-hidden="true" href="/resources"><img class="book" alt="books on a shelf" src={booksImage.src} /></a>
-     </div>
+	<div class="bookshelf">
+		<div>Find more</div>
+		<a href="/resources">
+			<h2>Resources</h2>
+		</a>
+		<a tabindex="-1" aria-hidden="true" href="/resources"
+			><img class="book" alt="books on a shelf" src={booksImage.src} /></a
+		>
+	</div>
 
-    <ul class="resources">
-        <li><a href="#communities">Communities</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#reference">Reference Material</a></li>
-        <li><a href="#reading">Reading Practice</a></li>
-        <li><a href="#listening">Listening Practice</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#tools">Tools</a></li>
-    </ul>
+	<ul class="resources">
+		<li><a href="#communities">Communities</a></li>
+		<li><a href="#courses">Courses</a></li>
+		<li><a href="#reference">Reference Material</a></li>
+		<li><a href="#reading">Reading Practice</a></li>
+		<li><a href="#listening">Listening Practice</a></li>
+		<li><a href="#music">Music</a></li>
+		<li><a href="#tools">Tools</a></li>
+	</ul>
 </div>
-
