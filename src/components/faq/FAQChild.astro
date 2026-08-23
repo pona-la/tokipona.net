@@ -1,29 +1,20 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { faqImages } from "@/data/faqImages";
+import type { PublishedFaqEntry } from "./faq";
+
 interface Props {
 	title: string;
 	description: string;
 	draft?: boolean;
-	array: Array<{}>;
+	entries: PublishedFaqEntry[];
 	faq_title: string;
 	nextLink?: string;
 	prevLink?: string;
 	nextText?: string;
 }
 
-const {
-	title,
-	description,
-	draft,
-	array,
-	faq_title,
-	nextLink,
-	prevLink,
-	nextText,
-} = Astro.props;
-
-import { Image } from "astro:assets";
-import { faqImages } from "@/data/faqImages";
+const { entries } = Astro.props;
 ---
 
 <style>
@@ -256,7 +247,7 @@ import { faqImages } from "@/data/faqImages";
 	<slot />
 
 	{
-		array.map(async (item) => (
+		entries.map(async (item) => (
 			<article class="entry-wrap">
 				<h3 class="entry-title" id={item.id}>
 					{item.data.title}
@@ -270,7 +261,7 @@ import { faqImages } from "@/data/faqImages";
 							{item.data.simple}
 						</div>
 					</details>
-					<div set:html={await item.rendered.html} class="entry-content">
+					<div set:html={item.rendered!.html} class="entry-content">
 						<div class="space-maker" />
 					</div>
 				</div>
@@ -284,7 +275,7 @@ import { faqImages } from "@/data/faqImages";
 		console.log("mu");
 
 		document.querySelectorAll("details.plant").forEach((details) => {
-			details.addEventListener("toggle", (event) => {
+			details.addEventListener("toggle", () => {
 				// Only run when the state changes to open
 				if (details.open) {
 					// Define the outside click handler function

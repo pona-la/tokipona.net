@@ -3,6 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import Article from "@/content/about/article.md";
 import * as contact from "@/content/about/contact.md";
 import Contact from "@/content/about/contact.md";
+
+type Reason = { id: string; text: string };
 ---
 
 <style>
@@ -38,7 +40,7 @@ import Contact from "@/content/about/contact.md";
 
 		<h3>For questions regarding:</h3>
 		{
-			contact.frontmatter.regarding.map((reason) => (
+			contact.frontmatter.regarding.map((reason: Reason) => (
 				<details name="regarding">
 					<summary>{reason.id}</summary>
 					<p set:html={reason.text} />
@@ -48,7 +50,7 @@ import Contact from "@/content/about/contact.md";
 
 		<h3>For questions from:</h3>
 		{
-			contact.frontmatter.from.map((reason) => (
+			contact.frontmatter.from.map((reason: Reason) => (
 				<details name="from">
 					<summary>{reason.id}</summary>
 					<p set:html={reason.text} />

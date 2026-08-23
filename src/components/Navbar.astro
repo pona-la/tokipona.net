@@ -1,6 +1,5 @@
 ---
 import DarkModeToggle from "@/components/DarkModeToggle.astro";
-import { RENDER_DRAFTS } from "@/utils/draft.ts";
 
 const links = [
 	{ name: "Home", href: "/" },
@@ -8,7 +7,8 @@ const links = [
 	{ name: "Resources", href: "/resources/" },
 	{ name: "Perspectives", href: "/perspectives/" },
 	{ name: "About", href: "/about/" },
-].filter((link) => !(link.draft && !RENDER_DRAFTS));
+];
+// ].filter((link) => !(link.draft && !RENDER_DRAFTS));
 ---
 
 <style>

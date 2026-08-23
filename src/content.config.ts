@@ -1,7 +1,6 @@
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
-import Faq from "./pages/faq.astro";
 
 const testimonials = defineCollection({
 	loader: glob({
@@ -15,16 +14,20 @@ const testimonials = defineCollection({
 	}),
 });
 
+const faqEntry = z.object({
+	title: z.string(),
+	simple: z.string(),
+	image: z.string(),
+	faq_group: z.int(),
+	faq_index: z.int(),
+});
+
 const faqEntries = defineCollection({
 	loader: glob({ base: "./src/content/faq", pattern: "**/*.{md,mdx}" }),
-	schema: z.object({
-		published: z.boolean(),
-		title: z.string(),
-		simple: z.optional(z.string()),
-		image: z.optional(z.string()),
-		faq_group: z.int(),
-		faq_index: z.optional(z.int()),
-	}),
+	schema: z.discriminatedUnion("published", [
+		faqEntry.extend({ published: z.literal(true) }),
+		faqEntry.partial().extend({ published: z.literal(false) }),
+	]),
 });
 
 export const collections = { testimonials, faqEntries };

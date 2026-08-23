@@ -1,19 +1,11 @@
 ---
 import FAQChild from "@/components/faq/FAQChild.astro";
-import { getCollection, getEntry, render } from "astro:content";
-const kasi = (
-	await getCollection("faqEntries", ({ data }) => {
-		return data.published == true && data.faq_group == 2;
-	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
+
+const kasi = await getFaqEntries(2);
 
 import { Image } from "astro:assets";
 import { faqImages } from "@/data/faqImages";
-const imagesSRC = kasi.map((entry) =>
-	entry.data.image ?
-		faqImages["/src/assets/sitelen/faq/" + entry.data.image]?.default
-	:	null,
-);
+import { getFaqEntries } from "./faq";
 ---
 
 <style>
@@ -66,7 +58,7 @@ const imagesSRC = kasi.map((entry) =>
 	nextLink={"/faq/insights/"}
 	prevLink={"/faq/basics/"}
 	nextText={"Deeper Insights"}
-	array={kasi}
+	entries={kasi}
 >
 	<div class="garden">
 		{

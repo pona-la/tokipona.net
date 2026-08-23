@@ -1,16 +1,25 @@
 ---
 const { name, category, withImg, hideCat } = Astro.props;
+
 import resources from "@/data/resources.yaml";
 import InfoSitelenToki from "@/components/resources/Info_SitelenToki.astro";
+
+export type Resource = {
+	name: string;
+	category: string;
+	description: string;
+	link: string;
+	img: string;
+};
 ---
 
 {
 	resources
 		.filter(
-			(r) =>
+			(r: Resource) =>
 				r.category === category &&
 				((withImg == true && r.img) ||
 					(withImg == false && r.img == undefined)),
 		)
-		.map((r) => <InfoSitelenToki entry={r} hideCat={hideCat} />)
+		.map((r: Resource) => <InfoSitelenToki entry={r} hideCat={hideCat} />)
 }

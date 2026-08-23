@@ -6,6 +6,7 @@
 		"dev": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
+		"check": "astro check",
 		"astro": "astro",
 		"format": "prettier --write ."
 	},
@@ -16,12 +17,14 @@
 		"not dead"
 	],
 	"dependencies": {
+		"@astrojs/check": "^0.9.10",
 		"@astrojs/cloudflare": "^13.7.0",
 		"@astrojs/mdx": "^5.0.6",
 		"@astrojs/sitemap": "^3.7.3",
 		"@rollup/plugin-yaml": "^5.0.0",
 		"astro": "^6.4.8",
-		"bsky-embed": "^0.2.7"
+		"bsky-embed": "^0.2.7",
+		"typescript": "^6"
 	},
 	"devDependencies": {
 		"browserslist": "^4.28.8",
