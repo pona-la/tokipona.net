@@ -1,0 +1,32 @@
+<div id="dev-warning">
+	<p>
+		This is the development branch. You are previewing a version of the site
+		that is still being worked on.
+	</p>
+
+	<p>Go to the <a href="https://tokipona.net">actual website</a></p>
+
+	<p>
+		Give your feedback <a href="https://tokipona.net"
+			>at the #pali-pona Discord server</a>
+	</p>
+
+	<button id="dismiss-dev-warning"
+		>Understood. Hide this message for the rest of this session</button
+	>
+	<script>
+		function olenanuseme() {
+			if (!sessionStorage.dnd) {
+				document.getElementById("dev-warning")!.style.display = "block";
+			}
+		}
+		document
+			.getElementById("dismiss-dev-warning")
+			?.addEventListener("click", () => {
+				sessionStorage.dnd = true;
+				document.getElementById("dev-warning")!.style.display = "none";
+				olenanuseme();
+			});
+		olenanuseme();
+	</script>
+</div>
