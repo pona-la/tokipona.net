@@ -1,46 +1,41 @@
 ---
 import FilterFor from "@/components/resources/FilterFor.astro";
 const { name, category, withImg } = Astro.props;
-
 ---
+
 <style>
-    		.courses {
-			columns: 20em;
-			gap: 2em;
-			margin: 0;
-			padding: 0;
-			padding-inline: 1em;
+	.courses {
+		columns: 20em;
+		gap: 2em;
+		margin: 0;
+		padding: 0;
+		padding-inline: 1em;
 
-			li {
-				break-inside: avoid;
-				list-style-type: none;
-				padding-bottom: 2em;
+		li {
+			break-inside: avoid;
+			list-style-type: none;
+			padding-bottom: 2em;
 
-				a {
-					font-size: 1.5em;
-					padding-inline-end: 0.25em;
-					font-weight: 600;
-				}
+			a {
+				font-size: 1.5em;
+				padding-inline-end: 0.25em;
+				font-weight: 600;
+			}
 
-								img {
-					max-width: 6em;
-					float: right;
-					margin-inline-start: 2em;
-					margin-block-start: 1em;
-				}
-
+			img {
+				max-width: 6em;
+				float: right;
+				margin-inline-start: 2em;
+				margin-block-start: 1em;
 			}
 		}
-		.courses .cat{
-			color: var(--foreground-muted);
-		}
-
+	}
+	.courses .cat {
+		color: var(--foreground-muted);
+	}
 </style>
 
-		<ul class="courses">
-
-						<FilterFor
-                        name={name} category={category} withImg={withImg}></FilterFor>
-            <slot />
-
-		</ul>
+<ul class="courses">
+	<FilterFor name={name} category={category} withImg={withImg} />
+	<slot />
+</ul>

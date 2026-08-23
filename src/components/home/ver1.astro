@@ -1,0 +1,500 @@
+<style>
+	.words {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 5.5em);
+		justify-content: center;
+		justify-items: center;
+		line-height: 1em;
+		font-size: 0.8em;
+		text-align: center;
+		border: none;
+		row-gap: 1em;
+	}
+	.subtitle {
+		display: block;
+		font-size: 1.2em;
+		text-align: center;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+	}
+	.button {
+		display: block;
+		border: none;
+		background-color: inherit;
+		color: inherit;
+		white-space-collapse: collapse;
+		cursor: pointer;
+		text-wrap-mode: wrap;
+		border-radius: var(--rounding-small);
+	}
+	.button:hover {
+		background-color: var(--card-background);
+	}
+	.button :not([lang="en"]) {
+		display: block;
+	}
+	span[lang="en"] {
+		display: none;
+		font-style: italic;
+		line-height: 1em;
+		font-size: 0.8em;
+		font-weight: 800;
+
+		color: var(--link);
+	}
+	.kije {
+		display: flex;
+		justify-content: end;
+		grid-column: -3 / -1;
+	}
+	.kije .button {
+		text-align: right;
+		margin-right: 0;
+	}
+	.caveat {
+		text-decoration: none;
+	}
+	p .caveat {
+		font-size: 1.5em;
+		font-weight: 800;
+	}
+	p:has(.caveat) {
+		text-align: center;
+	}
+</style>
+
+<h1>
+	Toki Pona: the language of 120<a
+		class="caveat"
+		id="open-caveat"
+		href="#pini-caveat">*</a
+	> words
+</h1>
+
+<span id="vocab" class="subtitle">Explore the vocabulary:</span>
+
+<section aria-labelled-by="vocab" class="words">
+	<button lang="tok" class="button"
+		><span>a</span><span lang="en">ah!</span></button
+	>
+	<button lang="tok" class="button"
+		><span>akesi</span><span lang="en">reptile</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ala</span><span lang="en">no</span></button
+	>
+	<button lang="tok" class="button"
+		><span>alasa</span><span lang="en">hunt</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ale</span><span lang="en">all</span></button
+	>
+	<button lang="tok" class="button"
+		><span>anpa</span><span lang="en">low</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ante</span><span lang="en">different</span></button
+	>
+	<button lang="tok" class="button"
+		><span>anu</span><span lang="en">or</span></button
+	>
+	<button lang="tok" class="button"
+		><span>awen</span><span lang="en">sustain</span></button
+	>
+	<button lang="tok" class="button"
+		><span>e</span><span lang="en">(marks object)</span></button
+	>
+	<button lang="tok" class="button"
+		><span>en</span><span lang="en">(marks subject)</span></button
+	>
+	<button lang="tok" class="button"
+		><span>esun</span><span lang="en">exchange</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ijo</span><span lang="en">concept</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ike</span><span lang="en">negative</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ilo</span><span lang="en">tool</span></button
+	>
+	<button lang="tok" class="button"
+		><span>insa</span><span lang="en">internal</span></button
+	>
+	<button lang="tok" class="button"
+		><span>jaki</span><span lang="en">unclean</span></button
+	>
+	<button lang="tok" class="button"
+		><span>jan</span><span lang="en">human</span></button
+	>
+	<button lang="tok" class="button"
+		><span>jelo</span><span lang="en">yellow</span></button
+	>
+	<button lang="tok" class="button"
+		><span>jo</span><span lang="en">have</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kala</span><span lang="en">fish</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kalama</span><span lang="en">noise</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kama</span><span lang="en">come</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kasi</span><span lang="en">plant</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ken</span><span lang="en">ability</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kepeken</span><span lang="en">via</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kili</span><span lang="en">plant product</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kiwen</span><span lang="en">hard object</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ko</span><span lang="en">semi-solid</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kon</span><span lang="en">air</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kule</span><span lang="en">colour</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kulupu</span><span lang="en">group</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kute</span><span lang="en">ear</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kin</span><span lang="en">too</span></button
+	>
+	<button lang="tok" class="button"
+		><span>kipisi</span><span lang="en">divide</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ku</span><span lang="en">2021 dictionary</span></button
+	>
+	<button lang="tok" class="button"
+		><span>la</span><span lang="en">(marks context)</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lape</span><span lang="en">rest</span></button
+	>
+	<button lang="tok" class="button"
+		><span>laso</span><span lang="en">blue-green</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lawa</span><span lang="en">head</span></button
+	>
+	<button lang="tok" class="button"
+		><span>len</span><span lang="en">covering</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lete</span><span lang="en">cold</span></button
+	>
+	<button lang="tok" class="button"
+		><span>li</span><span lang="en">marks verb</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lili</span><span lang="en">small</span></button
+	>
+	<button lang="tok" class="button"
+		><span>linja</span><span lang="en">string-like</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lipu</span><span lang="en">book</span></button
+	>
+	<button lang="tok" class="button"
+		><span>loje</span><span lang="en">reddish</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lon</span><span lang="en">at</span></button
+	>
+	<button lang="tok" class="button"
+		><span>luka</span><span lang="en">hand</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lukin</span><span lang="en">see</span></button
+	>
+	<button lang="tok" class="button"
+		><span>leko</span><span lang="en">cube</span></button
+	>
+	<button lang="tok" class="button"
+		><span>lupa</span><span lang="en">gap</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ma</span><span lang="en">land</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mama</span><span lang="en">creator</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mani</span><span lang="en">money</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mi</span><span lang="en">me/we</span></button
+	>
+	<button lang="tok" class="button"
+		><span>moku</span><span lang="en">food</span></button
+	>
+	<button lang="tok" class="button"
+		><span>moli</span><span lang="en">death</span></button
+	>
+	<button lang="tok" class="button"
+		><span>monsi</span><span lang="en">behind</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mu</span><span lang="en">animal call</span></button
+	>
+	<button lang="tok" class="button"
+		><span>monsuta</span><span lang="en">scary</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mun</span><span lang="en">celestial</span></button
+	>
+	<button lang="tok" class="button"
+		><span>musi</span><span lang="en">amuse</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mute</span><span lang="en">lots</span></button
+	>
+	<button lang="tok" class="button"
+		><span>misikeke</span><span lang="en">medicine</span></button
+	>
+	<button lang="tok" class="button"
+		><span>meli</span><span lang="en">feminine</span></button
+	>
+	<button lang="tok" class="button"
+		><span>mije</span><span lang="en">masculine</span></button
+	>
+	<button lang="tok" class="button"
+		><span>nanpa</span><span lang="en">number</span></button
+	>
+	<button lang="tok" class="button"
+		><span>nasa</span><span lang="en">unusual</span></button
+	>
+	<button lang="tok" class="button"
+		><span>nasin</span><span lang="en">way</span></button
+	>
+	<button lang="tok" class="button"
+		><span>nena</span><span lang="en">bump</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ni</span><span lang="en">that</span></button
+	>
+	<button lang="tok" class="button"
+		><span>nimi</span><span lang="en">word</span></button
+	>
+	<button lang="tok" class="button"
+		><span>noka</span><span lang="en">foot</span></button
+	>
+	<button lang="tok" class="button"
+		><span>namako</span><span lang="en">extra</span></button
+	>
+	<button lang="tok" class="button"
+		><span>o</span><span lang="en">(marks imperative)</span></button
+	>
+	<button lang="tok" class="button"
+		><span>olin</span><span lang="en">affection</span></button
+	>
+	<button lang="tok" class="button"
+		><span>ona</span><span lang="en">they/it</span></button
+	>
+	<button lang="tok" class="button"
+		><span>open</span><span lang="en">open</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pakala</span><span lang="en">damage</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pali</span><span lang="en">work</span></button
+	>
+	<button lang="tok" class="button"
+		><span>palisa</span><span lang="en">sticky</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pan</span><span lang="en">grain product</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pana</span><span lang="en">send</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pi</span><span lang="en">(regroup modifiers)</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pilin</span><span lang="en">feeling</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pimeja</span><span lang="en">dark</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pini</span><span lang="en">end</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pipi</span><span lang="en">insect</span></button
+	>
+	<button lang="tok" class="button"
+		><span>poka</span><span lang="en">near</span></button
+	>
+	<button lang="tok" class="button"
+		><span>poki</span><span lang="en">contain</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pona</span><span lang="en">positive</span></button
+	>
+	<button lang="tok" class="button"
+		><span>pu</span><span lang="en">2014 book</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sama</span><span lang="en">similar</span></button
+	>
+	<button lang="tok" class="button"
+		><span>seli</span><span lang="en">heat</span></button
+	>
+	<button lang="tok" class="button"
+		><span>selo</span><span lang="en">boundary</span></button
+	>
+	<button lang="tok" class="button"
+		><span>seme</span><span lang="en">what</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sewi</span><span lang="en">above</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sijelo</span><span lang="en">body</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sike</span><span lang="en">circle</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sin</span><span lang="en">new</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sina</span><span lang="en">you</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sinpin</span><span lang="en">front</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sitelen</span><span lang="en">symbol</span></button
+	>
+	<button lang="tok" class="button"
+		><span>sona</span><span lang="en">knowledge</span></button
+	>
+	<button lang="tok" class="button"
+		><span>soko</span><span lang="en">fungi</span></button
+	>
+	<button lang="tok" class="button"
+		><span>soweli</span><span lang="en">mammal</span></button
+	>
+	<button lang="tok" class="button"
+		><span>suli</span><span lang="en">large</span></button
+	>
+	<button lang="tok" class="button"
+		><span>suno</span><span lang="en">light</span></button
+	>
+	<button lang="tok" class="button"
+		><span>supa</span><span lang="en">surface</span></button
+	>
+	<button lang="tok" class="button"
+		><span>suwi</span><span lang="en">pleasant</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tan</span><span lang="en">from</span></button
+	>
+	<button lang="tok" class="button"
+		><span>taso</span><span lang="en">only</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tawa</span><span lang="en">towards</span></button
+	>
+	<button lang="tok" class="button"
+		><span>telo</span><span lang="en">liquid</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tenpo</span><span lang="en">time</span></button
+	>
+	<button lang="tok" class="button"
+		><span>toki</span><span lang="en">talk</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tomo</span><span lang="en">building</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tonsi</span><span lang="en">nonbinary</span></button
+	>
+	<button lang="tok" class="button"
+		><span>tu</span><span lang="en">two</span></button
+	>
+	<button lang="tok" class="button"
+		><span>unpa</span><span lang="en">sex</span></button
+	>
+	<button lang="tok" class="button"
+		><span>uta</span><span lang="en">mouth</span></button
+	>
+	<button lang="tok" class="button"
+		><span>utala</span><span lang="en">fight</span></button
+	>
+	<button lang="tok" class="button"
+		><span>walo</span><span lang="en">lightish</span></button
+	>
+	<button lang="tok" class="button"
+		><span>wan</span><span lang="en">one</span></button
+	>
+	<button lang="tok" class="button"
+		><span>waso</span><span lang="en">bird</span></button
+	>
+	<button lang="tok" class="button"
+		><span>wawa</span><span lang="en">strength</span></button
+	>
+	<button lang="tok" class="button"
+		><span>weka</span><span lang="en">away</span></button
+	>
+	<button lang="tok" class="button"
+		><span>wile</span><span lang="en">desire</span></button
+	>
+	<span class="kije"
+		>& <button lang="tok" class="button"
+			><span>kijetesantakalu</span><span lang="en">raccoon</span></button
+		>
+	</span>
+</section>
+
+<p>
+	<a class="caveat" id="pini-caveat" href="#open-caveat">*</a>As much as it is
+	possible to exactly count the words in any language. <br /><a
+		href="/faq/#basics/how-many-words"
+		>Varies from 120-140 depending on the speaker.</a
+	>
+</p>
+
+<script>
+	document.querySelectorAll(".first .button").forEach((btn) => {
+		let state = 0;
+		const tokSpan = btn.children[0]; // the tok word
+		const enSpan = btn.children[1]; // the lang="en" span
+
+		btn.addEventListener("click", () => {
+			state = (state + 1) % 3;
+
+			if (state === 1) {
+				tokSpan.style.cssText = "font-family: var(--spfont)";
+				enSpan.style.cssText = "";
+			} else if (state === 2) {
+				tokSpan.style.cssText = "display: none;";
+				enSpan.style.cssText = "display: block;";
+			} else {
+				tokSpan.style.cssText = "";
+				enSpan.style.cssText = "";
+			}
+		});
+	});
+</script>

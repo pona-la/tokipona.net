@@ -4,7 +4,9 @@ faq_group: 2
 faq_index: 4
 published: true
 image: how-many-speakers.png
-simple: Hard to know for sure. We guess 3000-4000 speakers have been active online, but there's probably more.  
+simple:
+  Hard to know for sure. We guess 3000-4000 speakers have been active online,
+  but there's probably more.
 ---
 
 Pinning down an exact number of Toki Pona speakers is hard. It depends on who

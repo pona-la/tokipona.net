@@ -12,5 +12,5 @@ import InfoSitelenToki from "@/components/resources/Info_SitelenToki.astro";
 				((withImg == true && r.img) ||
 					(withImg == false && r.img == undefined)),
 		)
-		.map((r) => <InfoSitelenToki entry={r} hideCat={hideCat}></InfoSitelenToki>)
+		.map((r) => <InfoSitelenToki entry={r} hideCat={hideCat} />)
 }

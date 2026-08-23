@@ -4,7 +4,9 @@ faq_group: 2
 faq_index: 1
 published: true
 image: is-it-useful.png
-simple: It's not economically useful. For most speakers, it's a fun hobby and useful emotionally. Some use it as a personal or secret language.
+simple:
+  It's not economically useful. For most speakers, it's a fun hobby and useful
+  emotionally. Some use it as a personal or secret language.
 ---
 
 Toki Pona is what you make of it. If you'd like to experience and participate in
@@ -23,8 +25,8 @@ _Maybe?!_[^maybe], it is also more complicated than that.
 
 It is common to think about language learning in terms of the utility that
 language provides you. For most languages, there is at least one obvious
-utility: There is a community of people who speak this language somewhere in the world,
-and if you go there, you'll be able to read the street signs, purchase
+utility: There is a community of people who speak this language somewhere in the
+world, and if you go there, you'll be able to read the street signs, purchase
 groceries, and ask where the bathroom is.
 
 Toki Pona is different from most natural languages in this regard. There are no
@@ -38,14 +40,12 @@ to speak. It is "useful" because it can make us more considerate of what our
 words mean, to ourselves and to others. It is "useful" because it helps us to
 meet close friends, and even partners. Toki Pona's usefulness cannot be measured
 economically, but it can be felt emotionally. You can also
-[jump to "Perspectives"](/perspectives/) to see Toki Pona
-speakers describe what they found "useful" about Toki Pona—or more aptly, how
-Toki Pona impacted their lives.
-
+[jump to "Perspectives"](/perspectives/) to see Toki Pona speakers describe what
+they found "useful" about Toki Pona—or more aptly, how Toki Pona impacted their
+lives.
 
 <hr style="width: 100%">
 <h4 style="text-align: center">Footnotes</h4>
-
 
 [^maybe]:
     Realistically, the answer is no; Toki Pona does not have the volume of
@@ -53,5 +53,3 @@ Toki Pona impacted their lives.
     can fit Toki Pona into your daily life on your own, find a few people who
     you only share Toki Pona with to speak to, and do commissions in Toki Pona
     for some money. But don't learn Toki Pona with these as your expectations!
-
-

@@ -27,15 +27,14 @@ import Insights from "@/components/faq/insights.astro";
 ---
 
 <style>
-	:body{
-
+	:body {
 	}
 	.above-description {
 		max-width: 30em;
 		text-align: center;
 		margin: 0 auto;
 
-		a{
+		a {
 			color: inherit;
 		}
 	}
@@ -76,25 +75,25 @@ import Insights from "@/components/faq/insights.astro";
 		}
 	}
 
-	.right-toc, .small-toc{
+	.right-toc,
+	.small-toc {
 		--toc-highlight-color: var(--card-border);
 		--toc-quick-margin: -0.5em 0em;
 
-		&:is(details){
-		--toc-highlight-color: var(--card-border);
-		--toc-quick-margin: -0.5em 1.5em;
+		&:is(details) {
+			--toc-highlight-color: var(--card-border);
+			--toc-quick-margin: -0.5em 1.5em;
 		}
 
-		ul li:not(.quick-toc){
-
+		ul li:not(.quick-toc) {
 			display: flex;
 			align-items: center;
 
-			span{
+			span {
 				writing-mode: sideways-lr;
 				line-height: 1em;
 			}
-			ol{
+			ol {
 				border-left: 0.25em solid var(--toc-highlight-color);
 				position: relative;
 				padding: 0;
@@ -102,7 +101,7 @@ import Insights from "@/components/faq/insights.astro";
 
 				list-style-type: none;
 
-				li::before{
+				li::before {
 					position: absolute;
 					left: -2em;
 					top: 0;
@@ -114,17 +113,15 @@ import Insights from "@/components/faq/insights.astro";
 					width: 2em;
 				}
 
-				li{
+				li {
 					position: relative;
 					margin-left: 2em;
 					margin-bottom: 0.5em;
 					line-height: 1.2em;
-
-
-				};
+				}
 			}
 		}
-		ul{
+		ul {
 			display: grid;
 			counter-reset: entries;
 			row-gap: 1em;
@@ -132,24 +129,22 @@ import Insights from "@/components/faq/insights.astro";
 			padding-right: 0.75em;
 			margin-block: 0.5em;
 		}
-		.quick-toc{
+		.quick-toc {
 			list-style: none;
-			text-align:center;
+			text-align: center;
 			line-height: 1em;
 			margin-block: var(--toc-quick-margin);
 
-			a{
+			a {
 				color: inherit;
-				text-decoration:none;
-				border-bottom:  0.25em solid var(--toc-highlight-color);
-
+				text-decoration: none;
+				border-bottom: 0.25em solid var(--toc-highlight-color);
 			}
 		}
-		.quick-toc::before{
-			content: '+';
+		.quick-toc::before {
+			content: "+";
 			padding-right: 0.5em;
 		}
-
 	}
 
 	.ijo {
@@ -242,9 +237,7 @@ import Insights from "@/components/faq/insights.astro";
 	<section style="grid-area: right;" class="right-toc">
 		<ul>
 			<li>
-				<span class="toc-section-title">
-					The Basics
-				</span>
+				<span class="toc-section-title"> The Basics </span>
 				<ol>
 					{
 						kasi.map((item) => (
@@ -256,9 +249,7 @@ import Insights from "@/components/faq/insights.astro";
 				</ol>
 			</li>
 			<li>
-								<span class="toc-section-title">
-					Using Toki Pona
-				</span>
+				<span class="toc-section-title"> Using Toki Pona </span>
 
 				<ol>
 					{
@@ -271,9 +262,7 @@ import Insights from "@/components/faq/insights.astro";
 				</ol>
 			</li>
 			<li>
-								<span class="toc-section-title">
-					Deeper Insights
-				</span>
+				<span class="toc-section-title"> Deeper Insights </span>
 
 				<ol>
 					{
@@ -291,8 +280,16 @@ import Insights from "@/components/faq/insights.astro";
 	<section style="grid-area: left;">
 		<h1>Toki Pona: Frequently Asked Questions</h1>
 
-		<p class="above-description">Our FAQ is a little bit long. We've recruited some <a title="plants" href="https://nimi.li/kasi">kasi</a>, <a title="birds" href="https://nimi.li/waso">waso</a>, and <a title="mammals" href="https://nimi.li/soweli">soweli</a> to prepare very condensed summaries of each answer. Click on the image next to the question. They will try to help out!</p>
-
+		<p class="above-description">
+			Our FAQ is a little bit long. We've recruited some <a
+				title="plants"
+				href="https://nimi.li/kasi">kasi</a
+			>, <a title="birds" href="https://nimi.li/waso">waso</a>, and <a
+				title="mammals"
+				href="https://nimi.li/soweli">soweli</a
+			> to prepare very condensed summaries of each answer. Click on the image next
+			to the question. They will try to help out!
+		</p>
 
 		<details class="small-toc">
 			<summary> Table of Contents </summary>
@@ -333,8 +330,9 @@ import Insights from "@/components/faq/insights.astro";
 						}
 					</ol>
 				</li>
-							<li class="quick-toc"><a href="#quick-questions">Quick Questions</a></li>
-
+				<li class="quick-toc">
+					<a href="#quick-questions">Quick Questions</a>
+				</li>
 			</ul>
 		</details>
 

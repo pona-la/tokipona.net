@@ -19,8 +19,8 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <style>
-	@media  (min-height: 690px) {
-	.stuck-scroll {
+	@media (min-height: 690px) {
+		.stuck-scroll {
 			position: sticky;
 			top: 1rem;
 		}
@@ -31,16 +31,12 @@ import Layout from "@/layouts/Layout.astro";
 		}
 	}
 	@media only screen and (min-width: 1201px) {
-		.stuck-scroll{ /* Prevent side container's details from causing overflow where you can't view it*/
+		.stuck-scroll {
+			/* Prevent side container's details from causing overflow where you can't view it*/
 			max-height: 100vh;
 			overflow: auto;
-			
-
 		}
-
-
 	}
-
 </style>
 
 <Layout
@@ -51,11 +47,13 @@ import Layout from "@/layouts/Layout.astro";
 ">
 		<div style="max-width: 40em;margin: 0 auto;">
 			<h1>Perspectives</h1>
-			<p style="text-align: center"><em>Personal Experiences and Stories</em></p>
+			<p style="text-align: center">
+				<em>Personal Experiences and Stories</em>
+			</p>
 			<p>
 				Why learn Toki Pona? This question has more answers than speakers, so we
-				collected these from community members to get the most
-				complete answer possible.
+				collected these from community members to get the most complete answer
+				possible.
 			</p>
 			<p>
 				<strong>We asked speakers to reflect on these four questions:</strong>
