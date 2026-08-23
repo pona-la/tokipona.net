@@ -1,29 +1,15 @@
 ---
-import { getCollection, getEntry } from "astro:content";
-const kasi = (
-	await getCollection("faqEntries", ({ data }) => {
-		return data.published == true && data.faq_group == 1;
-	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
-
-const waso = (
-	await getCollection("faqEntries", ({ data }) => {
-		return data.published == true && data.faq_group == 2;
-	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
-
-const soweli = (
-	await getCollection("faqEntries", ({ data }) => {
-		return data.published == true && data.faq_group == 3;
-	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
-
 import Layout from "@/layouts/Layout.astro";
 import { compiledContent as toki } from "@/content/rapid-fire.md";
 import Basic from "@/components/faq/basics.astro";
 import Using from "@/components/faq/using-toki-pona.astro";
 
 import Insights from "@/components/faq/insights.astro";
+import { getFaqEntries } from "@/components/faq/faq";
+
+const kasi = await getFaqEntries(1);
+const waso = await getFaqEntries(2);
+const soweli = await getFaqEntries(3);
 ---
 
 <style>

@@ -1,14 +1,11 @@
 ---
 import FAQChild from "@/components/faq/FAQChild.astro";
-import { getCollection, getEntry, render } from "astro:content";
-const kasi = (
-	await getCollection("faqEntries", ({ data }) => {
-		return data.published == true && data.faq_group == 1;
-	})
-).sort((a, b) => a.data.faq_index.valueOf() - b.data.faq_index.valueOf());
+
+const kasi = await getFaqEntries(1);
 
 import { Image } from "astro:assets";
 import { faqImages } from "@/data/faqImages";
+import { getFaqEntries } from "./faq";
 ---
 
 <style>
@@ -45,7 +42,7 @@ import { faqImages } from "@/data/faqImages";
 	faq_title={"The Basics"}
 	title={"The Basics | Toki Pona FAQ"}
 	description={"Answers to common questions regarding the language with 130 words."}
-	array={kasi}
+	entries={kasi}
 	nextLink={"/faq/using-toki-pona/"}
 	prevLink={undefined}
 	nextText={"Using Toki Pona"}

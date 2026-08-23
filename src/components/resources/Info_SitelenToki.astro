@@ -1,9 +1,17 @@
 ---
-const { entry, hideCat } = Astro.props;
+import type { Resource } from "./FilterFor.astro";
 import { Image } from "astro:assets";
 
 import { resourceImages } from "@/data/resourceImages";
+
+interface Props {
+	entry: Resource;
+	hideCat: boolean;
+}
+
+const { entry, hideCat } = Astro.props;
 const isSvg = entry.img?.endsWith(".svg");
+// @ts-expect-error
 const image = entry.img ? resourceImages[entry.img]?.default : null;
 ---
 

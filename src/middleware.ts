@@ -1,7 +1,7 @@
 import type { APIContext, MiddlewareNext } from "astro";
 import { RENDER_DRAFTS, isDraftResponse } from "./utils/draft";
 
-export async function onRequest(context: APIContext, next: MiddlewareNext) {
+export async function onRequest(_context: APIContext, next: MiddlewareNext) {
 	const response = await next();
 	if (!RENDER_DRAFTS && isDraftResponse(response)) {
 		// ni li tan nasa a pi ilo Aso. ona li pali lon tenpo pana ala la,
