@@ -38,5 +38,6 @@ vice-versa), their historical ties being another source of mutual curiosity.
 
 This overlap occasionally invites opportunities for cross-community
 collaboration. A contemporary example: some Esperanto-speaking members of the
-Toki Pona community are working with TEJO, the international Esperanto youth
-organization, to plan a joint gathering in Tiana in August 2026.
+Toki Pona community worked with TEJO, the international Esperanto youth
+organization, to plan
+[a joint gathering in Tiana in August 2026.](https://ijk2026.tejo.org/la-europa-tokipona-renkontigo/)
