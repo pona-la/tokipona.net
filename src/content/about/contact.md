@@ -1,8 +1,8 @@
 ---
 regarding:
-  - id: "Commisioning Toki Pona Work"
+  - id: "Commissioning Toki Pona Work"
     text:
-      "Commisions for work may include translations, proofreading,
+      "Commissions for work may include translations, proofreading,
       consultations, illustrations, voice work, tutoring, etc. <br><br>We will
       help you use announcement boards in community spaces to find and recruit a
       good fit for job. If your project cannot be advertised publically, we will
