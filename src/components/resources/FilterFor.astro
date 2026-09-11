@@ -1,16 +1,9 @@
 ---
 const { name, category, withImg, hideCat } = Astro.props;
 
-import resources from "@/data/resources.yaml";
+import { resources } from "@/data/resources.ts";
+import type { Resource } from "@/data/resources.ts";
 import InfoSitelenToki from "@/components/resources/Info_SitelenToki.astro";
-
-export type Resource = {
-	name: string;
-	category: string;
-	description: string;
-	link: string;
-	img: string;
-};
 ---
 
 {
