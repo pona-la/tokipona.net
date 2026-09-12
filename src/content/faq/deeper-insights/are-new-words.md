@@ -14,7 +14,7 @@ reasons: to reflect personal preferences, to expand on common concepts, to
 introduce alternative grammatical structures, or even as a silly inside-joke.
 There are many many such coinages. Though rare, some neologisms have
 successfully spread throughout the community (also see
-"[Can I propose changes to Toki Pona?](/faq/using-toki-pona/index.html#using-toki-pona/proposing-changes)").
+"[Can I propose changes to Toki Pona?](/faq/#using-toki-pona/proposing-changes)").
 Besides novel coinages, there's also a second way that words may be introduced:
 A speaker may rediscover an older word from Toki Pona's earlier years and choose
 to adopt it into their speaking style. In this case, the introduced word isn't
