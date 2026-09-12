@@ -1,0 +1,7 @@
+import {wasonaLangs} from "@/data/wasona.ts";
+
+This website offers a full Toki Pona crash-course. It teaches vocabulary, grammar, and the sitelen pona writing system using Duolingo-style quizzes and exercises to boost retention. Available in many languages: {
+	Object.entries(wasonaLangs).map(([langCode, {url}]) => {
+		return <a href={url}>{new Intl.DisplayNames(langCode, {type: "language"}).of(langCode)}</a>
+	}).reduce((prev, curr) => <>{prev}{" · "}{curr}</>)
+}

@@ -30,6 +30,7 @@ const image = entry.img ? resourceImages[entry.img]?.default : null;
 
 	<a
 		aria-hidden="true"
+		class="meta"
 		href={entry.link}
 		target="_blank"
 		rel="noopener noreferrer"
@@ -41,5 +42,5 @@ const image = entry.img ? resourceImages[entry.img]?.default : null;
 		}</a
 	>
 
-	{entry.description && <p>{entry.description}</p>}
+	{entry.description && (typeof entry.description === "string" ? <p>{entry.description}</p> : <entry.description />)}
 </li>

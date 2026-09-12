@@ -1,11 +1,6 @@
 - name: Wasona
   category: course
-  description:
-    "This website offers a full Toki Pona crash-course. It teaches vocabulary,
-    grammar, and the sitelen pona writing system using Duolingo-style quizzes
-    and exercises to boost retention. Available in many languages: English ·
-    čeština · dansk · Deutsch · español · français · magyar · italiano · polski
-    · português · Tagalog · русский · українська · العربية · עברית"
+  descriptionMdx: wasona
   link: https://wasona.com/
   img: /src/assets/sitelen/resources/wasona.png
 - name: sona.pona.la
