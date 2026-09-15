@@ -1,6 +1,7 @@
 ---
 import { Font } from "astro:assets";
 
+import fontUrl from "../assets/fonts/nasin-nanpa-5.0.0-beta.3.otf?url";
 import ScriptToggleDarkMode from "@/components/ScriptToggleDarkMode.astro";
 
 interface Props {
@@ -27,6 +28,7 @@ const { title, description } = Astro.props;
 
 <!-- Font preloads -->
 <Font cssVariable="--font-andika" preload />
+<Font cssVariable="--font-nasin-nanpa" preload />
 
 {
 	!noURL ?

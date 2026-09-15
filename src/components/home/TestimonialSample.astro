@@ -1,0 +1,296 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+
+const testimonials = await getCollection("testimonials");
+const selectedTestimonials = testimonials.sort((a, b) =>
+	a.data.author.localeCompare(b.data.author),
+);
+---
+
+<style>
+	figure {
+		margin: 0;
+		margin-block: 0;
+		margin-inline: 0.2rem;
+		display: grid;
+		grid-template-rows: 1fr max-content;
+		align-items: start;
+		justify-content: end;
+		break-inside: avoid;
+		padding: 0.5em 1.5em 0.5em 1.5em;
+		display: none;
+		height: 30rem;
+	}
+	figure:nth-of-type(3n + 1) {
+		background-color: var(--card-background);
+	}
+	figure:nth-of-type(3n + 2) {
+		background-color: var(--border);
+	}
+	figure:nth-of-type(4n-1) {
+		background-color: var(--scene-background);
+	}
+
+	blockquote {
+		position: relative;
+		margin: 0;
+		padding-block: 0rem;
+		overflow: hidden;
+		align-self: stretch;
+		min-height: 0;
+	}
+	blockquote.clipped {
+		mask-image: linear-gradient(to bottom, #000 calc(100% - 4rem), transparent);
+	}
+	figure.expanded {
+		height: auto;
+		min-height: 30rem;
+	}
+	figure.expanded blockquote {
+		overflow: visible;
+		mask-image: none;
+	}
+	.expand {
+		position: absolute;
+		display: none;
+		bottom: 100%;
+		margin-bottom: 1em;
+		left: 50%;
+		translate: -50% 0;
+		font: inherit;
+		background: none;
+		border: none;
+		color: inherit;
+		font-weight: 600;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	blockquote.clipped + * > .expand {
+		display: block;
+	}
+	figure.expanded .expand {
+		display: none;
+	}
+
+	figcaption {
+		position: relative;
+		margin-top: 0.5rem;
+		color: var(--color-secondary);
+		text-align: right;
+	}
+	.testimonials {
+		margin-top: 0.75rem;
+		column-width: 20em;
+		column-gap: 0;
+		column-rule: 0.43rem solid var(--border);
+	}
+	.testimonials :global(a) {
+		color: inherit;
+	}
+	.tags {
+		list-style: none;
+		margin-block: 1em;
+		font-size: 0.8em;
+		flex-wrap: wrap;
+		column-gap: 0.5em;
+		row-gap: 0.25em;
+		justify-content: end;
+		opacity: 0.75;
+		li {
+			display: inline;
+			word-spacing: 0.75em;
+			word-break: keep-all;
+			hyphens: none;
+		}
+	}
+	.testimonials :global(details) {
+		background-color: inherit;
+		border: 0.1em dotted var(--foreground);
+	}
+	.testimonials :global(summary) {
+		list-style: initial;
+		margin-left: 0;
+	}
+	.note {
+		font-size: 0.8em;
+		line-height: 1em;
+		font-style: italic;
+		opacity: 0.9;
+		text-align: left;
+		border-top: 0.1em dotted var(--foreground);
+		padding: 0.5em;
+	}
+	.testimonial-container {
+		display: grid;
+		grid-template-columns: max-content 1fr max-content;
+		align-content: center;
+
+		h2 {
+			grid-column: 1 / 4;
+			grid-row: 1 / 2;
+		}
+		#next {
+			grid-column: 3 / 4;
+			grid-row: 2 / 3;
+		}
+		.cta {
+			margin: 0;
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			text-align: center;
+			align-self: center;
+		}
+		#previous {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+		.testimonials {
+			grid-column: 1 / 4;
+			grid-row: 3 / 4;
+		}
+
+		.switcher {
+			cursor: pointer;
+			background-color: var(--background);
+			border: 0;
+			color: var(--foreground);
+
+			span {
+				clip: rect(1px, 1px, 1px, 1px);
+				clip-path: inset(50%);
+				height: 1px;
+				width: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				background-color: var(--highlight);
+				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='size-5'%3E%3Cpath fill-rule='evenodd' d='M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");
+				width: 1.25rem;
+				height: 1.25rem;
+			}
+			&#previous::after {
+				rotate: 180deg;
+			}
+		}
+	}
+</style>
+
+<div class="testimonial-container">
+	<h2>Perspectives on Toki Pona</h2>
+	<p class="cta">Read all on <a href="/perspectives/">our page</a>!</p>
+	<button class="switcher" id="next"><span>Next</span></button>
+	<button class="switcher" id="previous"><span>Previous</span></button>
+	<div class="testimonials">
+		{
+			selectedTestimonials.map(async (testimonial) => {
+				const { Content } = await render(testimonial);
+				return (
+					<figure class:list={testimonial.data.tags}>
+						<blockquote>
+							<Content />
+						</blockquote>
+						<figcaption>
+							<button class="expand" aria-expanded="false">
+								expand...
+							</button>
+							— <cite>{testimonial.data.author}</cite>
+							<ul class="tags">
+								{testimonial.data.tags.map((tag) => (
+									<li>#{tag} </li>
+								))}
+							</ul>
+							{testimonial.data.notes && (
+								<p class="note">{testimonial.data.notes}</p>
+							)}
+						</figcaption>
+					</figure>
+				);
+			})
+		}
+	</div>
+</div>
+
+<script>
+	function scrambleTestimonials() {
+		const container = document.querySelector("div.testimonials");
+		if (!container) return; //straight out of claude, so improve it if you know a better solution
+
+		const figures = [...container.querySelectorAll("figure")];
+
+		// Fisher-Yates shuffle
+		for (let i = figures.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[figures[i], figures[j]] = [figures[j], figures[i]];
+		}
+
+		// Re-append in shuffled order
+		figures.forEach((fig) => container.appendChild(fig));
+	}
+	function iterateTestimonials() {
+		const figures = document
+			.querySelector("div.testimonials")!
+			.querySelectorAll("figure");
+		const next = document.getElementById("next") as HTMLElement;
+		const previous = document.getElementById("previous") as HTMLElement;
+		const breakpoint = figures.length - 1;
+		let current = 0;
+		set("grid");
+		next.addEventListener("click", () => {
+			set("");
+			current++;
+			set("grid");
+		});
+		previous.addEventListener("click", () => {
+			set("");
+			current--;
+			set("grid");
+		});
+		function set(value: string) {
+			if (current == -1) current = breakpoint;
+			else if (current > breakpoint) current = 0;
+			figures[current].style.display = value;
+		}
+	}
+	let clipping: ResizeObserver;
+	function watchClipping() {
+		clipping?.disconnect();
+		clipping = new ResizeObserver((entries) => {
+			for (const { target } of entries) {
+				target.classList.toggle(
+					"clipped",
+					target.scrollHeight > target.clientHeight + 1,
+				);
+			}
+		});
+		document
+			.querySelectorAll("div.testimonials blockquote")
+			.forEach((bq) => clipping.observe(bq));
+	}
+	function enableExpanding() {
+		const container = document.querySelector("div.testimonials");
+		if (!container) return;
+		container.addEventListener("click", (event) => {
+			const button = (event.target as HTMLElement).closest(".expand");
+			if (!button) return;
+			const figure = button.closest("figure") as HTMLElement;
+			figure.classList.toggle("expanded", true);
+			button.setAttribute("aria-expanded", "true");
+		});
+	}
+
+	scrambleTestimonials();
+	document.addEventListener("astro:page-load", scrambleTestimonials);
+	iterateTestimonials();
+	document.addEventListener("astro:page-load", iterateTestimonials);
+	watchClipping();
+	document.addEventListener("astro:page-load", watchClipping);
+	enableExpanding();
+	document.addEventListener("astro:page-load", enableExpanding);
+</script>
