@@ -1,0 +1,259 @@
+words:
+  - tok: a
+    en: ah!
+  - tok: akesi
+    en: reptile
+  - tok: ala
+    en: no
+  - tok: alasa
+    en: hunt
+  - tok: ale
+    en: all
+  - tok: anpa
+    en: low
+  - tok: ante
+    en: different
+  - tok: anu
+    en: or
+  - tok: awen
+    en: sustain
+  - tok: e
+    en: (marks object)
+  - tok: en
+    en: (marks subject)
+  - tok: esun
+    en: exchange
+  - tok: ijo
+    en: concept
+  - tok: ike
+    en: negative
+  - tok: ilo
+    en: tool
+  - tok: insa
+    en: internal
+  - tok: jaki
+    en: unclean
+  - tok: jan
+    en: human
+  - tok: jelo
+    en: yellow
+  - tok: jo
+    en: have
+  - tok: kala
+    en: fish
+  - tok: kalama
+    en: noise
+  - tok: kama
+    en: come
+  - tok: kasi
+    en: plant
+  - tok: ken
+    en: ability
+  - tok: kepeken
+    en: via
+  - tok: kili
+    en: plant product
+  - tok: kiwen
+    en: hard object
+  - tok: ko
+    en: semi-solid
+  - tok: kon
+    en: air
+  - tok: kule
+    en: colour
+  - tok: kulupu
+    en: group
+  - tok: kute
+    en: ear
+  - tok: kin
+    en: too
+  - tok: kipisi
+    en: divide
+  - tok: ku
+    en: 2021 dictionary
+  - tok: la
+    en: (marks context)
+  - tok: lape
+    en: rest
+  - tok: laso
+    en: blue-green
+  - tok: lawa
+    en: head
+  - tok: len
+    en: covering
+  - tok: lete
+    en: cold
+  - tok: li
+    en: (marks verb)
+  - tok: lili
+    en: small
+  - tok: linja
+    en: string-like
+  - tok: lipu
+    en: book
+  - tok: loje
+    en: reddish
+  - tok: lon
+    en: at
+  - tok: luka
+    en: hand
+  - tok: lukin
+    en: see
+  - tok: leko
+    en: cube
+  - tok: lupa
+    en: gap
+  - tok: ma
+    en: land
+  - tok: mama
+    en: creator
+  - tok: mani
+    en: money
+  - tok: mi
+    en: me/we
+  - tok: moku
+    en: food
+  - tok: moli
+    en: death
+  - tok: monsi
+    en: behind
+  - tok: mu
+    en: animal call
+  - tok: monsuta
+    en: scary
+  - tok: mun
+    en: celestial
+  - tok: musi
+    en: amuse
+  - tok: mute
+    en: lots
+  - tok: misikeke
+    en: medicine
+  - tok: meli
+    en: feminine
+  - tok: mije
+    en: masculine
+  - tok: nanpa
+    en: number
+  - tok: nasa
+    en: unusual
+  - tok: nasin
+    en: way
+  - tok: nena
+    en: bump
+  - tok: ni
+    en: that
+  - tok: nimi
+    en: word
+  - tok: noka
+    en: foot
+  - tok: namako
+    en: extra
+  - tok: o
+    en: (marks imperative)
+  - tok: olin
+    en: affection
+  - tok: ona
+    en: they/it
+  - tok: open
+    en: open
+  - tok: pakala
+    en: damage
+  - tok: pali
+    en: work
+  - tok: palisa
+    en: sticky
+  - tok: pan
+    en: grain product
+  - tok: pana
+    en: send
+  - tok: pi
+    en: (regroup modifiers)
+  - tok: pilin
+    en: feeling
+  - tok: pimeja
+    en: dark
+  - tok: pini
+    en: end
+  - tok: pipi
+    en: insect
+  - tok: poka
+    en: near
+  - tok: poki
+    en: contain
+  - tok: pona
+    en: positive
+  - tok: pu
+    en: 2014 book
+  - tok: sama
+    en: similar
+  - tok: seli
+    en: heat
+  - tok: selo
+    en: boundary
+  - tok: seme
+    en: what
+  - tok: sewi
+    en: above
+  - tok: sijelo
+    en: body
+  - tok: sike
+    en: circle
+  - tok: sin
+    en: new
+  - tok: sina
+    en: you
+  - tok: sinpin
+    en: front
+  - tok: sitelen
+    en: symbol
+  - tok: sona
+    en: knowledge
+  - tok: soko
+    en: fungi
+  - tok: soweli
+    en: mammal
+  - tok: suli
+    en: large
+  - tok: suno
+    en: light
+  - tok: supa
+    en: surface
+  - tok: suwi
+    en: pleasant
+  - tok: tan
+    en: from
+  - tok: taso
+    en: only
+  - tok: tawa
+    en: towards
+  - tok: telo
+    en: liquid
+  - tok: tenpo
+    en: time
+  - tok: toki
+    en: talk
+  - tok: tomo
+    en: building
+  - tok: tonsi
+    en: nonbinary
+  - tok: tu
+    en: two
+  - tok: unpa
+    en: sex
+  - tok: uta
+    en: mouth
+  - tok: utala
+    en: fight
+  - tok: walo
+    en: lightish
+  - tok: wan
+    en: one
+  - tok: waso
+    en: bird
+  - tok: wawa
+    en: strength
+  - tok: weka
+    en: away
+  - tok: wile
+    en: desire

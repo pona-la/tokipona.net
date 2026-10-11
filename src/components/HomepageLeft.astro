@@ -2,10 +2,21 @@
 import Banner from "@/assets/banner.svg";
 import Cols from "@/components/Cols.astro";
 import MaSeka from "@/components/MaSeka.astro";
-// import Video from "@/components/Video.astro";
+import HomepageGrid from "@/components/home/HomepageGrid.astro";
 ---
 
 <style>
+	.caveat {
+		text-decoration: none;
+	}
+	p .caveat {
+		font-size: 1.5em;
+		font-weight: 800;
+	}
+	p:has(.caveat) {
+		text-align: center;
+	}
+
 	.banner {
 		display: flex;
 		justify-content: center;
@@ -42,11 +53,85 @@ import MaSeka from "@/components/MaSeka.astro";
 			}
 		}
 	}
+
+	:global(:has(#wan:checked)) {
+		.first {
+			display: block;
+		}
+		.second {
+			display: none;
+		}
+		.third {
+			display: none;
+		}
+		.fourth {
+			display: none;
+		}
+	}
+
+	:global(:has(#tu:checked)) {
+		.first {
+			display: none;
+		}
+		.second {
+			display: block;
+		}
+		.third {
+			display: none;
+		}
+		.fourth {
+			display: none;
+		}
+	}
+	:global(:has(#tuwan:checked)) {
+		.first {
+			display: none;
+		}
+		.second {
+			display: none;
+		}
+		.third {
+			display: block;
+		}
+		.fourth {
+			display: none;
+		}
+	}
+	:global(:has(#tutu:checked)) {
+		.first {
+			display: none;
+		}
+		.second {
+			display: none;
+		}
+		.third {
+			display: none;
+		}
+		.fourth {
+			display: block;
+		}
+	}
 </style>
 
-<h1>Toki Pona: the language with only 120 words.</h1>
+<h1>
+	Toki Pona: the language of 120<a
+		class="caveat"
+		id="open-caveat"
+		href="#pini-caveat">*</a
+	> words
+</h1>
 
 <div class="banner"><Banner /></div>
+
+<HomepageGrid />
+
+<p>
+	<a class="caveat" id="pini-caveat" href="#open-caveat">*</a>As much as it is
+	possible to exactly count the words in any language. <br /><a
+		href="/faq/#basics/how-many-words"
+		>Varies from 120-140 depending on the speaker.</a
+	>
+</p>
 
 <h2>Learn via videos!</h2>
 
@@ -61,23 +146,6 @@ import MaSeka from "@/components/MaSeka.astro";
 	/>
 </Cols>
 
-<details>
-	<summary>Q - What is Toki Pona?</summary>
-	<p>
-		A - Toki Pona is a constructed language. That means that someone decided
-		what words and grammar to put in it, unlike natural languages, such as
-		English or Urdu. Toki Pona has one main gimmick: it only has 120 words.
-		Beyond that, Toki Pona is not very different from any other language in
-		capability.
-	</p>
-	<p>
-		The number of speakers of Toki Pona is in the thousands. Toki Pona speakers
-		are proud to be part of a community that emphasizes art and expression of
-		identity. Toki Pona is a living language, and it's evolving through daily
-		usage.
-	</p>
-</details>
-
 <Cols>
 	<blockquote style="grid-area: 1/2">
 		<b>How can one communicate</b><br />when limited to such a small set of
@@ -89,22 +157,6 @@ import MaSeka from "@/components/MaSeka.astro";
 		name="Context and Toki Pona // English Version"
 	/>
 </Cols>
-
-<details>
-	<summary>Q - How does Toki Pona work with only 120 words?</summary>
-	<p>
-		A - Toki Pona is highly context-dependent. This means that Toki Pona employs
-		many of the same methods of communication that other languages do, it just
-		doesn't allow for disambiguation via the usage of a more specific word. All
-		other methods still work.
-	</p>
-	<p>
-		Speakers must pay more attention to surrounding events, prior knowledge, and
-		presupposition (which is information implied by a sentence), in places where
-		speakers of other languages would use or request a more specific word.
-		Speakers may also clarify using an additional sentence.
-	</p>
-</details>
 
 <Cols>
 	<blockquote>

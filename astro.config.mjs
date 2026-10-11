@@ -50,6 +50,20 @@ export default defineConfig({
 			styles: ["normal", "italic"],
 			weights: [400, 700],
 		},
+		{
+			provider: fontProviders.local(),
+			name: "nasin-nanpa",
+			cssVariable: "--font-nasin-nanpa",
+			options: {
+				variants: [
+					{
+						weight: "400",
+						style: "normal",
+						src: ["./src/assets/fonts/nasin-nanpa-5.0.0-beta.3.otf"],
+					},
+				],
+			},
+		},
 	],
 
 	integrations: [mdx(), sitemap()],
