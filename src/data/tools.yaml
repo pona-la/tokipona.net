@@ -116,6 +116,11 @@
     - name: ilo Nu
       description: Make and keep notes in Sitelen Pona
       link: https://sirstotes.github.io/iloNu/notes/notes.html
+    - name: ilo sitelen
+      description:
+        Type Toki Pona and get a Sitelen Pona image to paste into WhatsApp,
+        Discord, or any chat; nothing to install
+      link: https://ilositelen.app/
     - category: Font
       children:
         - name: fonts on Linku
